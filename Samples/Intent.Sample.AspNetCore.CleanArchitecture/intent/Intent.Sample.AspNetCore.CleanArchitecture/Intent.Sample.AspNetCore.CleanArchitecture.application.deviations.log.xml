@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <deviationsLog>
-  <files />
+  <files>
+    <file>
+      <correlationId>Intent.Application.MediatR.QueryHandler#5bb3fbbd-512b-41a0-949b-ac03f7ab5e85</correlationId>
+      <path>AspNetCoreCleanArchitecture.Sample.Application/Buyers/GetBuyerStatistics/GetBuyerStatisticsQueryHandler.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-07-03T04:44:42.6984589Z</updatedAt>
+      <deviationsHash>947BD465003F20E88C35B444A4974CCB9FB20AB34BB44C9F18EB03DFFE6BBB1F</deviationsHash>
+      <fileHash>05F2DF976B6CA42D1F7CCA206E243772880BBB0B28F6290B173EC6214F368D62</fileHash>
+    </file>
+  </files>
 </deviationsLog>

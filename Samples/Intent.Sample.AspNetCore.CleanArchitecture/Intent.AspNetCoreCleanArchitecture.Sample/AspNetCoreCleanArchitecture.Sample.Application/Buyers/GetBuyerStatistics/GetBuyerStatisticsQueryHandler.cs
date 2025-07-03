@@ -17,8 +17,8 @@ namespace AspNetCoreCleanArchitecture.Sample.Application.Buyers.GetBuyerStatisti
         [IntentManaged(Mode.Fully, Body = Mode.Fully)]
         public async Task<BuyerStatisticsDto> Handle(GetBuyerStatisticsQuery request, CancellationToken cancellationToken)
         {
-            // TODO: Implement return type mapping...
-            throw new NotImplementedException("Implement return type mapping...");
+            // TODO: Implement Handle (GetBuyerStatisticsQueryHandler) functionality
+            throw new NotImplementedException("Your implementation here...");
         }
     }
 }
