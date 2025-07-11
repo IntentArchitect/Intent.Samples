@@ -10,19 +10,27 @@ namespace AspNetCoreCleanArchitecture.Sample.Application.Buyers
         public BuyerStatisticsDto()
         {
             BuyerName = null!;
+            BuyerSurname = null!;
         }
 
         public Guid BuyerId { get; set; }
-        public byte[] BuyerName { get; set; }
+        public string BuyerName { get; set; }
+        public string BuyerSurname { get; set; }
         public int NoOfOrders { get; set; }
         public decimal AverageCartValue { get; set; }
 
-        public static BuyerStatisticsDto Create(Guid buyerId, byte[] buyerName, int noOfOrders, decimal averageCartValue)
+        public static BuyerStatisticsDto Create(
+            Guid buyerId,
+            string buyerName,
+            string buyerSurname,
+            int noOfOrders,
+            decimal averageCartValue)
         {
             return new BuyerStatisticsDto
             {
                 BuyerId = buyerId,
                 BuyerName = buyerName,
+                BuyerSurname = buyerSurname,
                 NoOfOrders = noOfOrders,
                 AverageCartValue = averageCartValue
             };
