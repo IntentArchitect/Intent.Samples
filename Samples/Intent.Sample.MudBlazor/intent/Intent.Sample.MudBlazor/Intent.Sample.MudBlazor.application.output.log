@@ -244,6 +244,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>69c34f73-a573-410a-8e02-45b0de41f41e</ProjectId>
+      <CorrelationId>Intent.Application.Identity.CurrentUserInterface</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Intent.Sample.MudBlazor/MudBlazor.Sample.Application/Common/Interfaces/ICurrentUser.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ICurrentUser.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>69c34f73-a573-410a-8e02-45b0de41f41e</ProjectId>
       <CorrelationId>Intent.Application.Identity.CurrentUserServiceInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Intent.Sample.MudBlazor/MudBlazor.Sample.Application/Common/Interfaces/ICurrentUserService.cs</ApplicationRelativeFilePath>

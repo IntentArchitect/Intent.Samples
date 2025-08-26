@@ -450,6 +450,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>18227e72-6055-4f89-9b63-1102f7b751b0</ProjectId>
+      <CorrelationId>Intent.Application.Identity.CurrentUserInterface</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Intent.AspNetCoreCleanArchitecture.Sample/AspNetCoreCleanArchitecture.Sample.Application/Common/Interfaces/ICurrentUser.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ICurrentUser.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>18227e72-6055-4f89-9b63-1102f7b751b0</ProjectId>
       <CorrelationId>Intent.Application.Identity.CurrentUserServiceInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Intent.AspNetCoreCleanArchitecture.Sample/AspNetCoreCleanArchitecture.Sample.Application/Common/Interfaces/ICurrentUserService.cs</ApplicationRelativeFilePath>

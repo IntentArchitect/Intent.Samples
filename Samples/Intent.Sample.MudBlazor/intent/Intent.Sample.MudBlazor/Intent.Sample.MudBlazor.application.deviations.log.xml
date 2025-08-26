@@ -1,4 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <deviationsLog>
-  <files />
+  <files>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorLayoutCodeBehindTemplate#95da6272-e0c2-4a3f-a4ef-e3a1ce5ee200</correlationId>
+      <path>MudBlazor.Sample.Client/Layout/MainLayout.razor.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-08-12T07:17:38.7184015Z</updatedAt>
+      <deviationsHash>D23E8E25DF13E045048E01956A6C99AA9D11BE315478B4278CFF8D4EC66BDEF9</deviationsHash>
+      <fileHash>3681C2F001E416C70718EC0F0BAA3164D006837C1D5E39637D22EB77E2EAB1CD</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorComponentCodeBehindTemplate#5977cc17-b9dc-41c2-915b-3df8fa225612</correlationId>
+      <path>MudBlazor.Sample.Client/Pages/Customers/Components/ConfirmationDialog.razor.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-08-12T07:17:38.7172483Z</updatedAt>
+      <deviationsHash>D23E8E25DF13E045048E01956A6C99AA9D11BE315478B4278CFF8D4EC66BDEF9</deviationsHash>
+      <fileHash>2CD33C0A17663434D07E4C1B6A31A6331C4AD6DE35063065A95758B415AB80F5</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorComponentCodeBehindTemplate#77ecf40a-6155-4623-845f-d59ba535fe9d</correlationId>
+      <path>MudBlazor.Sample.Client/Pages/Customers/Components/CustomerAddDialog.razor.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-08-12T07:17:38.7172576Z</updatedAt>
+      <deviationsHash>D23E8E25DF13E045048E01956A6C99AA9D11BE315478B4278CFF8D4EC66BDEF9</deviationsHash>
+      <fileHash>C2122EB09179B1383D3416F280ECEE1FD2E22BED3040A011C271A2A4490EDFA3</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorComponentCodeBehindTemplate#984e48be-e75e-4b3c-b36b-45632650d30a</correlationId>
+      <path>MudBlazor.Sample.Client/Pages/Customers/Components/CustomerEditDialog.razor.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-08-12T07:17:38.7172684Z</updatedAt>
+      <deviationsHash>D23E8E25DF13E045048E01956A6C99AA9D11BE315478B4278CFF8D4EC66BDEF9</deviationsHash>
+      <fileHash>8DCAB93B27139C47C6057478F5D54F3EE31E35214600360DDB79495BA265E4E4</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorComponentCodeBehindTemplate#9fe445f1-b1c8-44dc-899e-ba01edb652c8</correlationId>
+      <path>MudBlazor.Sample.Client/Pages/Customers/CustomerList.razor.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-08-12T07:17:38.7172812Z</updatedAt>
+      <deviationsHash>D23E8E25DF13E045048E01956A6C99AA9D11BE315478B4278CFF8D4EC66BDEF9</deviationsHash>
+      <fileHash>E3847A2E5B6C7D3542232659870A1AD50068867492A9E9166D0F2DCC82303157</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorComponentCodeBehindTemplate#727af709-121a-4241-8e0d-5ba948439324</correlationId>
+      <path>MudBlazor.Sample.Client/Pages/Home.razor.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-08-12T07:17:38.7172867Z</updatedAt>
+      <deviationsHash>D23E8E25DF13E045048E01956A6C99AA9D11BE315478B4278CFF8D4EC66BDEF9</deviationsHash>
+      <fileHash>69A6369A3072A4B6AF406B9D414456EFDFC2FDC439A95AA63BE09AF473A50EC8</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorComponentCodeBehindTemplate#f1bada77-b6a5-4800-9132-023187d93f1c</correlationId>
+      <path>MudBlazor.Sample.Client/Pages/Invoices/Components/InvoiceForm.razor.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-08-12T07:17:38.7173132Z</updatedAt>
+      <deviationsHash>D23E8E25DF13E045048E01956A6C99AA9D11BE315478B4278CFF8D4EC66BDEF9</deviationsHash>
+      <fileHash>70F9BD26397224636F72170A689D65CA550CC3B346A10C69C8859E359D3037A8</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorComponentCodeBehindTemplate#ced5e440-e2c8-4236-a90b-fffb6de8219f</correlationId>
+      <path>MudBlazor.Sample.Client/Pages/Invoices/InvoiceAdd.razor.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-08-12T07:17:38.7172945Z</updatedAt>
+      <deviationsHash>D23E8E25DF13E045048E01956A6C99AA9D11BE315478B4278CFF8D4EC66BDEF9</deviationsHash>
+      <fileHash>773A02DB2BDF08118BD61B16C21BF3CC1CA75912FF461FFFDB23CE4C82A01EE3</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorComponentCodeBehindTemplate#1f24d8f7-3210-4019-afff-a621626dbad8</correlationId>
+      <path>MudBlazor.Sample.Client/Pages/Invoices/InvoiceEdit.razor.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-08-12T07:17:38.7173045Z</updatedAt>
+      <deviationsHash>D23E8E25DF13E045048E01956A6C99AA9D11BE315478B4278CFF8D4EC66BDEF9</deviationsHash>
+      <fileHash>1B807F59A9D8208EC148D5CB6C9F3B675E20BFDEB64245227ACC37AD6909E633</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorComponentCodeBehindTemplate#541fc66c-8027-4988-8bb2-11be6408c12a</correlationId>
+      <path>MudBlazor.Sample.Client/Pages/Invoices/InvoiceList.razor.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-08-12T07:17:38.7173208Z</updatedAt>
+      <deviationsHash>D23E8E25DF13E045048E01956A6C99AA9D11BE315478B4278CFF8D4EC66BDEF9</deviationsHash>
+      <fileHash>4226FD6B4130CBA1A8764FA919B9B992AC348A01C76259750027B6179376057E</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorComponentCodeBehindTemplate#10d1ffec-db34-40f4-8934-ca18962fd224</correlationId>
+      <path>MudBlazor.Sample.Client/Pages/Products/Components/ProductAddDialog.razor.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-08-12T07:17:38.717334Z</updatedAt>
+      <deviationsHash>D23E8E25DF13E045048E01956A6C99AA9D11BE315478B4278CFF8D4EC66BDEF9</deviationsHash>
+      <fileHash>5466ECF7508FEC9E77D3F5C9EE5DFBFCA4E0477603AB7A06F48EFBC32A94A6B2</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorComponentCodeBehindTemplate#a9d3ff59-2597-4ac9-a07f-790425796442</correlationId>
+      <path>MudBlazor.Sample.Client/Pages/Products/Components/ProductEditDialog.razor.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-08-12T07:17:38.7173428Z</updatedAt>
+      <deviationsHash>D23E8E25DF13E045048E01956A6C99AA9D11BE315478B4278CFF8D4EC66BDEF9</deviationsHash>
+      <fileHash>34298044BB391C5AFDEAFC90178BC1CEA594D23A61A865BC2C1C237B34B0C8A6</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorComponentCodeBehindTemplate#79e40f2c-500c-4282-90a0-aa8b2441ab8d</correlationId>
+      <path>MudBlazor.Sample.Client/Pages/Products/NewComponent.razor.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-08-12T07:17:38.7173262Z</updatedAt>
+      <deviationsHash>D23E8E25DF13E045048E01956A6C99AA9D11BE315478B4278CFF8D4EC66BDEF9</deviationsHash>
+      <fileHash>184BD003F9E15D587DF50B7EC0157EC5F2FE9715E251A77D7ED4A45B16399822</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorComponentCodeBehindTemplate#dc91c973-6057-4fdb-b827-1c2cbb55cc1c</correlationId>
+      <path>MudBlazor.Sample.Client/Pages/Products/ProductList.razor.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-08-12T07:17:38.7173522Z</updatedAt>
+      <deviationsHash>D23E8E25DF13E045048E01956A6C99AA9D11BE315478B4278CFF8D4EC66BDEF9</deviationsHash>
+      <fileHash>90094142CA748A0EC1999F238457419C58C2C091371C14ECC73CFC12DF9EFE78</fileHash>
+    </file>
+  </files>
 </deviationsLog>
