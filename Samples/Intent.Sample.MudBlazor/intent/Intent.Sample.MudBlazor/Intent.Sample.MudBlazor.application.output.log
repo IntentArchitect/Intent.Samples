@@ -1739,6 +1739,14 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>c985d59a-fa6c-4f1d-8ea9-f9f34fce6f3e</ProjectId>
+      <CorrelationId>Intent.EntityFrameworkCore.DbMigrationsReadMe</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Intent.Sample.MudBlazor/MudBlazor.Sample.Infrastructure/Migrations/README.md</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>README.md</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>399d7a4c-1605-4834-9220-d074f65185d0</ProjectId>
       <CorrelationId>Intent.VisualStudio.Projects.CSharpProject#399d7a4c-1605-4834-9220-d074f65185d0</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -1776,14 +1784,6 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Intent.Sample.MudBlazor/MudBlazor.Sample.Infrastructure/Persistence/Configurations/ProductConfiguration.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ProductConfiguration.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>b653836d-ebd3-4103-adf7-8431b0599ec2</ProjectId>
-      <CorrelationId>Intent.EntityFrameworkCore.DbMigrationsReadMe</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../Intent.Sample.MudBlazor/MudBlazor.Sample.Infrastructure/Persistence/MIGRATION_README.txt</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>MIGRATION_README.txt</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
