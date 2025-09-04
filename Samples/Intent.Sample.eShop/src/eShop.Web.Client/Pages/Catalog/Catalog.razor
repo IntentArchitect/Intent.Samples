@@ -1,0 +1,17 @@
+@page "/"
+
+<PageTitle>Catalog</PageTitle>
+<SectionContent SectionName="page-header-subtitle">Catalog</SectionContent>
+@if (Model != null)
+{
+    <MudGrid>
+        <MudSpacer></MudSpacer>
+        <MudItem xs="3">
+            <CatalogSearch BrandId="BrandId"
+                           ItemTypeId="ItemTypeId" />
+        </MudItem>
+        <MudItem xs="8">
+            <CatalogItemCard Model="Model.Data" />
+        </MudItem>
+    </MudGrid>
+}

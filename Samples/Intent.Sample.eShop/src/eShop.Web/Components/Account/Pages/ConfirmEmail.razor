@@ -1,0 +1,32 @@
+﻿@page "/Account/ConfirmEmail"
+@using eShop.Web.Common
+@inject IdentityRedirectManager RedirectManager
+@inject IAuthService AuthService
+@attribute [Intent.Skip("/h1")]
+
+<PageTitle>Confirm email</PageTitle>
+
+<section class="form-container">
+    <h2>Email confirmation</h2>
+    <hr />
+    <StatusMessage Message="@statusMessage" />
+</section>
+@code {
+
+    private string? statusMessage;
+    [CascadingParameter]
+    public HttpContext HttpContext { get; set; } = default!;
+    [SupplyParameterFromQuery]
+    public string? UserId { get; set; }
+    [SupplyParameterFromQuery]
+    public string? Code { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (UserId is null || Code is null)
+        {
+            RedirectManager.RedirectTo("");
+        }
+        statusMessage = await AuthService.ConfirmEmail(UserId, Code);
+    }
+}

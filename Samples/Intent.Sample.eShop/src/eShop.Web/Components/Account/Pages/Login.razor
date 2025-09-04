@@ -1,0 +1,97 @@
+@page "/Account/Login"
+@using System.ComponentModel.DataAnnotations
+@using eShop.Web.Common
+@using Microsoft.AspNetCore.Authentication
+@inject IAuthService AuthService
+@inject NavigationManager NavigationManager
+@attribute [Intent.Skip("/h1", "/div[@class='row']")]
+
+<PageTitle>Log in</PageTitle>
+
+<section class="form-container">
+    <StatusMessage Message="@errorMessage" />
+
+    <EditForm Model="Input"
+              FormName="login"
+              OnValidSubmit="LoginUser"
+              method="post">
+        <DataAnnotationsValidator />
+
+        <h2>Use a local account to log in</h2>
+        <ValidationSummary class="form-validation-summary" role="alert" />
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <InputText id="email"
+                       class="form-control"
+                       @bind-Value="Input.Email"
+                       autocomplete="username"
+                       aria-required="true"
+                       placeholder="name@example.com" />
+            <ValidationMessage For="() => Input.Email" class="form-error" />
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <InputText id="password"
+                       class="form-control"
+                       @bind-Value="Input.Password"
+                       autocomplete="current-password"
+                       aria-required="true"
+                       placeholder="password"
+                       type="password" />
+            <ValidationMessage For="() => Input.Password" class="form-error" />
+        </div>
+
+        <div class="form-group checkbox-group">
+            <InputCheckbox id="rememberMe"
+                           class="form-checkbox"
+                           @bind-Value="Input.RememberMe" />
+            <label for="rememberMe">Remember me</label>
+        </div>
+
+        <button type="submit" class="btn-primary" style="background-color:black; color:white">Login</button>
+
+        <div class="form-links">
+            <p><a href="Account/ForgotPassword">Forgot your password?</a></p>
+            <p><a href="@(NavigationManager.GetUriWithQueryParameters("Account/Register", new Dictionary<string, object?> { ["ReturnUrl"] = ReturnUrl }))">Register as a new user</a></p>
+            <p><a href="Account/ResendEmailConfirmation">Resend email confirmation</a></p>
+        </div>
+    </EditForm>
+</section>
+
+@code {
+
+    private string? errorMessage;
+    [CascadingParameter]
+    private HttpContext HttpContext { get; set; } = default!;
+    [SupplyParameterFromForm]
+    private InputModel Input { get; set; } = new();
+    [SupplyParameterFromQuery]
+    private string? ReturnUrl { get; set; }
+
+    public async Task LoginUser()
+    {
+        await AuthService.Login(Input.Email, Input.Password, Input.RememberMe, ReturnUrl);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (HttpMethods.IsGet(HttpContext.Request.Method))
+        {
+            await HttpContext.SignOutAsync();
+        }
+    }
+
+    private sealed class InputModel
+    {
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; } = "";
+        [Required]
+        [DataType(DataType.Password)]
+        public string Password { get; set; } = "";
+        [Display(Name = "Remember me?")]
+        public bool RememberMe { get; set; }
+    }
+}

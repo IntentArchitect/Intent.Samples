@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="8f86b516-7640-4666-bb91-57c6e4255e64" type="Application" typeId="f40a4942-5d2d-4174-8ec1-af66cbd464db">
+  <name>eShop.Basket</name>
+  <display>eShop.Basket</display>
+  <externalReference>259354b5-82fe-4c0a-bb30-1fda60b4d935</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>5b74ecec-ea89-4027-8e35-aa57e7304db2</parentFolderId>
+  <packageId>5b74ecec-ea89-4027-8e35-aa57e7304db2</packageId>
+  <packageName>eShop.Basket.Eventing</packageName>
+  <diagram>
+    <targetPackageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="0429ea0b-1e5f-4857-b184-a9358254e8ba" type="Integration Event Handler" typeId="c0582230-22f5-4f74-8eb0-ec6fc9364900">
+  <name>OrderStatusChangedToAwaitingValidationIntegrationEventHandler</name>
+  <display>OrderStatusChangedToAwaitingValidationIntegrationEventHandler</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>b369089c-82ab-42b9-9bab-af100e5de8d9</parentFolderId>
+  <packageId>b369089c-82ab-42b9-9bab-af100e5de8d9</packageId>
+  <packageName>eShop.Catalog.Services</packageName>
+  <traits>
+    <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+  </traits>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

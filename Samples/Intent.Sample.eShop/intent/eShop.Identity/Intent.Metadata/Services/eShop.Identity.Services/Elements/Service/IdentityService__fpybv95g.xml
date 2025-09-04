@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="d0ab57c6-90bb-4fb2-89f6-68930ee219e5" type="Service" typeId="b16578a5-27b1-4047-a8df-f0b783d706bd">
+  <name>IdentityService</name>
+  <display>IdentityService</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>e53e4b8f-22be-4057-a571-e23b5074cb45</parentFolderId>
+  <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+  <packageName>eShop.Identity.Services</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="c29224ec-d473-4b95-ad4a-ec55c676c4fd" name="Http Service Settings">
+      <addedByDefault>false</addedByDefault>
+      <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+      <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+      <properties>
+        <property name="1e223bd0-7a72-435a-8741-a612d88e4a12" display="Route" value="" isActive="true" />
+      </properties>
+    </stereotype>
+    <stereotype stereotypeDefinitionId="8ef84001-167a-4cbb-8950-e519937e7981" name="Identity Service Handler">
+      <addedByDefault>false</addedByDefault>
+      <definitionPackageName>Intent.AspNetCore.IdentityService</definitionPackageName>
+      <definitionPackageId>a1a75470-3437-43b1-be57-f2187693929b</definitionPackageId>
+      <properties />
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="93d6f8a9-b1d7-48dd-826d-8e3bbc6d4fd9" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>ConfirmEmail</name>
+      <display>ConfirmEmail(userId: string, code: string, changedEmail: string?): string</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="ba1bb46b-c84f-46c8-8310-d7221fb5d474">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d0ab57c6-90bb-4fb2-89f6-68930ee219e5</parentFolderId>
+      <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+      <packageName>eShop.Identity.Services</packageName>
+      <traits>
+        <trait id="0a932465-ea1f-42e7-b1eb-9f90aa8961fd" name="[Invokable]" />
+        <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+      </traits>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="confirmEmail" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+            <property name="e3870725-34b3-4684-85f2-ec4a667207fb" display="Success Response Code" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="8ef84001-167a-4cbb-8950-e519937e7981" name="Identity Service Handler">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.AspNetCore.IdentityService</definitionPackageName>
+          <definitionPackageId>a1a75470-3437-43b1-be57-f2187693929b</definitionPackageId>
+          <properties />
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="c2720e83-4cf1-4b11-b935-f8234cd71192" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>userId</name>
+          <display>in : userId: string</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="9428ebd7-6bb9-4686-8f1a-3ce485276248">
+            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>93d6f8a9-b1d7-48dd-826d-8e3bbc6d4fd9</parentFolderId>
+          <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+          <packageName>eShop.Identity.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="From Query" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+                <property name="c8caa58e-972a-42f2-983e-652ceee762b2" display="Query String Name" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="bb81d48e-7ed7-4d2e-8ba1-ab43e461e9aa" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>code</name>
+          <display>in : code: string</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="8cdbe5c4-0ac4-40cd-9c69-ddf1e92bb730">
+            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>93d6f8a9-b1d7-48dd-826d-8e3bbc6d4fd9</parentFolderId>
+          <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+          <packageName>eShop.Identity.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="From Query" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+                <property name="c8caa58e-972a-42f2-983e-652ceee762b2" display="Query String Name" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="4f47b11e-0ac2-4a55-a50c-8d88b18c0511" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>changedEmail</name>
+          <display>in : changedEmail: string?</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="c0fc940f-dfb1-4124-882d-d937c3e6bd99">
+            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>true</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>93d6f8a9-b1d7-48dd-826d-8e3bbc6d4fd9</parentFolderId>
+          <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+          <packageName>eShop.Identity.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="From Query" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+                <property name="c8caa58e-972a-42f2-983e-652ceee762b2" display="Query String Name" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="10a7af20-35fe-447f-beab-972019abbe1e" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>ForgotPassword</name>
+      <display>ForgotPassword(resetRequest: ForgotPasswordRequestDto): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="97c0ba5d-198a-4c81-b515-4e8c9d790f8d">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d0ab57c6-90bb-4fb2-89f6-68930ee219e5</parentFolderId>
+      <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+      <packageName>eShop.Identity.Services</packageName>
+      <traits>
+        <trait id="0a932465-ea1f-42e7-b1eb-9f90aa8961fd" name="[Invokable]" />
+        <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+      </traits>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="forgotPassword" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+            <property name="e3870725-34b3-4684-85f2-ec4a667207fb" display="Success Response Code" value="200 (Ok)" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="8ef84001-167a-4cbb-8950-e519937e7981" name="Identity Service Handler">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.AspNetCore.IdentityService</definitionPackageName>
+          <definitionPackageId>a1a75470-3437-43b1-be57-f2187693929b</definitionPackageId>
+          <properties />
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="5884a4c4-2a23-459e-b88c-dcfa00447e6a" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>resetRequest</name>
+          <display>in : resetRequest: ForgotPasswordRequestDto</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="2f608263-4610-4f73-aab8-9b3c71fd4a53">
+            <typeId>0fb483ce-b561-46e8-b9b5-6d07082792e6</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>eShop.Identity.Services</typePackageName>
+            <typePackageId>e53e4b8f-22be-4057-a571-e23b5074cb45</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>10a7af20-35fe-447f-beab-972019abbe1e</parentFolderId>
+          <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+          <packageName>eShop.Identity.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="From Body" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+                <property name="c8caa58e-972a-42f2-983e-652ceee762b2" display="Query String Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="730c98aa-b2dd-4492-a615-a09bb0d8c257" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetInfo</name>
+      <display>GetInfo(): InfoResponseDto</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="08a82cb9-21ac-4c74-925b-173dc15828d2">
+        <typeId>8b6cbf88-5100-4505-b6ce-4a880dd55e2c</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Identity.Services</typePackageName>
+        <typePackageId>e53e4b8f-22be-4057-a571-e23b5074cb45</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d0ab57c6-90bb-4fb2-89f6-68930ee219e5</parentFolderId>
+      <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+      <packageName>eShop.Identity.Services</packageName>
+      <traits>
+        <trait id="0a932465-ea1f-42e7-b1eb-9f90aa8961fd" name="[Invokable]" />
+        <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+      </traits>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="manage/info" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+            <property name="e3870725-34b3-4684-85f2-ec4a667207fb" display="Success Response Code" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="8ef84001-167a-4cbb-8950-e519937e7981" name="Identity Service Handler">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.AspNetCore.IdentityService</definitionPackageName>
+          <definitionPackageId>a1a75470-3437-43b1-be57-f2187693929b</definitionPackageId>
+          <properties />
+        </stereotype>
+        <stereotype stereotypeDefinitionId="a9eade71-1d56-4be7-a80c-81046c0c978b" name="Secured">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.Security</definitionPackageName>
+          <definitionPackageId>a6fa1088-0064-43e3-a7fc-36c97b2b9285</definitionPackageId>
+          <properties>
+            <property name="2b39acef-6079-48c9-b85e-2b0981f9de70" display="Roles" isActive="true" />
+            <property name="ae5251ff-40a1-4e46-be66-6b176f329f98" display="Policy" isActive="true" />
+            <property name="28bbe8bb-8d31-44c7-b642-ff0e279ab85f" display="Security Roles" isActive="false" />
+            <property name="68cbcd05-cd5c-49f3-a982-8ee9caf554bb" display="Security Policies" isActive="false" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="865eaa1f-a05a-43d2-8d9a-aa1561a3e237" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>Login</name>
+      <display>Login(login: LoginRequestDto, useCookies: bool?, useSessionCookies: bool?): AccessTokenResponseDto</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="d7d8749c-eda4-4faf-b4c6-ab713c201d65">
+        <typeId>ccc363b8-3315-41a9-8b19-dde5c3eadd2b</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Identity.Services</typePackageName>
+        <typePackageId>e53e4b8f-22be-4057-a571-e23b5074cb45</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d0ab57c6-90bb-4fb2-89f6-68930ee219e5</parentFolderId>
+      <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+      <packageName>eShop.Identity.Services</packageName>
+      <traits>
+        <trait id="0a932465-ea1f-42e7-b1eb-9f90aa8961fd" name="[Invokable]" />
+        <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+      </traits>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="login" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+            <property name="e3870725-34b3-4684-85f2-ec4a667207fb" display="Success Response Code" value="200 (Ok)" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="8ef84001-167a-4cbb-8950-e519937e7981" name="Identity Service Handler">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.AspNetCore.IdentityService</definitionPackageName>
+          <definitionPackageId>a1a75470-3437-43b1-be57-f2187693929b</definitionPackageId>
+          <properties />
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="b3600aa3-a7a3-4741-b5e5-f5a202565141" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>login</name>
+          <display>in : login: LoginRequestDto</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="2c491b6a-ae52-4aab-9dab-e8bc9eea971a">
+            <typeId>3775e275-50c9-4fc9-b450-03d0386cdf91</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>eShop.Identity.Services</typePackageName>
+            <typePackageId>e53e4b8f-22be-4057-a571-e23b5074cb45</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>865eaa1f-a05a-43d2-8d9a-aa1561a3e237</parentFolderId>
+          <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+          <packageName>eShop.Identity.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="From Body" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+                <property name="c8caa58e-972a-42f2-983e-652ceee762b2" display="Query String Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="0ddb9add-2c01-437c-9554-c12ffebb97ec" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>useCookies</name>
+          <display>in : useCookies: bool?</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="cd73a318-0cf6-48a0-82bf-466fd253f831">
+            <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>true</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>865eaa1f-a05a-43d2-8d9a-aa1561a3e237</parentFolderId>
+          <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+          <packageName>eShop.Identity.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="From Query" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+                <property name="c8caa58e-972a-42f2-983e-652ceee762b2" display="Query String Name" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="b3783d93-7e37-455f-91a4-7e81337091b5" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>useSessionCookies</name>
+          <display>in : useSessionCookies: bool?</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="899bfdec-3722-40f3-8206-ab4010e65ddf">
+            <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>true</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>865eaa1f-a05a-43d2-8d9a-aa1561a3e237</parentFolderId>
+          <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+          <packageName>eShop.Identity.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="From Query" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+                <property name="c8caa58e-972a-42f2-983e-652ceee762b2" display="Query String Name" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="97918405-9059-4464-be06-0367c5a5fa78" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>Refresh</name>
+      <display>Refresh(refreshRequest: RefreshRequestDto): AccessTokenResponseDto</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="fb138544-4352-43cc-89e1-f934c09daf55">
+        <typeId>ccc363b8-3315-41a9-8b19-dde5c3eadd2b</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Identity.Services</typePackageName>
+        <typePackageId>e53e4b8f-22be-4057-a571-e23b5074cb45</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d0ab57c6-90bb-4fb2-89f6-68930ee219e5</parentFolderId>
+      <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+      <packageName>eShop.Identity.Services</packageName>
+      <traits>
+        <trait id="0a932465-ea1f-42e7-b1eb-9f90aa8961fd" name="[Invokable]" />
+        <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+      </traits>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="refresh" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+            <property name="e3870725-34b3-4684-85f2-ec4a667207fb" display="Success Response Code" value="200 (Ok)" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="8ef84001-167a-4cbb-8950-e519937e7981" name="Identity Service Handler">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.AspNetCore.IdentityService</definitionPackageName>
+          <definitionPackageId>a1a75470-3437-43b1-be57-f2187693929b</definitionPackageId>
+          <properties />
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="9e876981-65f5-4030-97c4-a199369312d7" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>refreshRequest</name>
+          <display>in : refreshRequest: RefreshRequestDto</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="c8fe6371-d426-402f-b790-d43660cef195">
+            <typeId>e68ed718-58c2-4fb9-953a-aa250d459321</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>eShop.Identity.Services</typePackageName>
+            <typePackageId>e53e4b8f-22be-4057-a571-e23b5074cb45</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>97918405-9059-4464-be06-0367c5a5fa78</parentFolderId>
+          <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+          <packageName>eShop.Identity.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="From Body" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+                <property name="c8caa58e-972a-42f2-983e-652ceee762b2" display="Query String Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="dfe82c97-fb23-4376-b3fb-11d23c883886" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>Register</name>
+      <display>Register(register: RegisterRequestDto): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="02eda7e7-ba42-4e13-a5c6-45aafe759496">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d0ab57c6-90bb-4fb2-89f6-68930ee219e5</parentFolderId>
+      <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+      <packageName>eShop.Identity.Services</packageName>
+      <traits>
+        <trait id="0a932465-ea1f-42e7-b1eb-9f90aa8961fd" name="[Invokable]" />
+        <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+      </traits>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="register" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+            <property name="e3870725-34b3-4684-85f2-ec4a667207fb" display="Success Response Code" value="200 (Ok)" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="8ef84001-167a-4cbb-8950-e519937e7981" name="Identity Service Handler">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.AspNetCore.IdentityService</definitionPackageName>
+          <definitionPackageId>a1a75470-3437-43b1-be57-f2187693929b</definitionPackageId>
+          <properties />
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="77ae638c-1fb6-45de-94e6-9a979570c977" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>register</name>
+          <display>in : register: RegisterRequestDto</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="da27672b-fd35-402b-a8f4-0217db667da1">
+            <typeId>34c256c7-379a-4d09-abe4-cced74dc1b83</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>eShop.Identity.Services</typePackageName>
+            <typePackageId>e53e4b8f-22be-4057-a571-e23b5074cb45</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>dfe82c97-fb23-4376-b3fb-11d23c883886</parentFolderId>
+          <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+          <packageName>eShop.Identity.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="From Body" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+                <property name="c8caa58e-972a-42f2-983e-652ceee762b2" display="Query String Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="72474d17-32c8-475e-8151-d465bf76ec47" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>ResendConfirmationEmail</name>
+      <display>ResendConfirmationEmail(resendRequest: ResendConfirmationEmailRequestDto): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="8188a2d1-743f-443a-880e-ddd95e127d5d">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d0ab57c6-90bb-4fb2-89f6-68930ee219e5</parentFolderId>
+      <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+      <packageName>eShop.Identity.Services</packageName>
+      <traits>
+        <trait id="0a932465-ea1f-42e7-b1eb-9f90aa8961fd" name="[Invokable]" />
+        <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+      </traits>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="resendConfirmationEmail" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+            <property name="e3870725-34b3-4684-85f2-ec4a667207fb" display="Success Response Code" value="200 (Ok)" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="8ef84001-167a-4cbb-8950-e519937e7981" name="Identity Service Handler">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.AspNetCore.IdentityService</definitionPackageName>
+          <definitionPackageId>a1a75470-3437-43b1-be57-f2187693929b</definitionPackageId>
+          <properties />
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="a9e6494f-2419-4180-ae72-726e5c17619f" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>resendRequest</name>
+          <display>in : resendRequest: ResendConfirmationEmailRequestDto</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="b9e12c4e-01b7-40ae-9737-b858e2533574">
+            <typeId>83019f86-e9da-4a3b-8cf3-8489cfd88a9e</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>eShop.Identity.Services</typePackageName>
+            <typePackageId>e53e4b8f-22be-4057-a571-e23b5074cb45</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>72474d17-32c8-475e-8151-d465bf76ec47</parentFolderId>
+          <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+          <packageName>eShop.Identity.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="From Body" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+                <property name="c8caa58e-972a-42f2-983e-652ceee762b2" display="Query String Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="d4d205e8-3f89-4420-bad3-38e5e4b701ad" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>ResetPassword</name>
+      <display>ResetPassword(resetRequest: ResetPasswordRequestDto): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="212f54a9-4c88-48c0-aac6-61c9d6a2d5ce">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d0ab57c6-90bb-4fb2-89f6-68930ee219e5</parentFolderId>
+      <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+      <packageName>eShop.Identity.Services</packageName>
+      <traits>
+        <trait id="0a932465-ea1f-42e7-b1eb-9f90aa8961fd" name="[Invokable]" />
+        <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+      </traits>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="resetPassword" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+            <property name="e3870725-34b3-4684-85f2-ec4a667207fb" display="Success Response Code" value="200 (Ok)" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="8ef84001-167a-4cbb-8950-e519937e7981" name="Identity Service Handler">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.AspNetCore.IdentityService</definitionPackageName>
+          <definitionPackageId>a1a75470-3437-43b1-be57-f2187693929b</definitionPackageId>
+          <properties />
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="ce238ba6-c595-4a00-81bb-8caf13a1e4b7" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>resetRequest</name>
+          <display>in : resetRequest: ResetPasswordRequestDto</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="6d5f9c58-6b94-4b39-83c0-3a8398e9c048">
+            <typeId>379bada3-e556-4918-983e-b0d67a68260f</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>eShop.Identity.Services</typePackageName>
+            <typePackageId>e53e4b8f-22be-4057-a571-e23b5074cb45</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>d4d205e8-3f89-4420-bad3-38e5e4b701ad</parentFolderId>
+          <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+          <packageName>eShop.Identity.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="From Body" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+                <property name="c8caa58e-972a-42f2-983e-652ceee762b2" display="Query String Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="28aa4175-bc86-4990-a406-31317706082e" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>UpdateInfo</name>
+      <display>UpdateInfo(infoRequest: InfoRequestDto): InfoResponseDto</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="d32247ef-5e2a-4b4c-b5f1-217167a9de9c">
+        <typeId>8b6cbf88-5100-4505-b6ce-4a880dd55e2c</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Identity.Services</typePackageName>
+        <typePackageId>e53e4b8f-22be-4057-a571-e23b5074cb45</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d0ab57c6-90bb-4fb2-89f6-68930ee219e5</parentFolderId>
+      <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+      <packageName>eShop.Identity.Services</packageName>
+      <traits>
+        <trait id="0a932465-ea1f-42e7-b1eb-9f90aa8961fd" name="[Invokable]" />
+        <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+      </traits>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="manage/info" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+            <property name="e3870725-34b3-4684-85f2-ec4a667207fb" display="Success Response Code" value="200 (Ok)" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="8ef84001-167a-4cbb-8950-e519937e7981" name="Identity Service Handler">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.AspNetCore.IdentityService</definitionPackageName>
+          <definitionPackageId>a1a75470-3437-43b1-be57-f2187693929b</definitionPackageId>
+          <properties />
+        </stereotype>
+        <stereotype stereotypeDefinitionId="a9eade71-1d56-4be7-a80c-81046c0c978b" name="Secured">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.Security</definitionPackageName>
+          <definitionPackageId>a6fa1088-0064-43e3-a7fc-36c97b2b9285</definitionPackageId>
+          <properties>
+            <property name="2b39acef-6079-48c9-b85e-2b0981f9de70" display="Roles" isActive="true" />
+            <property name="ae5251ff-40a1-4e46-be66-6b176f329f98" display="Policy" isActive="true" />
+            <property name="28bbe8bb-8d31-44c7-b642-ff0e279ab85f" display="Security Roles" isActive="false" />
+            <property name="68cbcd05-cd5c-49f3-a982-8ee9caf554bb" display="Security Policies" isActive="false" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="4e801e4a-9e94-454a-a187-8bd9008d4d67" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>infoRequest</name>
+          <display>in : infoRequest: InfoRequestDto</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="063f5c83-8d5b-4a13-b1a1-da5b3ed6a866">
+            <typeId>d57d393c-507b-4c50-8eaf-6a5005787c08</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>eShop.Identity.Services</typePackageName>
+            <typePackageId>e53e4b8f-22be-4057-a571-e23b5074cb45</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>28aa4175-bc86-4990-a406-31317706082e</parentFolderId>
+          <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+          <packageName>eShop.Identity.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="From Body" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+                <property name="c8caa58e-972a-42f2-983e-652ceee762b2" display="Query String Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="fe5765f9-490f-4760-8940-be7aafaf6af3" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>UpdateTwoFactor</name>
+      <display>UpdateTwoFactor(tfaRequest: TwoFactorRequestDto): TwoFactorResponseDto</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="47b2d2b9-22b5-43d6-b359-6886adba07e0">
+        <typeId>d26e5694-d249-43c8-95c9-2621a85b6ca4</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Identity.Services</typePackageName>
+        <typePackageId>e53e4b8f-22be-4057-a571-e23b5074cb45</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d0ab57c6-90bb-4fb2-89f6-68930ee219e5</parentFolderId>
+      <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+      <packageName>eShop.Identity.Services</packageName>
+      <traits>
+        <trait id="0a932465-ea1f-42e7-b1eb-9f90aa8961fd" name="[Invokable]" />
+        <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+      </traits>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="manage/2fa" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+            <property name="e3870725-34b3-4684-85f2-ec4a667207fb" display="Success Response Code" value="200 (Ok)" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="8ef84001-167a-4cbb-8950-e519937e7981" name="Identity Service Handler">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.AspNetCore.IdentityService</definitionPackageName>
+          <definitionPackageId>a1a75470-3437-43b1-be57-f2187693929b</definitionPackageId>
+          <properties />
+        </stereotype>
+        <stereotype stereotypeDefinitionId="a9eade71-1d56-4be7-a80c-81046c0c978b" name="Secured">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.Security</definitionPackageName>
+          <definitionPackageId>a6fa1088-0064-43e3-a7fc-36c97b2b9285</definitionPackageId>
+          <properties>
+            <property name="2b39acef-6079-48c9-b85e-2b0981f9de70" display="Roles" isActive="true" />
+            <property name="ae5251ff-40a1-4e46-be66-6b176f329f98" display="Policy" isActive="true" />
+            <property name="28bbe8bb-8d31-44c7-b642-ff0e279ab85f" display="Security Roles" isActive="false" />
+            <property name="68cbcd05-cd5c-49f3-a982-8ee9caf554bb" display="Security Policies" isActive="false" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="c21c300b-5527-45c9-8d40-adc1bef76310" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>tfaRequest</name>
+          <display>in : tfaRequest: TwoFactorRequestDto</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="e9461d46-c1b6-4357-88c6-c660e4c701aa">
+            <typeId>4bc3ad74-244d-405e-9aa0-3d1c6b9b7e94</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>eShop.Identity.Services</typePackageName>
+            <typePackageId>e53e4b8f-22be-4057-a571-e23b5074cb45</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>fe5765f9-490f-4760-8940-be7aafaf6af3</parentFolderId>
+          <packageId>e53e4b8f-22be-4057-a571-e23b5074cb45</packageId>
+          <packageName>eShop.Identity.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="From Body" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+                <property name="c8caa58e-972a-42f2-983e-652ceee762b2" display="Query String Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

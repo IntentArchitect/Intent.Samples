@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="8500f820-c7f2-4bc0-b754-6db95145eedc">
+  <sourceEnd id="1f917057-a10c-4a03-8e0d-b452604cf4b1" type="Perform Invocation Source End" typeId="ee56bd48-8eff-4fff-8d3a-87731d002335">
+    <display>called by : GracePeriodConfirmedIntegrationEventHandler.</display>
+    <order>0</order>
+    <typeReference id="ceed9c97-3ee8-40a7-93f4-1631ac20b6a6">
+      <typeId>cd7ca205-c077-4ef9-a6f0-48be3c92ca24</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Services</typePackageName>
+      <typePackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="8500f820-c7f2-4bc0-b754-6db95145eedc" type="Perform Invocation Target End" typeId="093e5909-ffe4-4510-b3ea-532f30212f3c">
+    <display>[call] : SetAwaitingValidationOrderStatusCommand(...): void</display>
+    <order>0</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="b8f5e8af-d2fb-4e26-9833-f0b339fdb05a">
+      <typeId>ea2d331f-c2e8-4c4b-b9f8-b8f710fdf35d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Services</typePackageName>
+      <typePackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Invocation Mapping" typeId="a4c4c5cc-76df-48ed-9d4e-c35caf44b567">
+        <source applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="822e4254-9ced-4dd1-ad56-500b861f7e4d" elementId="26121a0b-3aef-416f-8a8b-50070ee78b39" location="[eShop.Ordering].[Services].[GracePeriodConfirmedIntegrationEvent]" />
+        <target applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="ea2d331f-c2e8-4c4b-b9f8-b8f710fdf35d" location="[eShop.Ordering].[Services].[SetAwaitingValidationOrderStatusCommand]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{OrderId}</expression>
+            <path>
+              <target id="ea2d331f-c2e8-4c4b-b9f8-b8f710fdf35d" name="SetAwaitingValidationOrderStatusCommand" type="element" specialization="Command" />
+              <target id="ceea2ae8-5b84-4036-8b61-2ecd65d3234f" name="OrderId" type="element" specialization="DTO-Field" />
+            </path>
+            <sources>
+              <source identifier="OrderId" mappingType="Data Mapping" mappingTypeId="1ad97d12-2aa8-4f03-8cb0-3a8a4e71b4d9">
+                <path>
+                  <target id="26121a0b-3aef-416f-8a8b-50070ee78b39" name="GracePeriodConfirmedIntegrationEvent" type="element" specialization="Message" />
+                  <target id="f5a49691-c1a1-4754-9a91-ea58119d4caf" name="OrderId" type="element" specialization="Property" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Perform Invocation</associationType>
+  <associationTypeId>3e69085c-fa2f-44bd-93eb-41075fd472f8</associationTypeId>
+  <stereotypes />
+</association>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="deda6132-e306-4309-827a-c8f855c0a501">
+  <sourceEnd id="618024db-0ca0-412e-ba25-bbc0b2ad8bc9" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>CatalogItems</name>
+    <display>CatalogItems: CatalogItem[*]</display>
+    <order>0</order>
+    <typeReference id="a9ee2dcc-6690-42aa-892c-4685f823994d">
+      <typeId>f2ce80a2-8077-42e8-be33-de22cf15a09d</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Domain</typePackageName>
+      <typePackageId>969d4536-0205-4cbb-b35f-bcc92ac7ff04</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="deda6132-e306-4309-827a-c8f855c0a501" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>CatalogBrand</name>
+    <display>CatalogBrand: CatalogBrand</display>
+    <order>14</order>
+    <typeReference id="7f1742f9-a597-4beb-b6f0-559228ddcf44">
+      <typeId>511695dd-9903-4eb7-95c1-077c1ee84cf7</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Domain</typePackageName>
+      <typePackageId>969d4536-0205-4cbb-b35f-bcc92ac7ff04</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="7b660c98-cbdb-4d75-a90f-7159f524aa16">
+  <sourceEnd id="54077c0a-1767-480f-964e-8a2cc98c15b9" type="Subscribe Integration Event Source End" typeId="5d8f5c33-f9c9-4629-b637-fad9b0096894">
+    <display>handled by: eShop.Basket.Services.OrderStartedIntegrationEventHandler</display>
+    <order>0</order>
+    <typeReference id="9593be85-0534-4db1-86d0-694fc819726d">
+      <typeId>c85b74ed-98a3-42d7-b655-46cff6542971</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Basket.Services</typePackageName>
+      <typePackageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="7b660c98-cbdb-4d75-a90f-7159f524aa16" type="Subscribe Integration Event Target End" typeId="16fa2952-79e6-4150-b5ab-45aa4c106de4">
+    <display>handles: OrderStartedIntegrationEvent</display>
+    <order>0</order>
+    <traits>
+      <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+    </traits>
+    <typeReference id="1becaae2-4d66-46c4-a0bb-a116008966e2">
+      <typeId>038ac4a1-40f7-43d8-8880-5c3977fae015</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Eventing.Messages</typePackageName>
+      <typePackageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Subscribe Integration Event</associationType>
+  <associationTypeId>80aa7f6d-64e5-4d24-a81e-6bc212925ca7</associationTypeId>
+  <stereotypes />
+</association>

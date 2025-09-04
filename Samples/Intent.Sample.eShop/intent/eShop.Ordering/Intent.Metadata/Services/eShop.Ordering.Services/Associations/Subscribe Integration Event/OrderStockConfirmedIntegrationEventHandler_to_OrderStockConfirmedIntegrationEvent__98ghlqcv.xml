@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="80b52c86-43c8-4e96-aa44-c0a24e3d01a8">
+  <sourceEnd id="3b265186-e969-4348-9c89-b5448f356646" type="Subscribe Integration Event Source End" typeId="5d8f5c33-f9c9-4629-b637-fad9b0096894">
+    <display>handled by: eShop.Ordering.Services.OrderStockConfirmedIntegrationEventHandler</display>
+    <order>0</order>
+    <typeReference id="36efd8f8-062e-4e87-b966-2ae4a3d1c6c8">
+      <typeId>c1b6e20a-85de-49a5-a07d-8b147eec7edc</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Services</typePackageName>
+      <typePackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="80b52c86-43c8-4e96-aa44-c0a24e3d01a8" type="Subscribe Integration Event Target End" typeId="16fa2952-79e6-4150-b5ab-45aa4c106de4">
+    <display>handles: OrderStockConfirmedIntegrationEvent</display>
+    <order>0</order>
+    <traits>
+      <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+    </traits>
+    <typeReference id="51218520-f28b-4a42-92ab-47cb8db47467">
+      <typeId>8eba012d-f636-42a5-9cdb-a28d76885f7f</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Eventing.Messages</typePackageName>
+      <typePackageId>530b7102-dfc3-48f7-91e2-42f40c300148</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Subscribe Integration Event</associationType>
+  <associationTypeId>80aa7f6d-64e5-4d24-a81e-6bc212925ca7</associationTypeId>
+  <stereotypes />
+</association>

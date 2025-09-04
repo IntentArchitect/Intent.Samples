@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="ac878281-283f-4427-9ec5-485b4ff6c5d3">
+  <sourceEnd id="4e1d129a-fd46-419d-8da7-a567f485dba8" type="Publish Integration Event Source End" typeId="eab91b3a-9903-40a2-90e8-ddb714883eab">
+    <display>published by : OrderStatusChangedToStockConfirmedIntegrationEventHandler.</display>
+    <order>0</order>
+    <typeReference id="24ec3ee8-fa74-40cb-8fdd-7d8d237fe6f1">
+      <typeId>df302a63-b88d-49eb-9b22-34d43f7d5b85</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Payment.Services</typePackageName>
+      <typePackageId>db0b5419-47ae-4667-b0f1-34231f86875a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="ac878281-283f-4427-9ec5-485b4ff6c5d3" type="Publish Integration Event Target End" typeId="6feb1511-849a-4aa3-85eb-d0c736ac1fec">
+    <display>[publish] OrderPaymentFailedIntegrationEvent</display>
+    <order>0</order>
+    <typeReference id="4ab48ef4-67eb-4131-b962-1904aaca5f1f">
+      <typeId>828af32a-a069-48a5-a44c-30b6b4b94eb7</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Payment.Eventing.Messages</typePackageName>
+      <typePackageId>2b2383de-deff-48fc-adb1-2a366de37085</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Publish Integration Event</associationType>
+  <associationTypeId>580b6b26-eab5-4602-a408-e76e2d292d2c</associationTypeId>
+  <stereotypes />
+</association>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="c1b6e20a-85de-49a5-a07d-8b147eec7edc" type="Integration Event Handler" typeId="c0582230-22f5-4f74-8eb0-ec6fc9364900">
+  <name>OrderStockConfirmedIntegrationEventHandler</name>
+  <display>OrderStockConfirmedIntegrationEventHandler</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</parentFolderId>
+  <packageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</packageId>
+  <packageName>eShop.Ordering.Services</packageName>
+  <traits>
+    <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+  </traits>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

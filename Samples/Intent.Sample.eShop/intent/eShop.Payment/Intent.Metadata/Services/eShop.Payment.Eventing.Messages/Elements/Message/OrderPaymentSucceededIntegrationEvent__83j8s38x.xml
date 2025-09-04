@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="46086675-ab8b-47d9-9bfc-843cbdfe38dc" type="Message" typeId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e">
+  <name>OrderPaymentSucceededIntegrationEvent</name>
+  <display>OrderPaymentSucceededIntegrationEvent</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>2b2383de-deff-48fc-adb1-2a366de37085</parentFolderId>
+  <packageId>2b2383de-deff-48fc-adb1-2a366de37085</packageId>
+  <packageName>eShop.Payment.Eventing.Messages</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="ca84308e-9dab-49f6-8c31-8dd41fb9a03c" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>OrderId</name>
+      <display>OrderId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="a7223062-b18a-436f-a2d9-aefbe18adc5c">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>46086675-ab8b-47d9-9bfc-843cbdfe38dc</parentFolderId>
+      <packageId>2b2383de-deff-48fc-adb1-2a366de37085</packageId>
+      <packageName>eShop.Payment.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

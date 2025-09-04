@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deviationsLog>
+  <files>
+    <file>
+      <correlationId>Intent.Application.Identity.ApplicationSecurityConfiguration</correlationId>
+      <path>eShop.Ordering.Api/Configuration/ApplicationSecurityConfiguration.cs</path>
+      <count>1</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-07-31T06:36:58.0784781Z</updatedAt>
+      <deviationsHash>3658D121F37914D60C67FE0D28124FFC0977BF0BC07ED28D83B045610449D16B</deviationsHash>
+      <fileHash>9FF9C97DCBF1F040448433EE6638DBEE20980B017E607C24C4D0356BA973EF9D</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.AspNetCore.Controllers.Controller#6ee622fa-aea6-41b9-ab1e-d14792c29bc7</correlationId>
+      <path>eShop.Ordering.Api/Controllers/OrdersController.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-02-10T06:51:54.9433281Z</updatedAt>
+      <deviationsHash>B7203BFB9686F060DB0ACAA7C53E52041597E3DB8BC78F5BAE12E1FBA6835020</deviationsHash>
+      <fileHash>3B9F39532CC885BC1984D5D5C2A1C4ACBE23C3C101EE8DD1AFC81CBF9DE40D43</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.AspNetCore.Startup</correlationId>
+      <path>eShop.Ordering.Api/Startup.cs</path>
+      <count>1</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-07-31T09:15:33.3622118Z</updatedAt>
+      <deviationsHash>343B9FB05520CB3A383392D625D981EB00E5F265E786D6AE551D68EABC54CC3F</deviationsHash>
+      <fileHash>22D6AC190746DB93900523C062AE0899B886B1DD64FF3BF8915AE2674D7B8EDC</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.MediatR.DomainEvents.DomainEventHandler#c439bdc1-3aac-4cc1-81f5-6149e9942b85</correlationId>
+      <path>eShop.Ordering.Application/EventHandlers/OrderCancelledDomainEventHandler.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-10-23T06:22:56.3794267Z</updatedAt>
+      <deviationsHash>95F024BBB9B93CC06F17BC55CA2B849AF9EDD9596525892D00915BACFA8C917B</deviationsHash>
+      <fileHash>F22729ADF5D1A9D03EFF6E2DE82E47B6B91CA578C15DB2C881A37D3DE76CBD1B</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.MediatR.DomainEvents.DomainEventHandler#52b0978b-ffbd-4946-99c3-880f90c2cbe6</correlationId>
+      <path>eShop.Ordering.Application/EventHandlers/OrderShippedDomainEventHandler.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-10-23T06:22:56.3794309Z</updatedAt>
+      <deviationsHash>95F024BBB9B93CC06F17BC55CA2B849AF9EDD9596525892D00915BACFA8C917B</deviationsHash>
+      <fileHash>4F0CBB82FC15525B712C38FDDB3AF8E2C628825F2B87C6F2B7E50CF871A9C5C3</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.MediatR.DomainEvents.DomainEventHandler#ee8d8af9-4c19-4b6d-b7a9-6eff718a721d</correlationId>
+      <path>eShop.Ordering.Application/EventHandlers/ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler.cs</path>
+      <count>2</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-07-31T06:36:58.0786417Z</updatedAt>
+      <deviationsHash>873BDC90AE0A059FFEB106A822091F7CDBAB5DED600F1B37200C2CAB9C259D08</deviationsHash>
+      <fileHash>F54580FDC3F2224D45E6DD4C976A601A4A33F16DAD120BCBEF6A78D4E8A31470</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Eventing.Contracts.IntegrationEventMessage#d97bfbfc-2241-4dd0-82de-fb85d92697b5</correlationId>
+      <path>eShop.Ordering.Application/IntegrationEvents/OrderStatusChangedToSubmittedIntegrationEvent.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-10-23T06:22:56.3795282Z</updatedAt>
+      <deviationsHash>624E63D10AE3B27E155ED4147D884603BAD8ED43678191961FB94F80C1D9E729</deviationsHash>
+      <fileHash>C63143BA160CE02DA2A7A786B6C9ED0DBD9B123AD115A644A90D8825B891600D</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Application.MediatR.FluentValidation.CommandValidator#c33ec8a6-7573-4366-871b-07ff6c039a45</correlationId>
+      <path>eShop.Ordering.Application/Orders/CancelOrder/CancelOrderCommandValidator.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-02-10T06:51:54.9434777Z</updatedAt>
+      <deviationsHash>26F4F8883E51B7AB212E5EAE0E93A62DCDE9B6402BA6FE23BFC6900D5CF6DCC8</deviationsHash>
+      <fileHash>4351A70F4A791410A2AD45D6E996F6B0E49E6EF239CFB4D6D55DF441BF9B4F72</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Application.MediatR.CommandHandler#fc5d4a28-b660-4f94-9f5f-93aad1e373e2</correlationId>
+      <path>eShop.Ordering.Application/Orders/CreateOrder/CreateOrderCommandHandler.cs</path>
+      <count>1</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-07-07T11:22:20.6057539Z</updatedAt>
+      <deviationsHash>D1BC1717A741889B4AA6230AA6E252AA471926FD94C8B47FBB9A010836BE1698</deviationsHash>
+      <fileHash>B040A3A350ABF6AA53926ED50032022E8E28F902298FBA07EBA12DBFB7DF739B</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Application.MediatR.FluentValidation.CommandValidator#fc5d4a28-b660-4f94-9f5f-93aad1e373e2</correlationId>
+      <path>eShop.Ordering.Application/Orders/CreateOrder/CreateOrderCommandValidator.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-02-10T06:51:54.9434864Z</updatedAt>
+      <deviationsHash>D671A0C94D8E3C535D428B3ACF849FA89788C14B0470794FA4ED306D86665F41</deviationsHash>
+      <fileHash>77CEBB02079BF6EB42EB5181274925EC3F9A6BC8DB44297F73C5AC900AA8670D</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Application.MediatR.QueryHandler#a3095c7c-29a6-4c77-bf68-da9e7cefec07</correlationId>
+      <path>eShop.Ordering.Application/Orders/GetOrderById/GetOrderByIdQueryHandler.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-02-10T06:51:54.94353Z</updatedAt>
+      <deviationsHash>284C13965315DB733C667485F8C7E4C32D0EE676C77F0828D24FBBF225956A61</deviationsHash>
+      <fileHash>E65B9C804EF92498945FC17EBF465E107B2A3362C4ADE2B3F6BFFAC523CB3E61</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Application.MediatR.FluentValidation.QueryValidator#a3095c7c-29a6-4c77-bf68-da9e7cefec07</correlationId>
+      <path>eShop.Ordering.Application/Orders/GetOrderById/GetOrderByIdQueryValidator.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-02-10T06:51:54.9435168Z</updatedAt>
+      <deviationsHash>FE9B4160AFA4A8EF4CFC82A3AA3BF403ADC16079B297AB598E8C3A4FCBAA7A0B</deviationsHash>
+      <fileHash>7ACBC3F389B620D6FE78A5BB7E45A8EF881774F061BF63DF44FBA8FFCBBC5801</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Application.MediatR.QueryHandler#940c4983-df6f-4d0d-9261-77c31e2a4e9b</correlationId>
+      <path>eShop.Ordering.Application/Orders/GetOrders/GetOrdersQueryHandler.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-02-10T06:51:54.9435347Z</updatedAt>
+      <deviationsHash>E83795F16FB98E53F3AAAFBC9FFB683EDC558F376F4183416D2ACC5D6CACD9EB</deviationsHash>
+      <fileHash>386BB9E04415CE924375889DCB0F6E29B065DFF07DB663450494894C59F72FB2</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Application.MediatR.FluentValidation.QueryValidator#940c4983-df6f-4d0d-9261-77c31e2a4e9b</correlationId>
+      <path>eShop.Ordering.Application/Orders/GetOrders/GetOrdersQueryValidator.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-02-10T06:51:54.9435211Z</updatedAt>
+      <deviationsHash>2E87142F49335AA571830F909C8723433BC7DC16E8A65758A14573A33AC77CDD</deviationsHash>
+      <fileHash>34EAB722C4950398EC121268F01D2ABCB0B46A6CF2D6FC62927CD41655AEDB0E</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Application.MediatR.FluentValidation.CommandValidator#ea2d331f-c2e8-4c4b-b9f8-b8f710fdf35d</correlationId>
+      <path>eShop.Ordering.Application/Orders/SetAwaitingValidationOrderStatus/SetAwaitingValidationOrderStatusCommandValidator.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-02-10T06:51:54.9434914Z</updatedAt>
+      <deviationsHash>DF748D0233CAC18CA2CFC939ED68803DC83E86B99097A476196AB25B2C26AB31</deviationsHash>
+      <fileHash>04CB6FD72EC79DFC3068C342E87082C4AA89FE60CB1FA19CA72B75411C287E77</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Application.MediatR.FluentValidation.CommandValidator#788bdb98-7163-4c3e-bd54-e632ccbffff6</correlationId>
+      <path>eShop.Ordering.Application/Orders/SetStockConfirmedOrderStatus/SetStockConfirmedOrderStatusCommandValidator.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-02-10T06:51:54.9435Z</updatedAt>
+      <deviationsHash>8AADA56916643C7FDC637BD0F7718210EC7956CDFEC92E06D0B70341C50000A8</deviationsHash>
+      <fileHash>2F43823BC6D68D0E336D2915B9BF96EFFBCAEF2CF45559B88CFBF8F490278F02</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Application.MediatR.FluentValidation.CommandValidator#940c9281-d7dd-4949-ab51-ae6c48558168</correlationId>
+      <path>eShop.Ordering.Application/Orders/SetStockRejectedOrderStatus/SetStockRejectedOrderStatusCommandValidator.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-02-10T06:51:54.9435047Z</updatedAt>
+      <deviationsHash>361839953973211590B6704F27296CAD6FEA31036278CE33D39ED55F36C65744</deviationsHash>
+      <fileHash>AC5D92408D0EFEB8314A4172A90A16B5ACD8C34B5FFE9C8D2A3B5E4D9FF386A8</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Application.MediatR.FluentValidation.CommandValidator#535ea32c-ef25-434f-a72e-9c8384f6b3dc</correlationId>
+      <path>eShop.Ordering.Application/Orders/ShipOrder/ShipOrderCommandValidator.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-02-10T06:51:54.9435086Z</updatedAt>
+      <deviationsHash>675F6DB8096C0A4D522DB63B34D2D53745371C57B1869AD81355B5DF94ECFC67</deviationsHash>
+      <fileHash>839A752466E3F3168C5C4DA22039BC3A4B2DC69B2BD0E3340352370959FE28A0</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Entities.DomainEntity#11551992-2fa3-4a1c-8c55-c02fe7cfc361</correlationId>
+      <path>eShop.Ordering.Domain/OrderAggregate/Order.cs</path>
+      <count>4</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-07-14T09:21:47.2181535Z</updatedAt>
+      <deviationsHash>33538B5CF9E9996DA651C312A087A8993E03A02FD088662053505C0AFDD55647</deviationsHash>
+      <fileHash>4F918856F2EBFF84D7AF546FDCA379FB5BC97E40DB797ED81D7480C15A5F2AF0</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Entities.DomainEntity#f216a27e-9b16-4837-9bf6-54b5bad5b7f7</correlationId>
+      <path>eShop.Ordering.Domain/OrderAggregate/OrderItem.cs</path>
+      <count>1</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-07-10T11:42:28.6752448Z</updatedAt>
+      <deviationsHash>A616F8F7737BC89B554EBBFB72A51F4E05828CF70FF96D37C1B6F96DC5787803</deviationsHash>
+      <fileHash>8BBF37885655CDB70C783012048D57F06D85E877C2F93538FAE3F542A62AF2A5</fileHash>
+    </file>
+  </files>
+</deviationsLog>

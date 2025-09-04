@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="3175ee62-b835-4ae8-a74d-4272aab8b67f" type="Component" typeId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b">
+  <name>Orders</name>
+  <display>Orders</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>09dbb0fb-99aa-40b5-b420-197b2ee93849</parentFolderId>
+  <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+  <packageName>eShop.Web.UI</packageName>
+  <traits>
+    <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+  </traits>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="ea4adc09-8978-4ede-ba5f-265debb2b60c" name="Page">
+      <addedByDefault>false</addedByDefault>
+      <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+      <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+      <properties>
+        <property name="9dff9df1-a993-4bf6-9aa7-c16811142228" display="Route" value="/orders" isActive="true" />
+        <property name="0a8627ba-ec45-4023-9c36-b0999f43e982" display="Title" isActive="true" />
+      </properties>
+    </stereotype>
+    <stereotype stereotypeDefinitionId="012f5173-6419-4006-a9a8-ab5c20b8a42e" name="Secured">
+      <addedByDefault>false</addedByDefault>
+      <definitionPackageName>Intent.Blazor</definitionPackageName>
+      <definitionPackageId>3ac5ff1e-5fc9-46a2-95e5-2d9ca579e484</definitionPackageId>
+      <properties>
+        <property name="a4a26159-0b60-498e-8b91-56a59756928b" display="Roles" isActive="true" />
+        <property name="f7079953-a05f-4ca6-b51a-40f160460003" display="Policy" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <mappings>
+    <mapping type="View Binding" typeId="c33f86ad-423a-4a6f-a80c-a3206eafe5cd">
+      <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="3175ee62-b835-4ae8-a74d-4272aab8b67f" location="[eShop.Web].[User Interface].[Orders]" />
+      <target applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="ffe75dc6-17ae-4ce7-a48f-d6d2e227332c" location="[eShop.Web].[User Interface].[[view]]" />
+      <mappedEnds>
+        <mappedEnd>
+          <expression>{Model}</expression>
+          <path>
+            <target id="ffe75dc6-17ae-4ce7-a48f-d6d2e227332c" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="0f41e92b-f910-4044-b583-e0b8d5e7ff72" name="Data Grid" type="element" specialization="Data Grid" specializationId="4b33f894-ad6e-43e0-a238-4286375c9ab7" />
+          </path>
+          <sources>
+            <source identifier="Model" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="3175ee62-b835-4ae8-a74d-4272aab8b67f" name="Orders" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="9232800b-2f44-4066-8de8-4cc7ee70bfb2" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{Model.OrderNumber}</expression>
+          <path>
+            <target id="ffe75dc6-17ae-4ce7-a48f-d6d2e227332c" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="0f41e92b-f910-4044-b583-e0b8d5e7ff72" name="Data Grid" type="element" specialization="Data Grid" specializationId="4b33f894-ad6e-43e0-a238-4286375c9ab7" />
+            <target id="5f888f69-d4b9-4247-b4d2-ac7f0ca6269d" name="OrderNumber" type="element" specialization="Data Grid Column" specializationId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532" />
+          </path>
+          <sources>
+            <source identifier="Model.OrderNumber" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="3175ee62-b835-4ae8-a74d-4272aab8b67f" name="Orders" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="9232800b-2f44-4066-8de8-4cc7ee70bfb2" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                <target id="16d59a53-53f6-4905-b4ee-41b47ee895ff" name="OrderNumber" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{Model.Date}</expression>
+          <path>
+            <target id="ffe75dc6-17ae-4ce7-a48f-d6d2e227332c" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="0f41e92b-f910-4044-b583-e0b8d5e7ff72" name="Data Grid" type="element" specialization="Data Grid" specializationId="4b33f894-ad6e-43e0-a238-4286375c9ab7" />
+            <target id="0054b5a5-174b-47b1-962c-3a62aac5a973" name="Date" type="element" specialization="Data Grid Column" specializationId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532" />
+          </path>
+          <sources>
+            <source identifier="Model.Date" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="3175ee62-b835-4ae8-a74d-4272aab8b67f" name="Orders" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="9232800b-2f44-4066-8de8-4cc7ee70bfb2" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                <target id="ec6946ca-cc42-405b-9323-066df1eda290" name="Date" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{Model.Status}</expression>
+          <path>
+            <target id="ffe75dc6-17ae-4ce7-a48f-d6d2e227332c" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="0f41e92b-f910-4044-b583-e0b8d5e7ff72" name="Data Grid" type="element" specialization="Data Grid" specializationId="4b33f894-ad6e-43e0-a238-4286375c9ab7" />
+            <target id="89711ce4-7526-4a9c-b156-568e5623dccc" name="Status" type="element" specialization="Data Grid Column" specializationId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532" />
+          </path>
+          <sources>
+            <source identifier="Model.Status" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="3175ee62-b835-4ae8-a74d-4272aab8b67f" name="Orders" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="9232800b-2f44-4066-8de8-4cc7ee70bfb2" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                <target id="a7b622f8-348c-4ebc-8761-5d398cbd71ed" name="Status" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{Model.Total}</expression>
+          <path>
+            <target id="ffe75dc6-17ae-4ce7-a48f-d6d2e227332c" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="0f41e92b-f910-4044-b583-e0b8d5e7ff72" name="Data Grid" type="element" specialization="Data Grid" specializationId="4b33f894-ad6e-43e0-a238-4286375c9ab7" />
+            <target id="0f23ce64-b17e-478e-936d-e6d90f49d5e3" name="Total" type="element" specialization="Data Grid Column" specializationId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532" />
+          </path>
+          <sources>
+            <source identifier="Model.Total" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="3175ee62-b835-4ae8-a74d-4272aab8b67f" name="Orders" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="9232800b-2f44-4066-8de8-4cc7ee70bfb2" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                <target id="ebb0969d-cee2-4878-8b01-b422f513bce3" name="Total" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+      </mappedEnds>
+    </mapping>
+  </mappings>
+  <metadata />
+  <childElements>
+    <childElement id="9232800b-2f44-4066-8de8-4cc7ee70bfb2" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Model</name>
+      <display>Model: OrderSummaryDto[*]</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="f6c772cf-8b43-4fbc-a2ff-1351c2f43ae7">
+        <typeId>efed376f-7c88-4e0b-bf94-b69a0edddb29</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Ordering.Services</typePackageName>
+        <typePackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>3175ee62-b835-4ae8-a74d-4272aab8b67f</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="41ec528d-a679-4272-806d-080d8906ac74" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>OnInitializedAsync</name>
+      <display>OnInitializedAsync(): void</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="14be9c5b-21a1-4297-abac-0ccda85f2238">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>3175ee62-b835-4ae8-a74d-4272aab8b67f</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="f9e87eff-9a03-4d5b-ac65-6e18e619ec27" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>InitializeComponentAsync</name>
+      <display>InitializeComponentAsync(): void</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="4acd54e8-12be-489a-a2ac-03af8d5bdf8f">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>3175ee62-b835-4ae8-a74d-4272aab8b67f</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

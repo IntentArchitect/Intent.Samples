@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="ee8d8af9-4c19-4b6d-b7a9-6eff718a721d" type="Domain Event Handler" typeId="d80e61c5-7e4c-4175-9df1-0413f664824c">
+  <name>ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler</name>
+  <display>ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</parentFolderId>
+  <packageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</packageId>
+  <packageName>eShop.Ordering.Services</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

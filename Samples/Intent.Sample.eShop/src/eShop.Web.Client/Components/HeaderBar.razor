@@ -1,0 +1,47 @@
+@inject NavigationManager NavManager
+
+<div class="eshop-header @(IsCatalog? "home" : "")">
+    <div class="eshop-header-hero">
+        @{
+            var headerImage = IsCatalog ? "images/header-home.webp" : "images/header.webp";
+        }
+        <img role="presentation" src="@headerImage" style="width:100vw;"/>
+    </div>
+    <div class="eshop-header-container">
+        <nav class="eshop-header-navbar">
+            <a class="logo logo-header" href="">
+                <img alt="AdventureWorks" src="images/logo-header.svg" class="logo logo-header" />
+            </a>
+        </nav>
+        <div class="eshop-header-intro">
+            <h1><SectionOutlet SectionName="page-header-title" /></h1>
+            <p><SectionOutlet SectionName="page-header-subtitle" /></p>
+        </div>
+    </div>
+</div>
+
+@code {
+    private bool IsCatalog;
+
+    protected override void OnInitialized()
+    {
+        NavManager.LocationChanged += OnLocationChanged;
+        SetIsCatalog();
+    }
+
+    private void SetIsCatalog()
+    {
+        IsCatalog = NavManager.Uri.Equals(NavManager.BaseUri, StringComparison.OrdinalIgnoreCase);
+    }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        SetIsCatalog();
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        NavManager.LocationChanged -= OnLocationChanged;
+    }
+}

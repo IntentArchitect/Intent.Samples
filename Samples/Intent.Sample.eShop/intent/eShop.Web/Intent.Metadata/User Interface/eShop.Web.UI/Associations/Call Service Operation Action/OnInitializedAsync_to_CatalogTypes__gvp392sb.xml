@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="e36e05d7-706c-4b53-ae70-494809815930">
+  <sourceEnd id="cd101a03-8ced-4542-aa8d-61a32e625082" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: OnInitializedAsync</display>
+    <order>0</order>
+    <typeReference id="212347f0-2ee4-4bc0-9a0b-4cd865c5eab9">
+      <typeId>5582fee8-0d10-4c69-bd0a-d25430976ba4</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Web.UI</typePackageName>
+      <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="e36e05d7-706c-4b53-ae70-494809815930" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>CatalogTypes</name>
+    <display>[call] CatalogService.CatalogTypes(): CatalogTypeDto[*]</display>
+    <order>1</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="24904ec5-b3e8-4b4d-9c9f-57dd551ffe52">
+      <typeId>dee3ff5f-5617-4f58-896d-85f2bb079e13</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Services</typePackageName>
+      <typePackageId>b369089c-82ab-42b9-9bab-af100e5de8d9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="def0353c-21e1-416f-8cce-4479d3f4ca50" location="[eShop.Web].[User Interface].[CatalogSearch]" />
+        <target applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="dee3ff5f-5617-4f58-896d-85f2bb079e13" location="[eShop.Web].[User Interface].[CatalogTypes]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{OnInitializedAsync.CatalogTypes}</expression>
+            <path>
+              <target id="dee3ff5f-5617-4f58-896d-85f2bb079e13" name="CatalogTypes" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+            </path>
+            <sources>
+              <source identifier="OnInitializedAsync.CatalogTypes" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="def0353c-21e1-416f-8cce-4479d3f4ca50" name="CatalogSearch" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="5582fee8-0d10-4c69-bd0a-d25430976ba4" name="OnInitializedAsync" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="e36e05d7-706c-4b53-ae70-494809815930" name="CatalogTypes" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Call Service Response Mapping" typeId="e60890c6-7ce7-47be-a0da-dff82b8adc02">
+        <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="def0353c-21e1-416f-8cce-4479d3f4ca50" location="[eShop.Web].[User Interface].[CatalogSearch]" />
+        <target applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="def0353c-21e1-416f-8cce-4479d3f4ca50" location="[eShop.Web].[User Interface].[CatalogSearch]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{OnInitializedAsync.CatalogTypes.response}</expression>
+            <path>
+              <target id="def0353c-21e1-416f-8cce-4479d3f4ca50" name="CatalogSearch" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="18416961-a8ae-4e5c-b897-ed7a066c9b57" name="catalogItemTypes" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="OnInitializedAsync.CatalogTypes.response" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="def0353c-21e1-416f-8cce-4479d3f4ca50" name="CatalogSearch" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="5582fee8-0d10-4c69-bd0a-d25430976ba4" name="OnInitializedAsync" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="e36e05d7-706c-4b53-ae70-494809815930" name="CatalogTypes" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>657743a4-bcd0-4ba1-8f09-4e55868fd4df</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>true</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>eShop.Catalog.Services</typePackageName>
+                      <typePackageId>b369089c-82ab-42b9-9bab-af100e5de8d9</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

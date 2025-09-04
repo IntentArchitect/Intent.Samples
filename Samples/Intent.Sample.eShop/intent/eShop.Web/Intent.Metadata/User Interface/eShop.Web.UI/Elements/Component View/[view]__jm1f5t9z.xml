@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="005e65f0-a01c-46fe-9cfc-b90981e80a95" type="Component View" typeId="624513a6-cba8-4dde-8ebe-6b19f00f0364">
+  <comment />
+  <name>[view]</name>
+  <display>[view]</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>manually</sort-children>
+  <order>0</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>94f109cb-d93f-4599-8262-98be7fb3d3b3</parentFolderId>
+  <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+  <packageName>eShop.Web.UI</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="46344e1a-d457-4b62-9950-96a590c51bfe" type="Data Grid" typeId="4b33f894-ad6e-43e0-a238-4286375c9ab7">
+      <name>Data Grid</name>
+      <display>Data Grid = {Model.BasketItems}</display>
+      <isAbstract>false</isAbstract>
+      <value>{Model.BasketItems}</value>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>005e65f0-a01c-46fe-9cfc-b90981e80a95</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <traits>
+        <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+      </traits>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="d523028b-4077-441e-a70f-50af42c9e91f" name="Appearance">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Blazor.Components.MudBlazor</definitionPackageName>
+          <definitionPackageId>47e5f8d0-3892-4408-b6f9-88bf8591af2d</definitionPackageId>
+          <properties>
+            <property name="3c87930d-09ac-4f32-96da-ae5f5ac20f7e" display="Dense" value="false" isActive="true" />
+            <property name="2eb4bcd7-71dd-4b25-b236-c9e1e47c1333" display="Elevation" value="0" isActive="true" />
+            <property name="696f0b1c-bcfb-43c1-a490-3d76451ade04" display="Hover" value="true" isActive="true" />
+            <property name="80c4105a-06ca-42f9-b2ac-5fc1c090bacd" display="Striped" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="0f3fc9f6-d11b-4e78-b28d-3c818e32d510" name="Interaction">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Blazor.Components.MudBlazor</definitionPackageName>
+          <definitionPackageId>47e5f8d0-3892-4408-b6f9-88bf8591af2d</definitionPackageId>
+          <properties>
+            <property name="0e69d7ce-a9aa-4c8f-8940-6b9964dfa894" display="On Row Click" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="7936f4ce-2243-4fb1-ad9e-5af331a0f1d2" name="Layout">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+          <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+          <properties>
+            <property name="80fd6320-1bc9-4a95-8b95-59640877e978" display="xs" value="12" isActive="true" />
+            <property name="9561bc34-a1f1-4167-938a-84e2a3a9446f" display="sm" value="7" isActive="true" />
+            <property name="3a6d24b8-6761-40e2-8277-b8a21e158fb9" display="md" isActive="true" />
+            <property name="d45056ab-9ce5-467d-a05f-24f43bd79ff3" display="lg" isActive="true" />
+            <property name="6cd2eeb6-9dc4-46f2-ac0f-ac370fd0d894" display="xl" isActive="true" />
+            <property name="475fd55a-540c-4a64-bb7d-174c0171f9be" display="xxl" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="80a9cacc-cb9f-4d6e-86cd-24957494e493" type="Data Grid Toolbar" typeId="9af26915-0394-4cda-864d-0e7f9f9943dc">
+          <name>Toolbar</name>
+          <display>Toolbar</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>46344e1a-d457-4b62-9950-96a590c51bfe</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="ea0a2eee-45a8-4548-8941-8d9ca738c884" type="Data Grid Column" typeId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532">
+          <name>Products</name>
+          <display>Products</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>manually</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>46344e1a-d457-4b62-9950-96a590c51bfe</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="07e23f28-c31c-4a95-9219-c01d6dd1bac5" type="Display Component" typeId="866a90f7-4044-43b9-bb05-7270c7889796">
+              <name>ProductImagePrice</name>
+              <display>ProductImagePrice</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <typeReference id="e6a2254e-3b0d-4a98-935d-439bfb913a87">
+                <typeId>91998985-b788-4232-ab8e-19eb2c8b5355</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>eShop.Web.UI</typePackageName>
+                <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+              <isMapped>false</isMapped>
+              <parentFolderId>ea0a2eee-45a8-4548-8941-8d9ca738c884</parentFolderId>
+              <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+              <packageName>eShop.Web.UI</packageName>
+              <traits>
+                <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+              </traits>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="ed74aebd-f7be-445c-a923-eae733112772" type="Data Grid Column" typeId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532">
+          <name>Quantity</name>
+          <display>Quantity</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>46344e1a-d457-4b62-9950-96a590c51bfe</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="f6a73154-6b59-49bc-88fc-48877d8214d6" type="Data Grid Column" typeId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532">
+          <name>Total</name>
+          <display>Total</display>
+          <isAbstract>false</isAbstract>
+          <sort-children>manually</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>46344e1a-d457-4b62-9950-96a590c51bfe</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements>
+            <childElement id="2c733e53-a1c6-40ac-b313-987334fc834f" type="Text" typeId="922150d2-42e6-4805-a002-f9580cdf7f6f">
+              <name>Text</name>
+              <display>Text = $@((context.Item.UnitPrice * CurrentOrPendingQuantity(context.Item.ProductId, context.Item.Quantity)).ToString("0.00"))</display>
+              <isAbstract>false</isAbstract>
+              <value>$@((context.Item.UnitPrice * CurrentOrPendingQuantity(context.Item.ProductId, context.Item.Quantity)).ToString("0.00"))</value>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>f6a73154-6b59-49bc-88fc-48877d8214d6</parentFolderId>
+              <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+              <packageName>eShop.Web.UI</packageName>
+              <traits>
+                <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+              </traits>
+              <stereotypes />
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="058638a1-84be-4db9-8fa8-c4c7dd2b8bff" type="Spacer" typeId="cfc58280-fe7e-466d-9c00-ddb41b5462e7">
+      <name>Spacer</name>
+      <display>Spacer</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>005e65f0-a01c-46fe-9cfc-b90981e80a95</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <traits>
+        <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+      </traits>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="7936f4ce-2243-4fb1-ad9e-5af331a0f1d2" name="Layout">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+          <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+          <properties>
+            <property name="80fd6320-1bc9-4a95-8b95-59640877e978" display="xs" value="1" isActive="true" />
+            <property name="9561bc34-a1f1-4167-938a-84e2a3a9446f" display="sm" isActive="true" />
+            <property name="3a6d24b8-6761-40e2-8277-b8a21e158fb9" display="md" isActive="true" />
+            <property name="d45056ab-9ce5-467d-a05f-24f43bd79ff3" display="lg" isActive="true" />
+            <property name="6cd2eeb6-9dc4-46f2-ac0f-ac370fd0d894" display="xl" isActive="true" />
+            <property name="475fd55a-540c-4a64-bb7d-174c0171f9be" display="xxl" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="c10680ce-a905-43a0-8bc4-4cb295a8d04f" type="Container" typeId="b97ea181-2462-431f-8f62-f90f79509b9e">
+      <name>Container</name>
+      <display>Container</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>005e65f0-a01c-46fe-9cfc-b90981e80a95</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <traits>
+        <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+      </traits>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="7936f4ce-2243-4fb1-ad9e-5af331a0f1d2" name="Layout">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+          <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+          <properties>
+            <property name="80fd6320-1bc9-4a95-8b95-59640877e978" display="xs" value="12" isActive="true" />
+            <property name="9561bc34-a1f1-4167-938a-84e2a3a9446f" display="sm" value="3" isActive="true" />
+            <property name="3a6d24b8-6761-40e2-8277-b8a21e158fb9" display="md" isActive="true" />
+            <property name="d45056ab-9ce5-467d-a05f-24f43bd79ff3" display="lg" isActive="true" />
+            <property name="6cd2eeb6-9dc4-46f2-ac0f-ac370fd0d894" display="xl" isActive="true" />
+            <property name="475fd55a-540c-4a64-bb7d-174c0171f9be" display="xxl" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="6870a951-d9f3-437f-8d26-bb2bdcddc4df" type="Icon" typeId="3c5f8ea8-061a-4e71-826f-59f9281abe71">
+          <name>Shopping Cart</name>
+          <display>Shopping Cart</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>c10680ce-a905-43a0-8bc4-4cb295a8d04f</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <traits>
+            <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+          </traits>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="7936f4ce-2243-4fb1-ad9e-5af331a0f1d2" name="Layout">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+              <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+              <properties>
+                <property name="80fd6320-1bc9-4a95-8b95-59640877e978" display="xs" value="6" isActive="true" />
+                <property name="9561bc34-a1f1-4167-938a-84e2a3a9446f" display="sm" isActive="true" />
+                <property name="3a6d24b8-6761-40e2-8277-b8a21e158fb9" display="md" isActive="true" />
+                <property name="d45056ab-9ce5-467d-a05f-24f43bd79ff3" display="lg" isActive="true" />
+                <property name="6cd2eeb6-9dc4-46f2-ac0f-ac370fd0d894" display="xl" isActive="true" />
+                <property name="475fd55a-540c-4a64-bb7d-174c0171f9be" display="xxl" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="5b2dc712-10ba-4545-a215-bd4a8f85f2df" type="Text" typeId="922150d2-42e6-4805-a002-f9580cdf7f6f">
+          <name>Your shopping bag</name>
+          <display>Your shopping bag</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>c10680ce-a905-43a0-8bc4-4cb295a8d04f</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <traits>
+            <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+          </traits>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="7936f4ce-2243-4fb1-ad9e-5af331a0f1d2" name="Layout">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+              <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+              <properties>
+                <property name="80fd6320-1bc9-4a95-8b95-59640877e978" display="xs" value="6" isActive="true" />
+                <property name="9561bc34-a1f1-4167-938a-84e2a3a9446f" display="sm" isActive="true" />
+                <property name="3a6d24b8-6761-40e2-8277-b8a21e158fb9" display="md" isActive="true" />
+                <property name="d45056ab-9ce5-467d-a05f-24f43bd79ff3" display="lg" isActive="true" />
+                <property name="6cd2eeb6-9dc4-46f2-ac0f-ac370fd0d894" display="xl" isActive="true" />
+                <property name="475fd55a-540c-4a64-bb7d-174c0171f9be" display="xxl" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="449b1e15-2726-4238-918f-f0c20e3468f0" type="Icon" typeId="3c5f8ea8-061a-4e71-826f-59f9281abe71">
+          <name>Quantity</name>
+          <display>Quantity = @TotalQuantity.ToString()</display>
+          <isAbstract>false</isAbstract>
+          <value>@TotalQuantity.ToString()</value>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>c10680ce-a905-43a0-8bc4-4cb295a8d04f</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <traits>
+            <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+          </traits>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="7936f4ce-2243-4fb1-ad9e-5af331a0f1d2" name="Layout">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+              <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+              <properties>
+                <property name="80fd6320-1bc9-4a95-8b95-59640877e978" display="xs" value="12" isActive="true" />
+                <property name="9561bc34-a1f1-4167-938a-84e2a3a9446f" display="sm" isActive="true" />
+                <property name="3a6d24b8-6761-40e2-8277-b8a21e158fb9" display="md" isActive="true" />
+                <property name="d45056ab-9ce5-467d-a05f-24f43bd79ff3" display="lg" isActive="true" />
+                <property name="6cd2eeb6-9dc4-46f2-ac0f-ac370fd0d894" display="xl" isActive="true" />
+                <property name="475fd55a-540c-4a64-bb7d-174c0171f9be" display="xxl" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="06f6be86-32c2-49b4-91d4-8357bb34f3bf" type="Text" typeId="922150d2-42e6-4805-a002-f9580cdf7f6f">
+          <name>Total</name>
+          <display>Total = Total: &lt;strong&gt;$@TotalPrice.ToString("0.00")&lt;/strong&gt;</display>
+          <isAbstract>false</isAbstract>
+          <value>Total: &lt;strong&gt;$@TotalPrice.ToString("0.00")&lt;/strong&gt;</value>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>c10680ce-a905-43a0-8bc4-4cb295a8d04f</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <traits>
+            <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+          </traits>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="7936f4ce-2243-4fb1-ad9e-5af331a0f1d2" name="Layout">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+              <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+              <properties>
+                <property name="80fd6320-1bc9-4a95-8b95-59640877e978" display="xs" value="12" isActive="true" />
+                <property name="9561bc34-a1f1-4167-938a-84e2a3a9446f" display="sm" isActive="true" />
+                <property name="3a6d24b8-6761-40e2-8277-b8a21e158fb9" display="md" isActive="true" />
+                <property name="d45056ab-9ce5-467d-a05f-24f43bd79ff3" display="lg" isActive="true" />
+                <property name="6cd2eeb6-9dc4-46f2-ac0f-ac370fd0d894" display="xl" isActive="true" />
+                <property name="475fd55a-540c-4a64-bb7d-174c0171f9be" display="xxl" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="f7f3e0a8-d780-42bc-b9ae-58fca523e45c" type="Button" typeId="4474d808-f6fd-405f-a9c7-6998cd000ede">
+          <name>Check out</name>
+          <display>Check out</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>c10680ce-a905-43a0-8bc4-4cb295a8d04f</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <traits>
+            <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+          </traits>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="b218f7cb-d150-401d-a17a-9e22fadf863f" name="Appearance">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Blazor.Components.MudBlazor</definitionPackageName>
+              <definitionPackageId>47e5f8d0-3892-4408-b6f9-88bf8591af2d</definitionPackageId>
+              <properties>
+                <property name="eecbc26c-443b-4d97-a706-a4e21fc13552" display="Icon Only" value="false" isActive="false" />
+                <property name="de8a25d2-a144-4806-b5ad-e6c195abfa43" display="Variant" value="93828c49-ea2f-46d2-b661-df6fc2c4a0e2" isActive="true" />
+                <property name="d527d5a7-fd00-4486-a204-5c6fc93099a5" display="Color" isActive="true" />
+                <property name="9243cf9b-c6de-47d4-a914-382ab7ddf920" display="Class" isActive="true" />
+              </properties>
+            </stereotype>
+            <stereotype stereotypeDefinitionId="a7de29e5-4bee-4e5d-93f0-740569ac6130" name="Interaction">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Modelers.UI.Core</definitionPackageName>
+              <definitionPackageId>a2a95421-3e55-43c7-96ad-355610b43c4d</definitionPackageId>
+              <properties>
+                <property name="7cee794d-e1a7-4590-b65a-6e56914a2a97" display="Type" value="Default" isActive="true" />
+                <property name="2265736b-4381-42dc-9dbf-b757188837bc" display="Form" isActive="false" />
+                <property name="d05f7b5b-fe45-4cbb-b938-380a4b68c0df" display="On Click" isActive="true" />
+                <property name="86aeb4ba-54e8-4327-bcb0-166fb9b9968c" display="Link To" value="{NavigateToCheckout}" isActive="true" />
+                <property name="8bde99c0-4d3e-47d2-92f1-e299b05e5543" display="Disabled" value="{CheckoutDisabled}" isActive="true" />
+              </properties>
+            </stereotype>
+            <stereotype stereotypeDefinitionId="7936f4ce-2243-4fb1-ad9e-5af331a0f1d2" name="Layout">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+              <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+              <properties>
+                <property name="80fd6320-1bc9-4a95-8b95-59640877e978" display="xs" value="12" isActive="true" />
+                <property name="9561bc34-a1f1-4167-938a-84e2a3a9446f" display="sm" isActive="true" />
+                <property name="3a6d24b8-6761-40e2-8277-b8a21e158fb9" display="md" isActive="true" />
+                <property name="d45056ab-9ce5-467d-a05f-24f43bd79ff3" display="lg" isActive="true" />
+                <property name="6cd2eeb6-9dc4-46f2-ac0f-ac370fd0d894" display="xl" isActive="true" />
+                <property name="475fd55a-540c-4a64-bb7d-174c0171f9be" display="xxl" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="256277a6-0638-44ab-8468-f9ab9cb64510" type="Link" typeId="a274918b-72d1-4913-95de-0a801ac90ce4">
+          <name>Continue shopping</name>
+          <display>Continue shopping = {NavigateToCatalog}</display>
+          <isAbstract>false</isAbstract>
+          <value>{NavigateToCatalog}</value>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>c10680ce-a905-43a0-8bc4-4cb295a8d04f</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <traits>
+            <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+          </traits>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="5d0a10f7-ef5c-4f1e-af13-3471671b46a7" name="Interaction">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Modelers.UI.Core</definitionPackageName>
+              <definitionPackageId>a2a95421-3e55-43c7-96ad-355610b43c4d</definitionPackageId>
+              <properties>
+                <property name="c1be1bbb-0dc3-4186-b0a9-d0ea621f0e9a" display="On Click" isActive="true" />
+                <property name="257ead90-2cc1-44a3-9dc0-5bebf44bff91" display="Link To" value="{NavigateToCatalog}" isActive="true" />
+              </properties>
+            </stereotype>
+            <stereotype stereotypeDefinitionId="7936f4ce-2243-4fb1-ad9e-5af331a0f1d2" name="Layout">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+              <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+              <properties>
+                <property name="80fd6320-1bc9-4a95-8b95-59640877e978" display="xs" value="12" isActive="true" />
+                <property name="9561bc34-a1f1-4167-938a-84e2a3a9446f" display="sm" isActive="true" />
+                <property name="3a6d24b8-6761-40e2-8277-b8a21e158fb9" display="md" isActive="true" />
+                <property name="d45056ab-9ce5-467d-a05f-24f43bd79ff3" display="lg" isActive="true" />
+                <property name="6cd2eeb6-9dc4-46f2-ac0f-ac370fd0d894" display="xl" isActive="true" />
+                <property name="475fd55a-540c-4a64-bb7d-174c0171f9be" display="xxl" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="b03fcff7-56c7-4592-8d9e-9e6f001af1e7">
+  <sourceEnd id="14717c69-c7b1-4673-a5e9-86ba960e3f83" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>CustomerBasket</name>
+    <display>CustomerBasket: CustomerBasket</display>
+    <order>0</order>
+    <typeReference id="19efb44b-1d71-4254-ae1f-598c9f39fb4b">
+      <typeId>09d6cad2-e555-47ba-9c4f-9b0705455f62</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Basket.Domain</typePackageName>
+      <typePackageId>70fd059c-eb1a-4b4b-80e3-d63bae40b9d6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="b03fcff7-56c7-4592-8d9e-9e6f001af1e7" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>BasketItems</name>
+    <display>BasketItems: BasketItem[*]</display>
+    <order>2</order>
+    <typeReference id="7a99edd1-1bac-47b7-8464-0805f9964a7c">
+      <typeId>2c04db2d-fbb8-4175-ba80-f623a5ca9e0e</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Basket.Domain</typePackageName>
+      <typePackageId>70fd059c-eb1a-4b4b-80e3-d63bae40b9d6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="2f78e56b-c5f3-42d1-9d09-6242408f57e0" type="Diagram" typeId="4912c89a-77eb-497e-a3f4-7408b6a20886">
+  <name>SiteMap</name>
+  <display>SiteMap</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>352d33f1-2157-4a2e-9fd8-3235ca46b372</parentFolderId>
+  <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+  <packageName>eShop.Web.UI</packageName>
+  <diagram>
+    <targetPackageId>2f78e56b-c5f3-42d1-9d09-6242408f57e0</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

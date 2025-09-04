@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="ecbd0db7-9f37-4ae0-8f9f-72d432f85b05" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>CustomerBaskets</name>
+  <display>CustomerBaskets</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</parentFolderId>
+  <packageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</packageId>
+  <packageName>eShop.Basket.Services</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="66fd9e66-42c7-4ef9-a778-b68e009272b9" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.Common.CSharp</definitionPackageName>
+      <definitionPackageId>730e1275-0c32-44f7-991a-9619d07ca68d</definitionPackageId>
+      <properties>
+        <property name="96df2fa6-7361-4e43-9acf-dbcea23b650a" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements />
+</class>

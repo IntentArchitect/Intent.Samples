@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deviationsLog>
+  <files>
+    <file>
+      <correlationId>Intent.AspNetCore.Controllers.Controller#99909f93-8c4c-4295-a480-242169cc6914</correlationId>
+      <path>eShop.Catalog.Api/Controllers/CatalogController.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-10-23T06:30:51.375917Z</updatedAt>
+      <deviationsHash>B7203BFB9686F060DB0ACAA7C53E52041597E3DB8BC78F5BAE12E1FBA6835020</deviationsHash>
+      <fileHash>A7C23738301405F95793A57C314BB4E68DF63AF340BB810A3FE495BB2E968BF9</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.AspNetCore.Startup</correlationId>
+      <path>eShop.Catalog.Api/Startup.cs</path>
+      <count>1</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-07-11T07:09:00.0496719Z</updatedAt>
+      <deviationsHash>C057FD7509632244C299E81BCD14282C17A8B3CDE0C4C976EA8B8F92BC1AFFE8</deviationsHash>
+      <fileHash>A9A2915DF3978A24885C71D429FA4F81856DA8A8E5F47D65F004506482248372</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Application.ServiceImplementations.ServiceImplementation#99909f93-8c4c-4295-a480-242169cc6914</correlationId>
+      <path>eShop.Catalog.Application/Implementation/CatalogService.cs</path>
+      <count>5</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-07-29T10:20:52.7270258Z</updatedAt>
+      <deviationsHash>A852C5BCE01CFEFA54CE4C1F8319A6B1F786185E986F615ED4CA7DD495D1064D</deviationsHash>
+      <fileHash>5D859ADECF8A36B54E01DFDB1DDE392434E11353AD3760C5A835E65BCACD2A4C</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Eventing.MassTransit.IntegrationEventHandler#0429ea0b-1e5f-4857-b184-a9358254e8ba</correlationId>
+      <path>eShop.Catalog.Application/IntegrationEvents/EventHandlers/OrderStatusChangedToAwaitingValidationIntegrationEventHandler.cs</path>
+      <count>1</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-07-11T08:06:02.4682082Z</updatedAt>
+      <deviationsHash>9A4FFCF0D05165A44FADBF619C5E70059CF02AAA717677DEA41567ADD54557DE</deviationsHash>
+      <fileHash>0D463CC374FB07CFC3094298F42906F638E7085FFFF6C43FAC24DE6DDD22D3C6</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Entities.DomainEntity#f2ce80a2-8077-42e8-be33-de22cf15a09d</correlationId>
+      <path>eShop.Catalog.Domain/Entities/CatalogItem.cs</path>
+      <count>2</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-07-10T15:05:22.1042088Z</updatedAt>
+      <deviationsHash>87F842C8012828AF47851C9916B48946103C582030AC52EA4C33FA60C2443A63</deviationsHash>
+      <fileHash>165F95312947EFBC01B3FEF74E0A2F666CEE9CFABBA39582B9C73C55B95B94A0</fileHash>
+    </file>
+  </files>
+</deviationsLog>

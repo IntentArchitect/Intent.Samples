@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="6c5218ce-43e5-4ab0-acea-d0f3743e2b69" type="Layout" typeId="776a9393-6b23-4a8c-8937-fd7e833fa0ef">
+  <name>MainLayout</name>
+  <display>MainLayout</display>
+  <externalReference>a178d0e7-8bc2-47a2-9724-fc672ce37c13</externalReference>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>e99b789a-2758-42e4-a03b-9f1f925531b5</parentFolderId>
+  <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+  <packageName>eShop.Web.UI</packageName>
+  <stereotypes />
+  <mappings>
+    <mapping type="View Binding" typeId="c33f86ad-423a-4a6f-a80c-a3206eafe5cd">
+      <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="6c5218ce-43e5-4ab0-acea-d0f3743e2b69" location="[eShop.Web].[User Interface].[MainLayout]" />
+      <target applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="6c5218ce-43e5-4ab0-acea-d0f3743e2b69" location="[eShop.Web].[User Interface].[MainLayout]" />
+      <mappedEnds>
+        <mappedEnd>
+          <expression>{RedirectToLogin.NavigateToOrders}</expression>
+          <path>
+            <target id="6c5218ce-43e5-4ab0-acea-d0f3743e2b69" name="MainLayout" type="element" specialization="Layout" specializationId="776a9393-6b23-4a8c-8937-fd7e833fa0ef" />
+            <target id="64d5c8b4-9630-4fcf-884a-a616ca9dcbde" name="Header" type="element" specialization="Layout Header" specializationId="a6c3a89e-5932-4ab6-a406-75444f05beee" />
+            <target id="190d744a-a3e0-45cd-9e5f-9d7177f0e23d" name="Menu" type="element" specialization="Navigation Menu" specializationId="d7282bf2-1626-4b8b-9446-1d530527db06" />
+            <target id="030049a4-0dc5-4d78-971d-581418f5aa53" name="My Orders" type="element" specialization="Menu Item" specializationId="adbf2fa8-6833-4c24-960a-31d8a41fd1ed" />
+            <target id="a4073b81-6ddd-44cb-909f-f2c97d965112" name="Link To" type="static-mappable" specialization="Link To" specializationId="a4073b81-6ddd-44cb-909f-f2c97d965112" />
+          </path>
+          <sources>
+            <source identifier="RedirectToLogin.NavigateToOrders" mappingType="Event Mapping" mappingTypeId="95ce3c3e-ddf4-440b-a9b2-6b152a5fc1b8">
+              <path>
+                <target id="6c5218ce-43e5-4ab0-acea-d0f3743e2b69" name="MainLayout" type="element" specialization="Layout" specializationId="776a9393-6b23-4a8c-8937-fd7e833fa0ef" />
+                <target id="492f2a42-fe91-4133-a349-4b568c7a52ac" name="RedirectToLogin" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                <target id="7b56e340-080a-4248-b5a9-e8515c6f149d" name="NavigateToOrders" type="association" specialization="Navigation Target End" specializationId="2b191288-ecae-4743-b069-cbdd927ef349" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{RedirectToLogout}</expression>
+          <path>
+            <target id="6c5218ce-43e5-4ab0-acea-d0f3743e2b69" name="MainLayout" type="element" specialization="Layout" specializationId="776a9393-6b23-4a8c-8937-fd7e833fa0ef" />
+            <target id="64d5c8b4-9630-4fcf-884a-a616ca9dcbde" name="Header" type="element" specialization="Layout Header" specializationId="a6c3a89e-5932-4ab6-a406-75444f05beee" />
+            <target id="190d744a-a3e0-45cd-9e5f-9d7177f0e23d" name="Menu" type="element" specialization="Navigation Menu" specializationId="d7282bf2-1626-4b8b-9446-1d530527db06" />
+            <target id="8f604f90-7223-44e8-ab71-aab29aa61ea5" name="Logout" type="element" specialization="Menu Item" specializationId="adbf2fa8-6833-4c24-960a-31d8a41fd1ed" />
+            <target id="8f736707-74d0-4b14-8e85-18a3206c48e7" name="On Click" type="static-mappable" specialization="On Click" specializationId="8f736707-74d0-4b14-8e85-18a3206c48e7" />
+          </path>
+          <sources>
+            <source identifier="RedirectToLogout" mappingType="Event Mapping" mappingTypeId="95ce3c3e-ddf4-440b-a9b2-6b152a5fc1b8">
+              <path>
+                <target id="6c5218ce-43e5-4ab0-acea-d0f3743e2b69" name="MainLayout" type="element" specialization="Layout" specializationId="776a9393-6b23-4a8c-8937-fd7e833fa0ef" />
+                <target id="50069e67-ff3f-47ab-85e9-f3cabc30eb5a" name="RedirectToLogout" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{RedirectToLogin}</expression>
+          <path>
+            <target id="6c5218ce-43e5-4ab0-acea-d0f3743e2b69" name="MainLayout" type="element" specialization="Layout" specializationId="776a9393-6b23-4a8c-8937-fd7e833fa0ef" />
+            <target id="64d5c8b4-9630-4fcf-884a-a616ca9dcbde" name="Header" type="element" specialization="Layout Header" specializationId="a6c3a89e-5932-4ab6-a406-75444f05beee" />
+            <target id="190d744a-a3e0-45cd-9e5f-9d7177f0e23d" name="Menu" type="element" specialization="Navigation Menu" specializationId="d7282bf2-1626-4b8b-9446-1d530527db06" />
+            <target id="fb52e598-a392-4ae4-be46-5d955ed91601" name="Login" type="element" specialization="Menu Item" specializationId="adbf2fa8-6833-4c24-960a-31d8a41fd1ed" />
+            <target id="8f736707-74d0-4b14-8e85-18a3206c48e7" name="On Click" type="static-mappable" specialization="On Click" specializationId="8f736707-74d0-4b14-8e85-18a3206c48e7" />
+          </path>
+          <sources>
+            <source identifier="RedirectToLogin" mappingType="Event Mapping" mappingTypeId="95ce3c3e-ddf4-440b-a9b2-6b152a5fc1b8">
+              <path>
+                <target id="6c5218ce-43e5-4ab0-acea-d0f3743e2b69" name="MainLayout" type="element" specialization="Layout" specializationId="776a9393-6b23-4a8c-8937-fd7e833fa0ef" />
+                <target id="492f2a42-fe91-4133-a349-4b568c7a52ac" name="RedirectToLogin" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{NavigateToCart}</expression>
+          <path>
+            <target id="6c5218ce-43e5-4ab0-acea-d0f3743e2b69" name="MainLayout" type="element" specialization="Layout" specializationId="776a9393-6b23-4a8c-8937-fd7e833fa0ef" />
+            <target id="64d5c8b4-9630-4fcf-884a-a616ca9dcbde" name="Header" type="element" specialization="Layout Header" specializationId="a6c3a89e-5932-4ab6-a406-75444f05beee" />
+            <target id="0f5f6764-e57a-47d4-be9f-331d5345bf0f" name="Shopping Cart" type="element" specialization="Button" specializationId="4474d808-f6fd-405f-a9c7-6998cd000ede" />
+            <target id="ddfa6961-1042-4bea-84c7-4b2e9853c80a" name="Link To" type="static-mappable" specialization="Link To" specializationId="ddfa6961-1042-4bea-84c7-4b2e9853c80a" />
+          </path>
+          <sources>
+            <source identifier="NavigateToCart" mappingType="Event Mapping" mappingTypeId="95ce3c3e-ddf4-440b-a9b2-6b152a5fc1b8">
+              <path>
+                <target id="6c5218ce-43e5-4ab0-acea-d0f3743e2b69" name="MainLayout" type="element" specialization="Layout" specializationId="776a9393-6b23-4a8c-8937-fd7e833fa0ef" />
+                <target id="6378d701-ea43-455b-a51f-0d1ba732bf1f" name="NavigateToCart" type="association" specialization="Navigation Target End" specializationId="2b191288-ecae-4743-b069-cbdd927ef349" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+      </mappedEnds>
+    </mapping>
+  </mappings>
+  <metadata />
+  <childElements>
+    <childElement id="64d5c8b4-9630-4fcf-884a-a616ca9dcbde" type="Layout Header" typeId="a6c3a89e-5932-4ab6-a406-75444f05beee">
+      <name>Header</name>
+      <display>Header</display>
+      <externalReference>a7c89270-9de3-40c7-942e-483aea25806f</externalReference>
+      <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>6c5218ce-43e5-4ab0-acea-d0f3743e2b69</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="52244e3d-31e8-46e4-b91b-5a2da2c06576" type="Spacer" typeId="cfc58280-fe7e-466d-9c00-ddb41b5462e7">
+          <name>Spacer</name>
+          <display>Spacer</display>
+          <externalReference>58869fa2-c4d7-43ca-b0d4-7e0997d001cb</externalReference>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>64d5c8b4-9630-4fcf-884a-a616ca9dcbde</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <traits>
+            <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+          </traits>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="190d744a-a3e0-45cd-9e5f-9d7177f0e23d" type="Navigation Menu" typeId="d7282bf2-1626-4b8b-9446-1d530527db06">
+          <name>Menu</name>
+          <display>Menu</display>
+          <externalReference>237e592a-d6ae-4bb4-a90d-a927b2d5653c</externalReference>
+          <isAbstract>false</isAbstract>
+          <sort-children>by-type-then-manually</sort-children>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>64d5c8b4-9630-4fcf-884a-a616ca9dcbde</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <traits>
+            <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+          </traits>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="8e1b7033-fd27-495a-a2a7-36b5168f04f5" name="Icon">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Blazor.Components.MudBlazor</definitionPackageName>
+              <definitionPackageId>47e5f8d0-3892-4408-b6f9-88bf8591af2d</definitionPackageId>
+              <properties>
+                <property name="7bda044e-8be7-4ac4-98cd-41e97132942f" display="Icon Value" value="9257f134-f2a4-446e-aa94-a37565b130c6" isActive="true" />
+                <property name="6a70b142-c60d-4015-97aa-be0bcab7d128" display="Icon Color" isActive="true" />
+                <property name="13f1151e-7611-4bde-8374-1598b5d3335c" display="Variant" value="41f2ef78-a358-43bd-9b84-926dc185c8d1" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements>
+            <childElement id="030049a4-0dc5-4d78-971d-581418f5aa53" type="Menu Item" typeId="adbf2fa8-6833-4c24-960a-31d8a41fd1ed">
+              <name>My Orders</name>
+              <display>My Orders</display>
+              <externalReference>5be345b4-8580-48cb-b8bf-2d09362142bd</externalReference>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>190d744a-a3e0-45cd-9e5f-9d7177f0e23d</parentFolderId>
+              <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+              <packageName>eShop.Web.UI</packageName>
+              <stereotypes>
+                <stereotype stereotypeDefinitionId="8e1b7033-fd27-495a-a2a7-36b5168f04f5" name="Icon">
+                  <addedByDefault>false</addedByDefault>
+                  <definitionPackageName>Intent.Blazor.Components.MudBlazor</definitionPackageName>
+                  <definitionPackageId>47e5f8d0-3892-4408-b6f9-88bf8591af2d</definitionPackageId>
+                  <properties>
+                    <property name="7bda044e-8be7-4ac4-98cd-41e97132942f" display="Icon Value" value="9257f134-f2a4-446e-aa94-a37565b130c6" isActive="true" />
+                    <property name="6a70b142-c60d-4015-97aa-be0bcab7d128" display="Icon Color" value="22910495-cd04-40b0-bbb8-d0f2ca6cda02" isActive="true" />
+                    <property name="13f1151e-7611-4bde-8374-1598b5d3335c" display="Variant" value="41f2ef78-a358-43bd-9b84-926dc185c8d1" isActive="true" />
+                  </properties>
+                </stereotype>
+              </stereotypes>
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="8f604f90-7223-44e8-ab71-aab29aa61ea5" type="Menu Item" typeId="adbf2fa8-6833-4c24-960a-31d8a41fd1ed">
+              <name>Logout</name>
+              <display>Logout</display>
+              <externalReference>016bf71d-0470-46a2-acfb-59631a6af138</externalReference>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>190d744a-a3e0-45cd-9e5f-9d7177f0e23d</parentFolderId>
+              <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+              <packageName>eShop.Web.UI</packageName>
+              <stereotypes>
+                <stereotype stereotypeDefinitionId="8e1b7033-fd27-495a-a2a7-36b5168f04f5" name="Icon">
+                  <addedByDefault>false</addedByDefault>
+                  <definitionPackageName>Intent.Blazor.Components.MudBlazor</definitionPackageName>
+                  <definitionPackageId>47e5f8d0-3892-4408-b6f9-88bf8591af2d</definitionPackageId>
+                  <properties>
+                    <property name="7bda044e-8be7-4ac4-98cd-41e97132942f" display="Icon Value" value="caf1cca8-fa22-4dbe-97e0-8ed3e6c51c38" isActive="true" />
+                    <property name="6a70b142-c60d-4015-97aa-be0bcab7d128" display="Icon Color" value="22910495-cd04-40b0-bbb8-d0f2ca6cda02" isActive="true" />
+                    <property name="13f1151e-7611-4bde-8374-1598b5d3335c" display="Variant" value="41f2ef78-a358-43bd-9b84-926dc185c8d1" isActive="true" />
+                  </properties>
+                </stereotype>
+              </stereotypes>
+              <metadata />
+              <childElements />
+            </childElement>
+            <childElement id="fb52e598-a392-4ae4-be46-5d955ed91601" type="Menu Item" typeId="adbf2fa8-6833-4c24-960a-31d8a41fd1ed">
+              <name>Login</name>
+              <display>Login</display>
+              <isAbstract>false</isAbstract>
+              <genericTypes />
+              <isMapped>false</isMapped>
+              <parentFolderId>190d744a-a3e0-45cd-9e5f-9d7177f0e23d</parentFolderId>
+              <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+              <packageName>eShop.Web.UI</packageName>
+              <stereotypes>
+                <stereotype stereotypeDefinitionId="8e1b7033-fd27-495a-a2a7-36b5168f04f5" name="Icon">
+                  <addedByDefault>false</addedByDefault>
+                  <definitionPackageName>Intent.Blazor.Components.MudBlazor</definitionPackageName>
+                  <definitionPackageId>47e5f8d0-3892-4408-b6f9-88bf8591af2d</definitionPackageId>
+                  <properties>
+                    <property name="7bda044e-8be7-4ac4-98cd-41e97132942f" display="Icon Value" value="9257f134-f2a4-446e-aa94-a37565b130c6" isActive="true" />
+                    <property name="6a70b142-c60d-4015-97aa-be0bcab7d128" display="Icon Color" isActive="true" />
+                    <property name="13f1151e-7611-4bde-8374-1598b5d3335c" display="Variant" value="41f2ef78-a358-43bd-9b84-926dc185c8d1" isActive="true" />
+                  </properties>
+                </stereotype>
+              </stereotypes>
+              <metadata />
+              <childElements />
+            </childElement>
+          </childElements>
+        </childElement>
+        <childElement id="0f5f6764-e57a-47d4-be9f-331d5345bf0f" type="Button" typeId="4474d808-f6fd-405f-a9c7-6998cd000ede">
+          <name>Shopping Cart</name>
+          <display>Shopping Cart</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>64d5c8b4-9630-4fcf-884a-a616ca9dcbde</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <traits>
+            <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+          </traits>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="b218f7cb-d150-401d-a17a-9e22fadf863f" name="Appearance">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Blazor.Components.MudBlazor</definitionPackageName>
+              <definitionPackageId>47e5f8d0-3892-4408-b6f9-88bf8591af2d</definitionPackageId>
+              <properties>
+                <property name="eecbc26c-443b-4d97-a706-a4e21fc13552" display="Icon Only" value="false" isActive="true" />
+                <property name="de8a25d2-a144-4806-b5ad-e6c195abfa43" display="Variant" value="93828c49-ea2f-46d2-b661-df6fc2c4a0e2" isActive="true" />
+                <property name="d527d5a7-fd00-4486-a204-5c6fc93099a5" display="Color" value="22910495-cd04-40b0-bbb8-d0f2ca6cda02" isActive="true" />
+                <property name="9243cf9b-c6de-47d4-a914-382ab7ddf920" display="Class" isActive="true" />
+              </properties>
+            </stereotype>
+            <stereotype stereotypeDefinitionId="a7de29e5-4bee-4e5d-93f0-740569ac6130" name="Interaction">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Modelers.UI.Core</definitionPackageName>
+              <definitionPackageId>a2a95421-3e55-43c7-96ad-355610b43c4d</definitionPackageId>
+              <properties>
+                <property name="7cee794d-e1a7-4590-b65a-6e56914a2a97" display="Type" value="Default" isActive="true" />
+                <property name="2265736b-4381-42dc-9dbf-b757188837bc" display="Form" isActive="false" />
+                <property name="d05f7b5b-fe45-4cbb-b938-380a4b68c0df" display="On Click" isActive="true" />
+                <property name="86aeb4ba-54e8-4327-bcb0-166fb9b9968c" display="Link To" value="{NavigateToCart}" isActive="true" />
+                <property name="8bde99c0-4d3e-47d2-92f1-e299b05e5543" display="Disabled" isActive="true" />
+              </properties>
+            </stereotype>
+            <stereotype stereotypeDefinitionId="8e1b7033-fd27-495a-a2a7-36b5168f04f5" name="Icon">
+              <addedByDefault>false</addedByDefault>
+              <definitionPackageName>Intent.Blazor.Components.MudBlazor</definitionPackageName>
+              <definitionPackageId>47e5f8d0-3892-4408-b6f9-88bf8591af2d</definitionPackageId>
+              <properties>
+                <property name="7bda044e-8be7-4ac4-98cd-41e97132942f" display="Icon Value" value="30ceb16e-07c0-4901-ac73-8a91f57be3c6" isActive="true" />
+                <property name="6a70b142-c60d-4015-97aa-be0bcab7d128" display="Icon Color" value="22910495-cd04-40b0-bbb8-d0f2ca6cda02" isActive="true" />
+                <property name="13f1151e-7611-4bde-8374-1598b5d3335c" display="Variant" value="41f2ef78-a358-43bd-9b84-926dc185c8d1" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="6fb05a92-f8f6-4baf-b228-932999a546ac" type="Layout Body" typeId="11636699-8bad-4693-8c15-8141bd66d04f">
+      <name>Body</name>
+      <display>Body</display>
+      <externalReference>3d941ba4-404d-4233-9465-816e87cb5b25</externalReference>
+      <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>6c5218ce-43e5-4ab0-acea-d0f3743e2b69</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="738b2b6b-366d-42a9-bb1c-2f6e0bc78895" type="Display Component" typeId="866a90f7-4044-43b9-bb05-7270c7889796">
+          <name>Display Component</name>
+          <display>HeaderBar</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="f62c1a53-205d-48b2-a277-590892b432d6">
+            <typeId>3d0e14f0-dd6e-4e99-8386-dfa16919ceb3</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>eShop.Web.UI</typePackageName>
+            <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>6fb05a92-f8f6-4baf-b228-932999a546ac</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <traits>
+            <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+          </traits>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="51041f53-aa9f-4ceb-8403-409b868cdd51" type="Layout Footer" typeId="5d4fe8e9-2ccf-42ea-af60-04c6970c9ecb">
+      <name>Footer</name>
+      <display>Footer</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>6c5218ce-43e5-4ab0-acea-d0f3743e2b69</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="d43db0b9-521c-457e-9746-a0a5584c3885" type="Display Component" typeId="866a90f7-4044-43b9-bb05-7270c7889796">
+          <name>FooterBar</name>
+          <display>FooterBar</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="0a169f71-3d64-4a3f-a87a-0fe75702c519">
+            <typeId>eed80c96-b210-49d5-bb09-6a93c528d81b</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>eShop.Web.UI</typePackageName>
+            <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>51041f53-aa9f-4ceb-8403-409b868cdd51</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <traits>
+            <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+          </traits>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="492f2a42-fe91-4133-a349-4b568c7a52ac" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>RedirectToLogin</name>
+      <display>RedirectToLogin(): void</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="46471dd3-3b3f-48cd-b5c5-ed94008d2199">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6c5218ce-43e5-4ab0-acea-d0f3743e2b69</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="50069e67-ff3f-47ab-85e9-f3cabc30eb5a" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>RedirectToLogout</name>
+      <display>RedirectToLogout(): void</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="98761a83-a3a7-4f6f-becd-2b363c0e26b2">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6c5218ce-43e5-4ab0-acea-d0f3743e2b69</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

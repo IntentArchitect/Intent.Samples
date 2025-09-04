@@ -1,0 +1,16 @@
+<MudGrid>
+@foreach (var item in Model)
+{
+    <MudItem md="4">
+        <MudCard Style="cursor: pointer" @onclick="@(() => NavigateToDetails(item.Id))" Elevation="0" Class="hover-elevation">
+            <MudCardMedia Image="@ProductImages.GetProductImageUrl(item.Id)" Height="400" />
+            <MudCardContent>
+                <MudStack Row>
+                    <MudText Color="Color.Dark">@item.Name</MudText>
+                    <MudText Color="Color.Dark" Class="ml-auto">$@item.Price.ToString("0.00")</MudText>
+                </MudStack>
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+}
+</MudGrid>

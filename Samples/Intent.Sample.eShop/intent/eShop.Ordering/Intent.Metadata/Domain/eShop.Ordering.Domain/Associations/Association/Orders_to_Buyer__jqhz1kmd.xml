@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="1fe303f2-5b1b-4365-a2c2-632e55af1715">
+  <sourceEnd id="0d703b7e-362c-4e47-abb3-8e484ca7c337" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Orders</name>
+    <display>Orders: Order[*]</display>
+    <order>0</order>
+    <typeReference id="19745e65-6d59-4ba1-9812-33da78ab3d3a">
+      <typeId>11551992-2fa3-4a1c-8c55-c02fe7cfc361</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Domain</typePackageName>
+      <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="1fe303f2-5b1b-4365-a2c2-632e55af1715" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Buyer</name>
+    <display>Buyer: Buyer?</display>
+    <order>18</order>
+    <typeReference id="08a5f8d6-3af3-4944-a6cc-e5a21fa674bd">
+      <typeId>c9580049-c86e-4c8b-a10f-38c7cff1b98f</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>true</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Domain</typePackageName>
+      <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

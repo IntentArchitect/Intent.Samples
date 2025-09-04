@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="d6e4dd08-2b28-4e02-8ac4-e7835bdaf3d4">
+  <sourceEnd id="58ea6a7a-d506-451e-bab1-af6e86309e53" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: Items</display>
+    <order>0</order>
+    <typeReference id="f3e42b15-ab69-48fb-8144-44bea53ef61a">
+      <typeId>0d7e4aa3-a5b7-42c8-a93a-cfd39e69df1c</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Services</typePackageName>
+      <typePackageId>b369089c-82ab-42b9-9bab-af100e5de8d9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="d6e4dd08-2b28-4e02-8ac4-e7835bdaf3d4" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>catalogItems</name>
+    <display>[query] catalogItems: CatalogItem[*]</display>
+    <order>2</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="bff7d7b4-07eb-44ec-a49f-a5e68828f1d1">
+      <typeId>f2ce80a2-8077-42e8-be33-de22cf15a09d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Domain</typePackageName>
+      <typePackageId>969d4536-0205-4cbb-b35f-bcc92ac7ff04</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="0d7e4aa3-a5b7-42c8-a93a-cfd39e69df1c" location="[eShop.Catalog].[Services].[Items]" />
+        <target applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="f2ce80a2-8077-42e8-be33-de22cf15a09d" location="[eShop.Catalog].[Services].[CatalogItem]" />
+        <mappedEnds />
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

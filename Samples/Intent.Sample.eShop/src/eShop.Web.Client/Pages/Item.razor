@@ -1,0 +1,54 @@
+﻿@page "/item/{ProductId:int}"
+
+@* @Intent.Ignore *@
+
+@if (Model is not null)
+{
+    <PageTitle>@Model.Name</PageTitle>
+    <SectionContent SectionName="page-header-subtitle">@Model.Name</SectionContent>
+
+    <MudGrid>
+        <MudSpacer></MudSpacer>
+        <MudItem xs="12"
+                 md="3">
+            <MudImage Src="@ProductImageUrlProvider.GetProductImageUrl(Model.Id)"
+                      Alt="@Model.Name"
+                      Width="400"
+                      Height="400"
+                      Style="max-width: 400px; border-radius: 12px;" />
+        </MudItem>
+        <MudItem xs="12"
+                 md="7">
+            <MudText Typo="Typo.subtitle1">@Model?.Description</MudText>
+            <MudSpacer />
+            <MudText Typo="Typo.subtitle1">$@Model?.Price</MudText>
+            <Microsoft.AspNetCore.Components.Authorization.AuthorizeView>
+                <Authorized>
+                    @if (Basket is not null)
+                    {
+                        <MudButton Variant="Variant.Filled"
+                                   StartIcon="@Icons.Material.Filled.AddShoppingCart"
+                                   Class="my-2 mr-2"
+                                   Color="Color.Dark"
+                                   OnClick="() => AddToCart()"
+                                   Disabled="@_addToCartProcessing">
+                            @if (_addToCartProcessing)
+                            {
+                                <MudProgressCircular Class="ms-n1"
+                                                     Size="Size.Small"
+                                                     Indeterminate="true" />
+                            }
+                            <MudText>Add to cart</MudText>
+                        </MudButton>
+                        <MudText>@(Basket.BasketItems.FirstOrDefault(i => i.ProductId == Model.Id)?.Quantity ?? 0) in shopping cart</MudText>
+                    }
+                </Authorized>
+                <NotAuthorized>
+                    <MudButton OnClick="() => RedirectToLogin()" StartIcon="@Icons.Material.Filled.Person" Variant="Variant.Outlined">
+                        Login
+                    </MudButton>
+                </NotAuthorized>
+            </Microsoft.AspNetCore.Components.Authorization.AuthorizeView>
+        </MudItem>
+    </MudGrid>
+}

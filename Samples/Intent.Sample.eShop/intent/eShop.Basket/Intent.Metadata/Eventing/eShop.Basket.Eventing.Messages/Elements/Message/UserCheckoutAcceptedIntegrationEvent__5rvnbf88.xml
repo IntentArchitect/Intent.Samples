@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="fd737b53-48a3-4f40-bd71-add404369a46" type="Message" typeId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e">
+  <name>UserCheckoutAcceptedIntegrationEvent</name>
+  <display>UserCheckoutAcceptedIntegrationEvent</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</parentFolderId>
+  <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+  <packageName>eShop.Basket.Eventing.Messages</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="52328e60-f15c-4070-bc57-7a36bb79b6b6" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>UserId</name>
+      <display>UserId: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="cc6e40c7-a6e3-4cf3-be92-31d28b622766">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="9d17cabc-8fa3-4b76-91c5-e9a841d9a01a" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>UserName</name>
+      <display>UserName: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="e8552ece-9fa9-4576-b112-e5a7abd629d1">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="0b3d85fa-f3e9-412b-acc5-422dbfef31af" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>OrderNumber</name>
+      <display>OrderNumber: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="f1c03b3e-e156-4c60-a853-cb26821cb00c">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="c4ffcc69-c5ab-4836-a21f-6d26a8be8693" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>City</name>
+      <display>City: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="10068722-3087-4f8e-84f4-ec2334210179">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="0f875022-881e-41a2-9f4c-88e4400c80d4" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>Street</name>
+      <display>Street: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="271b1848-1a14-4838-b66e-5a10ebb11617">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="1bc75582-8471-4199-8375-62f77376855d" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>State</name>
+      <display>State: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="76dc11e6-da08-4b6c-9d08-53eefd35652a">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="9948efc8-1fcd-4dee-804b-2056807fe7eb" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>Country</name>
+      <display>Country: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="a3baeae8-f907-4276-9d8c-6ae842e475fd">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="cb7b4c58-0979-4416-9947-d2db662ce480" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>ZipCode</name>
+      <display>ZipCode: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="f95f2772-8a47-4124-932f-36f385484739">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="78fe0d1c-279f-4472-a6a2-66cd0588d4f7" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>CardNumber</name>
+      <display>CardNumber: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="35c558e8-452a-46b4-a317-01d20e10cd50">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="0f0f73d3-9191-4d64-b161-d06ffbd52469" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>CardHolderName</name>
+      <display>CardHolderName: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="bf7602b9-863f-4e67-b76e-d57db7e01868">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="bc797044-9d32-4033-961b-735a80674b37" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>CardExpiration</name>
+      <display>CardExpiration: datetime</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="04b98259-5a20-4030-bfd5-6d49dec083e2">
+        <typeId>a4107c29-7851-4121-9416-cf1236908f1e</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="52be158c-772a-4c1d-9443-38a22dd777cf" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>CardSecurityNumber</name>
+      <display>CardSecurityNumber: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="fc0f611e-4895-43ab-83f2-0cfc900af2f4">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="ba576582-df87-4319-bdd5-e88d173cbce4" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>CardTypeId</name>
+      <display>CardTypeId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="daa97b0f-7458-4e66-a71b-975569915125">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="74818768-cb93-4c29-a412-dbf806db699a" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>Buyer</name>
+      <display>Buyer: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="614e73a3-7a9f-4299-9c0a-87f0662cb79c">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="52999402-5503-44d0-90e1-a04fb07e55e5" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>RequestId</name>
+      <display>RequestId: guid</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="c4bd2346-bc0b-4fab-9aa8-a0e07294e776">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="8b86b49f-022d-4dee-b39e-521b83cb06b1" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>Basket</name>
+      <display>Basket: CustomerBasket</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="2927d7dd-0e87-4116-8f75-d9018ee3345c">
+        <typeId>ff0e06a3-bce8-4ae7-95bd-87651a5e3ad6</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Basket.Eventing.Messages</typePackageName>
+        <typePackageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>fd737b53-48a3-4f40-bd71-add404369a46</parentFolderId>
+      <packageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</packageId>
+      <packageName>eShop.Basket.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

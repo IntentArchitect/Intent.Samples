@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="897e0abc-0965-4e4d-a163-d82ecc5d65cf">
+  <sourceEnd id="cacbdbda-380b-4a63-88e5-21d7a24aee32" type="Message Publish Assocation Source End" typeId="282eea12-2b98-4f0f-a28c-50c05b953c8e">
+    <display>publisher: eShop.Payment</display>
+    <order>0</order>
+    <typeReference id="66603def-7c30-44b9-8659-3d513508744f">
+      <typeId>17344130-69fd-4167-bcc6-e3689472fa4f</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Payment.Eventing</typePackageName>
+      <typePackageId>a538b1a1-1324-419d-9753-1d97f958142a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="897e0abc-0965-4e4d-a163-d82ecc5d65cf" type="Message Publish Assocation Target End" typeId="6be8d569-70b9-4451-bd1b-7b654499503e">
+    <display>publish: OrderPaymentSucceededIntegrationEvent</display>
+    <order>1</order>
+    <typeReference id="f0eebd64-c933-47a6-a02a-20d19c3e89c0">
+      <typeId>46086675-ab8b-47d9-9bfc-843cbdfe38dc</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Payment.Eventing.Messages</typePackageName>
+      <typePackageId>2b2383de-deff-48fc-adb1-2a366de37085</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Message Publish Assocation</associationType>
+  <associationTypeId>022d4c90-e1b6-4747-a15f-640c19503a8f</associationTypeId>
+  <stereotypes />
+</association>

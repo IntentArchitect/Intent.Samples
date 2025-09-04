@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.3.1" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>70a08320-a84f-4e6b-b352-d2714ca90b6d</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.3.1" />
+    <PackageReference Include="Aspire.Hosting.MongoDB" Version="9.4.1" />
+    <PackageReference Include="Aspire.Hosting.RabbitMQ" Version="9.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\eShop.Basket.Api\eShop.Basket.Api.csproj" />
+    <ProjectReference Include="..\eShop.Catalog.Api\eShop.Catalog.Api.csproj" />
+    <ProjectReference Include="..\eShop.Identity.Api\eShop.Identity.Api.csproj" />
+    <ProjectReference Include="..\eShop.Ordering.Api\eShop.Ordering.Api.csproj" />
+    <ProjectReference Include="..\eShop.Web\eShop.Web.csproj" />
+  </ItemGroup>
+
+</Project>

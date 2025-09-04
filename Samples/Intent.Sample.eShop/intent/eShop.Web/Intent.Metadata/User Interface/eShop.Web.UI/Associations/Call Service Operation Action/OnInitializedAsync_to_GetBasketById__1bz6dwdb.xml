@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="1f679713-6931-4b28-9f35-731d32b528fc">
+  <sourceEnd id="b765d8d6-c4e0-49c7-863a-e4b96dc5e63f" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: OnInitializedAsync</display>
+    <order>0</order>
+    <typeReference id="6f8dbd8a-24bc-42c1-a220-842e4b02eb1f">
+      <typeId>64fb0dde-4e5d-4784-a21e-4a940eba19e7</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Web.UI</typePackageName>
+      <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="1f679713-6931-4b28-9f35-731d32b528fc" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>GetBasketById</name>
+    <display>[call] BasketService.GetBasketById(id: string): BasketDto</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="8fe925db-8571-4c54-880b-fd4681cd7877">
+      <typeId>32950848-8ba2-433b-8ba4-b0475a90212d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Basket.Services</typePackageName>
+      <typePackageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="94f109cb-d93f-4599-8262-98be7fb3d3b3" location="[eShop.Web].[User Interface].[Cart]" />
+        <target applicationId="0fad2d18-af53-4fc4-b6f1-698045dd88f4" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="32950848-8ba2-433b-8ba4-b0475a90212d" location="[eShop.Web].[User Interface].[GetBasketById]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{OnInitializedAsync.GetBasketById}</expression>
+            <path>
+              <target id="32950848-8ba2-433b-8ba4-b0475a90212d" name="GetBasketById" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+            </path>
+            <sources>
+              <source identifier="OnInitializedAsync.GetBasketById" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="94f109cb-d93f-4599-8262-98be7fb3d3b3" name="Cart" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="64fb0dde-4e5d-4784-a21e-4a940eba19e7" name="OnInitializedAsync" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="1f679713-6931-4b28-9f35-731d32b528fc" name="GetBasketById" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{BasketState.Id}</expression>
+            <path>
+              <target id="32950848-8ba2-433b-8ba4-b0475a90212d" name="GetBasketById" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+              <target id="d4ea1511-5abc-4d5f-a3f3-9ac1abe02000" name="id" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+            </path>
+            <sources>
+              <source identifier="BasketState.Id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="94f109cb-d93f-4599-8262-98be7fb3d3b3" name="Cart" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="653dfbfa-7e36-49c0-b909-3e80a1015cd2" name="BasketState" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="636fc76b-bcb7-4ed7-840f-de2b2978a439" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Call Service Response Mapping" typeId="e60890c6-7ce7-47be-a0da-dff82b8adc02">
+        <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="94f109cb-d93f-4599-8262-98be7fb3d3b3" location="[eShop.Web].[User Interface].[Cart]" />
+        <target applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="94f109cb-d93f-4599-8262-98be7fb3d3b3" location="[eShop.Web].[User Interface].[Cart]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{OnInitializedAsync.GetBasketById.response}</expression>
+            <path>
+              <target id="94f109cb-d93f-4599-8262-98be7fb3d3b3" name="Cart" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="0d41991a-a22d-4f43-b11d-8b2671620141" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="OnInitializedAsync.GetBasketById.response" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="94f109cb-d93f-4599-8262-98be7fb3d3b3" name="Cart" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="64fb0dde-4e5d-4784-a21e-4a940eba19e7" name="OnInitializedAsync" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="1f679713-6931-4b28-9f35-731d32b528fc" name="GetBasketById" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>cd639556-6b4e-4e8e-acb7-5468c696af3c</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>eShop.Basket.Services</typePackageName>
+                      <typePackageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

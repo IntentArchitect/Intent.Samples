@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deviationsLog>
+  <files>
+    <file>
+      <correlationId>Intent.Eventing.MassTransit.IntegrationEventHandler#8aecd1a2-aba0-4f9e-993d-1e8654ff2b07</correlationId>
+      <path>eShop.Payment.Api/IntegrationEvents/EventHandlers/OrderStatusChangedToStockConfirmedIntegrationEventHandler.cs</path>
+      <count>2</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-11-09T15:29:29.8458386Z</updatedAt>
+      <deviationsHash>8CA24902071E4B37CB7569F5CB9A28AA72FD365F704A155675CFEA3E5E27B509</deviationsHash>
+      <fileHash>4D40C4588369E0E89D27C0A50C0EEB3F28B3A0DD14C274543E8EBF18A2D4DE6B</fileHash>
+    </file>
+  </files>
+</deviationsLog>

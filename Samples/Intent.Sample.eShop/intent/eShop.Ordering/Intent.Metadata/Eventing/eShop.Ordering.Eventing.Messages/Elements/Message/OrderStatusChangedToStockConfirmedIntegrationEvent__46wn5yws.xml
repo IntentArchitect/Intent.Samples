@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="42e8173d-8897-4ac7-b7ff-9ba00f703ee4" type="Message" typeId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e">
+  <name>OrderStatusChangedToStockConfirmedIntegrationEvent</name>
+  <display>OrderStatusChangedToStockConfirmedIntegrationEvent</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>true</isMapped>
+  <mappedClass isRoot="true">
+    <applicationId>a69e0287-59a0-48ac-a257-010f24d26af3</applicationId>
+    <metadataId>6ab29b31-27af-4f56-a67c-986d82097d63</metadataId>
+    <mappingSettingsId>1b4f670b-4c97-4dd0-a1c5-831f3a695859</mappingSettingsId>
+    <autoSyncTypeReference>true</autoSyncTypeReference>
+    <mappedPath>
+      <target id="2bd1303b-19ba-4a15-8098-c1eb351592d6" name="OrderStatusChangedToStockConfirmedDomainEvent" type="element" specialization="Domain Event" specializationId="0814e459-fb9b-47db-b7eb-32ce30397e8a" />
+    </mappedPath>
+  </mappedClass>
+  <parentFolderId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</parentFolderId>
+  <packageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</packageId>
+  <packageName>eShop.Ordering.Eventing.Messages</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="d7595e6f-3d11-49d4-8d64-a30424c6c247" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>OrderId</name>
+      <display>OrderId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="1338f4dd-b994-4260-9b8d-c78138117868">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>1b4f670b-4c97-4dd0-a1c5-831f3a695859</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="2bb44de2-c166-482f-a557-6dc4901ecf35" name="Order" type="element" specialization="Property" specializationId="b4d69073-5abb-4968-b41b-545b2f7408ed" />
+          <target id="c43af763-ea81-4def-a45a-f6d271c42a31" name="Id" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>42e8173d-8897-4ac7-b7ff-9ba00f703ee4</parentFolderId>
+      <packageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</packageId>
+      <packageName>eShop.Ordering.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="289ded7c-befe-4c78-9faa-f4c697cb19ec" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>OrderStatus</name>
+      <display>OrderStatus: OrderStatus</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="4552efa9-890f-4123-988f-65584cd5bf10">
+        <typeId>1c1fa896-ac29-4e99-8a38-bf3d8f96d279</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Ordering.Domain</typePackageName>
+        <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>1b4f670b-4c97-4dd0-a1c5-831f3a695859</mappingSettingsId>
+        <autoSyncTypeReference>false</autoSyncTypeReference>
+        <mappedPath>
+          <target id="2bb44de2-c166-482f-a557-6dc4901ecf35" name="Order" type="element" specialization="Property" specializationId="b4d69073-5abb-4968-b41b-545b2f7408ed" />
+          <target id="e105a529-8263-484f-a8f7-e2c4c2f24093" name="OrderStatus" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>42e8173d-8897-4ac7-b7ff-9ba00f703ee4</parentFolderId>
+      <packageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</packageId>
+      <packageName>eShop.Ordering.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="04ab84df-4148-4f30-be81-e6d293d5bd15" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>BuyerName</name>
+      <display>BuyerName: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="b5f2fcfd-4540-4c9c-8fbe-6cc2d842ac09">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <mappingSettingsId>1b4f670b-4c97-4dd0-a1c5-831f3a695859</mappingSettingsId>
+        <autoSyncTypeReference>false</autoSyncTypeReference>
+        <mappedPath>
+          <target id="2bb44de2-c166-482f-a557-6dc4901ecf35" name="Order" type="element" specialization="Property" specializationId="b4d69073-5abb-4968-b41b-545b2f7408ed" />
+          <target id="1fe303f2-5b1b-4365-a2c2-632e55af1715" name="Buyer" type="association" specialization="Association Target End" specializationId="0a66489f-30aa-417b-a75d-b945863366fd" />
+          <target id="1dfb9124-b1ba-447d-93f4-c65b85873722" name="Name" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>42e8173d-8897-4ac7-b7ff-9ba00f703ee4</parentFolderId>
+      <packageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</packageId>
+      <packageName>eShop.Ordering.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

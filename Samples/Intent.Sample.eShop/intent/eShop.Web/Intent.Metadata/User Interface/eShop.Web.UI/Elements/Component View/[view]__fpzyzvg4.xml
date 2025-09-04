@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="ffe75dc6-17ae-4ce7-a48f-d6d2e227332c" type="Component View" typeId="624513a6-cba8-4dde-8ebe-6b19f00f0364">
+  <name>[view]</name>
+  <display>[view]</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>manually</sort-children>
+  <order>0</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>3175ee62-b835-4ae8-a74d-4272aab8b67f</parentFolderId>
+  <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+  <packageName>eShop.Web.UI</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="0f41e92b-f910-4044-b583-e0b8d5e7ff72" type="Data Grid" typeId="4b33f894-ad6e-43e0-a238-4286375c9ab7">
+      <name>Data Grid</name>
+      <display>Data Grid = {Model}</display>
+      <isAbstract>false</isAbstract>
+      <value>{Model}</value>
+      <sort-children>manually</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>ffe75dc6-17ae-4ce7-a48f-d6d2e227332c</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <traits>
+        <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+      </traits>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="d523028b-4077-441e-a70f-50af42c9e91f" name="Appearance">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Blazor.Components.MudBlazor</definitionPackageName>
+          <definitionPackageId>47e5f8d0-3892-4408-b6f9-88bf8591af2d</definitionPackageId>
+          <properties>
+            <property name="3c87930d-09ac-4f32-96da-ae5f5ac20f7e" display="Dense" isActive="true" />
+            <property name="2eb4bcd7-71dd-4b25-b236-c9e1e47c1333" display="Elevation" isActive="true" />
+            <property name="696f0b1c-bcfb-43c1-a490-3d76451ade04" display="Hover" value="true" isActive="true" />
+            <property name="80c4105a-06ca-42f9-b2ac-5fc1c090bacd" display="Striped" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="0f3fc9f6-d11b-4e78-b28d-3c818e32d510" name="Interaction">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Blazor.Components.MudBlazor</definitionPackageName>
+          <definitionPackageId>47e5f8d0-3892-4408-b6f9-88bf8591af2d</definitionPackageId>
+          <properties>
+            <property name="0e69d7ce-a9aa-4c8f-8940-6b9964dfa894" display="On Row Click" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="1e49aa01-21ac-4ab2-8733-ffa6e9a1779f" type="Data Grid Toolbar" typeId="9af26915-0394-4cda-864d-0e7f9f9943dc">
+          <name>Toolbar</name>
+          <display>Toolbar</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>0f41e92b-f910-4044-b583-e0b8d5e7ff72</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="5f888f69-d4b9-4247-b4d2-ac7f0ca6269d" type="Data Grid Column" typeId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532">
+          <name>OrderNumber</name>
+          <display>OrderNumber = {Model.OrderNumber}</display>
+          <isAbstract>false</isAbstract>
+          <value>{Model.OrderNumber}</value>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>0f41e92b-f910-4044-b583-e0b8d5e7ff72</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="0054b5a5-174b-47b1-962c-3a62aac5a973" type="Data Grid Column" typeId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532">
+          <name>Date</name>
+          <display>Date = {Model.Date}</display>
+          <isAbstract>false</isAbstract>
+          <value>{Model.Date}</value>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>0f41e92b-f910-4044-b583-e0b8d5e7ff72</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="89711ce4-7526-4a9c-b156-568e5623dccc" type="Data Grid Column" typeId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532">
+          <name>Status</name>
+          <display>Status = {Model.Status}</display>
+          <isAbstract>false</isAbstract>
+          <value>{Model.Status}</value>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>0f41e92b-f910-4044-b583-e0b8d5e7ff72</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="0f23ce64-b17e-478e-936d-e6d90f49d5e3" type="Data Grid Column" typeId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532">
+          <name>Total</name>
+          <display>Total = {Model.Total}</display>
+          <isAbstract>false</isAbstract>
+          <value>{Model.Total}</value>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>0f41e92b-f910-4044-b583-e0b8d5e7ff72</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

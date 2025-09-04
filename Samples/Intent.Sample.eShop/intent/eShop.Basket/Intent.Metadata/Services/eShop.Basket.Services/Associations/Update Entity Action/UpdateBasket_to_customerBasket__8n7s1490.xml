@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="6185347d-a9a1-41e6-82ac-7ee12f25e869">
+  <sourceEnd id="31b2d465-e810-47f1-ad4c-af43dd70b2ac" type="Update Entity Action Source End" typeId="6bc95978-6def-4d0c-a4f5-25bdeda8a9f6">
+    <display>updated by : BasketService.UpdateBasket</display>
+    <order>0</order>
+    <typeReference id="a1dcff06-e440-4c83-ae68-21d35a187c40">
+      <typeId>4830942d-7083-4309-95a7-ce4ae2893be7</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Basket.Services</typePackageName>
+      <typePackageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="6185347d-a9a1-41e6-82ac-7ee12f25e869" type="Update Entity Action Target End" typeId="516069f6-09cc-4de8-8e31-3c71ca823452">
+    <name>customerBasket</name>
+    <display>[update] customerBasket: CustomerBasket</display>
+    <order>1</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="cf9c1652-43fc-4094-a5d6-40d776de4a84">
+      <typeId>09d6cad2-e555-47ba-9c4f-9b0705455f62</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Basket.Domain</typePackageName>
+      <typePackageId>70fd059c-eb1a-4b4b-80e3-d63bae40b9d6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="0fad2d18-af53-4fc4-b6f1-698045dd88f4" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="4830942d-7083-4309-95a7-ce4ae2893be7" location="[eShop.Basket].[Services].[UpdateBasket]" />
+        <target applicationId="0fad2d18-af53-4fc4-b6f1-698045dd88f4" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="09d6cad2-e555-47ba-9c4f-9b0705455f62" location="[eShop.Basket].[Services].[CustomerBasket]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{dto.BuyerId}</expression>
+            <path>
+              <target id="09d6cad2-e555-47ba-9c4f-9b0705455f62" name="CustomerBasket" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="0a3ba7d4-c5fc-4830-8a9b-6e4928fbd4a2" name="BuyerId" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.BuyerId" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="4830942d-7083-4309-95a7-ce4ae2893be7" name="UpdateBasket" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="1e4378a3-12fc-41ae-8bd0-6c9928758b91" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="e8983296-0ead-4534-b653-941a645bca60" name="BuyerId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Update Entity Mapping" typeId="01721b1a-a85d-4320-a5cd-8bd39247196a">
+        <source applicationId="0fad2d18-af53-4fc4-b6f1-698045dd88f4" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="4830942d-7083-4309-95a7-ce4ae2893be7" location="[eShop.Basket].[Services].[UpdateBasket]" />
+        <target applicationId="0fad2d18-af53-4fc4-b6f1-698045dd88f4" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="09d6cad2-e555-47ba-9c4f-9b0705455f62" location="[eShop.Basket].[Services].[CustomerBasket]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{dto.BasketItems}</expression>
+            <path>
+              <target id="09d6cad2-e555-47ba-9c4f-9b0705455f62" name="CustomerBasket" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="b03fcff7-56c7-4592-8d9e-9e6f001af1e7" name="BasketItems" type="association" specialization="Association Target End" specializationId="0a66489f-30aa-417b-a75d-b945863366fd" />
+            </path>
+            <sources>
+              <source identifier="dto.BasketItems" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="4830942d-7083-4309-95a7-ce4ae2893be7" name="UpdateBasket" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="1e4378a3-12fc-41ae-8bd0-6c9928758b91" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.BasketItems.Id}</expression>
+            <path>
+              <target id="09d6cad2-e555-47ba-9c4f-9b0705455f62" name="CustomerBasket" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="b03fcff7-56c7-4592-8d9e-9e6f001af1e7" name="BasketItems" type="association" specialization="Association Target End" specializationId="0a66489f-30aa-417b-a75d-b945863366fd" />
+              <target id="e9581863-2700-45f7-8d1b-a21da62947af" name="Id" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.BasketItems.Id" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="4830942d-7083-4309-95a7-ce4ae2893be7" name="UpdateBasket" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="1e4378a3-12fc-41ae-8bd0-6c9928758b91" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="1b2589e9-d7c7-414a-ad7a-00eb6f1a65e2" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.BasketItems.ProductId}</expression>
+            <path>
+              <target id="09d6cad2-e555-47ba-9c4f-9b0705455f62" name="CustomerBasket" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="b03fcff7-56c7-4592-8d9e-9e6f001af1e7" name="BasketItems" type="association" specialization="Association Target End" specializationId="0a66489f-30aa-417b-a75d-b945863366fd" />
+              <target id="aa59b8a0-0ade-4e1d-80bc-b7c9b3c6ec1c" name="ProductId" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.BasketItems.ProductId" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="4830942d-7083-4309-95a7-ce4ae2893be7" name="UpdateBasket" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="1e4378a3-12fc-41ae-8bd0-6c9928758b91" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="0ab6b983-157e-4588-b756-b8a7edf2d9a1" name="ProductId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.BasketItems.ProductName}</expression>
+            <path>
+              <target id="09d6cad2-e555-47ba-9c4f-9b0705455f62" name="CustomerBasket" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="b03fcff7-56c7-4592-8d9e-9e6f001af1e7" name="BasketItems" type="association" specialization="Association Target End" specializationId="0a66489f-30aa-417b-a75d-b945863366fd" />
+              <target id="a37eaa1a-fb89-4ec8-816e-5b1b246d1312" name="ProductName" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.BasketItems.ProductName" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="4830942d-7083-4309-95a7-ce4ae2893be7" name="UpdateBasket" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="1e4378a3-12fc-41ae-8bd0-6c9928758b91" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="143a233f-387e-4576-8bef-c6498c73fd0d" name="ProductName" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.BasketItems.UnitPrice}</expression>
+            <path>
+              <target id="09d6cad2-e555-47ba-9c4f-9b0705455f62" name="CustomerBasket" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="b03fcff7-56c7-4592-8d9e-9e6f001af1e7" name="BasketItems" type="association" specialization="Association Target End" specializationId="0a66489f-30aa-417b-a75d-b945863366fd" />
+              <target id="c6e9c645-c4ff-41ad-a1a8-e02c21b2d414" name="UnitPrice" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.BasketItems.UnitPrice" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="4830942d-7083-4309-95a7-ce4ae2893be7" name="UpdateBasket" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="1e4378a3-12fc-41ae-8bd0-6c9928758b91" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="24d66a8e-a6c2-45ae-b74c-33ae204b9022" name="UnitPrice" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.BasketItems.OldUnitPrice}</expression>
+            <path>
+              <target id="09d6cad2-e555-47ba-9c4f-9b0705455f62" name="CustomerBasket" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="b03fcff7-56c7-4592-8d9e-9e6f001af1e7" name="BasketItems" type="association" specialization="Association Target End" specializationId="0a66489f-30aa-417b-a75d-b945863366fd" />
+              <target id="7503c01d-2b19-4c69-a2ed-4b507e50e2ff" name="OldUnitPrice" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.BasketItems.OldUnitPrice" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="4830942d-7083-4309-95a7-ce4ae2893be7" name="UpdateBasket" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="1e4378a3-12fc-41ae-8bd0-6c9928758b91" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="3583a617-ed77-4392-913a-547f354cc61e" name="OldUnitPrice" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.BasketItems.Quantity}</expression>
+            <path>
+              <target id="09d6cad2-e555-47ba-9c4f-9b0705455f62" name="CustomerBasket" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="b03fcff7-56c7-4592-8d9e-9e6f001af1e7" name="BasketItems" type="association" specialization="Association Target End" specializationId="0a66489f-30aa-417b-a75d-b945863366fd" />
+              <target id="6a493c32-2dcb-427c-89e2-8f9d2ffff7ca" name="Quantity" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.BasketItems.Quantity" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="4830942d-7083-4309-95a7-ce4ae2893be7" name="UpdateBasket" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="1e4378a3-12fc-41ae-8bd0-6c9928758b91" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="a06b4c24-5c75-4b91-8086-6570f7cb165f" name="Quantity" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.BasketItems.PictureUrl}</expression>
+            <path>
+              <target id="09d6cad2-e555-47ba-9c4f-9b0705455f62" name="CustomerBasket" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="b03fcff7-56c7-4592-8d9e-9e6f001af1e7" name="BasketItems" type="association" specialization="Association Target End" specializationId="0a66489f-30aa-417b-a75d-b945863366fd" />
+              <target id="20f0bcfb-8664-434f-8635-48666f3e7470" name="PictureUrl" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.BasketItems.PictureUrl" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="4830942d-7083-4309-95a7-ce4ae2893be7" name="UpdateBasket" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="1e4378a3-12fc-41ae-8bd0-6c9928758b91" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="96f0476b-e6bd-47d0-be26-98352db5a909" name="PictureUrl" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Update Entity Action</associationType>
+  <associationTypeId>9ea0382a-4617-412a-a8c8-af987bbce226</associationTypeId>
+  <stereotypes />
+</association>

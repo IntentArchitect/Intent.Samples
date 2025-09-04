@@ -1,0 +1,60 @@
+﻿@page "/checkout"
+@using eShop.Web.Client.Common.Validation
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+
+
+@inject IValidatorProvider ValidatorProvider
+<PageTitle>Checkout</PageTitle>
+<SectionContent SectionName="page-header-subtitle">Checkout</SectionContent>
+<MudGrid>
+    <MudItem xs="4">
+        <MudSpacer />
+    </MudItem>
+    <MudItem xs="4">
+        @if (ShippingInformation is not null)
+        {
+            <MudForm @ref="@_form"
+                     Model="ShippingInformation"
+                     Validation="@(ValidatorProvider.GetValidationFunc<ShippingInfo>())">
+                <MudText>Shipping Address</MudText>
+                <MudTextField @bind-Value="ShippingInformation.Street"
+                              Label="Address"
+                              For="@(() => ShippingInformation.Street)" />
+                <MudTextField @bind-Value="ShippingInformation.City"
+                              Label="City"
+                              For="@(() => ShippingInformation.City)" />
+                <MudTextField @bind-Value="ShippingInformation.State"
+                              Label="State"
+                              For="@(() => ShippingInformation.State)" />
+                <MudTextField @bind-Value="ShippingInformation.ZipCode"
+                              Label="Zip Code"
+                              For="@(() => ShippingInformation.ZipCode)" />
+                <MudTextField @bind-Value="ShippingInformation.Country"
+                              Label="Country"
+                              For="@(() => ShippingInformation.Country)" />
+            </MudForm>
+        }
+    </MudItem>
+    <MudItem xs="12" Class="d-flex justify-center">
+        <MudButton Variant="Variant.Filled"
+                   Class="my-2 mr-2"
+                   Color="Color.Default">
+            <MudText>Back to shopping bag</MudText>
+        </MudButton>
+        @Intent.IgnoreAttributes("Color")
+        <MudButton Variant="Variant.Filled"
+                   Class="my-2 mr-2"
+                   Color="Color.Dark"
+                   OnClick="() => CheckoutCart()"
+                   Disabled="@_checkoutCartProcessing">
+            @if (_checkoutCartProcessing)
+            {
+                <MudProgressCircular Class="ms-n1"
+                                     Size="Size.Small"
+                                     Indeterminate="true" />
+            }
+            <MudText>Place order</MudText>
+        </MudButton>
+    </MudItem>
+</MudGrid>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="15a4d7ac-97c8-4b6e-b7b0-9a4f05d99451" type="Application" typeId="f40a4942-5d2d-4174-8ec1-af66cbd464db">
+  <name>eShop.Catalog</name>
+  <display>eShop.Catalog</display>
+  <externalReference>259354b5-82fe-4c0a-bb30-1fda60b4d935</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>85c616ac-6436-4367-ac89-872daeaad4b4</parentFolderId>
+  <packageId>85c616ac-6436-4367-ac89-872daeaad4b4</packageId>
+  <packageName>eShop.Catalog.Eventing</packageName>
+  <diagram>
+    <targetPackageId>530b7102-dfc3-48f7-91e2-42f40c300148</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>
