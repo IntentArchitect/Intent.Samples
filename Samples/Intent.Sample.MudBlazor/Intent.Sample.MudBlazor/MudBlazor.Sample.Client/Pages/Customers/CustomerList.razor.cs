@@ -45,7 +45,7 @@ namespace MudBlazor.Sample.Client.Pages.Customers
             try
             {
                 _addCustomerClickProcessing = true;
-                var dialog = await DialogService.ShowAsync<CustomerAddDialog>("Add Customer", new DialogOptions() { FullWidth = true });
+                var dialog = await DialogService.ShowAsync<CustomerAddDialog>("Add Customer", new DialogOptions() { FullWidth = true, MaxWidth = MaxWidth.Large, BackdropClick = false });
                 var result = await dialog.Result;
 
                 if (result.Canceled)
@@ -72,7 +72,7 @@ namespace MudBlazor.Sample.Client.Pages.Customers
                 {
                     { x => x.CustomerId, Guid.Parse(rowId) },
                 };
-                var dialog = await DialogService.ShowAsync<CustomerEditDialog>("Edit Customer", parameters, new DialogOptions() { FullWidth = true });
+                var dialog = await DialogService.ShowAsync<CustomerEditDialog>("Edit Customer", parameters, new DialogOptions() { FullWidth = true, MaxWidth = MaxWidth.Large, BackdropClick = false });
                 var result = await dialog.Result;
 
                 if (result.Canceled)
@@ -98,7 +98,7 @@ namespace MudBlazor.Sample.Client.Pages.Customers
                     { x => x.ButtonText, "Delete" },
                     { x => x.Color, Color.Error },
                 };
-                var dialog = await DialogService.ShowAsync<ConfirmationDialog>("Delete Customer", parameters, new DialogOptions() { FullWidth = true });
+                var dialog = await DialogService.ShowAsync<ConfirmationDialog>("Delete Customer", parameters, new DialogOptions() { FullWidth = true, MaxWidth = MaxWidth.Large, BackdropClick = false });
                 var result = await dialog.Result;
 
                 if (result.Canceled)

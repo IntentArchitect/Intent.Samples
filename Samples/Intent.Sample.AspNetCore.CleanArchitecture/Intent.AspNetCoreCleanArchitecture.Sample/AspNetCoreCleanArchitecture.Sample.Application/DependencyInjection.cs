@@ -3,10 +3,8 @@ using AspNetCoreCleanArchitecture.Sample.Application.Common.Behaviours;
 using AspNetCoreCleanArchitecture.Sample.Application.Common.Validation;
 using AspNetCoreCleanArchitecture.Sample.Application.Implementation;
 using AspNetCoreCleanArchitecture.Sample.Application.Interfaces;
-using AutoMapper;
 using FluentValidation;
 using Intent.RoslynWeaver.Attributes;
-using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
