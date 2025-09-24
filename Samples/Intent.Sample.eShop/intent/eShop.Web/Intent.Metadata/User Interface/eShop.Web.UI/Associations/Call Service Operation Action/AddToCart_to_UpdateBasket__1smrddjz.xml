@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="90eff719-e3e9-4f67-8b1c-51e4e7141490">
+  <sourceEnd id="6106cb61-dc52-4f84-9a98-3d6de9404231" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: AddToCart</display>
+    <order>0</order>
+    <typeReference id="f7c57675-160b-4be8-9791-9a29b5840d3c">
+      <typeId>723d0f84-6f10-4289-8690-fd63d4700a96</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Web.UI</typePackageName>
+      <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="90eff719-e3e9-4f67-8b1c-51e4e7141490" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>UpdateBasket</name>
+    <display>[call] BasketService.UpdateBasket(dto: BasketDto): void</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="aa193d71-173f-4c0a-8bd0-dafc07f30e3c">
+      <typeId>4830942d-7083-4309-95a7-ce4ae2893be7</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Basket.Services</typePackageName>
+      <typePackageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="0092d8cd-a9de-426d-a5d8-b02a69a05a59" location="[eShop.Web].[User Interface].[Item]" />
+        <target applicationId="0fad2d18-af53-4fc4-b6f1-698045dd88f4" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="4830942d-7083-4309-95a7-ce4ae2893be7" location="[eShop.Web].[User Interface].[UpdateBasket]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{AddToCart.UpdateBasket}</expression>
+            <path>
+              <target id="4830942d-7083-4309-95a7-ce4ae2893be7" name="UpdateBasket" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+            </path>
+            <sources>
+              <source identifier="AddToCart.UpdateBasket" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="0092d8cd-a9de-426d-a5d8-b02a69a05a59" name="Item" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="723d0f84-6f10-4289-8690-fd63d4700a96" name="AddToCart" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="90eff719-e3e9-4f67-8b1c-51e4e7141490" name="UpdateBasket" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{BasketState.Id}</expression>
+            <path>
+              <target id="4830942d-7083-4309-95a7-ce4ae2893be7" name="UpdateBasket" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+              <target id="1e4378a3-12fc-41ae-8bd0-6c9928758b91" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+              <target id="e8983296-0ead-4534-b653-941a645bca60" name="BuyerId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="BasketState.Id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="0092d8cd-a9de-426d-a5d8-b02a69a05a59" name="Item" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82899ee9-91b0-4ed9-915a-0b02f4bf6ceb" name="BasketState" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="636fc76b-bcb7-4ed7-840f-de2b2978a439" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="0c77a07c-61ba-4049-93b0-ab117afb0a43">
+  <sourceEnd id="13bbba3c-a4d9-4ce6-b155-a62f6be5bf5e" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: ItemsWithName</display>
+    <order>0</order>
+    <typeReference id="df50f683-d9ce-48a3-8173-1a6632f277f8">
+      <typeId>f1288849-a33b-42ed-9578-38486839cc2c</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Services</typePackageName>
+      <typePackageId>b369089c-82ab-42b9-9bab-af100e5de8d9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="0c77a07c-61ba-4049-93b0-ab117afb0a43" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>catalogItems</name>
+    <display>[query] catalogItems: CatalogItem</display>
+    <order>3</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="f4639169-3284-44da-a532-8437d8ac51af">
+      <typeId>f2ce80a2-8077-42e8-be33-de22cf15a09d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Domain</typePackageName>
+      <typePackageId>969d4536-0205-4cbb-b35f-bcc92ac7ff04</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="f1288849-a33b-42ed-9578-38486839cc2c" location="[eShop.Catalog].[Services].[ItemsWithName]" />
+        <target applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="f2ce80a2-8077-42e8-be33-de22cf15a09d" location="[eShop.Catalog].[Services].[CatalogItem]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>StartsWith({name})</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="9caa9249-ec73-41fd-8cc6-9ae02af761b0" name="Name" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="name" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="f1288849-a33b-42ed-9578-38486839cc2c" name="ItemsWithName" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="a37ac50f-7d94-4e50-bd27-f786bc9d3043" name="name" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

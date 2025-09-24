@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="a1cfd4f7-79d7-43c0-8d6e-dbd50e81c8b5" type="Integration Event Handler" typeId="c0582230-22f5-4f74-8eb0-ec6fc9364900">
+  <name>UserCheckoutAcceptedIntegrationEventHandler</name>
+  <display>UserCheckoutAcceptedIntegrationEventHandler</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</parentFolderId>
+  <packageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</packageId>
+  <packageName>eShop.Basket.Services</packageName>
+  <traits>
+    <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+  </traits>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

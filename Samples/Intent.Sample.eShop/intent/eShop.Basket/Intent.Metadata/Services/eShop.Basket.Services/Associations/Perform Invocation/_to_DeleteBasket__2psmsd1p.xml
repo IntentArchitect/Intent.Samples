@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="f9651c27-daef-4266-8e0a-f25d6f32c5f7">
+  <sourceEnd id="6b7b1ef7-e037-44c1-be03-81cc4f4472a1" type="Perform Invocation Source End" typeId="ee56bd48-8eff-4fff-8d3a-87731d002335">
+    <display>called by : UserCheckoutAcceptedIntegrationEventHandler.</display>
+    <order>0</order>
+    <typeReference id="f32a287d-167a-41fa-8d50-c8bb86850960">
+      <typeId>f5e7fdb5-ca3f-4c47-a351-a46d914b69c9</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Basket.Services</typePackageName>
+      <typePackageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="f9651c27-daef-4266-8e0a-f25d6f32c5f7" type="Perform Invocation Target End" typeId="093e5909-ffe4-4510-b3ea-532f30212f3c">
+    <display>[call] : DeleteBasket(...): void</display>
+    <order>0</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="c922e069-9743-43c9-a779-1cb01079d756">
+      <typeId>cea6baf4-5628-4437-be23-4346010317e6</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Basket.Services</typePackageName>
+      <typePackageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Invocation Mapping" typeId="a4c4c5cc-76df-48ed-9d4e-c35caf44b567">
+        <source applicationId="0fad2d18-af53-4fc4-b6f1-698045dd88f4" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="f5e7fdb5-ca3f-4c47-a351-a46d914b69c9" location="[eShop.Basket].[Services].[]" />
+        <target applicationId="0fad2d18-af53-4fc4-b6f1-698045dd88f4" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="cea6baf4-5628-4437-be23-4346010317e6" location="[eShop.Basket].[Services].[DeleteBasket]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{UserId}</expression>
+            <path>
+              <target id="cea6baf4-5628-4437-be23-4346010317e6" name="DeleteBasket" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+              <target id="26b284fd-c07b-46ce-990a-d12263ca5373" name="id" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+            </path>
+            <sources>
+              <source identifier="UserId" mappingType="Data Mapping" mappingTypeId="1ad97d12-2aa8-4f03-8cb0-3a8a4e71b4d9">
+                <path>
+                  <target id="f5e7fdb5-ca3f-4c47-a351-a46d914b69c9" name="" type="association" specialization="Subscribe Integration Event Target End" specializationId="16fa2952-79e6-4150-b5ab-45aa4c106de4" />
+                  <target id="52328e60-f15c-4070-bc57-7a36bb79b6b6" name="UserId" type="element" specialization="Property" specializationId="bde29850-5fb9-4f47-9941-b9e182fd9bdc" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Perform Invocation</associationType>
+  <associationTypeId>3e69085c-fa2f-44bd-93eb-41075fd472f8</associationTypeId>
+  <stereotypes />
+</association>

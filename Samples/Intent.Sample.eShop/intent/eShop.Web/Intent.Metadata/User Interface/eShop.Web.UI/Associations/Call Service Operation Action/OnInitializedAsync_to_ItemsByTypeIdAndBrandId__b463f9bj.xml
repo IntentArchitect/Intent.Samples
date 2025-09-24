@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="2c83a692-2095-45cc-82a0-f10ccf2fe43b">
+  <sourceEnd id="18878567-1f17-4b64-b846-97df5dd2dc76" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: OnInitializedAsync</display>
+    <order>0</order>
+    <typeReference id="4972a6cb-4ba3-42d7-98f6-fe18e41dd6cd">
+      <typeId>d4a4e6b0-22af-4c85-84fa-3d8ea6865f6c</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Web.UI</typePackageName>
+      <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="2c83a692-2095-45cc-82a0-f10ccf2fe43b" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>ItemsByTypeIdAndBrandId</name>
+    <display>[call] CatalogService.ItemsByTypeIdAndBrandId(catalogTypeId: int, catalogBrandId: int?, pageSize: int, pageIndex: int): PagedResult&lt;CatalogItemDto&gt;</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="02633b1e-32bb-49da-9e40-63c42025f0e7">
+      <typeId>dc8decdc-a257-42ab-9d40-13882906e93a</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Services</typePackageName>
+      <typePackageId>b369089c-82ab-42b9-9bab-af100e5de8d9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="b6dc06ec-0fe4-4f81-8818-9558017ab263" location="[eShop.Web].[User Interface].[Catalog]" />
+        <target applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="dc8decdc-a257-42ab-9d40-13882906e93a" location="[eShop.Web].[User Interface].[ItemsByTypeIdAndBrandId]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{OnInitializedAsync.ItemsByTypeIdAndBrandId}</expression>
+            <path>
+              <target id="dc8decdc-a257-42ab-9d40-13882906e93a" name="ItemsByTypeIdAndBrandId" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+            </path>
+            <sources>
+              <source identifier="OnInitializedAsync.ItemsByTypeIdAndBrandId" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="b6dc06ec-0fe4-4f81-8818-9558017ab263" name="Catalog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d4a4e6b0-22af-4c85-84fa-3d8ea6865f6c" name="OnInitializedAsync" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="2c83a692-2095-45cc-82a0-f10ccf2fe43b" name="ItemsByTypeIdAndBrandId" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{ItemTypeId}</expression>
+            <path>
+              <target id="dc8decdc-a257-42ab-9d40-13882906e93a" name="ItemsByTypeIdAndBrandId" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+              <target id="f5b34ed4-62f0-4eba-842c-ab5ab9a25aba" name="catalogTypeId" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+            </path>
+            <sources>
+              <source identifier="ItemTypeId" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="b6dc06ec-0fe4-4f81-8818-9558017ab263" name="Catalog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="cd31cc54-aba7-4db1-832b-49f7c8ca1f42" name="ItemTypeId" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{BrandId}</expression>
+            <path>
+              <target id="dc8decdc-a257-42ab-9d40-13882906e93a" name="ItemsByTypeIdAndBrandId" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+              <target id="44720a7a-cc91-496d-aa57-a55a9b773575" name="catalogBrandId" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+            </path>
+            <sources>
+              <source identifier="BrandId" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="b6dc06ec-0fe4-4f81-8818-9558017ab263" name="Catalog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="657a2421-3804-4ce8-b905-a5e14f78db2d" name="BrandId" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{PageSize}</expression>
+            <path>
+              <target id="dc8decdc-a257-42ab-9d40-13882906e93a" name="ItemsByTypeIdAndBrandId" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+              <target id="cc51789a-a15c-40a1-8cf0-42788534e791" name="pageSize" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+            </path>
+            <sources>
+              <source identifier="PageSize" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="b6dc06ec-0fe4-4f81-8818-9558017ab263" name="Catalog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="b4634e0d-15c7-450c-98bd-e765609b05c6" name="PageSize" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Page}</expression>
+            <path>
+              <target id="dc8decdc-a257-42ab-9d40-13882906e93a" name="ItemsByTypeIdAndBrandId" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+              <target id="28fc9803-ae1d-40be-aca0-2b0fae3d503b" name="pageIndex" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+            </path>
+            <sources>
+              <source identifier="Page" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="b6dc06ec-0fe4-4f81-8818-9558017ab263" name="Catalog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="b9b4a309-ece1-42f6-9f2e-968b6252c1ac" name="Page" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Call Service Response Mapping" typeId="e60890c6-7ce7-47be-a0da-dff82b8adc02">
+        <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="b6dc06ec-0fe4-4f81-8818-9558017ab263" location="[eShop.Web].[User Interface].[Catalog]" />
+        <target applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="b6dc06ec-0fe4-4f81-8818-9558017ab263" location="[eShop.Web].[User Interface].[Catalog]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{OnInitializedAsync.ItemsByTypeIdAndBrandId.response}</expression>
+            <path>
+              <target id="b6dc06ec-0fe4-4f81-8818-9558017ab263" name="Catalog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="6fa65775-c821-4e8e-ae0e-28311ef3b641" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="OnInitializedAsync.ItemsByTypeIdAndBrandId.response" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="b6dc06ec-0fe4-4f81-8818-9558017ab263" name="Catalog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d4a4e6b0-22af-4c85-84fa-3d8ea6865f6c" name="OnInitializedAsync" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="2c83a692-2095-45cc-82a0-f10ccf2fe43b" name="ItemsByTypeIdAndBrandId" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>9204e067-bdc8-45e7-8970-8a833fdc5253</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Modelers.Services.Pagination</typePackageName>
+                      <typePackageId>7ed452ae-334c-48f7-b0aa-0426fc21e243</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

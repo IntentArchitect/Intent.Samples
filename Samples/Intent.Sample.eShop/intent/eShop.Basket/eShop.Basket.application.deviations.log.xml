@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deviationsLog>
+  <files>
+    <file>
+      <correlationId>Intent.Application.Identity.ApplicationSecurityConfiguration</correlationId>
+      <path>eShop.Basket.Api/Configuration/ApplicationSecurityConfiguration.cs</path>
+      <count>1</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-07-31T06:35:42.0414942Z</updatedAt>
+      <deviationsHash>3658D121F37914D60C67FE0D28124FFC0977BF0BC07ED28D83B045610449D16B</deviationsHash>
+      <fileHash>AF125203413867ECF0465E335D6B3683DEFA634FE59F2D118DE20CCDBA48B50F</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.AspNetCore.Controllers.Controller#aee6e6e6-4433-482a-8b51-3d83c4526244</correlationId>
+      <path>eShop.Basket.Api/Controllers/BasketController.cs</path>
+      <count>1</count>
+      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
+      <updatedAt>2024-11-09T15:31:53.8626383Z</updatedAt>
+      <deviationsHash>B7203BFB9686F060DB0ACAA7C53E52041597E3DB8BC78F5BAE12E1FBA6835020</deviationsHash>
+      <fileHash>316C5BCD8D66CBFD45C800AE56AB5338D03F36EE55D3711333E60E7971360A1A</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Application.ServiceImplementations.ServiceImplementation#aee6e6e6-4433-482a-8b51-3d83c4526244</correlationId>
+      <path>eShop.Basket.Application/Implementation/BasketService.cs</path>
+      <count>3</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-08-26T06:58:18.9238281Z</updatedAt>
+      <deviationsHash>120EDB9CA4A331B938EC67BEC2804E059CB6F8DBA2134075E66881E25C57B83D</deviationsHash>
+      <fileHash>A8EE44FA9CF59028CE0D3B8BDA51C211E589290A11C46D60EEB3F98834C5BF95</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Entities.DomainEntity#09d6cad2-e555-47ba-9c4f-9b0705455f62</correlationId>
+      <path>eShop.Basket.Domain/Entities/CustomerBasket.cs</path>
+      <count>2</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-08-26T06:58:18.9238656Z</updatedAt>
+      <deviationsHash>05E43CE8D688EDBD38CDEAE6ADEDD1406C95F595AFCA4DA1726D53AC014C7387</deviationsHash>
+      <fileHash>BACD61CEB890FF0313201E1A3DF82D8B7C55EC1D9E27D7B3FAA845FD3F916250</fileHash>
+    </file>
+  </files>
+</deviationsLog>

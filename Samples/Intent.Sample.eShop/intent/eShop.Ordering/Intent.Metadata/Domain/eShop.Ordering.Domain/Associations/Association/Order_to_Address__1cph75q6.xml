@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="da4bed13-01b6-4462-b019-9c8c048ce0ac">
+  <sourceEnd id="e5c13e8c-76c0-4020-8e41-bb9f2de779e1" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Order</name>
+    <display>Order: Order</display>
+    <order>0</order>
+    <typeReference id="5f9e2e79-335c-48e2-b819-328dd1ad6f9a">
+      <typeId>11551992-2fa3-4a1c-8c55-c02fe7cfc361</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Domain</typePackageName>
+      <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata>
+      <entry key="generated-name" value="Order" />
+    </metadata>
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="da4bed13-01b6-4462-b019-9c8c048ce0ac" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Address</name>
+    <display>Address: Address</display>
+    <order>17</order>
+    <typeReference id="cf798450-60cd-4ac9-9e25-1967a38c8477">
+      <typeId>c3e30f86-8a57-4e45-aa64-00d318bea3c1</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Domain</typePackageName>
+      <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata>
+      <entry key="generated-name" value="Address" />
+    </metadata>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

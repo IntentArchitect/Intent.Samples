@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="20e26e17-da7b-4fbe-9384-b744e1bb368b" type="Diagram" typeId="8c90aca5-86f4-47f1-bd58-116fe79f5c55">
+  <name>Default Diagram</name>
+  <display>Default Diagram</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>db0b5419-47ae-4667-b0f1-34231f86875a</parentFolderId>
+  <packageId>db0b5419-47ae-4667-b0f1-34231f86875a</packageId>
+  <packageName>eShop.Payment.Services</packageName>
+  <diagram>
+    <targetPackageId>20e26e17-da7b-4fbe-9384-b744e1bb368b</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

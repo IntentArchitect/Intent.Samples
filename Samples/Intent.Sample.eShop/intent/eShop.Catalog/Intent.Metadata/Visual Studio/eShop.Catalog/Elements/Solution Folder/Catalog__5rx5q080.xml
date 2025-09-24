@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="e5578153-3c1a-4c48-8ed4-70cd007c09d1" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>Catalog</name>
+  <display>Catalog</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>02f09bb7-b46f-4942-adef-06c8fbe454fc</parentFolderId>
+  <packageId>02f09bb7-b46f-4942-adef-06c8fbe454fc</packageId>
+  <packageName>eShop.Catalog</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

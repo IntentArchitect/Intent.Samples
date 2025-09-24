@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="d54a5ca7-84a3-430d-bd5a-499caa4cdf85">
+  <sourceEnd id="f66277fa-ff94-4749-a380-bd3a44279a2c" type="Message Subscribe Assocation Source End" typeId="18780798-1ea8-462b-b4f9-b8605ad11636">
+    <display>subscriber: eShop.Payment</display>
+    <order>0</order>
+    <typeReference id="7e098a64-ab3d-48b7-9a3d-9ae5095b200c">
+      <typeId>17344130-69fd-4167-bcc6-e3689472fa4f</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Payment.Eventing</typePackageName>
+      <typePackageId>a538b1a1-1324-419d-9753-1d97f958142a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="d54a5ca7-84a3-430d-bd5a-499caa4cdf85" type="Message Subscribe Assocation Target End" typeId="21c3df1c-5140-4f65-9814-a68e1a577768">
+    <display>subscribe: OrderStatusChangedToStockConfirmedIntegrationEvent</display>
+    <order>2</order>
+    <typeReference id="1a9533c4-0e8d-4769-ae51-50a6787ee91e">
+      <typeId>42e8173d-8897-4ac7-b7ff-9ba00f703ee4</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Eventing.Messages</typePackageName>
+      <typePackageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Message Subscribe Assocation</associationType>
+  <associationTypeId>50e0bed1-1387-4d67-8f66-1194763296b1</associationTypeId>
+  <stereotypes />
+</association>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="84dca6c0-61aa-4fd1-b13c-0c2484c2cda6">
+  <sourceEnd id="81cdf62e-c106-4846-886a-967295bcb282" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: ItemsByTypeIdAndBrandId</display>
+    <order>0</order>
+    <typeReference id="8d27c42b-ead9-4feb-bb16-490083084406">
+      <typeId>dc8decdc-a257-42ab-9d40-13882906e93a</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Services</typePackageName>
+      <typePackageId>b369089c-82ab-42b9-9bab-af100e5de8d9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="84dca6c0-61aa-4fd1-b13c-0c2484c2cda6" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>catalogItems</name>
+    <display>[query] catalogItems: CatalogItem</display>
+    <order>4</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="a16e5555-b068-4f50-ac97-588c8a2e8ef7">
+      <typeId>f2ce80a2-8077-42e8-be33-de22cf15a09d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Domain</typePackageName>
+      <typePackageId>969d4536-0205-4cbb-b35f-bcc92ac7ff04</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="dc8decdc-a257-42ab-9d40-13882906e93a" location="[eShop.Catalog].[Services].[ItemsByTypeIdAndBrandId]" />
+        <target applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="f2ce80a2-8077-42e8-be33-de22cf15a09d" location="[eShop.Catalog].[Services].[CatalogItem]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{catalogBrandId}</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="276ac7fe-ef6a-4180-b802-55c0a83572da" name="CatalogBrandId" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="catalogBrandId" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="dc8decdc-a257-42ab-9d40-13882906e93a" name="ItemsByTypeIdAndBrandId" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="44720a7a-cc91-496d-aa57-a55a9b773575" name="catalogBrandId" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{catalogTypeId}</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="18526bc5-8aa3-4fd5-b604-8cb0f09081a9" name="CatalogTypeId" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="catalogTypeId" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="dc8decdc-a257-42ab-9d40-13882906e93a" name="ItemsByTypeIdAndBrandId" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="f5b34ed4-62f0-4eba-842c-ab5ab9a25aba" name="catalogTypeId" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

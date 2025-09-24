@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="e5608ab2-ab2b-4595-b271-dcf222a18d7f" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>4 - Infrastructure</name>
+  <display>4 - Infrastructure</display>
+  <externalReference>03755119-cb3c-4cca-a0d0-532c2b817667</externalReference>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>e5578153-3c1a-4c48-8ed4-70cd007c09d1</parentFolderId>
+  <packageId>02f09bb7-b46f-4942-adef-06c8fbe454fc</packageId>
+  <packageName>eShop.Catalog</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

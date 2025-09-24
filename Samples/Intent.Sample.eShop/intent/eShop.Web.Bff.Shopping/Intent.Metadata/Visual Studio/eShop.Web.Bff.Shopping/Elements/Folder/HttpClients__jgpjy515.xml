@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="947c5dee-71cc-4564-b919-3e69036147fe" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>HttpClients</name>
+  <display>HttpClients</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>4dec57d2-2358-491a-b931-da1af9a1cfe0</parentFolderId>
+  <packageId>92b05d33-2688-4ecc-a9af-d143881b3291</packageId>
+  <packageName>eShop.Web.Bff.Shopping</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="61132551-825d-4c6e-b9f1-0f95249d08d4" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4bfbefd0-d22e-4ca0-9723-92ae273feca4" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="7e17bca1-c446-4911-8528-e9b189524d79" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Integration.HttpClients.AuthorizationHeaderProviderInterface</name>
+      <display>Intent.Integration.HttpClients.AuthorizationHeaderProviderInterface</display>
+      <externalReference>Intent.Integration.HttpClients</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>947c5dee-71cc-4564-b919-3e69036147fe</parentFolderId>
+      <packageId>92b05d33-2688-4ecc-a9af-d143881b3291</packageId>
+      <packageName>eShop.Web.Bff.Shopping</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="6b046b50-592c-4362-9933-a788500e25f7" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Integration.HttpClients.HttpClientAuthorizationHeaderHandler</name>
+      <display>Intent.Integration.HttpClients.HttpClientAuthorizationHeaderHandler</display>
+      <externalReference>Intent.Integration.HttpClients</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>947c5dee-71cc-4564-b919-3e69036147fe</parentFolderId>
+      <packageId>92b05d33-2688-4ecc-a9af-d143881b3291</packageId>
+      <packageName>eShop.Web.Bff.Shopping</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="3332a5bd-857e-418f-a767-162d15689ab6" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Integration.HttpClients.HttpClientHeaderHandlerTemplate</name>
+      <display>Intent.Integration.HttpClients.HttpClientHeaderHandlerTemplate</display>
+      <externalReference>Intent.Integration.HttpClients</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>947c5dee-71cc-4564-b919-3e69036147fe</parentFolderId>
+      <packageId>92b05d33-2688-4ecc-a9af-d143881b3291</packageId>
+      <packageName>eShop.Web.Bff.Shopping</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

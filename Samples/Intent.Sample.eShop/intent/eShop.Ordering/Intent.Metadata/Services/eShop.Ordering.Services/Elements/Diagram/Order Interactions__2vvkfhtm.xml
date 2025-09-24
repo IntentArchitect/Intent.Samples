@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="23407929-c4ff-48d9-9a28-0f6b8a8b63cb" type="Diagram" typeId="8c90aca5-86f4-47f1-bd58-116fe79f5c55">
+  <name>Order Interactions</name>
+  <display>Order Interactions</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>6ee622fa-aea6-41b9-ab1e-d14792c29bc7</parentFolderId>
+  <packageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</packageId>
+  <packageName>eShop.Ordering.Services</packageName>
+  <diagram>
+    <targetPackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

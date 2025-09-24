@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="0bd4cfc3-4db5-4c6a-bab0-5326c6a1c9b7" type="Component" typeId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b">
+  <name>CatalogItemCard</name>
+  <display>CatalogItemCard</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>9256de0f-585d-49a0-929a-02cc06ff85c6</parentFolderId>
+  <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+  <packageName>eShop.Web.UI</packageName>
+  <traits>
+    <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+  </traits>
+  <stereotypes />
+  <mappings>
+    <mapping type="View Binding" typeId="c33f86ad-423a-4a6f-a80c-a3206eafe5cd">
+      <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="0bd4cfc3-4db5-4c6a-bab0-5326c6a1c9b7" location="[eShop.Web].[User Interface].[CatalogItemCard]" />
+      <target applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="4f55a41f-7b6f-4171-ab09-c4702d95cec2" location="[eShop.Web].[User Interface].[[view]]" />
+      <mappedEnds />
+    </mapping>
+  </mappings>
+  <metadata />
+  <childElements>
+    <childElement id="8f717453-7ab8-43af-bca7-88cb883bf24f" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Model</name>
+      <display>Model: CatalogItemDto[*]</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="42e7e510-b78a-4ccd-920a-c2ba17cde722">
+        <typeId>9a1c6bba-29d9-4062-ba02-26215f1abb20</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Catalog.Services</typePackageName>
+        <typePackageId>b369089c-82ab-42b9-9bab-af100e5de8d9</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>0bd4cfc3-4db5-4c6a-bab0-5326c6a1c9b7</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="12ba7bea-ceb9-44d4-8819-835fe36af7b3" name="[Bindable]">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+          <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+          <properties />
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="bfcce369-d3c3-43d0-8e2c-673da2d8053a" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>OnInitializedAsync</name>
+      <display>OnInitializedAsync(): void</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="37d5f8be-a159-4fc2-9f8a-e3919c1be32e">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>0bd4cfc3-4db5-4c6a-bab0-5326c6a1c9b7</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="1574799e-d9c3-4c9b-bb9b-12f9da6f0093" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>NavigateToDetails</name>
+      <display>NavigateToDetails(id: int): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="848778f0-f34d-47ef-9d54-f8e497db21af">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>0bd4cfc3-4db5-4c6a-bab0-5326c6a1c9b7</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="db206edb-4bf5-4d7c-8144-a3bf74e3b2db" type="Parameter" typeId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b">
+          <name>id</name>
+          <display>in : id: int</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="2f8a65c1-e26a-4e8d-9916-6c931b591f2d">
+            <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>1574799e-d9c3-4c9b-bb9b-12f9da6f0093</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

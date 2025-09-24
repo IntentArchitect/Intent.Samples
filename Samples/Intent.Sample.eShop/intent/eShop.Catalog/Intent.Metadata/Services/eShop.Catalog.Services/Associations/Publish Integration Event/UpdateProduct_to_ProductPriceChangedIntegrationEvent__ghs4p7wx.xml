@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="a4cfeed1-ce71-4699-bd73-c96aafaf3ab3">
+  <sourceEnd id="a64ba5a9-3b54-48d5-bb97-30ae3f774327" type="Publish Integration Event Source End" typeId="eab91b3a-9903-40a2-90e8-ddb714883eab">
+    <display>published by : CatalogService.UpdateProduct</display>
+    <order>0</order>
+    <typeReference id="58e0ea8b-691a-4d00-b75d-2be6ef104a0e">
+      <typeId>29758964-b423-4551-af1a-bf38d45ace49</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Services</typePackageName>
+      <typePackageId>b369089c-82ab-42b9-9bab-af100e5de8d9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="a4cfeed1-ce71-4699-bd73-c96aafaf3ab3" type="Publish Integration Event Target End" typeId="6feb1511-849a-4aa3-85eb-d0c736ac1fec">
+    <display>[publish] ProductPriceChangedIntegrationEvent</display>
+    <order>3</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="a858be3b-6d24-46ba-8f2e-982a4d1f432a">
+      <typeId>15cbbe95-16f8-492e-b1c6-343e09c3a6d0</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Eventing.Messages</typePackageName>
+      <typePackageId>530b7102-dfc3-48f7-91e2-42f40c300148</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Publish Message Mapping" typeId="7ff48a4c-ee8b-4e66-9dbb-c014eb0542fb">
+        <source applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="29758964-b423-4551-af1a-bf38d45ace49" location="[eShop.Catalog].[Services].[UpdateProduct]" />
+        <target applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="15cbbe95-16f8-492e-b1c6-343e09c3a6d0" location="[eShop.Catalog].[Services].[ProductPriceChangedIntegrationEvent]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{catalogItem.Id}</expression>
+            <path>
+              <target id="15cbbe95-16f8-492e-b1c6-343e09c3a6d0" name="ProductPriceChangedIntegrationEvent" type="element" specialization="Message" specializationId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e" />
+              <target id="cb01369b-17d9-4957-a230-039c9c5c08df" name="ProductId" type="element" specialization="Property" specializationId="bde29850-5fb9-4f47-9941-b9e182fd9bdc" />
+            </path>
+            <sources>
+              <source identifier="catalogItem.Id" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="29758964-b423-4551-af1a-bf38d45ace49" name="UpdateProduct" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="274575d1-e762-4b5e-bb90-19a636a3d2d0" name="catalogItem" type="association" specialization="Update Entity Action Target End" specializationId="516069f6-09cc-4de8-8e31-3c71ca823452" />
+                  <target id="1cac235e-eef8-429b-8e97-3b611e3d4264" name="Id" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{catalogItem.Price}</expression>
+            <path>
+              <target id="15cbbe95-16f8-492e-b1c6-343e09c3a6d0" name="ProductPriceChangedIntegrationEvent" type="element" specialization="Message" specializationId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e" />
+              <target id="cfb31337-926c-412b-be46-fb5227d4a28a" name="NewPrice" type="element" specialization="Property" specializationId="bde29850-5fb9-4f47-9941-b9e182fd9bdc" />
+            </path>
+            <sources>
+              <source identifier="catalogItem.Price" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="29758964-b423-4551-af1a-bf38d45ace49" name="UpdateProduct" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="274575d1-e762-4b5e-bb90-19a636a3d2d0" name="catalogItem" type="association" specialization="Update Entity Action Target End" specializationId="516069f6-09cc-4de8-8e31-3c71ca823452" />
+                  <target id="bd47a8e7-2bbd-4c23-a413-78436de34575" name="Price" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>oldPrice</expression>
+            <path>
+              <target id="15cbbe95-16f8-492e-b1c6-343e09c3a6d0" name="ProductPriceChangedIntegrationEvent" type="element" specialization="Message" specializationId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e" />
+              <target id="83e2af81-a030-454a-b0b1-635864a613b0" name="OldPrice" type="element" specialization="Property" specializationId="bde29850-5fb9-4f47-9941-b9e182fd9bdc" />
+            </path>
+            <sources />
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Publish Integration Event</associationType>
+  <associationTypeId>580b6b26-eab5-4602-a408-e76e2d292d2c</associationTypeId>
+  <stereotypes />
+</association>

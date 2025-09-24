@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="8cf6a555-bfd8-44a4-b172-1b46cedddc4a">
+  <sourceEnd id="c12c2f95-e7b4-4564-8103-d9de11f5b333" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Order</name>
+    <display>Order: Order</display>
+    <order>12</order>
+    <typeReference id="5b671792-40ef-4b72-9135-bfe26a873d83">
+      <typeId>11551992-2fa3-4a1c-8c55-c02fe7cfc361</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Domain</typePackageName>
+      <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata>
+      <entry key="generated-name" value="Order" />
+    </metadata>
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="8cf6a555-bfd8-44a4-b172-1b46cedddc4a" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>OrderItems</name>
+    <display>OrderItems: OrderItem[*]</display>
+    <order>16</order>
+    <typeReference id="b6bcda8d-224c-47a3-83fa-2160161d08fd">
+      <typeId>f216a27e-9b16-4837-9bf6-54b5bad5b7f7</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Domain</typePackageName>
+      <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata>
+      <entry key="generated-name" value="OrderItems" />
+    </metadata>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

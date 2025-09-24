@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="65fbfa31-8680-44c9-bc08-72ee2ea612a7">
+  <sourceEnd id="5d0d7eb5-86d1-4157-a855-9618703ad1af" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: GetBasketById</display>
+    <order>0</order>
+    <typeReference id="72fc1cd8-a7c4-44c8-8e91-6e6d7f4411b6">
+      <typeId>32950848-8ba2-433b-8ba4-b0475a90212d</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Basket.Services</typePackageName>
+      <typePackageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="65fbfa31-8680-44c9-bc08-72ee2ea612a7" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>customerBasket</name>
+    <display>[query] customerBasket: CustomerBasket</display>
+    <order>1</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="f2895dcf-efc5-4e89-a489-2be7d48c7fa4">
+      <typeId>09d6cad2-e555-47ba-9c4f-9b0705455f62</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Basket.Domain</typePackageName>
+      <typePackageId>70fd059c-eb1a-4b4b-80e3-d63bae40b9d6</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="0fad2d18-af53-4fc4-b6f1-698045dd88f4" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="32950848-8ba2-433b-8ba4-b0475a90212d" location="[eShop.Basket].[Services].[GetBasketById]" />
+        <target applicationId="0fad2d18-af53-4fc4-b6f1-698045dd88f4" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="09d6cad2-e555-47ba-9c4f-9b0705455f62" location="[eShop.Basket].[Services].[CustomerBasket]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{id}</expression>
+            <path>
+              <target id="09d6cad2-e555-47ba-9c4f-9b0705455f62" name="CustomerBasket" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="0a3ba7d4-c5fc-4830-8a9b-6e4928fbd4a2" name="BuyerId" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="32950848-8ba2-433b-8ba4-b0475a90212d" name="GetBasketById" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="d4ea1511-5abc-4d5f-a3f3-9ac1abe02000" name="id" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

@@ -1,0 +1,44 @@
+@inject NavigationManager Nav
+
+@if (CatalogBrands is not null)
+{
+    <MudPaper Class="p-4 mb-4" Style="width: 250px; height:500px" Elevation="0">
+        <MudText Typo="Typo.h6" Class="mb-2">
+            <MudIcon Icon="@Icons.Material.Filled.FilterList" Class="mr-2" />
+            Filters
+        </MudText>
+
+        <MudDivider Class="mb-4" />
+
+        <div class="mb-4">
+            <MudText Typo="Typo.subtitle1">Brand</MudText>
+            <MudChipSet T="int?" @bind-SelectedValue="BrandId" SelectionMode="SelectionMode.SingleSelection" Variant="Variant.Filled">
+                <MudChip T="int?" Value="@null" OnClick="@(() => NavigateTo(BrandUri(null)))" Style="@GetChipClassBrand(null)">
+                    All
+                </MudChip>
+
+                @foreach (var brand in CatalogBrands)
+                {
+                    <MudChip T="int?" Value="@brand.Id" OnClick="@(() => NavigateTo(BrandUri(brand.Id)))" Style="@GetChipClassBrand(brand.Id)">
+                        @brand.Brand
+                    </MudChip>
+                }
+            </MudChipSet>
+        </div>
+
+        <div>
+            <MudText Typo="Typo.subtitle1">Type</MudText>
+            <MudChipSet T="int?" @bind-SelectedValue="ItemTypeId" SelectionMode="SelectionMode.SingleSelection" Variant="Variant.Filled">
+                <MudChip T="int?" Value="@null" OnClick="@(() => NavigateTo(TypeUri(null)))" Style="@GetChipClassType(null)">
+                    All
+                </MudChip>
+                @foreach (var itemType in CatalogItemTypes)
+                {
+                    <MudChip T="int?" Value="@itemType.Id" OnClick="@(() => NavigateTo(TypeUri(itemType.Id)))" Style="@GetChipClassType(itemType.Id)">
+                        @itemType.Type
+                    </MudChip>
+                }
+            </MudChipSet>
+        </div>
+    </MudPaper>
+}

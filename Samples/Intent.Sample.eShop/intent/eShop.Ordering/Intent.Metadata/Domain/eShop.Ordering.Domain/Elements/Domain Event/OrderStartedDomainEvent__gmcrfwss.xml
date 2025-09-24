@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="29fc9cd3-6308-43e5-b5f6-b0809426153c" type="Domain Event" typeId="0814e459-fb9b-47db-b7eb-32ce30397e8a">
+  <name>OrderStartedDomainEvent</name>
+  <display>OrderStartedDomainEvent</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>76d205d9-7601-4b48-8af5-e4fecf6f2008</parentFolderId>
+  <packageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</packageId>
+  <packageName>eShop.Ordering.Domain</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="cac31777-915b-4be1-ab6a-36e86341af6a" type="Property" typeId="b4d69073-5abb-4968-b41b-545b2f7408ed">
+      <name>Order</name>
+      <display>Order: Order</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="9b99d5d3-7c94-4906-8e9e-9a44dd8a1d5f">
+        <typeId>11551992-2fa3-4a1c-8c55-c02fe7cfc361</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Ordering.Domain</typePackageName>
+        <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>29fc9cd3-6308-43e5-b5f6-b0809426153c</parentFolderId>
+      <packageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</packageId>
+      <packageName>eShop.Ordering.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="2cd39428-aaa6-4973-9ebd-aac3b549bda1" type="Property" typeId="b4d69073-5abb-4968-b41b-545b2f7408ed">
+      <name>UserId</name>
+      <display>UserId: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="9d00c7c8-e8bd-4f89-95f0-1bf74b530a5d">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>29fc9cd3-6308-43e5-b5f6-b0809426153c</parentFolderId>
+      <packageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</packageId>
+      <packageName>eShop.Ordering.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="68a95372-c7f2-43bf-a0ce-9d40835c9d14" type="Property" typeId="b4d69073-5abb-4968-b41b-545b2f7408ed">
+      <name>UserName</name>
+      <display>UserName: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="cf08152c-1c2f-4f90-af85-4fe053036ce9">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>29fc9cd3-6308-43e5-b5f6-b0809426153c</parentFolderId>
+      <packageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</packageId>
+      <packageName>eShop.Ordering.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

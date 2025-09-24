@@ -1,0 +1,81 @@
+﻿@page "/cart"
+@using eShop.Web.Client.Contracts.Basket.Services.CustomerBaskets
+@using eShop.Web.Client.Pages.Cart.Components
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+
+<PageTitle>Cart</PageTitle>
+<SectionContent SectionName="page-header-subtitle">Cart</SectionContent>
+<MudGrid>
+    <MudSpacer></MudSpacer>
+    @Intent.IgnoreAttributes("sm")
+    <MudItem xs="12"
+             sm="6">
+        @* @Intent.IgnoreAttributes("elevation") *@
+        <MudDataGrid T="BasketItemDto"
+                     Items="@Model.BasketItems"
+                     Dense="false"
+                     Elevation="1"
+                     Hover="true"
+                     Striped>
+            <ToolBarContent />
+            <Columns>
+                <TemplateColumn Title="Products">
+                    <CellTemplate>
+                        <MudStack Row>
+                            <ProductImagePrice ProductId="context.Item.ProductId"
+                                               ProductName="@context.Item.ProductName"
+                                               ProductPrice="context.Item.UnitPrice" />
+                        </MudStack>
+                    </CellTemplate>
+                </TemplateColumn>
+                <TemplateColumn Title="Quantity">
+                    <CellTemplate>
+                        <MudStack Row>
+                            <MudTextField T="int"
+                                          Value="context.Item.Quantity"
+                                          ValueChanged="@(qty => SubmitUpdateAsync(qty, context.Item.ProductId))"
+                                          Immediate="true"
+                                          Variant="Variant.Outlined"
+                                          Style="width: 40px; text-align:center" />
+                        </MudStack>
+                    </CellTemplate>
+                </TemplateColumn>
+                <TemplateColumn Title="Total">
+                    <CellTemplate>
+                        <MudStack Row>
+                            <MudText>$@((context.Item.UnitPrice * CurrentOrPendingQuantity(context.Item.ProductId, context.Item.Quantity)).ToString("0.00"))</MudText>
+                        </MudStack>
+                    </CellTemplate>
+                </TemplateColumn>
+            </Columns>
+            <PagerContent>
+                <MudDataGridPager T="BasketItemDto"
+                                  PageSizeOptions="new int[] { 10, 25, 50, 100 }" />
+            </PagerContent>
+        </MudDataGrid>
+    </MudItem>
+    <MudSpacer />
+    @Intent.IgnoreAttributes("xs")
+    <MudItem xs="12" sm="3"
+             Style="background-color: lightgray; display: flex; align-items: center; justify-content: center; padding: 1rem; border-radius: 8px;">
+        <MudStack Spacing="2" AlignItems="AlignItems.Center" Justify="Justify.Center">
+            <MudStack Row AlignItems="AlignItems.Center" Justify="Justify.Center">
+                <MudText Class="ml-2">Your shopping bag</MudText>
+            </MudStack>
+
+            <MudText>Items: <strong>@TotalQuantity</strong></MudText>
+            <MudText>Total: <strong>$@TotalPrice.ToString("0.00")</strong></MudText>
+
+            <MudButton Href="/checkout"
+                       Variant="Variant.Filled"
+                       Color="Color.Dark"
+                       Disabled="CheckoutDisabled">
+                Check out
+            </MudButton>
+
+            <MudLink Href="/" Color="Color.Dark">Continue shopping</MudLink>
+        </MudStack>
+    </MudItem>
+    <MudSpacer />
+</MudGrid>

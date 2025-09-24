@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="c829e680-9068-4b82-9682-4286c183bd17" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>ClientApp</name>
+  <display>ClientApp</display>
+  <externalReference>060a63b7-71dc-488a-8c31-3e0e32c9e87d</externalReference>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>4ec88c9f-61c9-4ac6-8915-84aad3a402d3</parentFolderId>
+  <packageId>4ab14b4f-9dc9-4b86-920d-7c3336e3b1e5</packageId>
+  <packageName>eShop.Basket</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="61132551-825d-4c6e-b9f1-0f95249d08d4" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4bfbefd0-d22e-4ca0-9723-92ae273feca4" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="8b564718-661a-4db3-9a13-f1063e66d342" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
+      <name>Front End</name>
+      <display>Front End</display>
+      <externalReference>164d4bd8-c4f0-4ca1-baa1-2549cc348c20</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>c829e680-9068-4b82-9682-4286c183bd17</parentFolderId>
+      <packageId>4ab14b4f-9dc9-4b86-920d-7c3336e3b1e5</packageId>
+      <packageName>eShop.Basket</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

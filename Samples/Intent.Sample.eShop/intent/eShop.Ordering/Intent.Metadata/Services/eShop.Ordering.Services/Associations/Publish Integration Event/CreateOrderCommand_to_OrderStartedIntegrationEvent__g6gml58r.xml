@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="3fbc96cd-4ae2-439c-8266-022f4d6767b4">
+  <sourceEnd id="c1fef6fc-2636-4f3b-aa7d-bc1b3d48a188" type="Publish Integration Event Source End" typeId="eab91b3a-9903-40a2-90e8-ddb714883eab">
+    <display>published by : Orders.CreateOrderCommand</display>
+    <order>0</order>
+    <typeReference id="7cf62780-c3f9-4343-bd93-887ced4dea4e">
+      <typeId>fc5d4a28-b660-4f94-9f5f-93aad1e373e2</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Services</typePackageName>
+      <typePackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="3fbc96cd-4ae2-439c-8266-022f4d6767b4" type="Publish Integration Event Target End" typeId="6feb1511-849a-4aa3-85eb-d0c736ac1fec">
+    <display>[publish] OrderStartedIntegrationEvent</display>
+    <order>10</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="fd837442-a79e-444d-9bdd-7353a78c6054">
+      <typeId>038ac4a1-40f7-43d8-8880-5c3977fae015</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Eventing.Messages</typePackageName>
+      <typePackageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Publish Message Mapping" typeId="7ff48a4c-ee8b-4e66-9dbb-c014eb0542fb">
+        <source applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" location="[eShop.Ordering].[Services].[CreateOrderCommand]" />
+        <target applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="038ac4a1-40f7-43d8-8880-5c3977fae015" location="[eShop.Ordering].[Services].[OrderStartedIntegrationEvent]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{UserId}</expression>
+            <path>
+              <target id="038ac4a1-40f7-43d8-8880-5c3977fae015" name="OrderStartedIntegrationEvent" type="element" specialization="Message" specializationId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e" />
+              <target id="4ea9a80a-d252-4d78-af2e-e3decb98ecc3" name="UserId" type="element" specialization="Property" specializationId="bde29850-5fb9-4f47-9941-b9e182fd9bdc" />
+            </path>
+            <sources>
+              <source identifier="UserId" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+                  <target id="f4f5afe7-cabf-435b-a6ff-c7a4f598c6d9" name="UserId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Publish Integration Event</associationType>
+  <associationTypeId>580b6b26-eab5-4602-a408-e76e2d292d2c</associationTypeId>
+  <stereotypes />
+</association>

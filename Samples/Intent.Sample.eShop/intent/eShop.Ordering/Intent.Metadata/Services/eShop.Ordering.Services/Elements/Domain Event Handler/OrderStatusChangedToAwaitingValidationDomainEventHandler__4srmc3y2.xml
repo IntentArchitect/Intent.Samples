@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="81276f45-2593-43ae-9d2c-15e3beca0ee5" type="Domain Event Handler" typeId="d80e61c5-7e4c-4175-9df1-0413f664824c">
+  <name>OrderStatusChangedToAwaitingValidationDomainEventHandler</name>
+  <display>OrderStatusChangedToAwaitingValidationDomainEventHandler</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</parentFolderId>
+  <packageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</packageId>
+  <packageName>eShop.Ordering.Services</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

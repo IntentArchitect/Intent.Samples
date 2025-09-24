@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="6378d701-ea43-455b-a51f-0d1ba732bf1f">
+  <sourceEnd id="5efd8e07-2d70-40ba-b368-902f7eb05980" type="Navigation Source End" typeId="97a3de8a-c9bf-4cf2-bc0a-b8692b02211b">
+    <display>: MainLayout</display>
+    <order>0</order>
+    <typeReference id="8c7d7443-afed-43a4-84a7-61ae215a6d4c">
+      <typeId>6c5218ce-43e5-4ab0-acea-d0f3743e2b69</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Web.UI</typePackageName>
+      <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="6378d701-ea43-455b-a51f-0d1ba732bf1f" type="Navigation Target End" typeId="2b191288-ecae-4743-b069-cbdd927ef349">
+    <name>NavigateToCart</name>
+    <display>[navigate] Cart</display>
+    <order>6</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="dbd3f72a-5e21-46df-9087-7bd34dbdceb2">
+      <typeId>94f109cb-d93f-4599-8262-98be7fb3d3b3</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Web.UI</typePackageName>
+      <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Navigation</associationType>
+  <associationTypeId>6d2b2070-c1cb-4cd2-88b4-4e5f8414bd9e</associationTypeId>
+  <stereotypes />
+</association>

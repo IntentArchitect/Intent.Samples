@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="c986dbf8-7fe6-4a60-ae5f-67fb8915db9c">
+  <sourceEnd id="b12357b3-abf6-4fee-ae27-cc119a7d0fe5" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: CheckoutCart</display>
+    <order>0</order>
+    <typeReference id="e710ca12-b332-4ac1-a5e7-27e37322ea44">
+      <typeId>daf75819-17c0-4c25-9816-b6d3d2a382bc</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Web.UI</typePackageName>
+      <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="c986dbf8-7fe6-4a60-ae5f-67fb8915db9c" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>CreateOrderCommand</name>
+    <display>[call] Orders.CreateOrderCommand: int</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="6e97919c-d85f-4b33-a77e-c02764e26949">
+      <typeId>fc5d4a28-b660-4f94-9f5f-93aad1e373e2</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Services</typePackageName>
+      <typePackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="2287fc13-3047-4489-92bb-e83f28c7b1f7" location="[eShop.Web].[User Interface].[Checkout]" />
+        <target applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" location="[eShop.Web].[User Interface].[CreateOrderCommand]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{CheckoutCart.CreateOrderCommand}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+            </path>
+            <sources>
+              <source identifier="CheckoutCart.CreateOrderCommand" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="daf75819-17c0-4c25-9816-b6d3d2a382bc" name="CheckoutCart" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="c986dbf8-7fe6-4a60-ae5f-67fb8915db9c" name="CreateOrderCommand" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Basket.BuyerId}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="f4f5afe7-cabf-435b-a6ff-c7a4f598c6d9" name="UserId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Basket.BuyerId" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d55aa5ab-f782-44bf-a770-f9b347c1377f" name="Basket" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="e8983296-0ead-4534-b653-941a645bca60" name="BuyerId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Basket.BuyerId}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="ac9fbcea-fd76-430d-a282-1003269db00e" name="UserName" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Basket.BuyerId" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d55aa5ab-f782-44bf-a770-f9b347c1377f" name="Basket" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="e8983296-0ead-4534-b653-941a645bca60" name="BuyerId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{ShippingInformation.Street}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="49073991-8ffc-4b64-9546-dc44a0165eaa" name="Street" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="ShippingInformation.Street" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="0ff25cde-dfd2-462d-90b7-087e2cf2f1a6" name="ShippingInformation" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="477c2fbc-a079-46ab-acf6-17d6e78bde25" name="Street" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{ShippingInformation.City}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="4c66936a-6cb1-4b6d-ba2a-6d783cc1e5be" name="City" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="ShippingInformation.City" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="0ff25cde-dfd2-462d-90b7-087e2cf2f1a6" name="ShippingInformation" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="0a0a9c7d-a73a-47a4-8cf0-4da1b8b84479" name="City" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{ShippingInformation.State}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="4894dbed-6ba8-43d0-8433-2c76a5d4801f" name="State" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="ShippingInformation.State" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="0ff25cde-dfd2-462d-90b7-087e2cf2f1a6" name="ShippingInformation" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="acbd757b-f251-46d6-ac9d-fa36a7c006ab" name="State" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{ShippingInformation.ZipCode}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="b562af10-a666-4e14-9051-fec366850922" name="Country" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="ShippingInformation.ZipCode" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="0ff25cde-dfd2-462d-90b7-087e2cf2f1a6" name="ShippingInformation" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="3c146e77-6b02-4506-950e-0e3f3d94f5f0" name="ZipCode" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{ShippingInformation.Country}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="50aac79d-6e0d-494e-9123-1dc2a2eaf5da" name="ZipCode" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="ShippingInformation.Country" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="0ff25cde-dfd2-462d-90b7-087e2cf2f1a6" name="ShippingInformation" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="abbfaa9c-02ae-40d1-85ae-25e9a178ca04" name="Country" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Basket.BasketItems}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="fd11930d-3c8c-4849-bef4-156e02dd8fe0" name="OrderItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Basket.BasketItems" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d55aa5ab-f782-44bf-a770-f9b347c1377f" name="Basket" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Basket.BasketItems.ProductId}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="fd11930d-3c8c-4849-bef4-156e02dd8fe0" name="OrderItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="52d3fd75-fa5b-43bb-8664-324bf707c4d1" name="ProductId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Basket.BasketItems.ProductId" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d55aa5ab-f782-44bf-a770-f9b347c1377f" name="Basket" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="0ab6b983-157e-4588-b756-b8a7edf2d9a1" name="ProductId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Basket.BasketItems.ProductName}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="fd11930d-3c8c-4849-bef4-156e02dd8fe0" name="OrderItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="c7c7e872-7f80-4b87-8a9e-4990c38a33d3" name="ProductName" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Basket.BasketItems.ProductName" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d55aa5ab-f782-44bf-a770-f9b347c1377f" name="Basket" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="143a233f-387e-4576-8bef-c6498c73fd0d" name="ProductName" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Basket.BasketItems.UnitPrice}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="fd11930d-3c8c-4849-bef4-156e02dd8fe0" name="OrderItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="9001e506-7b2b-481f-90b9-1ad91cf63e8a" name="UnitPrice" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Basket.BasketItems.UnitPrice" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d55aa5ab-f782-44bf-a770-f9b347c1377f" name="Basket" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="24d66a8e-a6c2-45ae-b74c-33ae204b9022" name="UnitPrice" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Basket.BasketItems.OldUnitPrice}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="fd11930d-3c8c-4849-bef4-156e02dd8fe0" name="OrderItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="3615a129-4a26-458d-9e8e-f60ab7c906ed" name="Discount" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Basket.BasketItems.OldUnitPrice" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d55aa5ab-f782-44bf-a770-f9b347c1377f" name="Basket" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="3583a617-ed77-4392-913a-547f354cc61e" name="OldUnitPrice" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Basket.BasketItems.PictureUrl}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="fd11930d-3c8c-4849-bef4-156e02dd8fe0" name="OrderItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="06a1c279-9fa2-480e-bb03-19051af86ccd" name="PictureUrl" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Basket.BasketItems.PictureUrl" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d55aa5ab-f782-44bf-a770-f9b347c1377f" name="Basket" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="96f0476b-e6bd-47d0-be26-98352db5a909" name="PictureUrl" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Basket.BasketItems.Quantity}</expression>
+            <path>
+              <target id="fc5d4a28-b660-4f94-9f5f-93aad1e373e2" name="CreateOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="fd11930d-3c8c-4849-bef4-156e02dd8fe0" name="OrderItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="f6e8ac3d-baea-4180-a59a-5214272e8c1b" name="Units" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Basket.BasketItems.Quantity" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d55aa5ab-f782-44bf-a770-f9b347c1377f" name="Basket" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="a06b4c24-5c75-4b91-8086-6570f7cb165f" name="Quantity" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

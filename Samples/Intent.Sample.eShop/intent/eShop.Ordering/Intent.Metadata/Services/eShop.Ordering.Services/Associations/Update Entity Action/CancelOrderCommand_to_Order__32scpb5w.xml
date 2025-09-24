@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="a93cb52c-3be1-4420-95eb-9f6b95e8d881">
+  <sourceEnd id="9fd03aaa-a04e-4c2d-948d-c0af909091b4" type="Update Entity Action Source End" typeId="6bc95978-6def-4d0c-a4f5-25bdeda8a9f6">
+    <name>CancelOrderCommand</name>
+    <display>updated by : Orders.CancelOrderCommand</display>
+    <order>0</order>
+    <typeReference id="dc1b3c0c-67a7-4a4c-ad25-ac1c1313d69b">
+      <typeId>c33ec8a6-7573-4366-871b-07ff6c039a45</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Services</typePackageName>
+      <typePackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="a93cb52c-3be1-4420-95eb-9f6b95e8d881" type="Update Entity Action Target End" typeId="516069f6-09cc-4de8-8e31-3c71ca823452">
+    <name>order</name>
+    <display>[update] order: SetCancelledStatus</display>
+    <order>1</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="7585ea82-89c4-4997-942e-c37b811a9905">
+      <typeId>9e75b12f-6769-4d6f-b643-1771643538b7</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Domain</typePackageName>
+      <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Update Entity Mapping" typeId="01721b1a-a85d-4320-a5cd-8bd39247196a">
+        <source applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="c33ec8a6-7573-4366-871b-07ff6c039a45" location="[eShop.Ordering].[Services].[CancelOrderCommand]" />
+        <target applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="11551992-2fa3-4a1c-8c55-c02fe7cfc361" location="[eShop.Ordering].[Services].[Order]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{CancelOrderCommand}</expression>
+            <path>
+              <target id="11551992-2fa3-4a1c-8c55-c02fe7cfc361" name="Order" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="9e75b12f-6769-4d6f-b643-1771643538b7" name="SetCancelledStatus" type="element" specialization="Operation" specializationId="e042bb67-a1df-480c-9935-b26210f78591" />
+            </path>
+            <sources>
+              <source identifier="CancelOrderCommand" mappingType="Invocation Mapping" mappingTypeId="d30bdba1-9c47-4917-b81d-29230fed5d6a">
+                <path>
+                  <target id="c33ec8a6-7573-4366-871b-07ff6c039a45" name="CancelOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="c33ec8a6-7573-4366-871b-07ff6c039a45" location="[eShop.Ordering].[Services].[CancelOrderCommand]" />
+        <target applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="11551992-2fa3-4a1c-8c55-c02fe7cfc361" location="[eShop.Ordering].[Services].[Order]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{OrderId}</expression>
+            <path>
+              <target id="11551992-2fa3-4a1c-8c55-c02fe7cfc361" name="Order" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="c43af763-ea81-4def-a45a-f6d271c42a31" name="Id" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="OrderId" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="c33ec8a6-7573-4366-871b-07ff6c039a45" name="CancelOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+                  <target id="18675d89-2106-4c60-809c-7476d8a8cac5" name="OrderId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Update Entity Action</associationType>
+  <associationTypeId>9ea0382a-4617-412a-a8c8-af987bbce226</associationTypeId>
+  <stereotypes />
+</association>

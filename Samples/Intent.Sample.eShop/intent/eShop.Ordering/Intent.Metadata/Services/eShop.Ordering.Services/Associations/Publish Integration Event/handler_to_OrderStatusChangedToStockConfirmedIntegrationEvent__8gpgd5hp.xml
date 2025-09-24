@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="6f5c9c7a-ff41-4090-85ca-c3b7e899988b">
+  <sourceEnd id="9439ead9-8dce-404e-bbe2-b4d5cd275d5f" type="Publish Integration Event Source End" typeId="eab91b3a-9903-40a2-90e8-ddb714883eab">
+    <display>published by : OrderStatusChangedToStockConfirmedDomainEventHandler.handler</display>
+    <order>0</order>
+    <typeReference id="632138ed-a6aa-4782-be08-402f38a05e32">
+      <typeId>8b7b740e-6190-4db2-abfc-11414c2fa6ca</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Services</typePackageName>
+      <typePackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="6f5c9c7a-ff41-4090-85ca-c3b7e899988b" type="Publish Integration Event Target End" typeId="6feb1511-849a-4aa3-85eb-d0c736ac1fec">
+    <display>[publish] OrderStatusChangedToStockConfirmedIntegrationEvent</display>
+    <order>0</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="381dacef-c6d3-415d-b07c-2f6ab311840a">
+      <typeId>42e8173d-8897-4ac7-b7ff-9ba00f703ee4</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Eventing.Messages</typePackageName>
+      <typePackageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Publish Message Mapping" typeId="7ff48a4c-ee8b-4e66-9dbb-c014eb0542fb">
+        <source applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="8b7b740e-6190-4db2-abfc-11414c2fa6ca" location="[eShop.Ordering].[Services].[handler]" />
+        <target applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="42e8173d-8897-4ac7-b7ff-9ba00f703ee4" location="[eShop.Ordering].[Services].[OrderStatusChangedToStockConfirmedIntegrationEvent]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Order.Id}</expression>
+            <path>
+              <target id="42e8173d-8897-4ac7-b7ff-9ba00f703ee4" name="OrderStatusChangedToStockConfirmedIntegrationEvent" type="element" specialization="Message" specializationId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e" />
+              <target id="d7595e6f-3d11-49d4-8d64-a30424c6c247" name="OrderId" type="element" specialization="Property" specializationId="bde29850-5fb9-4f47-9941-b9e182fd9bdc" />
+            </path>
+            <sources>
+              <source identifier="Order.Id" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="8b7b740e-6190-4db2-abfc-11414c2fa6ca" name="handler" type="association" specialization="Domain Event Handler Association Target End" specializationId="f45dfee9-f62b-45ac-bfce-a3878e04b73f" />
+                  <target id="2bb44de2-c166-482f-a557-6dc4901ecf35" name="Order" type="element" specialization="Property" specializationId="b4d69073-5abb-4968-b41b-545b2f7408ed" />
+                  <target id="c43af763-ea81-4def-a45a-f6d271c42a31" name="Id" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Order.OrderStatus}</expression>
+            <path>
+              <target id="42e8173d-8897-4ac7-b7ff-9ba00f703ee4" name="OrderStatusChangedToStockConfirmedIntegrationEvent" type="element" specialization="Message" specializationId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e" />
+              <target id="289ded7c-befe-4c78-9faa-f4c697cb19ec" name="OrderStatus" type="element" specialization="Property" specializationId="bde29850-5fb9-4f47-9941-b9e182fd9bdc" />
+            </path>
+            <sources>
+              <source identifier="Order.OrderStatus" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="8b7b740e-6190-4db2-abfc-11414c2fa6ca" name="handler" type="association" specialization="Domain Event Handler Association Target End" specializationId="f45dfee9-f62b-45ac-bfce-a3878e04b73f" />
+                  <target id="2bb44de2-c166-482f-a557-6dc4901ecf35" name="Order" type="element" specialization="Property" specializationId="b4d69073-5abb-4968-b41b-545b2f7408ed" />
+                  <target id="e105a529-8263-484f-a8f7-e2c4c2f24093" name="OrderStatus" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Order.Buyer.Name}</expression>
+            <path>
+              <target id="42e8173d-8897-4ac7-b7ff-9ba00f703ee4" name="OrderStatusChangedToStockConfirmedIntegrationEvent" type="element" specialization="Message" specializationId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e" />
+              <target id="04ab84df-4148-4f30-be81-e6d293d5bd15" name="BuyerName" type="element" specialization="Property" specializationId="bde29850-5fb9-4f47-9941-b9e182fd9bdc" />
+            </path>
+            <sources>
+              <source identifier="Order.Buyer.Name" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
+                <path>
+                  <target id="8b7b740e-6190-4db2-abfc-11414c2fa6ca" name="handler" type="association" specialization="Domain Event Handler Association Target End" specializationId="f45dfee9-f62b-45ac-bfce-a3878e04b73f" />
+                  <target id="2bb44de2-c166-482f-a557-6dc4901ecf35" name="Order" type="element" specialization="Property" specializationId="b4d69073-5abb-4968-b41b-545b2f7408ed" />
+                  <target id="1fe303f2-5b1b-4365-a2c2-632e55af1715" name="Buyer" type="association" specialization="Association Target End" specializationId="0a66489f-30aa-417b-a75d-b945863366fd" />
+                  <target id="1dfb9124-b1ba-447d-93f4-c65b85873722" name="Name" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Publish Integration Event</associationType>
+  <associationTypeId>580b6b26-eab5-4602-a408-e76e2d292d2c</associationTypeId>
+  <stereotypes />
+</association>

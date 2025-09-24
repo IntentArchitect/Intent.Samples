@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="3d0e14f0-dd6e-4e99-8386-dfa16919ceb3" type="Component" typeId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b">
+  <name>HeaderBar</name>
+  <display>HeaderBar</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>b59a1071-6fba-4367-99d7-a76056fb862f</parentFolderId>
+  <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+  <packageName>eShop.Web.UI</packageName>
+  <traits>
+    <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+  </traits>
+  <stereotypes />
+  <mappings>
+    <mapping type="View Binding" typeId="c33f86ad-423a-4a6f-a80c-a3206eafe5cd">
+      <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="3d0e14f0-dd6e-4e99-8386-dfa16919ceb3" location="[eShop.Web].[User Interface].[HeaderBar]" />
+      <target applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="e3bc5916-7abe-4611-a209-a45ceff10337" location="[eShop.Web].[User Interface].[[view]]" />
+      <mappedEnds />
+    </mapping>
+  </mappings>
+  <metadata />
+  <childElements>
+    <childElement id="7f3b719a-175d-4af8-9076-e05e520970d1" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>OnInitializedAsync</name>
+      <display>OnInitializedAsync(): void</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="93b517a2-53d0-49c7-9412-c3c4dd4265a0">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>3d0e14f0-dd6e-4e99-8386-dfa16919ceb3</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

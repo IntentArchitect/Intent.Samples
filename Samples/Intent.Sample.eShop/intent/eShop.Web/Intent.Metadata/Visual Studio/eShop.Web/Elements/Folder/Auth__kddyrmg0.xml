@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="9084c5fb-20f1-41cd-9ebf-0a3231ef02ef" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>Auth</name>
+  <display>Auth</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>f0164d65-7e53-4658-bda8-c81c2b3a1c43</parentFolderId>
+  <packageId>dd40f215-4bf6-4101-b9a2-ef5ca6380c59</packageId>
+  <packageName>eShop.Web</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="61132551-825d-4c6e-b9f1-0f95249d08d4" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4bfbefd0-d22e-4ca0-9723-92ae273feca4" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements />
+</class>

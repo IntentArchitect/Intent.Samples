@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="c439bdc1-3aac-4cc1-81f5-6149e9942b85" type="Domain Event Handler" typeId="d80e61c5-7e4c-4175-9df1-0413f664824c">
+  <name>OrderCancelledDomainEventHandler</name>
+  <display>OrderCancelledDomainEventHandler</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</parentFolderId>
+  <packageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</packageId>
+  <packageName>eShop.Ordering.Services</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

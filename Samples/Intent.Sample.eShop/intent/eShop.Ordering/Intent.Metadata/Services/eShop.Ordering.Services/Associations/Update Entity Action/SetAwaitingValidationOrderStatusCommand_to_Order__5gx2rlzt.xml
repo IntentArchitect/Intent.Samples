@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="b3974d4f-8c15-4548-844f-beed85888333">
+  <sourceEnd id="5e2ffa56-9dc0-4266-819d-bab86d219334" type="Update Entity Action Source End" typeId="6bc95978-6def-4d0c-a4f5-25bdeda8a9f6">
+    <name>SetAwaitingValidationOrderStatusCommand</name>
+    <display>updated by : Orders.SetAwaitingValidationOrderStatusCommand</display>
+    <order>0</order>
+    <typeReference id="ca6d17c9-6f5e-4c0f-9e6e-230c928b1264">
+      <typeId>ea2d331f-c2e8-4c4b-b9f8-b8f710fdf35d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Services</typePackageName>
+      <typePackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="b3974d4f-8c15-4548-844f-beed85888333" type="Update Entity Action Target End" typeId="516069f6-09cc-4de8-8e31-3c71ca823452">
+    <name>order</name>
+    <display>[update] order: SetAwaitingValidationStatus</display>
+    <order>1</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="468d1385-be83-4f61-95e3-47c574226646">
+      <typeId>0884639b-e37f-4caf-9b91-0a1335d9b2cd</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Domain</typePackageName>
+      <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Update Entity Mapping" typeId="01721b1a-a85d-4320-a5cd-8bd39247196a">
+        <source applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="ea2d331f-c2e8-4c4b-b9f8-b8f710fdf35d" location="[eShop.Ordering].[Services].[SetAwaitingValidationOrderStatusCommand]" />
+        <target applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="11551992-2fa3-4a1c-8c55-c02fe7cfc361" location="[eShop.Ordering].[Domain].[Order]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{SetAwaitingValidationOrderStatusCommand}</expression>
+            <path>
+              <target id="11551992-2fa3-4a1c-8c55-c02fe7cfc361" name="Order" type="element" specialization="Class" />
+              <target id="0884639b-e37f-4caf-9b91-0a1335d9b2cd" name="SetAwaitingValidationStatus" type="element" specialization="Operation" />
+            </path>
+            <sources>
+              <source identifier="SetAwaitingValidationOrderStatusCommand">
+                <path>
+                  <target id="ea2d331f-c2e8-4c4b-b9f8-b8f710fdf35d" name="SetAwaitingValidationOrderStatusCommand" type="element" specialization="Command" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="ea2d331f-c2e8-4c4b-b9f8-b8f710fdf35d" location="[eShop.Ordering].[Services].[SetAwaitingValidationOrderStatusCommand]" />
+        <target applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="11551992-2fa3-4a1c-8c55-c02fe7cfc361" location="[eShop.Ordering].[Domain].[Order]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{OrderId}</expression>
+            <path>
+              <target id="11551992-2fa3-4a1c-8c55-c02fe7cfc361" name="Order" type="element" specialization="Class" />
+              <target id="c43af763-ea81-4def-a45a-f6d271c42a31" name="Id" type="element" specialization="Attribute" />
+            </path>
+            <sources>
+              <source identifier="OrderId" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="ea2d331f-c2e8-4c4b-b9f8-b8f710fdf35d" name="SetAwaitingValidationOrderStatusCommand" type="element" specialization="Command" />
+                  <target id="ceea2ae8-5b84-4036-8b61-2ecd65d3234f" name="OrderId" type="element" specialization="DTO-Field" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Update Entity Action</associationType>
+  <associationTypeId>9ea0382a-4617-412a-a8c8-af987bbce226</associationTypeId>
+  <stereotypes />
+</association>

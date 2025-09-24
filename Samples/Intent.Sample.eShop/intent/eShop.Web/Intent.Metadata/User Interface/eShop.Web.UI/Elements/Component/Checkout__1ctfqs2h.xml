@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="2287fc13-3047-4489-92bb-e83f28c7b1f7" type="Component" typeId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b">
+  <name>Checkout</name>
+  <display>Checkout</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>0fafcf35-e8a3-4a41-842e-8a001eeb609d</parentFolderId>
+  <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+  <packageName>eShop.Web.UI</packageName>
+  <traits>
+    <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+  </traits>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="ea4adc09-8978-4ede-ba5f-265debb2b60c" name="Page">
+      <addedByDefault>false</addedByDefault>
+      <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+      <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+      <properties>
+        <property name="9dff9df1-a993-4bf6-9aa7-c16811142228" display="Route" value="/checkout" isActive="true" />
+        <property name="0a8627ba-ec45-4023-9c36-b0999f43e982" display="Title" isActive="true" />
+      </properties>
+    </stereotype>
+    <stereotype stereotypeDefinitionId="012f5173-6419-4006-a9a8-ab5c20b8a42e" name="Secured">
+      <addedByDefault>false</addedByDefault>
+      <definitionPackageName>Intent.Blazor</definitionPackageName>
+      <definitionPackageId>3ac5ff1e-5fc9-46a2-95e5-2d9ca579e484</definitionPackageId>
+      <properties>
+        <property name="a4a26159-0b60-498e-8b91-56a59756928b" display="Roles" isActive="true" />
+        <property name="f7079953-a05f-4ca6-b51a-40f160460003" display="Policy" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <mappings>
+    <mapping type="View Binding" typeId="c33f86ad-423a-4a6f-a80c-a3206eafe5cd">
+      <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="2287fc13-3047-4489-92bb-e83f28c7b1f7" location="[eShop.Web].[User Interface].[Checkout]" />
+      <target applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="37845c5a-1121-410b-b956-1529df45a628" location="[eShop.Web].[User Interface].[[view]]" />
+      <mappedEnds>
+        <mappedEnd>
+          <expression>{ShippingInformation}</expression>
+          <path>
+            <target id="37845c5a-1121-410b-b956-1529df45a628" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="f1f0ea03-9177-4cb7-84d9-729533483763" name="Form" type="element" specialization="Form" specializationId="1cfd2d9d-1061-4c45-8b4e-074cfa8dacfd" />
+            <target id="9d16e967-a2ab-45b4-ba69-b286daf4488c" name="Model" type="static-mappable" specialization="Model" specializationId="9d16e967-a2ab-45b4-ba69-b286daf4488c">
+              <typeReference>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+            </target>
+          </path>
+          <sources>
+            <source identifier="ShippingInformation" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="0ff25cde-dfd2-462d-90b7-087e2cf2f1a6" name="ShippingInformation" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>Shipping Address</expression>
+          <path>
+            <target id="37845c5a-1121-410b-b956-1529df45a628" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="f1f0ea03-9177-4cb7-84d9-729533483763" name="Form" type="element" specialization="Form" specializationId="1cfd2d9d-1061-4c45-8b4e-074cfa8dacfd" />
+            <target id="5ed18e61-78c1-4c30-a58e-eb82d700be4d" name="Shipping Address" type="element" specialization="Text" specializationId="922150d2-42e6-4805-a002-f9580cdf7f6f" />
+          </path>
+          <sources />
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{ShippingInformation.Street}</expression>
+          <path>
+            <target id="37845c5a-1121-410b-b956-1529df45a628" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="f1f0ea03-9177-4cb7-84d9-729533483763" name="Form" type="element" specialization="Form" specializationId="1cfd2d9d-1061-4c45-8b4e-074cfa8dacfd" />
+            <target id="1859e9b0-30ad-410b-8732-d3b1164d3199" name="Address" type="element" specialization="Text Input" specializationId="4803bf60-c626-4cbe-94ed-0f1eafff9fe3" />
+          </path>
+          <sources>
+            <source identifier="ShippingInformation.Street" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="0ff25cde-dfd2-462d-90b7-087e2cf2f1a6" name="ShippingInformation" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                <target id="477c2fbc-a079-46ab-acf6-17d6e78bde25" name="Street" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{ShippingInformation.City}</expression>
+          <path>
+            <target id="37845c5a-1121-410b-b956-1529df45a628" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="f1f0ea03-9177-4cb7-84d9-729533483763" name="Form" type="element" specialization="Form" specializationId="1cfd2d9d-1061-4c45-8b4e-074cfa8dacfd" />
+            <target id="5f2ccbac-839c-4c5d-b16e-573065956f1a" name="City" type="element" specialization="Text Input" specializationId="4803bf60-c626-4cbe-94ed-0f1eafff9fe3" />
+          </path>
+          <sources>
+            <source identifier="ShippingInformation.City" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="0ff25cde-dfd2-462d-90b7-087e2cf2f1a6" name="ShippingInformation" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                <target id="0a0a9c7d-a73a-47a4-8cf0-4da1b8b84479" name="City" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{ShippingInformation.State}</expression>
+          <path>
+            <target id="37845c5a-1121-410b-b956-1529df45a628" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="f1f0ea03-9177-4cb7-84d9-729533483763" name="Form" type="element" specialization="Form" specializationId="1cfd2d9d-1061-4c45-8b4e-074cfa8dacfd" />
+            <target id="9a9ee3ff-e057-49e5-9643-697f8b1f33ad" name="State" type="element" specialization="Text Input" specializationId="4803bf60-c626-4cbe-94ed-0f1eafff9fe3" />
+          </path>
+          <sources>
+            <source identifier="ShippingInformation.State" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="0ff25cde-dfd2-462d-90b7-087e2cf2f1a6" name="ShippingInformation" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                <target id="acbd757b-f251-46d6-ac9d-fa36a7c006ab" name="State" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{ShippingInformation.ZipCode}</expression>
+          <path>
+            <target id="37845c5a-1121-410b-b956-1529df45a628" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="f1f0ea03-9177-4cb7-84d9-729533483763" name="Form" type="element" specialization="Form" specializationId="1cfd2d9d-1061-4c45-8b4e-074cfa8dacfd" />
+            <target id="da40568f-5f20-4795-9bfe-9412f2556c48" name="Zip Code" type="element" specialization="Text Input" specializationId="4803bf60-c626-4cbe-94ed-0f1eafff9fe3" />
+          </path>
+          <sources>
+            <source identifier="ShippingInformation.ZipCode" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="0ff25cde-dfd2-462d-90b7-087e2cf2f1a6" name="ShippingInformation" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                <target id="3c146e77-6b02-4506-950e-0e3f3d94f5f0" name="ZipCode" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{ShippingInformation.Country}</expression>
+          <path>
+            <target id="37845c5a-1121-410b-b956-1529df45a628" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="f1f0ea03-9177-4cb7-84d9-729533483763" name="Form" type="element" specialization="Form" specializationId="1cfd2d9d-1061-4c45-8b4e-074cfa8dacfd" />
+            <target id="3c558839-07d4-4e59-9672-629050e9e9ce" name="Country" type="element" specialization="Text Input" specializationId="4803bf60-c626-4cbe-94ed-0f1eafff9fe3" />
+          </path>
+          <sources>
+            <source identifier="ShippingInformation.Country" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="0ff25cde-dfd2-462d-90b7-087e2cf2f1a6" name="ShippingInformation" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                <target id="abbfaa9c-02ae-40d1-85ae-25e9a178ca04" name="Country" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{CheckoutCart}</expression>
+          <path>
+            <target id="37845c5a-1121-410b-b956-1529df45a628" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="ad98e8ee-6b5c-4799-8c9a-e4bdf446b086" name="Container" type="element" specialization="Container" specializationId="b97ea181-2462-431f-8f62-f90f79509b9e" />
+            <target id="0c31506a-a6fc-4936-8aaa-32796af5414d" name="Place order" type="element" specialization="Button" specializationId="4474d808-f6fd-405f-a9c7-6998cd000ede" />
+            <target id="b80f61a7-3b9e-4b75-806f-71d4f8b9900a" name="On Click" type="static-mappable" specialization="On Click" specializationId="b80f61a7-3b9e-4b75-806f-71d4f8b9900a" />
+          </path>
+          <sources>
+            <source identifier="CheckoutCart" mappingType="Event Mapping" mappingTypeId="95ce3c3e-ddf4-440b-a9b2-6b152a5fc1b8">
+              <path>
+                <target id="2287fc13-3047-4489-92bb-e83f28c7b1f7" name="Checkout" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="daf75819-17c0-4c25-9816-b6d3d2a382bc" name="CheckoutCart" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+      </mappedEnds>
+    </mapping>
+  </mappings>
+  <metadata />
+  <childElements>
+    <childElement id="62b9bf52-8257-4a69-b027-ab55f5b908ef" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>BasketState</name>
+      <display>BasketState: BasketState</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="48137e11-912d-4968-9384-417f5e025498">
+        <typeId>eaedbe4d-20c2-4d73-9677-388fe46e64a6</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Web.UI</typePackageName>
+        <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>2287fc13-3047-4489-92bb-e83f28c7b1f7</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="d55aa5ab-f782-44bf-a770-f9b347c1377f" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Basket</name>
+      <display>Basket: BasketDto</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="cb99ebaf-d65b-4b05-ba51-c30be2902b80">
+        <typeId>cd639556-6b4e-4e8e-acb7-5468c696af3c</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Basket.Services</typePackageName>
+        <typePackageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>2287fc13-3047-4489-92bb-e83f28c7b1f7</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="25311703-0ca9-459f-a096-120b8c34e2b8" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Discount</name>
+      <display>Discount: decimal</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="15d36a1e-1cb7-4bee-81ab-e9accfc73d6c">
+        <typeId>675c7b84-997a-44e0-82b9-cd724c07c9e6</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>2287fc13-3047-4489-92bb-e83f28c7b1f7</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="0ff25cde-dfd2-462d-90b7-087e2cf2f1a6" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>ShippingInformation</name>
+      <display>ShippingInformation: ShippingInfo = new ShippingInfo()</display>
+      <isAbstract>false</isAbstract>
+      <value>new ShippingInfo()</value>
+      <genericTypes />
+      <typeReference id="69ca296b-c509-480b-8a2b-b0dd0b6c0b5c">
+        <typeId>fc30f867-dca5-4aca-a370-6785a59a5161</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Web.UI</typePackageName>
+        <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>2287fc13-3047-4489-92bb-e83f28c7b1f7</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="079b71f3-311e-4bcc-9be3-39912ada2e76" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>OnInitializedAsync</name>
+      <display>OnInitializedAsync(): void</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="99895ee6-21be-4c9b-bc87-dd467d1d6262">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>2287fc13-3047-4489-92bb-e83f28c7b1f7</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="daf75819-17c0-4c25-9816-b6d3d2a382bc" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>CheckoutCart</name>
+      <display>CheckoutCart(): Task</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="5ab94fc9-17a3-4859-9bf3-edd2936fa9e9">
+        <typeId>6cdaffae-7609-47ab-b8db-9d7282d2df6f</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.CSharp</typePackageName>
+        <typePackageId>730e1275-0c32-44f7-991a-9619d07ca68d</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>2287fc13-3047-4489-92bb-e83f28c7b1f7</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="fd2fef10-e556-4e94-9360-72d4f620f0bb" type="Diagram" typeId="8c90aca5-86f4-47f1-bd58-116fe79f5c55">
+  <name>Basket</name>
+  <display>Basket</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</parentFolderId>
+  <packageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</packageId>
+  <packageName>eShop.Basket.Services</packageName>
+  <diagram>
+    <targetPackageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

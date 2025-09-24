@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="f7b76178-78d8-4c39-a2f3-cb2aad95b34f" type="Domain Event" typeId="0814e459-fb9b-47db-b7eb-32ce30397e8a">
+  <name>OrderStatusChangedToAwaitingValidationDomainEvent</name>
+  <display>OrderStatusChangedToAwaitingValidationDomainEvent</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>76d205d9-7601-4b48-8af5-e4fecf6f2008</parentFolderId>
+  <packageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</packageId>
+  <packageName>eShop.Ordering.Domain</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="0b93d160-4711-4449-bec4-d8d48e089bfe" type="Property" typeId="b4d69073-5abb-4968-b41b-545b2f7408ed">
+      <name>Order</name>
+      <display>Order: Order</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="c1adb727-78c1-4264-93c7-6a5d31553ff8">
+        <typeId>11551992-2fa3-4a1c-8c55-c02fe7cfc361</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Ordering.Domain</typePackageName>
+        <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>f7b76178-78d8-4c39-a2f3-cb2aad95b34f</parentFolderId>
+      <packageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</packageId>
+      <packageName>eShop.Ordering.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

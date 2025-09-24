@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="8b7b740e-6190-4db2-abfc-11414c2fa6ca">
+  <sourceEnd id="8118c1e3-611c-4fe1-816a-1ad9d1e801e5" type="Domain Event Handler Association Source End" typeId="79f048d4-4c09-4405-be8f-95473a981556">
+    <display>: OrderStatusChangedToStockConfirmedDomainEventHandler</display>
+    <order>0</order>
+    <typeReference id="8cc5e7c8-a3ad-430e-854f-0908165be082">
+      <typeId>6e4ec40e-5f66-4a16-9432-3103663c7acd</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Services</typePackageName>
+      <typePackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="8b7b740e-6190-4db2-abfc-11414c2fa6ca" type="Domain Event Handler Association Target End" typeId="f45dfee9-f62b-45ac-bfce-a3878e04b73f">
+    <name>handler</name>
+    <display>handles : OrderStatusChangedToStockConfirmedDomainEvent</display>
+    <order>0</order>
+    <traits>
+      <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+    </traits>
+    <typeReference id="a7d739a9-f3dd-425d-8455-8fa9d865db46">
+      <typeId>2bd1303b-19ba-4a15-8098-c1eb351592d6</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Domain</typePackageName>
+      <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Domain Event Handler Association</associationType>
+  <associationTypeId>90831494-f069-44eb-b488-ab2dba7518ea</associationTypeId>
+  <stereotypes />
+</association>

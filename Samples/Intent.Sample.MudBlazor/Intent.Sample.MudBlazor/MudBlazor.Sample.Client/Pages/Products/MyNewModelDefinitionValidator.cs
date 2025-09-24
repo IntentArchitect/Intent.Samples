@@ -1,11 +1,10 @@
 using FluentValidation;
 using Intent.RoslynWeaver.Attributes;
-using MudBlazor.Sample.Client.Pages.Products;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.Blazor.FluentValidation.ModelDefinitionValidator", Version = "1.0")]
 
-namespace MudBlazor.Sample.Client
+namespace MudBlazor.Sample.Client.Pages.Products
 {
     [IntentManaged(Mode.Fully, Body = Mode.Merge)]
     public class MyNewModelDefinitionValidator : AbstractValidator<NewComponent.MyNewModelDefinition>

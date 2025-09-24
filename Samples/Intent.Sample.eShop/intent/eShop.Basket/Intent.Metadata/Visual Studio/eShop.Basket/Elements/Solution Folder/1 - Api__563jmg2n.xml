@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="170f334b-c9d8-40da-9f58-6e3c9f722250" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>1 - Api</name>
+  <display>1 - Api</display>
+  <externalReference>2b76d8c9-dd09-40ff-9955-8ab74ee9512a</externalReference>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>d817a8cd-f0d7-4af7-972b-9ecc97542be0</parentFolderId>
+  <packageId>4ab14b4f-9dc9-4b86-920d-7c3336e3b1e5</packageId>
+  <packageName>eShop.Basket</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

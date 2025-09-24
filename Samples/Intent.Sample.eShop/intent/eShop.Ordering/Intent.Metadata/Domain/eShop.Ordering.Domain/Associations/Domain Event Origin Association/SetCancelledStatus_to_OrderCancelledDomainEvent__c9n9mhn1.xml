@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="30c8aaa3-513f-4bc0-83bb-6e6e17a6e62a">
+  <sourceEnd id="b4293cf3-357d-4737-ac17-d586c7bb9f59" type="Domain Event Origin Association Source End" typeId="2495d3ef-f7a2-441d-b749-b51b2546b45e">
+    <display>published by : Order.SetCancelledStatus</display>
+    <order>1</order>
+    <typeReference id="8f194796-e22f-4788-afbe-e384ac4a0262">
+      <typeId>9e75b12f-6769-4d6f-b643-1771643538b7</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Domain</typePackageName>
+      <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="30c8aaa3-513f-4bc0-83bb-6e6e17a6e62a" type="Domain Event Origin Association Target End" typeId="17046427-14e2-4081-8463-ef16c0fda399">
+    <display>publishes : OrderCancelledDomainEvent</display>
+    <order>0</order>
+    <typeReference id="6c0dcae7-8fb5-4d9d-bcc2-99c2f146bb6d">
+      <typeId>b464fef0-82b7-4b22-bdf8-a9fd837daa3c</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Domain</typePackageName>
+      <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Entity to Domain Event Mapping" typeId="86cb62b5-412d-493b-a901-d6e08cf88059">
+        <source applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="11551992-2fa3-4a1c-8c55-c02fe7cfc361" location="[eShop.Ordering].[Domain].[Order]" />
+        <target applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="b464fef0-82b7-4b22-bdf8-a9fd837daa3c" location="[eShop.Ordering].[Domain].[OrderCancelledDomainEvent]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Order}</expression>
+            <path>
+              <target id="b464fef0-82b7-4b22-bdf8-a9fd837daa3c" name="OrderCancelledDomainEvent" type="element" specialization="Domain Event" specializationId="0814e459-fb9b-47db-b7eb-32ce30397e8a" />
+              <target id="fbd363ac-10b1-4914-93d1-edff1b66ea0f" name="Order" type="element" specialization="Property" specializationId="b4d69073-5abb-4968-b41b-545b2f7408ed" />
+            </path>
+            <sources>
+              <source identifier="Order" mappingType="Data Mapping" mappingTypeId="ddfefa35-caf3-48f8-aeed-7beabc8b2f5c">
+                <path>
+                  <target id="11551992-2fa3-4a1c-8c55-c02fe7cfc361" name="Order" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Domain Event Origin Association</associationType>
+  <associationTypeId>4c0cc50b-8a9d-43cd-b731-9f354f69f3c9</associationTypeId>
+  <stereotypes />
+</association>

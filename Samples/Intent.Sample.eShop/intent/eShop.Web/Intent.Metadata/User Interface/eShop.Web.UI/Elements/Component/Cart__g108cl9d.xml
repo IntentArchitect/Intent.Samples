@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="94f109cb-d93f-4599-8262-98be7fb3d3b3" type="Component" typeId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b">
+  <name>Cart</name>
+  <display>Cart</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>9de6d474-cbcd-4a03-897c-4e6ccc990cae</parentFolderId>
+  <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+  <packageName>eShop.Web.UI</packageName>
+  <traits>
+    <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+  </traits>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="ea4adc09-8978-4ede-ba5f-265debb2b60c" name="Page">
+      <addedByDefault>false</addedByDefault>
+      <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+      <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+      <properties>
+        <property name="9dff9df1-a993-4bf6-9aa7-c16811142228" display="Route" value="/cart" isActive="true" />
+        <property name="0a8627ba-ec45-4023-9c36-b0999f43e982" display="Title" isActive="true" />
+      </properties>
+    </stereotype>
+    <stereotype stereotypeDefinitionId="012f5173-6419-4006-a9a8-ab5c20b8a42e" name="Secured">
+      <addedByDefault>false</addedByDefault>
+      <definitionPackageName>Intent.Blazor</definitionPackageName>
+      <definitionPackageId>3ac5ff1e-5fc9-46a2-95e5-2d9ca579e484</definitionPackageId>
+      <properties>
+        <property name="a4a26159-0b60-498e-8b91-56a59756928b" display="Roles" isActive="true" />
+        <property name="f7079953-a05f-4ca6-b51a-40f160460003" display="Policy" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <mappings>
+    <mapping type="View Binding" typeId="c33f86ad-423a-4a6f-a80c-a3206eafe5cd">
+      <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="94f109cb-d93f-4599-8262-98be7fb3d3b3" location="[eShop.Web].[User Interface].[Cart]" />
+      <target applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="005e65f0-a01c-46fe-9cfc-b90981e80a95" location="[eShop.Web].[User Interface].[[view]]" />
+      <mappedEnds>
+        <mappedEnd>
+          <expression>{Model.BasketItems}</expression>
+          <path>
+            <target id="005e65f0-a01c-46fe-9cfc-b90981e80a95" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="46344e1a-d457-4b62-9950-96a590c51bfe" name="Data Grid" type="element" specialization="Data Grid" specializationId="4b33f894-ad6e-43e0-a238-4286375c9ab7" />
+          </path>
+          <sources>
+            <source identifier="Model.BasketItems" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="94f109cb-d93f-4599-8262-98be7fb3d3b3" name="Cart" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="0d41991a-a22d-4f43-b11d-8b2671620141" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{Model.BasketItems.ProductId}</expression>
+          <path>
+            <target id="005e65f0-a01c-46fe-9cfc-b90981e80a95" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="46344e1a-d457-4b62-9950-96a590c51bfe" name="Data Grid" type="element" specialization="Data Grid" specializationId="4b33f894-ad6e-43e0-a238-4286375c9ab7" />
+            <target id="ea0a2eee-45a8-4548-8941-8d9ca738c884" name="Products" type="element" specialization="Data Grid Column" specializationId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532" />
+            <target id="07e23f28-c31c-4a95-9219-c01d6dd1bac5" name="ProductImagePrice" type="element" specialization="Display Component" specializationId="866a90f7-4044-43b9-bb05-7270c7889796" />
+            <target id="ce84ed06-0524-4322-8ba5-61cec69903ea" name="ProductId" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+          </path>
+          <sources>
+            <source identifier="Model.BasketItems.ProductId" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="94f109cb-d93f-4599-8262-98be7fb3d3b3" name="Cart" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="0d41991a-a22d-4f43-b11d-8b2671620141" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                <target id="0ab6b983-157e-4588-b756-b8a7edf2d9a1" name="ProductId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{Model.BasketItems.ProductName}</expression>
+          <path>
+            <target id="005e65f0-a01c-46fe-9cfc-b90981e80a95" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="46344e1a-d457-4b62-9950-96a590c51bfe" name="Data Grid" type="element" specialization="Data Grid" specializationId="4b33f894-ad6e-43e0-a238-4286375c9ab7" />
+            <target id="ea0a2eee-45a8-4548-8941-8d9ca738c884" name="Products" type="element" specialization="Data Grid Column" specializationId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532" />
+            <target id="07e23f28-c31c-4a95-9219-c01d6dd1bac5" name="ProductImagePrice" type="element" specialization="Display Component" specializationId="866a90f7-4044-43b9-bb05-7270c7889796" />
+            <target id="019f8c19-2d14-4920-a6d4-196ff37d23d7" name="ProductName" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+          </path>
+          <sources>
+            <source identifier="Model.BasketItems.ProductName" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="94f109cb-d93f-4599-8262-98be7fb3d3b3" name="Cart" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="0d41991a-a22d-4f43-b11d-8b2671620141" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                <target id="143a233f-387e-4576-8bef-c6498c73fd0d" name="ProductName" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{Model.BasketItems.UnitPrice}</expression>
+          <path>
+            <target id="005e65f0-a01c-46fe-9cfc-b90981e80a95" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="46344e1a-d457-4b62-9950-96a590c51bfe" name="Data Grid" type="element" specialization="Data Grid" specializationId="4b33f894-ad6e-43e0-a238-4286375c9ab7" />
+            <target id="ea0a2eee-45a8-4548-8941-8d9ca738c884" name="Products" type="element" specialization="Data Grid Column" specializationId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532" />
+            <target id="07e23f28-c31c-4a95-9219-c01d6dd1bac5" name="ProductImagePrice" type="element" specialization="Display Component" specializationId="866a90f7-4044-43b9-bb05-7270c7889796" />
+            <target id="4b11b82a-887c-4eec-aa44-9e726523daf5" name="ProductPrice" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+          </path>
+          <sources>
+            <source identifier="Model.BasketItems.UnitPrice" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="94f109cb-d93f-4599-8262-98be7fb3d3b3" name="Cart" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="0d41991a-a22d-4f43-b11d-8b2671620141" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                <target id="e538d669-916d-42e1-bb9c-77da917e0f3c" name="BasketItems" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                <target id="24d66a8e-a6c2-45ae-b74c-33ae204b9022" name="UnitPrice" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>$@((context.Item.UnitPrice * CurrentOrPendingQuantity(context.Item.ProductId, context.Item.Quantity)).ToString("0.00"))</expression>
+          <path>
+            <target id="005e65f0-a01c-46fe-9cfc-b90981e80a95" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="46344e1a-d457-4b62-9950-96a590c51bfe" name="Data Grid" type="element" specialization="Data Grid" specializationId="4b33f894-ad6e-43e0-a238-4286375c9ab7" />
+            <target id="f6a73154-6b59-49bc-88fc-48877d8214d6" name="Total" type="element" specialization="Data Grid Column" specializationId="7cea32c5-1218-4bf2-bbab-52ddb2cb1532" />
+            <target id="2c733e53-a1c6-40ac-b313-987334fc834f" name="Text" type="element" specialization="Text" specializationId="922150d2-42e6-4805-a002-f9580cdf7f6f" />
+          </path>
+          <sources />
+        </mappedEnd>
+        <mappedEnd>
+          <expression>@TotalQuantity.ToString()</expression>
+          <path>
+            <target id="005e65f0-a01c-46fe-9cfc-b90981e80a95" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="c10680ce-a905-43a0-8bc4-4cb295a8d04f" name="Container" type="element" specialization="Container" specializationId="b97ea181-2462-431f-8f62-f90f79509b9e" />
+            <target id="449b1e15-2726-4238-918f-f0c20e3468f0" name="Quantity" type="element" specialization="Icon" specializationId="3c5f8ea8-061a-4e71-826f-59f9281abe71" />
+          </path>
+          <sources />
+        </mappedEnd>
+        <mappedEnd>
+          <expression>Total: &lt;strong&gt;$@TotalPrice.ToString("0.00")&lt;/strong&gt;</expression>
+          <path>
+            <target id="005e65f0-a01c-46fe-9cfc-b90981e80a95" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="c10680ce-a905-43a0-8bc4-4cb295a8d04f" name="Container" type="element" specialization="Container" specializationId="b97ea181-2462-431f-8f62-f90f79509b9e" />
+            <target id="06f6be86-32c2-49b4-91d4-8357bb34f3bf" name="Total" type="element" specialization="Text" specializationId="922150d2-42e6-4805-a002-f9580cdf7f6f" />
+          </path>
+          <sources />
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{NavigateToCheckout}</expression>
+          <path>
+            <target id="005e65f0-a01c-46fe-9cfc-b90981e80a95" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="c10680ce-a905-43a0-8bc4-4cb295a8d04f" name="Container" type="element" specialization="Container" specializationId="b97ea181-2462-431f-8f62-f90f79509b9e" />
+            <target id="f7f3e0a8-d780-42bc-b9ae-58fca523e45c" name="Check out" type="element" specialization="Button" specializationId="4474d808-f6fd-405f-a9c7-6998cd000ede" />
+            <target id="ddfa6961-1042-4bea-84c7-4b2e9853c80a" name="Link To" type="static-mappable" specialization="Link To" specializationId="ddfa6961-1042-4bea-84c7-4b2e9853c80a" />
+          </path>
+          <sources>
+            <source identifier="NavigateToCheckout" mappingType="Event Mapping" mappingTypeId="95ce3c3e-ddf4-440b-a9b2-6b152a5fc1b8">
+              <path>
+                <target id="94f109cb-d93f-4599-8262-98be7fb3d3b3" name="Cart" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="49abe4d3-abf7-41cc-becb-de434c330ecd" name="NavigateToCheckout" type="association" specialization="Navigation Target End" specializationId="2b191288-ecae-4743-b069-cbdd927ef349" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{CheckoutDisabled}</expression>
+          <path>
+            <target id="005e65f0-a01c-46fe-9cfc-b90981e80a95" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="c10680ce-a905-43a0-8bc4-4cb295a8d04f" name="Container" type="element" specialization="Container" specializationId="b97ea181-2462-431f-8f62-f90f79509b9e" />
+            <target id="f7f3e0a8-d780-42bc-b9ae-58fca523e45c" name="Check out" type="element" specialization="Button" specializationId="4474d808-f6fd-405f-a9c7-6998cd000ede" />
+            <target id="074d990f-d387-4f87-ae53-11543ffb3edf" name="Disabled" type="static-mappable" specialization="Disabled" specializationId="074d990f-d387-4f87-ae53-11543ffb3edf">
+              <typeReference>
+                <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+                <isNavigable>true</isNavigable>
+                <isNullable>false</isNullable>
+                <isCollection>false</isCollection>
+                <isRequired>true</isRequired>
+                <typePackageName>Intent.Common.Types</typePackageName>
+                <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+                <stereotypes />
+                <genericTypeParameters />
+              </typeReference>
+            </target>
+          </path>
+          <sources>
+            <source identifier="CheckoutDisabled" mappingType="Data Mapping" mappingTypeId="ee19a932-0cea-4b90-bd3c-857d7942d390">
+              <path>
+                <target id="94f109cb-d93f-4599-8262-98be7fb3d3b3" name="Cart" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="9cee33e6-0661-41e0-9a0d-623067da9e1c" name="CheckoutDisabled" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{NavigateToCatalog}</expression>
+          <path>
+            <target id="005e65f0-a01c-46fe-9cfc-b90981e80a95" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="c10680ce-a905-43a0-8bc4-4cb295a8d04f" name="Container" type="element" specialization="Container" specializationId="b97ea181-2462-431f-8f62-f90f79509b9e" />
+            <target id="256277a6-0638-44ab-8468-f9ab9cb64510" name="Continue shopping" type="element" specialization="Link" specializationId="a274918b-72d1-4913-95de-0a801ac90ce4" />
+          </path>
+          <sources>
+            <source identifier="NavigateToCatalog" mappingType="Invokable Mapping" mappingTypeId="e4f0c63b-0f00-42bd-a703-00adf44f3364">
+              <path>
+                <target id="94f109cb-d93f-4599-8262-98be7fb3d3b3" name="Cart" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="f3bb51c9-afc6-4276-bebc-803bf81e0a98" name="NavigateToCatalog" type="association" specialization="Navigation Target End" specializationId="2b191288-ecae-4743-b069-cbdd927ef349" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+        <mappedEnd>
+          <expression>{NavigateToCatalog}</expression>
+          <path>
+            <target id="005e65f0-a01c-46fe-9cfc-b90981e80a95" name="[view]" type="element" specialization="Component View" specializationId="624513a6-cba8-4dde-8ebe-6b19f00f0364" />
+            <target id="c10680ce-a905-43a0-8bc4-4cb295a8d04f" name="Container" type="element" specialization="Container" specializationId="b97ea181-2462-431f-8f62-f90f79509b9e" />
+            <target id="256277a6-0638-44ab-8468-f9ab9cb64510" name="Continue shopping" type="element" specialization="Link" specializationId="a274918b-72d1-4913-95de-0a801ac90ce4" />
+            <target id="f48eb268-c3d6-4ef7-ac77-4565562a99b9" name="Link To" type="static-mappable" specialization="Link To" specializationId="f48eb268-c3d6-4ef7-ac77-4565562a99b9" />
+          </path>
+          <sources>
+            <source identifier="NavigateToCatalog" mappingType="Event Mapping" mappingTypeId="95ce3c3e-ddf4-440b-a9b2-6b152a5fc1b8">
+              <path>
+                <target id="94f109cb-d93f-4599-8262-98be7fb3d3b3" name="Cart" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                <target id="f3bb51c9-afc6-4276-bebc-803bf81e0a98" name="NavigateToCatalog" type="association" specialization="Navigation Target End" specializationId="2b191288-ecae-4743-b069-cbdd927ef349" />
+              </path>
+            </source>
+          </sources>
+        </mappedEnd>
+      </mappedEnds>
+    </mapping>
+  </mappings>
+  <metadata />
+  <childElements>
+    <childElement id="91fa2832-4168-408b-bdb1-9835485447dd" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>DataGrid</name>
+      <display>DataGrid: MudDataGrid&lt;BasketDto&gt;</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="53a4d01c-1b83-4c6d-9592-5b32d90836a2">
+        <typeId>e57aa24c-eed9-4301-96f3-a34610cef546</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Blazor.Components.MudBlazor</typePackageName>
+        <typePackageId>47e5f8d0-3892-4408-b6f9-88bf8591af2d</typePackageId>
+        <stereotypes />
+        <genericTypeParameters>
+          <genericTypeParameter id="15edb72d-db73-4752-b097-9a4ed754c701">
+            <typeId>cd639556-6b4e-4e8e-acb7-5468c696af3c</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <genericTypeId>dba952dc-53e2-43d1-a8c9-c2b2160bec44</genericTypeId>
+            <typePackageName>eShop.Basket.Services</typePackageName>
+            <typePackageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </genericTypeParameter>
+        </genericTypeParameters>
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>94f109cb-d93f-4599-8262-98be7fb3d3b3</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="0d41991a-a22d-4f43-b11d-8b2671620141" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Model</name>
+      <display>Model: BasketDto</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="d4d61aad-b4a8-4574-b6a9-e4e4c9e74461">
+        <typeId>cd639556-6b4e-4e8e-acb7-5468c696af3c</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Basket.Services</typePackageName>
+        <typePackageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>94f109cb-d93f-4599-8262-98be7fb3d3b3</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="3b0af667-6ae6-4d3c-aa69-7762f1e4d161" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>ProductImages</name>
+      <display>ProductImages: ProductImageUrlProvider</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="711ea3c9-3603-4f67-9d74-f06ec46e807c">
+        <typeId>a4f401f3-6291-4835-bfb8-a3b49b6d0d30</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Web.UI</typePackageName>
+        <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>94f109cb-d93f-4599-8262-98be7fb3d3b3</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="64a2f683-8bbf-4c9f-a07f-aa2ef5fdc935" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>TotalQuantity</name>
+      <display>TotalQuantity: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="31f1e818-846b-450d-971e-34ed764fb696">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>94f109cb-d93f-4599-8262-98be7fb3d3b3</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="6e5cd8dc-3c7b-42df-8b89-4bb03ec0bcbd" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>TotalPrice</name>
+      <display>TotalPrice: decimal</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="8eaa98a4-76f3-43f5-ae8e-4baefe7e5bd7">
+        <typeId>675c7b84-997a-44e0-82b9-cd724c07c9e6</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>94f109cb-d93f-4599-8262-98be7fb3d3b3</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="653dfbfa-7e36-49c0-b909-3e80a1015cd2" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>BasketState</name>
+      <display>BasketState: BasketState</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="636d677e-9416-4e3a-b89d-672049f525fe">
+        <typeId>eaedbe4d-20c2-4d73-9677-388fe46e64a6</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Web.UI</typePackageName>
+        <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>94f109cb-d93f-4599-8262-98be7fb3d3b3</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="9cee33e6-0661-41e0-9a0d-623067da9e1c" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>CheckoutDisabled</name>
+      <display>CheckoutDisabled: bool</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="70dd6704-b7de-496e-b4b1-634c9a6a1ae3">
+        <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>94f109cb-d93f-4599-8262-98be7fb3d3b3</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="64fb0dde-4e5d-4784-a21e-4a940eba19e7" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>OnInitializedAsync</name>
+      <display>OnInitializedAsync(): void</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="9f46ae4b-e433-4399-bd8f-93a3f06b8e2d">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>94f109cb-d93f-4599-8262-98be7fb3d3b3</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="823cfb23-d8f5-4351-bf0a-530214933f02" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>CurrentOrPendingQuantity</name>
+      <display>CurrentOrPendingQuantity(productId: int, quantity: int): int</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="31766c3a-5fe3-405d-9495-df43609cc48a">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>94f109cb-d93f-4599-8262-98be7fb3d3b3</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="e8bcb5a0-b284-48a5-ab7d-60cba9c7a53c" type="Parameter" typeId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b">
+          <name>productId</name>
+          <display>in : productId: int</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="83531b18-df02-4ac6-9d0a-a51899a58f11">
+            <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>823cfb23-d8f5-4351-bf0a-530214933f02</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="ce523911-225d-4b47-8160-3ae6162f27af" type="Parameter" typeId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b">
+          <name>quantity</name>
+          <display>in : quantity: int</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="de0cb4f6-1d40-4765-b1f0-b0d87f77d7a1">
+            <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>823cfb23-d8f5-4351-bf0a-530214933f02</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="e9a00a1e-0280-476d-b4b9-2b9b9e4044fb" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>SubmitUpdateAsync</name>
+      <display>SubmitUpdateAsync(productId: int): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="5164a0a6-8bc9-4b3d-a995-d25ca5db0965">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>94f109cb-d93f-4599-8262-98be7fb3d3b3</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="65137b12-7a02-498e-b44c-32c3a4e21a12" type="Parameter" typeId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b">
+          <name>productId</name>
+          <display>in : productId: int</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="743fa0e9-f109-44a6-9567-2562a6f664a1">
+            <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>e9a00a1e-0280-476d-b4b9-2b9b9e4044fb</parentFolderId>
+          <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+          <packageName>eShop.Web.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="0f2c479f-55a3-417c-bcc0-d41eb180f264" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetTotal</name>
+      <display>GetTotal(): decimal</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="41803192-b6e9-4083-a835-c1ba7e96ad96">
+        <typeId>675c7b84-997a-44e0-82b9-cd724c07c9e6</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>94f109cb-d93f-4599-8262-98be7fb3d3b3</parentFolderId>
+      <packageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</packageId>
+      <packageName>eShop.Web.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

@@ -1,0 +1,36 @@
+﻿@page "/orders"
+@using eShop.Web.Client.Contracts.Ordering.Services.Orders
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+
+<PageTitle>Orders</PageTitle>
+<SectionContent SectionName="page-header-subtitle">Orders</SectionContent>
+
+@if (Model is not null)
+{
+    <MudGrid>
+        <MudSpacer></MudSpacer>
+        <MudItem xs="8">
+            <MudDataGrid T="OrderSummaryDto"
+                         Items="@Model"
+                         Hover="true" Elevation="1">
+                <ToolBarContent />
+                <Columns>
+                    <PropertyColumn Title="Order Number"
+                                    Property="x => x.OrderNumber"/>
+                    <PropertyColumn Title="Date"
+                                    Property="x => x.Date" />
+                    <PropertyColumn Title="Status"
+                                    Property="x => GetStatus(x.Status)" />
+                    <PropertyColumn Title="Total"
+                                    Property="x => x.Total" />
+                </Columns>
+                <PagerContent>
+                    <MudDataGridPager T="OrderSummaryDto"
+                                      PageSizeOptions="new int[] { 10, 25, 50, 100 }" />
+                </PagerContent>
+            </MudDataGrid>
+        </MudItem>
+        <MudSpacer></MudSpacer>
+    </MudGrid>
+}

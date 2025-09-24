@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "Start all",
+    "Projects": [
+      {
+        "Path": "eShop.Basket.Api\\eShop.Basket.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "eShop.Catalog.Api\\eShop.Catalog.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "eShop.Identity.Api\\eShop.Identity.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "eShop.Ordering.Api\\eShop.Ordering.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "eShop.Web\\eShop.Web.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

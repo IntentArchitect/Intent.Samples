@@ -1,0 +1,57 @@
+﻿@inherits LayoutComponentBase
+
+<MudThemeProvider />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    @Intent.Merge()
+    <MudAppBar Color="Color.Transparent" Elevation="0">
+        <MudSpacer />
+        <MudMenu Icon="@Icons.Material.Filled.Person">
+            <Microsoft.AspNetCore.Components.Authorization.AuthorizeView>
+                <Authorized>
+                    <MudMenuItem Href="/orders"
+                                 Icon="@Icons.Material.Filled.Person"
+                                 IconColor="Color.Dark">
+                        My Orders
+                    </MudMenuItem>
+                    <MudMenuItem OnClick="() => RedirectToLogout()" Icon="@Icons.Material.Filled.Logout"
+                                 IconColor="Color.Dark">
+                        Logout
+                    </MudMenuItem>
+                </Authorized>
+                <NotAuthorized>
+                    <MudMenuItem OnClick="() => RedirectToLogin()" Icon="@Icons.Material.Filled.Person">
+                        Login
+                    </MudMenuItem>
+                </NotAuthorized>
+            </Microsoft.AspNetCore.Components.Authorization.AuthorizeView>
+        </MudMenu>
+        <div class="cart-button-wrapper">
+            <MudButton Href="/cart"
+                       Variant="Variant.Filled"
+                       Class="cart-button"
+                       Color="Color.Dark">
+                <MudIcon Icon="@Icons.Material.Filled.ShoppingCart" />
+                Shopping Cart
+            </MudButton>
+
+                    @if (isBadgeVisible)
+                    {
+                        <MudBadge Dot="false"
+                                  Max="9"
+                                  Content="@badgeCount"
+                                  Color="Color.Error"
+                                  Class="cart-badge" />
+                    }
+        </div>
+    </MudAppBar>
+    @Intent.IgnoreAttributes("Class")
+    <MudMainContent Class="mt-16">
+        <HeaderBar />
+        @Body
+        <FooterBar />
+    </MudMainContent>
+</MudLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="710ca7eb-c493-4bed-80ca-260779814e8b" type="Application" typeId="f40a4942-5d2d-4174-8ec1-af66cbd464db">
+  <name>eShop.Ordering</name>
+  <display>eShop.Ordering</display>
+  <externalReference>259354b5-82fe-4c0a-bb30-1fda60b4d935</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>a0a9cff3-6356-4b6e-abbc-3297e33b91f0</parentFolderId>
+  <packageId>a0a9cff3-6356-4b6e-abbc-3297e33b91f0</packageId>
+  <packageName>eShop.Ordering.Eventing</packageName>
+  <diagram>
+    <targetPackageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

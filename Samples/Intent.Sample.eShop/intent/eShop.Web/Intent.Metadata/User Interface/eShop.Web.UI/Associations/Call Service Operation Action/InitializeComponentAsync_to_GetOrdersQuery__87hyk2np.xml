@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="97b54277-9414-4124-a894-b4b2134a06e8">
+  <sourceEnd id="e0e375e7-964e-425e-beda-928d3796fd37" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: InitializeComponentAsync</display>
+    <order>0</order>
+    <typeReference id="7b9d3141-da6e-449d-89d4-287ddc26a723">
+      <typeId>f9e87eff-9a03-4d5b-ac65-6e18e619ec27</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Web.UI</typePackageName>
+      <typePackageId>352d33f1-2157-4a2e-9fd8-3235ca46b372</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="97b54277-9414-4124-a894-b4b2134a06e8" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>GetOrdersQuery</name>
+    <display>[call] Orders.GetOrdersQuery: OrderSummaryDto[*]</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="59282d7b-6be8-4410-8113-fd6e5f5b71a5">
+      <typeId>940c4983-df6f-4d0d-9261-77c31e2a4e9b</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Services</typePackageName>
+      <typePackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="3175ee62-b835-4ae8-a74d-4272aab8b67f" location="[eShop.Web].[User Interface].[Orders]" />
+        <target applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="940c4983-df6f-4d0d-9261-77c31e2a4e9b" location="[eShop.Web].[User Interface].[GetOrdersQuery]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{InitializeComponentAsync.GetOrdersQuery}</expression>
+            <path>
+              <target id="940c4983-df6f-4d0d-9261-77c31e2a4e9b" name="GetOrdersQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+            </path>
+            <sources>
+              <source identifier="InitializeComponentAsync.GetOrdersQuery" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="3175ee62-b835-4ae8-a74d-4272aab8b67f" name="Orders" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="f9e87eff-9a03-4d5b-ac65-6e18e619ec27" name="InitializeComponentAsync" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="97b54277-9414-4124-a894-b4b2134a06e8" name="GetOrdersQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Call Service Response Mapping" typeId="e60890c6-7ce7-47be-a0da-dff82b8adc02">
+        <source applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="3175ee62-b835-4ae8-a74d-4272aab8b67f" location="[eShop.Web].[User Interface].[Orders]" />
+        <target applicationId="6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="3175ee62-b835-4ae8-a74d-4272aab8b67f" location="[eShop.Web].[User Interface].[Orders]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{InitializeComponentAsync.GetOrdersQuery.response}</expression>
+            <path>
+              <target id="3175ee62-b835-4ae8-a74d-4272aab8b67f" name="Orders" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="9232800b-2f44-4066-8de8-4cc7ee70bfb2" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="InitializeComponentAsync.GetOrdersQuery.response" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="3175ee62-b835-4ae8-a74d-4272aab8b67f" name="Orders" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="f9e87eff-9a03-4d5b-ac65-6e18e619ec27" name="InitializeComponentAsync" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="97b54277-9414-4124-a894-b4b2134a06e8" name="GetOrdersQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>efed376f-7c88-4e0b-bf94-b69a0edddb29</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>true</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>eShop.Ordering.Services</typePackageName>
+                      <typePackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

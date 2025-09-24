@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="274575d1-e762-4b5e-bb90-19a636a3d2d0">
+  <sourceEnd id="213f4f79-6cf0-42a2-af0e-5f83a968c513" type="Update Entity Action Source End" typeId="6bc95978-6def-4d0c-a4f5-25bdeda8a9f6">
+    <display>updated by : CatalogService.UpdateProduct</display>
+    <order>0</order>
+    <typeReference id="040a1e72-3456-4a12-a9da-9acab523cce6">
+      <typeId>29758964-b423-4551-af1a-bf38d45ace49</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Services</typePackageName>
+      <typePackageId>b369089c-82ab-42b9-9bab-af100e5de8d9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="274575d1-e762-4b5e-bb90-19a636a3d2d0" type="Update Entity Action Target End" typeId="516069f6-09cc-4de8-8e31-3c71ca823452">
+    <name>catalogItem</name>
+    <display>[update] catalogItem: CatalogItem</display>
+    <order>2</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="2fd1a912-d58e-4991-af67-394d01db1c20">
+      <typeId>f2ce80a2-8077-42e8-be33-de22cf15a09d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Catalog.Domain</typePackageName>
+      <typePackageId>969d4536-0205-4cbb-b35f-bcc92ac7ff04</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="29758964-b423-4551-af1a-bf38d45ace49" location="[eShop.Catalog].[Services].[UpdateProduct]" />
+        <target applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="f2ce80a2-8077-42e8-be33-de22cf15a09d" location="[eShop.Catalog].[Services].[CatalogItem]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{dto.Id}</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="1cac235e-eef8-429b-8e97-3b611e3d4264" name="Id" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="29758964-b423-4551-af1a-bf38d45ace49" name="UpdateProduct" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8b136e48-cb73-483d-bfc8-5f2dab1725af" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="dd47872c-9864-431b-84b4-f87fc229aeee" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Update Entity Mapping" typeId="01721b1a-a85d-4320-a5cd-8bd39247196a">
+        <source applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="29758964-b423-4551-af1a-bf38d45ace49" location="[eShop.Catalog].[Services].[UpdateProduct]" />
+        <target applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="f2ce80a2-8077-42e8-be33-de22cf15a09d" location="[eShop.Catalog].[Services].[CatalogItem]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{dto.CatalogBrandId}</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="276ac7fe-ef6a-4180-b802-55c0a83572da" name="CatalogBrandId" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.CatalogBrandId" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="29758964-b423-4551-af1a-bf38d45ace49" name="UpdateProduct" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8b136e48-cb73-483d-bfc8-5f2dab1725af" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="b14a5b0e-f9f0-4ef8-afdf-bd381ea60b1e" name="CatalogBrandId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.CatalogTypeId}</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="18526bc5-8aa3-4fd5-b604-8cb0f09081a9" name="CatalogTypeId" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.CatalogTypeId" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="29758964-b423-4551-af1a-bf38d45ace49" name="UpdateProduct" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8b136e48-cb73-483d-bfc8-5f2dab1725af" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="f9a87ec4-0a50-4520-a21a-eef92dbe5945" name="CatalogTypeId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.Name}</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="9caa9249-ec73-41fd-8cc6-9ae02af761b0" name="Name" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.Name" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="29758964-b423-4551-af1a-bf38d45ace49" name="UpdateProduct" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8b136e48-cb73-483d-bfc8-5f2dab1725af" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="813dde0e-16be-44fb-943c-5710d8794c99" name="Name" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.Description}</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="a1c5f57c-433b-4535-addd-df56f5939523" name="Description" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.Description" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="29758964-b423-4551-af1a-bf38d45ace49" name="UpdateProduct" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8b136e48-cb73-483d-bfc8-5f2dab1725af" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="2fc84e57-bbe7-481b-b06b-e0a02bf76ed8" name="Description" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.Price}</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="bd47a8e7-2bbd-4c23-a413-78436de34575" name="Price" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.Price" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="29758964-b423-4551-af1a-bf38d45ace49" name="UpdateProduct" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8b136e48-cb73-483d-bfc8-5f2dab1725af" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="eb2b3bc2-3a43-4e82-b43d-ea8387f6a7bd" name="Price" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.PictureFileName}</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="3ccfd0ec-2d60-4387-994a-6c0376d4d4b4" name="PictureFileName" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.PictureFileName" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="29758964-b423-4551-af1a-bf38d45ace49" name="UpdateProduct" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8b136e48-cb73-483d-bfc8-5f2dab1725af" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="c94677f3-5d2d-42d3-9ebc-f2793e71bd56" name="PictureFileName" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.PictureUri}</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="f613f738-7a7d-43b7-85ee-c5e394f68604" name="PictureUri" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.PictureUri" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="29758964-b423-4551-af1a-bf38d45ace49" name="UpdateProduct" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8b136e48-cb73-483d-bfc8-5f2dab1725af" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="07d2c043-5877-4d68-826e-e50f93bab68c" name="PictureUri" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.AvailableStock}</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="105aaa44-843b-453a-885e-86047a5eb4bf" name="AvailableStock" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.AvailableStock" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="29758964-b423-4551-af1a-bf38d45ace49" name="UpdateProduct" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8b136e48-cb73-483d-bfc8-5f2dab1725af" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="d2a20fbd-5187-4a18-93e2-b500bff6728e" name="AvailableStock" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.RestockThreshold}</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="1f1156cb-1266-4ff4-b2d2-faed0d721bca" name="RestockThreshold" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.RestockThreshold" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="29758964-b423-4551-af1a-bf38d45ace49" name="UpdateProduct" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8b136e48-cb73-483d-bfc8-5f2dab1725af" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="67b1c8bb-a077-4318-8f7c-8db3e9e3c93c" name="RestockThreshold" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.MaxStockThreshold}</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="a85c1d72-8045-47f2-97ca-2309f9a52f53" name="MaxStockThreshold" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.MaxStockThreshold" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="29758964-b423-4551-af1a-bf38d45ace49" name="UpdateProduct" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8b136e48-cb73-483d-bfc8-5f2dab1725af" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="fea2d934-364e-4331-b3a9-f9069073d66d" name="MaxStockThreshold" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{dto.OnReorder}</expression>
+            <path>
+              <target id="f2ce80a2-8077-42e8-be33-de22cf15a09d" name="CatalogItem" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="10775c12-cbad-4412-8b05-ad589da78fd6" name="OnReorder" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="dto.OnReorder" mappingType="Data Mapping" mappingTypeId="ca88649b-f20b-44db-a9c0-017c26155ba8">
+                <path>
+                  <target id="29758964-b423-4551-af1a-bf38d45ace49" name="UpdateProduct" type="element" specialization="Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8b136e48-cb73-483d-bfc8-5f2dab1725af" name="dto" type="element" specialization="Parameter" specializationId="00208d20-469d-41cb-8501-768fd5eb796b" />
+                  <target id="aed760e0-e78d-4c81-a351-12cd9118be5a" name="OnReorder" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Update Entity Action</associationType>
+  <associationTypeId>9ea0382a-4617-412a-a8c8-af987bbce226</associationTypeId>
+  <stereotypes />
+</association>

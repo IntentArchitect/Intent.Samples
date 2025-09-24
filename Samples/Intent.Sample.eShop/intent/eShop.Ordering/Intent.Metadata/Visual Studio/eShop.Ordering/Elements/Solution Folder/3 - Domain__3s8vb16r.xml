@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="551abe36-1610-4356-876a-53022579f344" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>3 - Domain</name>
+  <display>3 - Domain</display>
+  <externalReference>9bb4214b-c7f4-4a07-ba31-0c8d9d826541</externalReference>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>906cf539-4f1f-4703-9ea1-bd383f5181bf</parentFolderId>
+  <packageId>431fcae9-9939-4773-a801-8625bbc50909</packageId>
+  <packageName>eShop.Ordering</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

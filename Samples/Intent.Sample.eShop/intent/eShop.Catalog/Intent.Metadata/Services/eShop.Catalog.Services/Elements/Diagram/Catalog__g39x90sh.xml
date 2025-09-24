@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="8c151ecc-9afd-4134-af5b-5e974f64cd37" type="Diagram" typeId="8c90aca5-86f4-47f1-bd58-116fe79f5c55">
+  <name>Catalog</name>
+  <display>Catalog</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>b369089c-82ab-42b9-9bab-af100e5de8d9</parentFolderId>
+  <packageId>b369089c-82ab-42b9-9bab-af100e5de8d9</packageId>
+  <packageName>eShop.Catalog.Services</packageName>
+  <diagram>
+    <targetPackageId>b369089c-82ab-42b9-9bab-af100e5de8d9</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

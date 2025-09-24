@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="26121a0b-3aef-416f-8a8b-50070ee78b39" type="Message" typeId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e">
+  <name>GracePeriodConfirmedIntegrationEvent</name>
+  <display>GracePeriodConfirmedIntegrationEvent</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</parentFolderId>
+  <packageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</packageId>
+  <packageName>eShop.Ordering.Eventing.Messages</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="f5a49691-c1a1-4754-9a91-ea58119d4caf" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>OrderId</name>
+      <display>OrderId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="62d8009f-c972-4ef4-9c63-ecf227083f61">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>26121a0b-3aef-416f-8a8b-50070ee78b39</parentFolderId>
+      <packageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</packageId>
+      <packageName>eShop.Ordering.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

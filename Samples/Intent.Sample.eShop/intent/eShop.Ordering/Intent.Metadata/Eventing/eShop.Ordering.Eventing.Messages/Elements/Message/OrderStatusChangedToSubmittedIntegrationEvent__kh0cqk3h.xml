@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="d97bfbfc-2241-4dd0-82de-fb85d92697b5" type="Message" typeId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e">
+  <name>OrderStatusChangedToSubmittedIntegrationEvent</name>
+  <display>OrderStatusChangedToSubmittedIntegrationEvent</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</parentFolderId>
+  <packageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</packageId>
+  <packageName>eShop.Ordering.Eventing.Messages</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="ccf674c2-25f1-4e8b-85da-3feebfb10747" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>OrderId</name>
+      <display>OrderId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="313595a6-0c72-41e2-a477-0bf2c518509c">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d97bfbfc-2241-4dd0-82de-fb85d92697b5</parentFolderId>
+      <packageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</packageId>
+      <packageName>eShop.Ordering.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="17bfec62-e036-4a83-9ce8-fc761767375f" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>OrderStatus</name>
+      <display>OrderStatus: OrderStatus</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="ad988b9e-ac2d-4431-b4b8-1c2045be9f15">
+        <typeId>1c1fa896-ac29-4e99-8a38-bf3d8f96d279</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>eShop.Ordering.Domain</typePackageName>
+        <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d97bfbfc-2241-4dd0-82de-fb85d92697b5</parentFolderId>
+      <packageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</packageId>
+      <packageName>eShop.Ordering.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="f76ac92c-1dbe-4dfa-8f2e-8ee3a4f0738a" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>BuyerName</name>
+      <display>BuyerName: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="d295be82-9b42-41d6-82e0-dd212b435799">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d97bfbfc-2241-4dd0-82de-fb85d92697b5</parentFolderId>
+      <packageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</packageId>
+      <packageName>eShop.Ordering.Eventing.Messages</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

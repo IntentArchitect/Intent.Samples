@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="08ad81e4-3bdd-4cfa-a74f-d84d45d0b1d1" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>Interfaces</name>
+  <display>Interfaces</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>39c47154-0214-406e-b518-29fb2e7c1a4a</parentFolderId>
+  <packageId>431fcae9-9939-4773-a801-8625bbc50909</packageId>
+  <packageName>eShop.Ordering</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="61132551-825d-4c6e-b9f1-0f95249d08d4" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4bfbefd0-d22e-4ca0-9723-92ae273feca4" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="a74e9dd2-d1b8-408a-9674-0aaa65d3e115" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.Identity.CurrentUserServiceInterface</name>
+      <display>Intent.Application.Identity.CurrentUserServiceInterface</display>
+      <externalReference>Intent.Application.Identity</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>08ad81e4-3bdd-4cfa-a74f-d84d45d0b1d1</parentFolderId>
+      <packageId>431fcae9-9939-4773-a801-8625bbc50909</packageId>
+      <packageName>eShop.Ordering</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="3c4e8f2c-b5de-47cf-93ca-bf6c2ab199b2" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.MediatR.CommandInterface</name>
+      <display>Intent.Application.MediatR.CommandInterface</display>
+      <externalReference>Intent.Application.MediatR</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>08ad81e4-3bdd-4cfa-a74f-d84d45d0b1d1</parentFolderId>
+      <packageId>431fcae9-9939-4773-a801-8625bbc50909</packageId>
+      <packageName>eShop.Ordering</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="db38962f-f0fb-484d-9596-80a64c9d81bf" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.MediatR.QueryInterface</name>
+      <display>Intent.Application.MediatR.QueryInterface</display>
+      <externalReference>Intent.Application.MediatR</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>08ad81e4-3bdd-4cfa-a74f-d84d45d0b1d1</parentFolderId>
+      <packageId>431fcae9-9939-4773-a801-8625bbc50909</packageId>
+      <packageName>eShop.Ordering</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="9315bc95-5466-48bf-9b48-be41b44961f0" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.DomainEvents.DomainEventServiceInterface</name>
+      <display>Intent.DomainEvents.DomainEventServiceInterface</display>
+      <externalReference>Intent.DomainEvents</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>08ad81e4-3bdd-4cfa-a74f-d84d45d0b1d1</parentFolderId>
+      <packageId>431fcae9-9939-4773-a801-8625bbc50909</packageId>
+      <packageName>eShop.Ordering</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="a24f62cb-eaf1-47b8-9d35-461f66457cd5" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.EntityFrameworkCore.DbContextInterface</name>
+      <display>Intent.EntityFrameworkCore.DbContextInterface</display>
+      <externalReference>Intent.EntityFrameworkCore</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>08ad81e4-3bdd-4cfa-a74f-d84d45d0b1d1</parentFolderId>
+      <packageId>431fcae9-9939-4773-a801-8625bbc50909</packageId>
+      <packageName>eShop.Ordering</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="1dcc1818-5560-487c-8093-5cc992e14808" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.Identity.CurrentUserInterface</name>
+      <externalReference>Intent.Application.Identity</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>08ad81e4-3bdd-4cfa-a74f-d84d45d0b1d1</parentFolderId>
+      <packageId>431fcae9-9939-4773-a801-8625bbc50909</packageId>
+      <packageName>eShop.Ordering</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

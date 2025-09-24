@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="b261d2f6-22e3-4cdc-bba3-4e1bf7b3ac7b">
+  <sourceEnd id="c3a30ddc-427c-4d33-9660-b5e557018ba4" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: handler</display>
+    <order>0</order>
+    <typeReference id="e7e372dd-25b5-412a-976a-e96f6871642b">
+      <typeId>7ce25045-0507-44db-85e0-88146411e104</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Services</typePackageName>
+      <typePackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="b261d2f6-22e3-4cdc-bba3-4e1bf7b3ac7b" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>buyer</name>
+    <display>[query] buyer: Buyer?</display>
+    <order>0</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="cf83eb29-94e6-4973-be26-4e48e6ac208f">
+      <typeId>c9580049-c86e-4c8b-a10f-38c7cff1b98f</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>true</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>eShop.Ordering.Domain</typePackageName>
+      <typePackageId>76d205d9-7601-4b48-8af5-e4fecf6f2008</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="7ce25045-0507-44db-85e0-88146411e104" location="[eShop.Ordering].[Services].[handler]" />
+        <target applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="c9580049-c86e-4c8b-a10f-38c7cff1b98f" location="[eShop.Ordering].[Services].[Buyer]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{UserId}</expression>
+            <path>
+              <target id="c9580049-c86e-4c8b-a10f-38c7cff1b98f" name="Buyer" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="a6c294c1-b172-44f6-b1ae-1d4b63ba0754" name="BuyerIdentifier" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="UserId" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="7ce25045-0507-44db-85e0-88146411e104" name="handler" type="association" specialization="Domain Event Handler Association Target End" specializationId="f45dfee9-f62b-45ac-bfce-a3878e04b73f" />
+                  <target id="2cd39428-aaa6-4973-9ebd-aac3b549bda1" name="UserId" type="element" specialization="Property" specializationId="b4d69073-5abb-4968-b41b-545b2f7408ed" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

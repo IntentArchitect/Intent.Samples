@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="18913eb8-f0e3-4c0f-9204-97bb1652f789" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>4 - Infrastructure</name>
+  <display>4 - Infrastructure</display>
+  <externalReference>03755119-cb3c-4cca-a0d0-532c2b817667</externalReference>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>d817a8cd-f0d7-4af7-972b-9ecc97542be0</parentFolderId>
+  <packageId>4ab14b4f-9dc9-4b86-920d-7c3336e3b1e5</packageId>
+  <packageName>eShop.Basket</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

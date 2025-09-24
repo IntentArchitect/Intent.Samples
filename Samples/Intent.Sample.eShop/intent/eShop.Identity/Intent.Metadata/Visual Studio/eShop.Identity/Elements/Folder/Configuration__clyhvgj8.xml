@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="43a101a8-3d83-447c-8de8-b1a4d6c7d860" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>Configuration</name>
+  <display>Configuration</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>6111ff3d-11a6-4753-8af3-8f100e077774</parentFolderId>
+  <packageId>5e8fdb0d-92ef-4184-9632-d79f261fa4ad</packageId>
+  <packageName>eShop.Identity</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="61132551-825d-4c6e-b9f1-0f95249d08d4" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4bfbefd0-d22e-4ca0-9723-92ae273feca4" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="d76c9b6c-2029-46b3-9f3e-0cfb6d5329d8" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.Identity.ApplicationSecurityConfiguration</name>
+      <display>Intent.Application.Identity.ApplicationSecurityConfiguration</display>
+      <externalReference>Intent.Application.Identity</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</parentFolderId>
+      <packageId>5e8fdb0d-92ef-4184-9632-d79f261fa4ad</packageId>
+      <packageName>eShop.Identity</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="12acfafe-57a1-4097-9242-129a4d32d5b3" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.AspNetCore.HealthChecks.HealthChecksConfiguration</name>
+      <display>Intent.AspNetCore.HealthChecks.HealthChecksConfiguration</display>
+      <externalReference>Intent.AspNetCore.HealthChecks</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</parentFolderId>
+      <packageId>5e8fdb0d-92ef-4184-9632-d79f261fa4ad</packageId>
+      <packageName>eShop.Identity</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="aa52bdef-4509-48c8-b9d8-5ee3df378bce" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.AspNetCore.Identity.AspNetCoreIdentityConfiguration</name>
+      <display>Intent.AspNetCore.Identity.AspNetCoreIdentityConfiguration</display>
+      <externalReference>Intent.AspNetCore.Identity</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</parentFolderId>
+      <packageId>5e8fdb0d-92ef-4184-9632-d79f261fa4ad</packageId>
+      <packageName>eShop.Identity</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="00c01636-b7f9-4af2-8e05-8b94dddb25a2" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.AspNetCore.Identity.IdentityServiceCollectionExtensions</name>
+      <display>Intent.AspNetCore.Identity.IdentityServiceCollectionExtensions</display>
+      <externalReference>Intent.AspNetCore.Identity</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</parentFolderId>
+      <packageId>5e8fdb0d-92ef-4184-9632-d79f261fa4ad</packageId>
+      <packageName>eShop.Identity</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="590c5bc8-0e1c-4368-a76a-82801263bea0" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.AspNetCore.IdentityService.IdentityServiceEmailSenderCollectionExtensions</name>
+      <display>Intent.AspNetCore.IdentityService.IdentityServiceEmailSenderCollectionExtensions</display>
+      <externalReference>Intent.AspNetCore.IdentityService</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</parentFolderId>
+      <packageId>5e8fdb0d-92ef-4184-9632-d79f261fa4ad</packageId>
+      <packageName>eShop.Identity</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="ffe99208-2d3f-46c9-89ed-360b08c55819" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.AspNetCore.ProblemDetailsConfiguration</name>
+      <display>Intent.AspNetCore.ProblemDetailsConfiguration</display>
+      <externalReference>Intent.AspNetCore</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</parentFolderId>
+      <packageId>5e8fdb0d-92ef-4184-9632-d79f261fa4ad</packageId>
+      <packageName>eShop.Identity</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="74262c99-e431-4f43-a9ac-54516bc502a3" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.AspNetCore.Swashbuckle.SwashbuckleConfiguration</name>
+      <display>Intent.AspNetCore.Swashbuckle.SwashbuckleConfiguration</display>
+      <externalReference>Intent.AspNetCore.Swashbuckle</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</parentFolderId>
+      <packageId>5e8fdb0d-92ef-4184-9632-d79f261fa4ad</packageId>
+      <packageName>eShop.Identity</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="66f492b7-20ca-4e74-b7f0-4e63ca3053b9" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.AspNetCore.Versioning.ApiVersioningConfiguration</name>
+      <display>Intent.AspNetCore.Versioning.ApiVersioningConfiguration</display>
+      <externalReference>Intent.AspNetCore.Versioning</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</parentFolderId>
+      <packageId>5e8fdb0d-92ef-4184-9632-d79f261fa4ad</packageId>
+      <packageName>eShop.Identity</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="a5be25ad-fed8-4127-8273-c39496ea79a2" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.AspNetCore.Versioning.ApiVersionSwaggerGenOptions</name>
+      <display>Intent.AspNetCore.Versioning.ApiVersionSwaggerGenOptions</display>
+      <externalReference>Intent.AspNetCore.Versioning</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</parentFolderId>
+      <packageId>5e8fdb0d-92ef-4184-9632-d79f261fa4ad</packageId>
+      <packageName>eShop.Identity</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

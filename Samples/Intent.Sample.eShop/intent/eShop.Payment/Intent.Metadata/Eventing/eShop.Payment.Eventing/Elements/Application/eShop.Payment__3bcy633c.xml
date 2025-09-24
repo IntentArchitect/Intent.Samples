@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="17344130-69fd-4167-bcc6-e3689472fa4f" type="Application" typeId="f40a4942-5d2d-4174-8ec1-af66cbd464db">
+  <name>eShop.Payment</name>
+  <display>eShop.Payment</display>
+  <externalReference>259354b5-82fe-4c0a-bb30-1fda60b4d935</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>a538b1a1-1324-419d-9753-1d97f958142a</parentFolderId>
+  <packageId>a538b1a1-1324-419d-9753-1d97f958142a</packageId>
+  <packageName>eShop.Payment.Eventing</packageName>
+  <diagram>
+    <targetPackageId>2b2383de-deff-48fc-adb1-2a366de37085</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>
