@@ -30,11 +30,9 @@ namespace eShop.Ordering.Infrastructure.Configuration
 
                 x.UsingRabbitMq((context, cfg) =>
                 {
-                    cfg.Host(configuration["RabbitMq:Host"], configuration["RabbitMq:VirtualHost"], host =>
-                    {
-                        host.Username(configuration["RabbitMq:Username"]);
-                        host.Password(configuration["RabbitMq:Password"]);
-                    });
+                    var rabbitConn = configuration.GetConnectionString("rabbit");
+
+                    cfg.Host(new Uri(rabbitConn), h => { });
 
                     cfg.UseMessageRetry(r => r.Interval(
                         configuration.GetValue<int?>("MassTransit:RetryInterval:RetryCount") ?? 10,
