@@ -201,5 +201,15 @@
       <deviationsHash>A616F8F7737BC89B554EBBFB72A51F4E05828CF70FF96D37C1B6F96DC5787803</deviationsHash>
       <fileHash>8BBF37885655CDB70C783012048D57F06D85E877C2F93538FAE3F542A62AF2A5</fileHash>
     </file>
+    <file>
+      <correlationId>Intent.Eventing.MassTransit.MassTransitConfiguration</correlationId>
+      <path>eShop.Ordering.Infrastructure/Configuration/MassTransitConfiguration.cs</path>
+      <count>2</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-09-25T13:49:25.3193054Z</updatedAt>
+      <deviationsHash>E3A36D6DF1DEE2810A78A1B269FFB62841D6CFC5E102BE2340096B4F5C1C931A</deviationsHash>
+      <fileHash>A134CBA880D63F95C659B36E7B62B8FE9894019B7ACEA287A46F78BFA98F5690</fileHash>
+    </file>
   </files>
 </deviationsLog>

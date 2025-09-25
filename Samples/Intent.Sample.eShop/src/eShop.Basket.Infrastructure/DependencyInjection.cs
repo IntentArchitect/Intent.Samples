@@ -22,12 +22,14 @@ namespace eShop.Basket.Infrastructure
         {
             services.AddSingleton<IMongoClient>(sp =>
                     {
-                        var connectionString = configuration.GetConnectionString("MongoDbConnection");
+                        // IntentIgnore
+                        var connectionString = configuration.GetConnectionString("eshop");
                         return new MongoClient(connectionString);
                     });
             services.AddSingleton(sp =>
                     {
-                        var connectionString = configuration.GetConnectionString("MongoDbConnection");
+                        // IntentIgnore
+                        var connectionString = configuration.GetConnectionString("eshop");
 
                         // Parse connection string to get the database name
                         var mongoUrl = new MongoUrl(connectionString);

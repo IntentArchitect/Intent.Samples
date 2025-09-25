@@ -56,6 +56,7 @@ namespace eShop.Basket.Infrastructure.Repositories
         {
             var cursor = await _collection.FindAsync(TDocument.GetIdFilter(id));
             return LoadAndTrackDocument(cursor.Single());
+
         }
 
         public virtual async Task<List<TDomain>> FindByIdsAsync(

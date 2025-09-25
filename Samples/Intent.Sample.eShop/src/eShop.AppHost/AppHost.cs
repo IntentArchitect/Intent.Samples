@@ -2,7 +2,7 @@ using Projects;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-var mongo = builder.AddMongoDB("mongo").WithDataVolume();
+var mongo = builder.AddMongoDB("mongo").WithDataVolume().AddDatabase("eshop", "eshop");
 var rabbit = builder.AddRabbitMQ("rabbit").WithManagementPlugin();
 
 var identityapi = builder.AddProject<eShop_Identity_Api>("identityapi");

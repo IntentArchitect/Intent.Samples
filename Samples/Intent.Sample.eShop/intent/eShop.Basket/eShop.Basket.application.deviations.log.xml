@@ -41,5 +41,25 @@
       <deviationsHash>05E43CE8D688EDBD38CDEAE6ADEDD1406C95F595AFCA4DA1726D53AC014C7387</deviationsHash>
       <fileHash>BACD61CEB890FF0313201E1A3DF82D8B7C55EC1D9E27D7B3FAA845FD3F916250</fileHash>
     </file>
+    <file>
+      <correlationId>Intent.Eventing.MassTransit.MassTransitConfiguration</correlationId>
+      <path>eShop.Basket.Infrastructure/Configuration/MassTransitConfiguration.cs</path>
+      <count>2</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-09-25T13:49:07.9701743Z</updatedAt>
+      <deviationsHash>E3A36D6DF1DEE2810A78A1B269FFB62841D6CFC5E102BE2340096B4F5C1C931A</deviationsHash>
+      <fileHash>9244DE75DA74649196EBDECFC690C47F734F5EA7B50419EABF67F1E61A238983</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Infrastructure.DependencyInjection.DependencyInjection</correlationId>
+      <path>eShop.Basket.Infrastructure/DependencyInjection.cs</path>
+      <count>2</count>
+      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
+      <updatedAt>2025-09-25T13:49:07.9701606Z</updatedAt>
+      <deviationsHash>22BB1A2AD8842863AC46A3B60D470B20F3B53A63B0F6D6D96BDB10C4DB5FEEEB</deviationsHash>
+      <fileHash>FD18CE15F189DE09E2ABE32A47058D9BB2EF95F85A93CD45996E4928C0C2C09F</fileHash>
+    </file>
   </files>
 </deviationsLog>

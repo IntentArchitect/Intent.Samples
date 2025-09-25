@@ -30,8 +30,9 @@ namespace eShop.Ordering.Infrastructure.Configuration
 
                 x.UsingRabbitMq((context, cfg) =>
                 {
+                    // IntentIgnore
                     var rabbitConn = configuration.GetConnectionString("rabbit");
-
+                    // IntentIgnore
                     cfg.Host(new Uri(rabbitConn), h => { });
 
                     cfg.UseMessageRetry(r => r.Interval(
