@@ -22,7 +22,7 @@
   <targetEnd id="7ce25045-0507-44db-85e0-88146411e104" type="Domain Event Handler Association Target End" typeId="f45dfee9-f62b-45ac-bfce-a3878e04b73f">
     <comment />
     <name>handler</name>
-    <display>handles : OrderStartedDomainEvent</display>
+    <display>[handles] OrderStartedDomainEvent</display>
     <order>0</order>
     <traits>
       <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />

@@ -4,7 +4,6 @@ using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
 using eShop.Basket.Domain.Entities;
-using eShop.Basket.Domain.Repositories.Documents;
 using Intent.RoslynWeaver.Attributes;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
@@ -13,7 +12,11 @@ using Intent.RoslynWeaver.Attributes;
 namespace eShop.Basket.Domain.Repositories
 {
     [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
-    public interface ICustomerBasketRepository : IMongoRepository<CustomerBasket, ICustomerBasketDocument, string>
+    public interface ICustomerBasketRepository : IMongoRepository<CustomerBasket, string>
     {
+        [IntentManaged(Mode.Fully)]
+        Task<CustomerBasket?> FindByIdAsync(string buyerId, CancellationToken cancellationToken = default);
+        [IntentManaged(Mode.Fully)]
+        Task<List<CustomerBasket>> FindByIdsAsync(string[] buyerIds, CancellationToken cancellationToken = default);
     }
 }

@@ -34,7 +34,7 @@ namespace eShop.Web.Client.Implementations
         public async Task<BasketDto> GetBasketByIdAsync(string id, CancellationToken cancellationToken = default)
         {
             var relativeUri = $"api/v1/basket/{id}";
-            var httpRequest = new HttpRequestMessage(HttpMethod.Get, relativeUri);
+            using var httpRequest = new HttpRequestMessage(HttpMethod.Get, relativeUri);
             httpRequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(JSON_MEDIA_TYPE));
 
             using (var response = await _httpClient.SendAsync(httpRequest, HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false))
@@ -54,7 +54,7 @@ namespace eShop.Web.Client.Implementations
         public async Task UpdateBasketAsync(BasketDto dto, CancellationToken cancellationToken = default)
         {
             var relativeUri = $"api/v1/basket";
-            var httpRequest = new HttpRequestMessage(HttpMethod.Post, relativeUri);
+            using var httpRequest = new HttpRequestMessage(HttpMethod.Post, relativeUri);
             httpRequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(JSON_MEDIA_TYPE));
 
             var content = JsonSerializer.Serialize(dto, _serializerOptions);

@@ -37,7 +37,7 @@ namespace eShop.Web.Client.Layout
 
         protected override async Task OnInitializedAsync()
         {
-            
+
         }
 
         private void BasketState_OnCountChanged(int count)
@@ -87,6 +87,11 @@ namespace eShop.Web.Client.Layout
         private void RedirectToLogout()
         {
             NavigationManager.NavigateTo($"Account/Logout", forceLoad: true);
+        }
+
+        private void NavigateToCatalog(int? brandId, int itemTypeId)
+        {
+            NavigationManager.NavigateTo($"/?BrandId={brandId}&ItemTypeId={itemTypeId}");
         }
 
         [IntentIgnore]

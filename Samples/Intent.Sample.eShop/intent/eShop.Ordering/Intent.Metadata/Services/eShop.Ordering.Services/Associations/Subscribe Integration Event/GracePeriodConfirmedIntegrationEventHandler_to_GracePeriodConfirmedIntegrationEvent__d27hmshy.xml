@@ -19,7 +19,7 @@
     <childElements />
   </sourceEnd>
   <targetEnd id="cd7ca205-c077-4ef9-a6f0-48be3c92ca24" type="Subscribe Integration Event Target End" typeId="16fa2952-79e6-4150-b5ab-45aa4c106de4">
-    <display>handles: GracePeriodConfirmedIntegrationEvent</display>
+    <display>[handles] GracePeriodConfirmedIntegrationEvent</display>
     <order>0</order>
     <traits>
       <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />

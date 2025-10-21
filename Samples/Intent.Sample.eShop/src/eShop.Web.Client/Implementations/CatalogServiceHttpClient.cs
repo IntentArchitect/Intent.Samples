@@ -36,7 +36,7 @@ namespace eShop.Web.Client.Implementations
         public async Task<List<CatalogBrandDto>> CatalogBrandsAsync(CancellationToken cancellationToken = default)
         {
             var relativeUri = $"api/v1/catelog/catalogbrands";
-            var httpRequest = new HttpRequestMessage(HttpMethod.Get, relativeUri);
+            using var httpRequest = new HttpRequestMessage(HttpMethod.Get, relativeUri);
             httpRequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(JSON_MEDIA_TYPE));
 
             using (var response = await _httpClient.SendAsync(httpRequest, HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false))
@@ -56,7 +56,7 @@ namespace eShop.Web.Client.Implementations
         public async Task<List<CatalogTypeDto>> CatalogTypesAsync(CancellationToken cancellationToken = default)
         {
             var relativeUri = $"api/v1/catelog/catalogtypes";
-            var httpRequest = new HttpRequestMessage(HttpMethod.Get, relativeUri);
+            using var httpRequest = new HttpRequestMessage(HttpMethod.Get, relativeUri);
             httpRequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(JSON_MEDIA_TYPE));
 
             using (var response = await _httpClient.SendAsync(httpRequest, HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false))
@@ -76,7 +76,7 @@ namespace eShop.Web.Client.Implementations
         public async Task<CatalogItemDto> ItemByIdAsync(int id, CancellationToken cancellationToken = default)
         {
             var relativeUri = $"api/v1/catelog/items/{id}";
-            var httpRequest = new HttpRequestMessage(HttpMethod.Get, relativeUri);
+            using var httpRequest = new HttpRequestMessage(HttpMethod.Get, relativeUri);
             httpRequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(JSON_MEDIA_TYPE));
 
             using (var response = await _httpClient.SendAsync(httpRequest, HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false))
@@ -106,7 +106,7 @@ namespace eShop.Web.Client.Implementations
             queryParams.Add("pageSize", pageSize.ToString());
             queryParams.Add("pageIndex", pageIndex.ToString());
             relativeUri = QueryHelpers.AddQueryString(relativeUri, queryParams);
-            var httpRequest = new HttpRequestMessage(HttpMethod.Get, relativeUri);
+            using var httpRequest = new HttpRequestMessage(HttpMethod.Get, relativeUri);
             httpRequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(JSON_MEDIA_TYPE));
 
             using (var response = await _httpClient.SendAsync(httpRequest, HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false))

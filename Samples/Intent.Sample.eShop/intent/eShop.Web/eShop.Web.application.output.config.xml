@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<outputFiles>
+  <files>
+    <file relativePath="eShop.Web.Client/Layout/MainLayout.razor" state="ignored" />
+    <file relativePath="eShop.Web.Client/Pages/Cart/Cart.razor" state="ignored" />
+    <file relativePath="eShop.Web.Client/Pages/Cart/Cart.razor.cs" state="ignored" />
+    <file relativePath="eShop.Web.Client/Pages/Cart/Components/ProductImagePrice.razor" state="ignored" />
+    <file relativePath="eShop.Web.Client/Pages/Checkout/Checkout.razor" state="ignored" />
+    <file relativePath="eShop.Web.Client/Pages/Item.razor" state="ignored" />
+    <file relativePath="eShop.Web.Client/Pages/Item.razor.cs" state="ignored" />
+    <file relativePath="eShop.Web.Client/Pages/User/Orders.razor" state="ignored" />
+    <file relativePath="eShop.Web.Client/Routes.razor" state="ignored" />
+    <file relativePath="eShop.Web/Components/Account/Pages/ConfirmEmail.razor" state="ignored" />
+  </files>
+</outputFiles>

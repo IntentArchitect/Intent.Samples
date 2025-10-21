@@ -1,11 +1,10 @@
-using eShop.Web.Client.Pages.Checkout;
 using FluentValidation;
 using Intent.RoslynWeaver.Attributes;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.Blazor.FluentValidation.ModelDefinitionValidator", Version = "1.0")]
 
-namespace eShop.Web.Client
+namespace eShop.Web.Client.Pages.Checkout
 {
     [IntentManaged(Mode.Fully, Body = Mode.Merge)]
     public class ShippingInfoValidator : AbstractValidator<Checkout.ShippingInfo>

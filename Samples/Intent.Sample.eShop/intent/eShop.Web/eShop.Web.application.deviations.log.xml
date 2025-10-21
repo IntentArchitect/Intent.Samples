@@ -29,7 +29,7 @@
       <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
       <updatedAt>2025-08-04T13:25:51.8368102Z</updatedAt>
       <deviationsHash>2B9FDA524988E940921846A7B4C38F4BFD3EA22D8A45E788C395EF758DCD17C7</deviationsHash>
-      <fileHash>3B9DFF35C73D248EC32D5E2D642265574283EF7143F3388207590B8C2A8EDA12</fileHash>
+      <fileHash>5C92D726754C01B6F26CB64B6D5BB6B40801C7DB3DDBA6C326B51CD35E02B50C</fileHash>
     </file>
     <file>
       <correlationId>Intent.Blazor.Templates.Client.RazorComponentTemplate#94f109cb-d93f-4599-8262-98be7fb3d3b3</correlationId>
@@ -109,27 +109,17 @@
       <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
       <updatedAt>2025-08-04T13:25:51.8366971Z</updatedAt>
       <deviationsHash>D994BF2B7F8B7026AF7003DA7DB69AFD9618288027E31E82225896B95E790D72</deviationsHash>
-      <fileHash>91598CBCF97E997EF0CA2F7E795CF8E5C5CC6DEA1645745D92240C5A6F0C81A8</fileHash>
+      <fileHash>5CEFADCE2464AFBFBA6CD034591F0B12745A3FCE81163DA131FE39262E57F02B</fileHash>
     </file>
     <file>
-      <correlationId>Intent.Blazor.Templates.Client.ProgramTemplate</correlationId>
+      <correlationId>Intent.Blazor.Templates.Client.ProgramTemplate#6cfefbd8-c982-48b1-8414-edefb9a433f1</correlationId>
       <path>eShop.Web.Client/Program.cs</path>
       <count>2</count>
-      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
-      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
-      <updatedAt>2025-07-11T07:13:09.499933Z</updatedAt>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-09-29T11:46:02.0846023Z</updatedAt>
       <deviationsHash>D55EBC21382A38C9AC62DB2F52CD90A2B694D67B94117A6E00462EFAC7225A1B</deviationsHash>
       <fileHash>C93FDA1BD797D6B6787A4B549CC18FF9C33E90C8DCA6BEAA2A9462B285959014</fileHash>
-    </file>
-    <file>
-      <correlationId>Intent.Blazor.Templates.Client.RoutesRazorTemplate</correlationId>
-      <path>eShop.Web.Client/Routes.razor</path>
-      <count>1</count>
-      <updatedByAccountName>jonathan.lydall@intentarchitect.com</updatedByAccountName>
-      <updatedByDisplayName>Jonathan Lydall</updatedByDisplayName>
-      <updatedAt>2025-08-11T05:50:27.2901716Z</updatedAt>
-      <deviationsHash>81CD1A3DDEF9EFD27A30CF1AF7675E26A38FC187B9AB14668C0727B6D675F39C</deviationsHash>
-      <fileHash>5D05E3291F1F4F7FE1F7DFB8E5C6DC2E790A968AC164575C375E8D0B3F18A7C0</fileHash>
     </file>
     <file>
       <correlationId>Intent.Blazor.Templates.Client.ModelDefinitionTemplate#eaedbe4d-20c2-4d73-9677-388fe46e64a6</correlationId>
@@ -142,22 +132,22 @@
       <fileHash>3EB46E7B8F080AE04F611468088A4369766BE26A08709C8E0DFD020B6A2C60B4</fileHash>
     </file>
     <file>
-      <correlationId>Intent.Blazor.Authentication.Templates.Server.JwtAuthServiceConcreteTemplate</correlationId>
+      <correlationId>Intent.Blazor.Authentication.Templates.Server.JwtAuthServiceConcreteTemplate#ee6c9818-c98f-4be5-accf-99363c7a8464</correlationId>
       <path>eShop.Web/Common/JwtAuthService.cs</path>
       <count>1</count>
-      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
-      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
-      <updatedAt>2025-07-31T09:48:45.4902446Z</updatedAt>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-09-29T11:46:02.0843634Z</updatedAt>
       <deviationsHash>D9A91F1BD3706ED87EFBC7F4E8993C6AC5187B1592232D7FDB2CC1EA9818F978</deviationsHash>
       <fileHash>4E26CD6B96F86EEBB1671073C9FB876620F3913F36EFF9946747D28E4F403EDE</fileHash>
     </file>
     <file>
-      <correlationId>Intent.AspNetCore.Program</correlationId>
+      <correlationId>Intent.AspNetCore.Program#e5b732bc-4440-4654-a95e-d256b3dabb82</correlationId>
       <path>eShop.Web/Program.cs</path>
       <count>2</count>
-      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
-      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
-      <updatedAt>2025-07-30T13:08:15.7963657Z</updatedAt>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-09-29T11:46:02.0842556Z</updatedAt>
       <deviationsHash>D55EBC21382A38C9AC62DB2F52CD90A2B694D67B94117A6E00462EFAC7225A1B</deviationsHash>
       <fileHash>F281469D5F00CAC962D506E11A0947A1BDEE096FDED9FC6B0A4959E5D9A9484C</fileHash>
     </file>

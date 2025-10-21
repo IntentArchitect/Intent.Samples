@@ -54,7 +54,7 @@ namespace eShop.Catalog.Domain.Entities
         public int AddStock(int quantity)
         {
             // [IntentFully]
-            // TODO: Implement AddStock (CatalogItem) functionality// TODO: Implement AddStock (CatalogItem) functionality// TODO: Implement AddStock (CatalogItem) functionality// TODO: Implement AddStock (CatalogItem) functionality// TODO: Implement AddStock (CatalogItem) functionality// TODO: Implement RemoveStock (CatalogItem) functionality
+            // TODO: Implement AddStock (CatalogItem) functionality
             throw new NotImplementedException("Replace with your implementation...");
         }
     }

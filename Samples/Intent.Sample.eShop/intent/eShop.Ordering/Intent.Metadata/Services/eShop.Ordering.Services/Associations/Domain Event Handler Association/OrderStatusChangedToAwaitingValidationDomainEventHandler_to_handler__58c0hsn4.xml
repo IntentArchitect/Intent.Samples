@@ -20,7 +20,7 @@
   </sourceEnd>
   <targetEnd id="53dd3e4c-206e-4d55-ac28-9587e9781453" type="Domain Event Handler Association Target End" typeId="f45dfee9-f62b-45ac-bfce-a3878e04b73f">
     <name>handler</name>
-    <display>handles : OrderStatusChangedToAwaitingValidationDomainEvent</display>
+    <display>[handles] OrderStatusChangedToAwaitingValidationDomainEvent</display>
     <order>0</order>
     <traits>
       <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />

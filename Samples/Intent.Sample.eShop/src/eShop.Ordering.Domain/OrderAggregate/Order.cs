@@ -21,7 +21,10 @@ namespace eShop.Ordering.Domain.OrderAggregate
             BuyerId = buyerId;
             Address = address;
             OrderDate = DateTime.Now.ToString();
-            DomainEvents.Add(new OrderStartedDomainEvent(order: this, userId: userId, userName: userName));
+            DomainEvents.Add(new OrderStartedDomainEvent(
+                order: this,
+                userId: userId,
+                userName: userName));
         }
 
         /// <summary>
@@ -130,7 +133,8 @@ namespace eShop.Ordering.Domain.OrderAggregate
 
             OrderStatus = OrderStatus.Shipped;
             Description = "The order was shipped.";
-            DomainEvents.Add(new OrderShippedDomainEvent(order: this));
+            DomainEvents.Add(new OrderShippedDomainEvent(
+                order: this));
         }
 
         public void SetCancelledStatus()
@@ -143,7 +147,8 @@ namespace eShop.Ordering.Domain.OrderAggregate
 
             OrderStatus = OrderStatus.Cancelled;
             Description = $"The order was cancelled.";
-            DomainEvents.Add(new OrderCancelledDomainEvent(order: this));
+            DomainEvents.Add(new OrderCancelledDomainEvent(
+                order: this));
         }
 
         public void SetCancelledStatusWhenStockIsRejected(IEnumerable<int> orderStockRejectedItems)

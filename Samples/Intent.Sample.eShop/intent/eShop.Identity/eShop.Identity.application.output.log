@@ -18,7 +18,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</ProjectId>
-      <CorrelationId>Intent.AspNetCore.Versioning.ApiVersioningConfiguration</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.Versioning.ApiVersioningConfiguration#66f492b7-20ca-4e74-b7f0-4e63ca3053b9</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Configuration/ApiVersioningConfiguration.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ApiVersioningConfiguration.cs</ProjectRelativeFilePath>
@@ -26,7 +26,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</ProjectId>
-      <CorrelationId>Intent.AspNetCore.Versioning.ApiVersionSwaggerGenOptions</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.Versioning.ApiVersionSwaggerGenOptions#a5be25ad-fed8-4127-8273-c39496ea79a2</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Configuration/ApiVersionSwaggerGenOptions.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ApiVersionSwaggerGenOptions.cs</ProjectRelativeFilePath>
@@ -34,7 +34,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</ProjectId>
-      <CorrelationId>Intent.Application.Identity.ApplicationSecurityConfiguration</CorrelationId>
+      <CorrelationId>Intent.Application.Identity.ApplicationSecurityConfiguration#d76c9b6c-2029-46b3-9f3e-0cfb6d5329d8</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Configuration/ApplicationSecurityConfiguration.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ApplicationSecurityConfiguration.cs</ProjectRelativeFilePath>
@@ -42,7 +42,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</ProjectId>
-      <CorrelationId>Intent.AspNetCore.Identity.AspNetCoreIdentityConfiguration</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.Identity.AspNetCoreIdentityConfiguration#aa52bdef-4509-48c8-b9d8-5ee3df378bce</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Configuration/AspNetCoreIdentityConfiguration.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>AspNetCoreIdentityConfiguration.cs</ProjectRelativeFilePath>
@@ -50,7 +50,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</ProjectId>
-      <CorrelationId>Intent.AspNetCore.HealthChecks.HealthChecksConfiguration</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.HealthChecks.HealthChecksConfiguration#12acfafe-57a1-4097-9242-129a4d32d5b3</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Configuration/HealthChecksConfiguration.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>HealthChecksConfiguration.cs</ProjectRelativeFilePath>
@@ -58,7 +58,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</ProjectId>
-      <CorrelationId>Intent.AspNetCore.Identity.IdentityServiceCollectionExtensions</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.Identity.IdentityServiceCollectionExtensions#00c01636-b7f9-4af2-8e05-8b94dddb25a2</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Configuration/IdentityServiceCollectionExtensions.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IdentityServiceCollectionExtensions.cs</ProjectRelativeFilePath>
@@ -66,7 +66,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</ProjectId>
-      <CorrelationId>Intent.AspNetCore.IdentityService.IdentityServiceEmailSenderCollectionExtensions</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.IdentityService.IdentityServiceEmailSenderCollectionExtensions#590c5bc8-0e1c-4368-a76a-82801263bea0</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Configuration/IdentityServiceEmailSenderCollectionExtensions.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IdentityServiceEmailSenderCollectionExtensions.cs</ProjectRelativeFilePath>
@@ -74,7 +74,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</ProjectId>
-      <CorrelationId>Intent.AspNetCore.ProblemDetailsConfiguration</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.ProblemDetailsConfiguration#ffe99208-2d3f-46c9-89ed-360b08c55819</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Configuration/ProblemDetailsConfiguration.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ProblemDetailsConfiguration.cs</ProjectRelativeFilePath>
@@ -82,7 +82,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>43a101a8-3d83-447c-8de8-b1a4d6c7d860</ProjectId>
-      <CorrelationId>Intent.AspNetCore.Swashbuckle.SwashbuckleConfiguration</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.Swashbuckle.SwashbuckleConfiguration#74262c99-e431-4f43-a9ac-54516bc502a3</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Configuration/SwashbuckleConfiguration.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>SwashbuckleConfiguration.cs</ProjectRelativeFilePath>
@@ -106,7 +106,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>2d032700-16a6-445c-acb7-d4f648ab0d43</ProjectId>
-      <CorrelationId>Intent.AspNetCore.Swashbuckle.Security.AuthorizeCheckOperationFilter</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.Swashbuckle.Security.AuthorizeCheckOperationFilter#d9e7510a-964e-45ae-980b-e5016350bb91</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Filters/AuthorizeCheckOperationFilter.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>AuthorizeCheckOperationFilter.cs</ProjectRelativeFilePath>
@@ -114,7 +114,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>2d032700-16a6-445c-acb7-d4f648ab0d43</ProjectId>
-      <CorrelationId>Intent.AspNetCore.Controllers.ExceptionFilter</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.Controllers.ExceptionFilter#01fbcd1c-3bed-4f7e-ac59-ee40273b81a2</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Filters/ExceptionFilter.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ExceptionFilter.cs</ProjectRelativeFilePath>
@@ -122,7 +122,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>2d032700-16a6-445c-acb7-d4f648ab0d43</ProjectId>
-      <CorrelationId>Intent.AspNetCore.Swashbuckle.TypeSchemaFilter</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.Swashbuckle.TypeSchemaFilter#604bc0ed-4f3e-4bb0-8bb7-200af36c423c</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Filters/TypeSchemaFilter.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>TypeSchemaFilter.cs</ProjectRelativeFilePath>
@@ -130,7 +130,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>7eb8e9eb-5838-4052-94b6-05e99ac3bc1f</ProjectId>
-      <CorrelationId>Intent.Modules.AspNetCore.Logging.Serilog.BoundedLoggingDestructuringPolicyTemplate</CorrelationId>
+      <CorrelationId>Intent.Modules.AspNetCore.Logging.Serilog.BoundedLoggingDestructuringPolicyTemplate#74da5734-600d-4949-958e-ea783d58d9fc</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Logging/BoundedLoggingDestructuringPolicy.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>BoundedLoggingDestructuringPolicy.cs</ProjectRelativeFilePath>
@@ -138,7 +138,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>6111ff3d-11a6-4753-8af3-8f100e077774</ProjectId>
-      <CorrelationId>Intent.AspNetCore.Program</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.Program#51fb83fc-a251-4a33-bf09-ad85bd8cbd61</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Program.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Program.cs</ProjectRelativeFilePath>
@@ -154,7 +154,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>d91b8062-f9f8-45ed-815c-8604e4a4b0e6</ProjectId>
-      <CorrelationId>Intent.Application.Identity.CurrentUserService</CorrelationId>
+      <CorrelationId>Intent.Application.Identity.CurrentUserService#fef09728-6f84-446c-8004-9a63b8ae0135</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Services/CurrentUserService.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>CurrentUserService.cs</ProjectRelativeFilePath>
@@ -162,7 +162,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>d91b8062-f9f8-45ed-815c-8604e4a4b0e6</ProjectId>
-      <CorrelationId>Intent.AspNetCore.IdentityService.IdentityServiceManager</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.IdentityService.IdentityServiceManager#3dfb8bc0-9a94-4502-876b-927ea4d57ebd</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Services/IdentityServiceManager.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IdentityServiceManager.cs</ProjectRelativeFilePath>
@@ -170,7 +170,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>d91b8062-f9f8-45ed-815c-8604e4a4b0e6</ProjectId>
-      <CorrelationId>Intent.AspNetCore.IdentityService.TokenServiceInterface</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.IdentityService.TokenServiceInterface#b5bd08ee-c54a-4091-939c-68577508ad1f</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Services/ITokenService.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ITokenService.cs</ProjectRelativeFilePath>
@@ -178,7 +178,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>d91b8062-f9f8-45ed-815c-8604e4a4b0e6</ProjectId>
-      <CorrelationId>Intent.AspNetCore.IdentityService.TokenService</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.IdentityService.TokenService#9005d21f-179f-410e-be97-b266e3ed9783</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Api/Services/TokenService.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>TokenService.cs</ProjectRelativeFilePath>
@@ -186,7 +186,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>1a916924-99f0-410c-b5bc-1854510801a8</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.Behaviours.AuthorizationBehaviour</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.Behaviours.AuthorizationBehaviour#715b6aac-3594-4ead-a658-954e071a9e61</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Behaviours/AuthorizationBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>AuthorizationBehaviour.cs</ProjectRelativeFilePath>
@@ -194,7 +194,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>1a916924-99f0-410c-b5bc-1854510801a8</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.Behaviours.LoggingBehaviour</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.Behaviours.LoggingBehaviour#78eec5c1-bde3-41b2-8b1c-74829caa33f6</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Behaviours/LoggingBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>LoggingBehaviour.cs</ProjectRelativeFilePath>
@@ -202,7 +202,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>1a916924-99f0-410c-b5bc-1854510801a8</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.Behaviours.PerformanceBehaviour</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.Behaviours.PerformanceBehaviour#285cfe55-00bd-44db-a46a-5670477ffb72</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Behaviours/PerformanceBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>PerformanceBehaviour.cs</ProjectRelativeFilePath>
@@ -210,7 +210,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>1a916924-99f0-410c-b5bc-1854510801a8</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.Behaviours.UnhandledExceptionBehaviour</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.Behaviours.UnhandledExceptionBehaviour#3766dbba-0fbb-4658-99a7-931e9df858ae</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Behaviours/UnhandledExceptionBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>UnhandledExceptionBehaviour.cs</ProjectRelativeFilePath>
@@ -218,7 +218,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>1a916924-99f0-410c-b5bc-1854510801a8</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.Behaviours.UnitOfWorkBehaviour</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.Behaviours.UnitOfWorkBehaviour#ec9aeb90-cb0d-4024-be40-d097e9a2e169</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Behaviours/UnitOfWorkBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>UnitOfWorkBehaviour.cs</ProjectRelativeFilePath>
@@ -226,7 +226,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>1a916924-99f0-410c-b5bc-1854510801a8</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.FluentValidation.ValidationBehaviour</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.ValidationBehaviour#2271bcac-e2bf-44bd-8074-6d2e417808e2</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Behaviours/ValidationBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ValidationBehaviour.cs</ProjectRelativeFilePath>
@@ -234,7 +234,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>02ae7483-d5d5-4561-a174-bb8de59a7d79</ProjectId>
-      <CorrelationId>Intent.Application.Identity.ForbiddenAccessException</CorrelationId>
+      <CorrelationId>Intent.Application.Identity.ForbiddenAccessException#09d4fbbb-318a-40bb-a4da-71bae3add788</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Exceptions/ForbiddenAccessException.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ForbiddenAccessException.cs</ProjectRelativeFilePath>
@@ -242,7 +242,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>9a3c1859-04a6-4099-be4c-bd3148a3de2b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandInterface</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandInterface#932ae38a-80c6-477c-934e-f0f0c703e389</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Interfaces/ICommand.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ICommand.cs</ProjectRelativeFilePath>
@@ -250,7 +250,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>9a3c1859-04a6-4099-be4c-bd3148a3de2b</ProjectId>
-      <CorrelationId>Intent.Application.Identity.CurrentUserInterface</CorrelationId>
+      <CorrelationId>Intent.Application.Identity.CurrentUserInterface#aa7077f6-acea-4e67-8cdc-f2e195d9fdca</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Interfaces/ICurrentUser.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ICurrentUser.cs</ProjectRelativeFilePath>
@@ -258,7 +258,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>9a3c1859-04a6-4099-be4c-bd3148a3de2b</ProjectId>
-      <CorrelationId>Intent.Application.Identity.CurrentUserServiceInterface</CorrelationId>
+      <CorrelationId>Intent.Application.Identity.CurrentUserServiceInterface#64de47a6-4a4b-4351-bcd0-cdb7bde62d12</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Interfaces/ICurrentUserService.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ICurrentUserService.cs</ProjectRelativeFilePath>
@@ -266,7 +266,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>9a3c1859-04a6-4099-be4c-bd3148a3de2b</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.QueryInterface</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.QueryInterface#1ec2f049-a29f-4338-8020-7c3e9a867638</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Interfaces/IQuery.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IQuery.cs</ProjectRelativeFilePath>
@@ -274,7 +274,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>c3f9eedc-8f3c-4e67-a67a-2bfd116c93c0</ProjectId>
-      <CorrelationId>Intent.Application.Identity.ResultModel</CorrelationId>
+      <CorrelationId>Intent.Application.Identity.ResultModel#235449dd-9438-4e15-86e6-d6deccc4b4ea</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Models/Result.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Result.cs</ProjectRelativeFilePath>
@@ -282,7 +282,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>b5b86365-da04-4149-871c-bf0d6eae41f1</ProjectId>
-      <CorrelationId>Intent.EntityFrameworkCore.PagedList</CorrelationId>
+      <CorrelationId>Intent.EntityFrameworkCore.PagedList#76a29354-c718-45cf-a5de-09cd8120ed10</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Pagination/PagedList.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>PagedList.cs</ProjectRelativeFilePath>
@@ -290,7 +290,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>b5b86365-da04-4149-871c-bf0d6eae41f1</ProjectId>
-      <CorrelationId>Intent.Application.Dtos.Pagination.PagedResult</CorrelationId>
+      <CorrelationId>Intent.Application.Dtos.Pagination.PagedResult#641c7802-35c9-4fd8-922c-b240d590345a</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Pagination/PagedResult.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>PagedResult.cs</ProjectRelativeFilePath>
@@ -298,7 +298,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>b5b86365-da04-4149-871c-bf0d6eae41f1</ProjectId>
-      <CorrelationId>Intent.Application.Dtos.Pagination.PagedResultMappingExtensions</CorrelationId>
+      <CorrelationId>Intent.Application.Dtos.Pagination.PagedResultMappingExtensions#6f96c070-673f-4264-b06f-0068e9d1aa57</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Pagination/PagedResultMappingExtensions.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>PagedResultMappingExtensions.cs</ProjectRelativeFilePath>
@@ -306,7 +306,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>f4df045f-22f3-4e06-8e5e-f1afc3601423</ProjectId>
-      <CorrelationId>Intent.Application.Identity.AuthorizeAttribute</CorrelationId>
+      <CorrelationId>Intent.Application.Identity.AuthorizeAttribute#46bd7d3e-ffbe-468d-8f27-1edfa7ec6667</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Security/AuthorizeAttribute.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>AuthorizeAttribute.cs</ProjectRelativeFilePath>
@@ -314,7 +314,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>3c27c759-5ccc-4c20-8036-fe57d57a7956</ProjectId>
-      <CorrelationId>Intent.Application.FluentValidation.Dtos.ValidationServiceInterface</CorrelationId>
+      <CorrelationId>Intent.Application.FluentValidation.Dtos.ValidationServiceInterface#2dbe7582-c800-484c-84bf-4c5207e3ab35</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Validation/IValidationService.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IValidationService.cs</ProjectRelativeFilePath>
@@ -322,7 +322,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>3c27c759-5ccc-4c20-8036-fe57d57a7956</ProjectId>
-      <CorrelationId>Intent.Application.FluentValidation.Dtos.ValidatorProviderInterface</CorrelationId>
+      <CorrelationId>Intent.Application.FluentValidation.Dtos.ValidatorProviderInterface#0d6f45d3-556b-46a1-960e-ff5ed3b8fe07</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Validation/IValidatorProvider.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IValidatorProvider.cs</ProjectRelativeFilePath>
@@ -330,7 +330,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>3c27c759-5ccc-4c20-8036-fe57d57a7956</ProjectId>
-      <CorrelationId>Intent.Application.FluentValidation.Dtos.ValidationService</CorrelationId>
+      <CorrelationId>Intent.Application.FluentValidation.Dtos.ValidationService#fdc2cf70-8bda-4f9a-9f31-d5f9135862d0</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Validation/ValidationService.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ValidationService.cs</ProjectRelativeFilePath>
@@ -338,7 +338,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>3c27c759-5ccc-4c20-8036-fe57d57a7956</ProjectId>
-      <CorrelationId>Intent.Application.FluentValidation.Dtos.ValidatorProvider</CorrelationId>
+      <CorrelationId>Intent.Application.FluentValidation.Dtos.ValidatorProvider#bb5942c9-6345-45c6-8696-08cb28739e6a</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Common/Validation/ValidatorProvider.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ValidatorProvider.cs</ProjectRelativeFilePath>
@@ -346,7 +346,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>5e5e515e-cb67-4787-93b7-9a88a463ae41</ProjectId>
-      <CorrelationId>Intent.Application.DependencyInjection.DependencyInjection</CorrelationId>
+      <CorrelationId>Intent.Application.DependencyInjection.DependencyInjection#69c44199-e5c6-4577-b21a-c8c51e60058e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/DependencyInjection.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>DependencyInjection.cs</ProjectRelativeFilePath>
@@ -522,7 +522,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>a7efba7f-fbc7-4ffc-9c7a-f6240652fa1c</ProjectId>
-      <CorrelationId>Intent.AspNetCore.IdentityService.IdentityEmailSenderInterface</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.IdentityService.IdentityEmailSenderInterface#13b187e9-1fed-45aa-ab02-5e9a2ecc3da2</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Interfaces/IIdentityEmailSender.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IIdentityEmailSender.cs</ProjectRelativeFilePath>
@@ -538,7 +538,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>a7efba7f-fbc7-4ffc-9c7a-f6240652fa1c</ProjectId>
-      <CorrelationId>Intent.AspNetCore.IdentityService.IdentityServiceManagerInterface</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.IdentityService.IdentityServiceManagerInterface#f256fcf9-9ec2-427d-99c5-8043a97173ea</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Application/Interfaces/IIdentityServiceManager.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IIdentityServiceManager.cs</ProjectRelativeFilePath>
@@ -546,7 +546,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>c75618b1-5922-46e5-b7bf-ab60b3b80650</ProjectId>
-      <CorrelationId>Intent.Entities.CollectionExtensions</CorrelationId>
+      <CorrelationId>Intent.Entities.CollectionExtensions#3286c425-6d1b-4f90-97cf-c5dfb5d92398</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Domain/Common/CollectionExtensions.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>CollectionExtensions.cs</ProjectRelativeFilePath>
@@ -554,7 +554,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>d54a288f-650d-4b36-bb23-5c47224c9931</ProjectId>
-      <CorrelationId>Intent.Entities.NotFoundException</CorrelationId>
+      <CorrelationId>Intent.Entities.NotFoundException#161c3688-51f5-4d99-a280-320bd57af2db</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Domain/Common/Exceptions/NotFoundException.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>NotFoundException.cs</ProjectRelativeFilePath>
@@ -562,7 +562,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>65920a58-fd90-44a3-a42e-be552685c549</ProjectId>
-      <CorrelationId>Intent.Entities.Repositories.Api.UnitOfWorkInterface</CorrelationId>
+      <CorrelationId>Intent.Entities.Repositories.Api.UnitOfWorkInterface#b98e3d75-6efd-4762-99c9-9620195adf6f</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Domain/Common/Interfaces/IUnitOfWork.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IUnitOfWork.cs</ProjectRelativeFilePath>
@@ -570,7 +570,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>c75618b1-5922-46e5-b7bf-ab60b3b80650</ProjectId>
-      <CorrelationId>Intent.Entities.UpdateHelper</CorrelationId>
+      <CorrelationId>Intent.Entities.UpdateHelper#743f0178-f6f5-49e6-813a-3761813143b9</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Domain/Common/UpdateHelper.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>UpdateHelper.cs</ProjectRelativeFilePath>
@@ -602,7 +602,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>975321d1-ede6-4e76-849f-5b001e7d9724</ProjectId>
-      <CorrelationId>Intent.EntityFrameworkCore.Repositories.EFRepositoryInterface</CorrelationId>
+      <CorrelationId>Intent.EntityFrameworkCore.Repositories.EFRepositoryInterface#9e3a1a8b-21cf-4280-99de-2abcf33a9c14</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Domain/Repositories/IEFRepository.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IEFRepository.cs</ProjectRelativeFilePath>
@@ -610,7 +610,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>975321d1-ede6-4e76-849f-5b001e7d9724</ProjectId>
-      <CorrelationId>Intent.Entities.Repositories.Api.PagedListInterface</CorrelationId>
+      <CorrelationId>Intent.Entities.Repositories.Api.PagedListInterface#c0cce6d8-5d6a-4d96-8d8e-6099d3467788</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Domain/Repositories/IPagedList.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IPagedList.cs</ProjectRelativeFilePath>
@@ -618,7 +618,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>975321d1-ede6-4e76-849f-5b001e7d9724</ProjectId>
-      <CorrelationId>Intent.Entities.Repositories.Api.RepositoryInterface</CorrelationId>
+      <CorrelationId>Intent.Entities.Repositories.Api.RepositoryInterface#70ed1713-bfe2-48c0-843d-775fd9c74f1c</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Domain/Repositories/IRepository.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IRepository.cs</ProjectRelativeFilePath>
@@ -626,7 +626,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4dadaa46-430d-4b38-ba9a-8bbd37e4788a</ProjectId>
-      <CorrelationId>Intent.Infrastructure.DependencyInjection.DependencyInjection</CorrelationId>
+      <CorrelationId>Intent.Infrastructure.DependencyInjection.DependencyInjection#3984eef2-96a0-4300-972e-b58eb49b67d0</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Infrastructure/DependencyInjection.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>DependencyInjection.cs</ProjectRelativeFilePath>
@@ -642,7 +642,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>b2f95620-b42e-4d32-b584-45266138bae1</ProjectId>
-      <CorrelationId>Intent.AspNetCore.IdentityService.IdentityEmailSender</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.IdentityService.IdentityEmailSender#161ae8bd-d9fe-4a69-ba17-723186b885eb</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Infrastructure/Implementation/Identity/IdentityEmailSender.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IdentityEmailSender.cs</ProjectRelativeFilePath>
@@ -650,7 +650,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>d7adb122-e885-46af-9610-4bcf83581d89</ProjectId>
-      <CorrelationId>Intent.EntityFrameworkCore.DbMigrationsReadMe</CorrelationId>
+      <CorrelationId>Intent.EntityFrameworkCore.DbMigrationsReadMe#a835bdc4-e63c-4d39-b4d3-24f523a8c170</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Infrastructure/Migrations/README.md</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>README.md</ProjectRelativeFilePath>
@@ -658,7 +658,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>b03e4a4a-f114-488b-af6b-85a820dd71ba</ProjectId>
-      <CorrelationId>Intent.AspNetCore.IdentityService.EmailSenderOptions</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.IdentityService.EmailSenderOptions#5bb477f8-5ba4-4071-88fb-b81b9df2abfa</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Infrastructure/Options/EmailSenderOptions.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>EmailSenderOptions.cs</ProjectRelativeFilePath>
@@ -690,7 +690,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>8e7dbf77-672f-47e9-bdcb-04966d3c7f92</ProjectId>
-      <CorrelationId>Intent.EntityFrameworkCore.Repositories.RepositoryBase</CorrelationId>
+      <CorrelationId>Intent.EntityFrameworkCore.Repositories.RepositoryBase#0101e0f5-b785-424f-9d37-1fe811eaab15</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Identity.Infrastructure/Repositories/RepositoryBase.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>RepositoryBase.cs</ProjectRelativeFilePath>

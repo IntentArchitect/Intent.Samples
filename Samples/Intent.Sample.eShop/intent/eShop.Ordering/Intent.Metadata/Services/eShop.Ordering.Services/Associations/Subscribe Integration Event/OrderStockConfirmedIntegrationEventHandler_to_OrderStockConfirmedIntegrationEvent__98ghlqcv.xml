@@ -19,7 +19,7 @@
     <childElements />
   </sourceEnd>
   <targetEnd id="80b52c86-43c8-4e96-aa44-c0a24e3d01a8" type="Subscribe Integration Event Target End" typeId="16fa2952-79e6-4150-b5ab-45aa4c106de4">
-    <display>handles: OrderStockConfirmedIntegrationEvent</display>
+    <display>[handles] OrderStockConfirmedIntegrationEvent</display>
     <order>0</order>
     <traits>
       <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />

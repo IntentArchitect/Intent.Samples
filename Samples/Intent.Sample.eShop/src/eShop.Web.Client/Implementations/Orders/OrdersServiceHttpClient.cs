@@ -35,7 +35,7 @@ namespace eShop.Web.Client.Implementations.Orders
         public async Task<int> CreateOrderAsync(CreateOrderCommand command, CancellationToken cancellationToken = default)
         {
             var relativeUri = $"api/orders";
-            var httpRequest = new HttpRequestMessage(HttpMethod.Post, relativeUri);
+            using var httpRequest = new HttpRequestMessage(HttpMethod.Post, relativeUri);
             httpRequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(JSON_MEDIA_TYPE));
 
             var content = JsonSerializer.Serialize(command, _serializerOptions);
@@ -59,7 +59,7 @@ namespace eShop.Web.Client.Implementations.Orders
         public async Task<List<OrderSummaryDto>> GetOrdersAsync(CancellationToken cancellationToken = default)
         {
             var relativeUri = $"api/v1/orders";
-            var httpRequest = new HttpRequestMessage(HttpMethod.Get, relativeUri);
+            using var httpRequest = new HttpRequestMessage(HttpMethod.Get, relativeUri);
             httpRequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(JSON_MEDIA_TYPE));
 
             using (var response = await _httpClient.SendAsync(httpRequest, HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false))

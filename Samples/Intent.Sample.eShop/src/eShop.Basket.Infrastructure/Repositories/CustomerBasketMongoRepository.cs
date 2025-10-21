@@ -1,10 +1,12 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
+using System.Threading;
+using System.Threading.Tasks;
 using eShop.Basket.Domain.Entities;
 using eShop.Basket.Domain.Repositories;
-using eShop.Basket.Domain.Repositories.Documents;
 using eShop.Basket.Infrastructure.Persistence;
-using eShop.Basket.Infrastructure.Persistence.Documents;
 using Intent.RoslynWeaver.Attributes;
 using MongoDB.Driver;
 
@@ -13,11 +15,14 @@ using MongoDB.Driver;
 
 namespace eShop.Basket.Infrastructure.Repositories
 {
-    internal class CustomerBasketMongoRepository : MongoRepositoryBase<CustomerBasket, CustomerBasketDocument, ICustomerBasketDocument, string>, ICustomerBasketRepository
+    internal class CustomerBasketMongoRepository : MongoRepositoryBase<CustomerBasket, string>, ICustomerBasketRepository
     {
-        public CustomerBasketMongoRepository(IMongoCollection<CustomerBasketDocument> collection,
-            MongoDbUnitOfWork unitOfWork) : base(collection, unitOfWork)
+        public CustomerBasketMongoRepository(IMongoCollection<CustomerBasket> collection, MongoDbUnitOfWork unitOfWork) : base(collection, unitOfWork, x => x.BuyerId)
         {
         }
+
+        public Task<CustomerBasket?> FindByIdAsync(string buyerId, CancellationToken cancellationToken = default) => FindAsync(x => x.BuyerId == buyerId, cancellationToken);
+
+        public Task<List<CustomerBasket>> FindByIdsAsync(string[] buyerIds, CancellationToken cancellationToken = default) => FindAllAsync(x => buyerIds.Contains(x.BuyerId), cancellationToken);
     }
 }

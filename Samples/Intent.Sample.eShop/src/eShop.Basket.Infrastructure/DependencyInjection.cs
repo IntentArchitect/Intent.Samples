@@ -1,14 +1,15 @@
+using System;
 using eShop.Basket.Application.Common.Eventing;
 using eShop.Basket.Domain.Common.Interfaces;
 using eShop.Basket.Domain.Repositories;
 using eShop.Basket.Infrastructure.Configuration;
 using eShop.Basket.Infrastructure.Eventing;
 using eShop.Basket.Infrastructure.Persistence;
-using eShop.Basket.Infrastructure.Persistence.Documents;
 using eShop.Basket.Infrastructure.Repositories;
 using Intent.RoslynWeaver.Attributes;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using MongoDB.Driver;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
@@ -20,33 +21,16 @@ namespace eShop.Basket.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddSingleton<IMongoClient>(sp =>
+            var cs = configuration.GetConnectionString("MongoDbConnection");
+            services.TryAddSingleton<IMongoClient>(_ => new MongoClient(cs));
+            services.TryAddSingleton<IMongoDatabase>(sp =>
                     {
-                        // IntentIgnore
-                        var connectionString = configuration.GetConnectionString("eshop");
-                        return new MongoClient(connectionString);
+                        var dbName = new MongoUrl(cs).DatabaseName
+                                     ?? throw new InvalidOperationException(
+                                         "MongoDbConnection must include a database name.");
+                        return sp.GetRequiredService<IMongoClient>().GetDatabase(dbName);
                     });
-            services.AddSingleton(sp =>
-                    {
-                        // IntentIgnore
-                        var connectionString = configuration.GetConnectionString("eshop");
-
-                        // Parse connection string to get the database name
-                        var mongoUrl = new MongoUrl(connectionString);
-                        var client = sp.GetRequiredService<IMongoClient>();
-
-                        return client.GetDatabase(mongoUrl.DatabaseName);
-                    });
-            services.AddSingleton<IMongoCollection<BasketItemDocument>>(sp =>
-                            {
-                                var database = sp.GetRequiredService<IMongoDatabase>();
-                                return database.GetCollection<BasketItemDocument>("BasketItem");
-                            });
-            services.AddSingleton<IMongoCollection<CustomerBasketDocument>>(sp =>
-                            {
-                                var database = sp.GetRequiredService<IMongoDatabase>();
-                                return database.GetCollection<CustomerBasketDocument>("CustomerBasket");
-                            });
+            services.RegisterMongoCollections(typeof(DependencyInjection).Assembly);
             services.AddScoped<ICustomerBasketRepository, CustomerBasketMongoRepository>();
             services.AddScoped<MongoDbUnitOfWork>();
             services.AddScoped<IMongoDbUnitOfWork>(provider => provider.GetRequiredService<MongoDbUnitOfWork>());

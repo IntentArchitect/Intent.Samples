@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using eShop.Basket.Domain.Common.Interfaces;
 using eShop.Basket.Domain.Repositories;
 using eShop.Basket.Infrastructure.Persistence;
-using eShop.Basket.Infrastructure.Persistence.Documents;
 using Intent.RoslynWeaver.Attributes;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
@@ -17,17 +16,22 @@ using MongoDB.Driver.Linq;
 
 namespace eShop.Basket.Infrastructure.Repositories
 {
-    internal abstract class MongoRepositoryBase<TDomain, TDocument, TDocumentInterface, TIdentifier> : IMongoRepository<TDomain, TDocumentInterface, TIdentifier>
+    internal abstract class MongoRepositoryBase<TDomain, TIdentifier> : IMongoRepository<TDomain, TIdentifier>
         where TDomain : class
-        where TDocument : IMongoDbDocument<TDomain, TDocument, TIdentifier>, TDocumentInterface, new()
     {
-        private readonly IMongoCollection<TDocument> _collection;
+        private readonly Func<TDomain, TIdentifier> _getId;
+        private readonly IMongoCollection<TDomain> _collection;
         private readonly MongoDbUnitOfWork _unitOfWork;
+        private readonly Expression<Func<TDomain, TIdentifier>> _idSelector;
 
-        protected MongoRepositoryBase(IMongoCollection<TDocument> collection, MongoDbUnitOfWork unitOfWork)
+        protected MongoRepositoryBase(IMongoCollection<TDomain> collection,
+            MongoDbUnitOfWork unitOfWork,
+            Expression<Func<TDomain, TIdentifier>> idSelector)
         {
             _collection = collection;
             _unitOfWork = unitOfWork;
+            _idSelector = idSelector;
+            _getId = idSelector.Compile();
         }
 
         public IMongoDbUnitOfWork UnitOfWork => _unitOfWork;
@@ -37,9 +41,7 @@ namespace eShop.Basket.Infrastructure.Repositories
             _unitOfWork.Track(entity);
             _unitOfWork.Enqueue(async cancellationToken =>
             {
-                var document = new TDocument().PopulateFromEntity(entity);
-                await _collection.InsertOneAsync(document, cancellationToken: cancellationToken);
-                document.ToEntity(entity);
+                await _collection.InsertOneAsync(entity, cancellationToken: cancellationToken);
             });
         }
 
@@ -47,53 +49,36 @@ namespace eShop.Basket.Infrastructure.Repositories
         {
             _unitOfWork.Enqueue(async cancellationToken =>
             {
-                var document = new TDocument().PopulateFromEntity(entity);
-                await _collection.DeleteOneAsync(document.GetIdFilter(), cancellationToken: cancellationToken);
+                await _collection.DeleteOneAsync(GetIdFilter(entity), cancellationToken: cancellationToken);
             });
-        }
-
-        public virtual async Task<TDomain> FindByIdAsync(TIdentifier id, CancellationToken cancellationToken = default)
-        {
-            var cursor = await _collection.FindAsync(TDocument.GetIdFilter(id));
-            return LoadAndTrackDocument(cursor.Single());
-
-        }
-
-        public virtual async Task<List<TDomain>> FindByIdsAsync(
-            TIdentifier[] ids,
-            CancellationToken cancellationToken = default)
-        {
-            var cursor = await _collection.FindAsync(TDocument.GetIdsFilter(ids));
-            return LoadAndTrackDocuments(cursor.ToEnumerable()).ToList();
         }
 
         public virtual void Update(TDomain entity)
         {
             _unitOfWork.Enqueue(async cancellationToken =>
             {
-                var document = new TDocument().PopulateFromEntity(entity);
-                await _collection.ReplaceOneAsync(document.GetIdFilter(), document, cancellationToken: cancellationToken);
+                await _collection.ReplaceOneAsync(GetIdFilter(entity), entity, cancellationToken: cancellationToken);
             });
         }
 
         public virtual List<TDomain> SearchText(
             string searchText,
-            Expression<Func<TDocumentInterface, bool>>? filterExpression = null)
+            Expression<Func<TDomain, bool>>? filterExpression = null)
         {
-            var textFilter = Builders<TDocument>.Filter.Text(searchText);
-            FilterDefinition<TDocument> combinedFilter = textFilter;
+            var textFilter = Builders<TDomain>.Filter.Text(searchText);
+            FilterDefinition<TDomain> combinedFilter = textFilter;
 
             if (filterExpression != null)
             {
-                var adaptedFilter = Builders<TDocument>.Filter.Where(AdaptFilterPredicate(filterExpression));
-                combinedFilter = Builders<TDocument>.Filter.And(textFilter, adaptedFilter);
+                var adaptedFilter = Builders<TDomain>.Filter.Where(filterExpression);
+                combinedFilter = Builders<TDomain>.Filter.And(textFilter, adaptedFilter);
             }
             var documents = _collection.Find(combinedFilter).ToList();
             return documents.Select(LoadAndTrackDocument).ToList();
         }
 
         public virtual async Task<TDomain?> FindAsync(
-            Expression<Func<TDocumentInterface, bool>> filterExpression,
+            Expression<Func<TDomain, bool>> filterExpression,
             CancellationToken cancellationToken = default)
         {
             var documents = QueryInternal(filterExpression);
@@ -108,8 +93,8 @@ namespace eShop.Basket.Infrastructure.Repositories
         }
 
         public virtual async Task<TDomain?> FindAsync(
-            Expression<Func<TDocumentInterface, bool>> filterExpression,
-            Func<IQueryable<TDocumentInterface>, IQueryable<TDocumentInterface>> linq,
+            Expression<Func<TDomain, bool>> filterExpression,
+            Func<IQueryable<TDomain>, IQueryable<TDomain>> linq,
             CancellationToken cancellationToken = default)
         {
             var documents = QueryInternal(filterExpression, linq);
@@ -119,11 +104,11 @@ namespace eShop.Basket.Infrastructure.Repositories
             {
                 return default;
             }
-            return LoadAndTrackDocument((TDocument)document);
+            return LoadAndTrackDocument(document);
         }
 
         public virtual async Task<TDomain?> FindAsync(
-            Func<IQueryable<TDocumentInterface>, IQueryable<TDocumentInterface>> queryOptions,
+            Func<IQueryable<TDomain>, IQueryable<TDomain>> queryOptions,
             CancellationToken cancellationToken = default)
         {
             var documents = QueryInternal(x => true, queryOptions);
@@ -134,7 +119,7 @@ namespace eShop.Basket.Infrastructure.Repositories
                 return default;
             }
 
-            return LoadAndTrackDocument((TDocument)document);
+            return LoadAndTrackDocument(document);
         }
 
         public virtual async Task<List<TDomain>> FindAllAsync(CancellationToken cancellationToken = default)
@@ -145,7 +130,7 @@ namespace eShop.Basket.Infrastructure.Repositories
         }
 
         public virtual async Task<List<TDomain>> FindAllAsync(
-            Expression<Func<TDocumentInterface, bool>> filterExpression,
+            Expression<Func<TDomain, bool>> filterExpression,
             CancellationToken cancellationToken = default)
         {
             var documents = QueryInternal(filterExpression);
@@ -159,8 +144,8 @@ namespace eShop.Basket.Infrastructure.Repositories
         }
 
         public virtual async Task<List<TDomain>> FindAllAsync(
-            Expression<Func<TDocumentInterface, bool>> filterExpression,
-            Func<IQueryable<TDocumentInterface>, IQueryable<TDocumentInterface>> linq,
+            Expression<Func<TDomain, bool>> filterExpression,
+            Func<IQueryable<TDomain>, IQueryable<TDomain>> linq,
             CancellationToken cancellationToken = default)
         {
             var documents = QueryInternal(filterExpression, linq);
@@ -170,7 +155,7 @@ namespace eShop.Basket.Infrastructure.Repositories
                 return default;
             }
 
-            return LoadAndTrackDocuments(documents.Select(d => (TDocument)d)).ToList();
+            return LoadAndTrackDocuments(documents).ToList();
         }
 
         public virtual async Task<IPagedList<TDomain>> FindAllAsync(
@@ -179,32 +164,32 @@ namespace eShop.Basket.Infrastructure.Repositories
             CancellationToken cancellationToken = default)
         {
             var query = QueryInternal(x => true);
-            return await MongoPagedList<TDomain, TDocument, TIdentifier>.CreateAsync(query.Cast<TDomain>(), pageNo, pageSize, cancellationToken);
+            return await MongoPagedList<TDomain, TIdentifier>.CreateAsync(query, pageNo, pageSize, cancellationToken);
         }
 
         public virtual async Task<IPagedList<TDomain>> FindAllAsync(
-            Expression<Func<TDocumentInterface, bool>> filterExpression,
+            Expression<Func<TDomain, bool>> filterExpression,
             int pageNo,
             int pageSize,
-            Func<IQueryable<TDocumentInterface>, IQueryable<TDocumentInterface>> linq,
+            Func<IQueryable<TDomain>, IQueryable<TDomain>> linq,
             CancellationToken cancellationToken = default)
         {
             var query = QueryInternal(filterExpression, linq);
-            return await MongoPagedList<TDomain, TDocument, TIdentifier>.CreateAsync(query.Cast<TDomain>(), pageNo, pageSize, cancellationToken);
+            return await MongoPagedList<TDomain, TIdentifier>.CreateAsync(query, pageNo, pageSize, cancellationToken);
         }
 
         public virtual async Task<IPagedList<TDomain>> FindAllAsync(
-            Expression<Func<TDocumentInterface, bool>> filterExpression,
+            Expression<Func<TDomain, bool>> filterExpression,
             int pageNo,
             int pageSize,
             CancellationToken cancellationToken = default)
         {
             var query = QueryInternal(filterExpression);
-            return await MongoPagedList<TDomain, TDocument, TIdentifier>.CreateAsync(query.Cast<TDomain>(), pageNo, pageSize, cancellationToken);
+            return await MongoPagedList<TDomain, TIdentifier>.CreateAsync(query, pageNo, pageSize, cancellationToken);
         }
 
         public virtual async Task<List<TDomain>> FindAllAsync(
-            Func<IQueryable<TDocumentInterface>, IQueryable<TDocumentInterface>> queryOptions,
+            Func<IQueryable<TDomain>, IQueryable<TDomain>> queryOptions,
             CancellationToken cancellationToken = default)
         {
             var query = QueryInternal(x => true, queryOptions);
@@ -216,111 +201,94 @@ namespace eShop.Basket.Infrastructure.Repositories
         public virtual async Task<IPagedList<TDomain>> FindAllAsync(
             int pageNo,
             int pageSize,
-            Func<IQueryable<TDocumentInterface>, IQueryable<TDocumentInterface>> queryOptions,
+            Func<IQueryable<TDomain>, IQueryable<TDomain>> queryOptions,
             CancellationToken cancellationToken = default)
         {
             var query = QueryInternal(x => true, queryOptions);
-            return await MongoPagedList<TDomain, TDocument, TIdentifier>.CreateAsync(query.Cast<TDomain>(), pageNo, pageSize, cancellationToken);
+            return await MongoPagedList<TDomain, TIdentifier>.CreateAsync(query, pageNo, pageSize, cancellationToken);
         }
 
         public virtual async Task<int> CountAsync(
-            Expression<Func<TDocumentInterface, bool>> filterExpression,
+            Expression<Func<TDomain, bool>> filterExpression,
             CancellationToken cancellationToken = default)
         {
             return await QueryInternal(filterExpression).CountAsync(cancellationToken);
         }
 
         public virtual async Task<int> CountAsync(
-            Func<IQueryable<TDocumentInterface>, IQueryable<TDocumentInterface>>? queryOptions = default,
+            Func<IQueryable<TDomain>, IQueryable<TDomain>>? queryOptions = default,
             CancellationToken cancellationToken = default)
         {
             return await QueryInternal(x => true, queryOptions).CountAsync(cancellationToken);
         }
 
-        public bool Any(Expression<Func<TDocumentInterface, bool>> filterExpression)
+        public bool Any(Expression<Func<TDomain, bool>> filterExpression)
         {
             return QueryInternal(filterExpression).Any();
         }
 
         public virtual async Task<bool> AnyAsync(
-            Expression<Func<TDocumentInterface, bool>> filterExpression,
+            Expression<Func<TDomain, bool>> filterExpression,
             CancellationToken cancellationToken = default)
         {
             return await QueryInternal(filterExpression).AnyAsync(cancellationToken);
         }
 
         public virtual async Task<bool> AnyAsync(
-            Func<IQueryable<TDocumentInterface>, IQueryable<TDocumentInterface>>? queryOptions = default,
+            Func<IQueryable<TDomain>, IQueryable<TDomain>>? queryOptions = default,
             CancellationToken cancellationToken = default)
         {
             return await QueryInternal(x => true, queryOptions).AnyAsync(cancellationToken);
         }
 
-        public TDomain LoadAndTrackDocument(TDocument document)
+        public TDomain LoadAndTrackDocument(TDomain entity)
         {
-            var entity = document.ToEntity();
 
             _unitOfWork.Track(entity);
 
             return entity;
         }
 
-        public IEnumerable<TDomain> LoadAndTrackDocuments(IEnumerable<TDocument> documents)
+        public IEnumerable<TDomain> LoadAndTrackDocuments(IEnumerable<TDomain> entities)
         {
-            foreach (var document in documents)
+            foreach (var entity in entities)
             {
-                yield return LoadAndTrackDocument(document);
+                yield return LoadAndTrackDocument(entity);
             }
         }
 
-        protected virtual IQueryable<TDocument> QueryInternal(Expression<Func<TDocumentInterface, bool>>? filterExpression)
+        protected FilterDefinition<TDomain> GetIdFilter(TDomain entity) => Builders<TDomain>.Filter.Eq(_idSelector, _getId(entity));
+
+        protected virtual IQueryable<TDomain> QueryInternal(Expression<Func<TDomain, bool>>? filterExpression)
+        {
+            if (filterExpression != null)
+            {
+                return QueryInternalTDocument(filterExpression);
+            }
+
+            return QueryInternalTDocument(null);
+        }
+
+        protected virtual IQueryable<TDomain> QueryInternal(
+            Expression<Func<TDomain, bool>> filterExpression,
+            Func<IQueryable<TDomain>, IQueryable<TDomain>> linq)
+        {
+            var queryable = QueryInternal(filterExpression);
+            var result = linq(queryable);
+
+            return result;
+        }
+
+        protected virtual IQueryable<TDomain> QueryInternalTDocument(Expression<Func<TDomain, bool>>? filterExpression)
         {
             var queryable = _collection.AsQueryable();
 
             if (filterExpression != null)
             {
-                queryable = queryable.Where(AdaptFilterPredicate(filterExpression));
+                queryable = queryable.Where(filterExpression);
             }
 
             return queryable;
-        }
-
-        protected virtual IQueryable<TDocument> QueryInternal(
-            Expression<Func<TDocumentInterface, bool>> filterExpression,
-            Func<IQueryable<TDocumentInterface>, IQueryable<TDocumentInterface>> linq)
-        {
-            var queryable = QueryInternal(filterExpression);
-            var castable = linq(queryable.Cast<TDocumentInterface>());
-
-            return castable.Cast<TDocument>();
-        }
-
-        /// <summary>
-        /// Adapts a <typeparamref name="TDocumentInterface"/> predicate to a <typeparamref name="TDocument"/> predicate.
-        /// </summary>
-        private static Expression<Func<TDocument, bool>> AdaptFilterPredicate(Expression<Func<TDocumentInterface, bool>> expression)
-        {
-            var beforeParameter = expression.Parameters.Single();
-            var afterParameter = Expression.Parameter(typeof(TDocument), beforeParameter.Name);
-            var visitor = new SubstitutionExpressionVisitor(beforeParameter, afterParameter);
-            return Expression.Lambda<Func<TDocument, bool>>(visitor.Visit(expression.Body)!, afterParameter);
-        }
-
-        private class SubstitutionExpressionVisitor : ExpressionVisitor
-        {
-            private readonly Expression _before;
-            private readonly Expression _after;
-
-            public SubstitutionExpressionVisitor(Expression before, Expression after)
-            {
-                _before = before;
-                _after = after;
-            }
-
-            public override Expression? Visit(Expression? node)
-            {
-                return node == _before ? _after : base.Visit(node);
-            }
         }
     }
 }

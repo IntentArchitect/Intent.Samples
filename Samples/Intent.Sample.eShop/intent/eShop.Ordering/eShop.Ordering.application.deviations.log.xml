@@ -2,12 +2,12 @@
 <deviationsLog>
   <files>
     <file>
-      <correlationId>Intent.Application.Identity.ApplicationSecurityConfiguration</correlationId>
+      <correlationId>Intent.Application.Identity.ApplicationSecurityConfiguration#8a967530-5bb7-4dae-a0da-305ea60e9f19</correlationId>
       <path>eShop.Ordering.Api/Configuration/ApplicationSecurityConfiguration.cs</path>
       <count>1</count>
-      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
-      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
-      <updatedAt>2025-07-31T06:36:58.0784781Z</updatedAt>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-09-29T11:46:21.2821429Z</updatedAt>
       <deviationsHash>3658D121F37914D60C67FE0D28124FFC0977BF0BC07ED28D83B045610449D16B</deviationsHash>
       <fileHash>9FF9C97DCBF1F040448433EE6638DBEE20980B017E607C24C4D0356BA973EF9D</fileHash>
     </file>
@@ -22,44 +22,64 @@
       <fileHash>3B9F39532CC885BC1984D5D5C2A1C4ACBE23C3C101EE8DD1AFC81CBF9DE40D43</fileHash>
     </file>
     <file>
-      <correlationId>Intent.AspNetCore.Startup</correlationId>
+      <correlationId>Intent.AspNetCore.Startup#cbc17368-3dd4-4e44-9807-e249720a08b3</correlationId>
       <path>eShop.Ordering.Api/Startup.cs</path>
       <count>1</count>
-      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
-      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
-      <updatedAt>2025-07-31T09:15:33.3622118Z</updatedAt>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-09-29T11:46:21.2820189Z</updatedAt>
       <deviationsHash>343B9FB05520CB3A383392D625D981EB00E5F265E786D6AE551D68EABC54CC3F</deviationsHash>
       <fileHash>22D6AC190746DB93900523C062AE0899B886B1DD64FF3BF8915AE2674D7B8EDC</fileHash>
     </file>
     <file>
       <correlationId>Intent.MediatR.DomainEvents.DomainEventHandler#c439bdc1-3aac-4cc1-81f5-6149e9942b85</correlationId>
       <path>eShop.Ordering.Application/EventHandlers/OrderCancelledDomainEventHandler.cs</path>
-      <count>1</count>
-      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
-      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
-      <updatedAt>2024-10-23T06:22:56.3794267Z</updatedAt>
-      <deviationsHash>95F024BBB9B93CC06F17BC55CA2B849AF9EDD9596525892D00915BACFA8C917B</deviationsHash>
-      <fileHash>F22729ADF5D1A9D03EFF6E2DE82E47B6B91CA578C15DB2C881A37D3DE76CBD1B</fileHash>
+      <count>3</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-10-06T18:00:32.8245418Z</updatedAt>
+      <deviationsHash>55BE858BAA2E1BBA9A0D1FBBA6B8731738CA0E52D91DAC9E968505D6AD0B5164</deviationsHash>
+      <fileHash>78868ED451312B92BD4DDF95DA87DDC5F82FF22A81545AA769C93F1C2B9F308D</fileHash>
     </file>
     <file>
       <correlationId>Intent.MediatR.DomainEvents.DomainEventHandler#52b0978b-ffbd-4946-99c3-880f90c2cbe6</correlationId>
       <path>eShop.Ordering.Application/EventHandlers/OrderShippedDomainEventHandler.cs</path>
+      <count>3</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-10-06T18:00:32.8245498Z</updatedAt>
+      <deviationsHash>149FF080C8B5E264A86B8E18C1C59C63085240FCC4637E7D99BB0E51C88FE955</deviationsHash>
+      <fileHash>8BCDDC73A8D475A9E21088E6B5A75C6B35D9A357395073EE5599D5E6B4370356</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.MediatR.DomainEvents.DomainEventHandler#81276f45-2593-43ae-9d2c-15e3beca0ee5</correlationId>
+      <path>eShop.Ordering.Application/EventHandlers/OrderStatusChangedToAwaitingValidationDomainEventHandler.cs</path>
       <count>1</count>
-      <updatedByAccountName>gareth.baars@intentarchitect.com</updatedByAccountName>
-      <updatedByDisplayName>Gareth Baars</updatedByDisplayName>
-      <updatedAt>2024-10-23T06:22:56.3794309Z</updatedAt>
-      <deviationsHash>95F024BBB9B93CC06F17BC55CA2B849AF9EDD9596525892D00915BACFA8C917B</deviationsHash>
-      <fileHash>4F0CBB82FC15525B712C38FDDB3AF8E2C628825F2B87C6F2B7E50CF871A9C5C3</fileHash>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-09-29T11:46:21.2836306Z</updatedAt>
+      <deviationsHash>BE8BEE9C8C4A7CAB360771C46D5BD5E76924D20C6EC487DB85148336CB40D641</deviationsHash>
+      <fileHash>A02FF9F5244C71037C52E90CE873B5762752B60B79827412663C1363461FF740</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.MediatR.DomainEvents.DomainEventHandler#6e4ec40e-5f66-4a16-9432-3103663c7acd</correlationId>
+      <path>eShop.Ordering.Application/EventHandlers/OrderStatusChangedToStockConfirmedDomainEventHandler.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-09-29T11:46:21.2836475Z</updatedAt>
+      <deviationsHash>A020E7F8B3F627C9BEE5F8F9909B56EA6E609346208DC85A8DCC749702512355</deviationsHash>
+      <fileHash>37EBA86010E2A026ECF7CE7AB280615493477E3B0BCD0573712E8A95969526A7</fileHash>
     </file>
     <file>
       <correlationId>Intent.MediatR.DomainEvents.DomainEventHandler#ee8d8af9-4c19-4b6d-b7a9-6eff718a721d</correlationId>
       <path>eShop.Ordering.Application/EventHandlers/ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler.cs</path>
-      <count>2</count>
-      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
-      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
-      <updatedAt>2025-07-31T06:36:58.0786417Z</updatedAt>
-      <deviationsHash>873BDC90AE0A059FFEB106A822091F7CDBAB5DED600F1B37200C2CAB9C259D08</deviationsHash>
-      <fileHash>F54580FDC3F2224D45E6DD4C976A601A4A33F16DAD120BCBEF6A78D4E8A31470</fileHash>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-09-29T11:46:21.2836671Z</updatedAt>
+      <deviationsHash>2673DAE3AEFB08990572903753CF5F8A0048493E0831E844850A1456B12BA604</deviationsHash>
+      <fileHash>18B8A8D4D9526CA0268BD344A209426E5090CB926DF25762F01C5D0A6E774395</fileHash>
     </file>
     <file>
       <correlationId>Intent.Eventing.Contracts.IntegrationEventMessage#d97bfbfc-2241-4dd0-82de-fb85d92697b5</correlationId>
@@ -182,6 +202,16 @@
       <fileHash>839A752466E3F3168C5C4DA22039BC3A4B2DC69B2BD0E3340352370959FE28A0</fileHash>
     </file>
     <file>
+      <correlationId>Intent.ValueObjects.ValueObject#c3e30f86-8a57-4e45-aa64-00d318bea3c1</correlationId>
+      <path>eShop.Ordering.Domain/OrderAggregate/Address.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-10-06T18:00:32.8247183Z</updatedAt>
+      <deviationsHash>CC0114B00BC67C843CE966834ED4D198A7A342D20D0DE46301C6920EE497DE2B</deviationsHash>
+      <fileHash>75EAFFFC71C505D9DA7E913EAD4CAAA4F84BA436D114230D7130419757CA7E7F</fileHash>
+    </file>
+    <file>
       <correlationId>Intent.Entities.DomainEntity#11551992-2fa3-4a1c-8c55-c02fe7cfc361</correlationId>
       <path>eShop.Ordering.Domain/OrderAggregate/Order.cs</path>
       <count>4</count>
@@ -189,7 +219,7 @@
       <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
       <updatedAt>2025-07-14T09:21:47.2181535Z</updatedAt>
       <deviationsHash>33538B5CF9E9996DA651C312A087A8993E03A02FD088662053505C0AFDD55647</deviationsHash>
-      <fileHash>4F918856F2EBFF84D7AF546FDCA379FB5BC97E40DB797ED81D7480C15A5F2AF0</fileHash>
+      <fileHash>8E587E8EE6BE9B965268E60277806303E71FF9A3DB15821F2101445BACCC2842</fileHash>
     </file>
     <file>
       <correlationId>Intent.Entities.DomainEntity#f216a27e-9b16-4837-9bf6-54b5bad5b7f7</correlationId>
@@ -202,12 +232,12 @@
       <fileHash>8BBF37885655CDB70C783012048D57F06D85E877C2F93538FAE3F542A62AF2A5</fileHash>
     </file>
     <file>
-      <correlationId>Intent.Eventing.MassTransit.MassTransitConfiguration</correlationId>
+      <correlationId>Intent.Eventing.MassTransit.MassTransitConfiguration#440824ee-6a21-4437-93c1-8b70444346a0</correlationId>
       <path>eShop.Ordering.Infrastructure/Configuration/MassTransitConfiguration.cs</path>
       <count>2</count>
-      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
-      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
-      <updatedAt>2025-09-25T13:49:25.3193054Z</updatedAt>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-09-29T11:46:21.2843609Z</updatedAt>
       <deviationsHash>E3A36D6DF1DEE2810A78A1B269FFB62841D6CFC5E102BE2340096B4F5C1C931A</deviationsHash>
       <fileHash>A134CBA880D63F95C659B36E7B62B8FE9894019B7ACEA287A46F78BFA98F5690</fileHash>
     </file>
