@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <association id="1cabc941-1bbb-4210-94e1-0d072a8ca3ad">
   <sourceEnd id="2fed828b-11b0-494e-8aef-86cf4c761db4" type="Publish Integration Event Source End" typeId="eab91b3a-9903-40a2-90e8-ddb714883eab">
-    <display>published by : OrderStatusChangedToAwaitingValidationIntegrationEventHandler.</display>
+    <display>published by : OrderStatusChangedToAwaitingValidationIntegrationEventHandler.Handler</display>
     <order>0</order>
     <typeReference id="34b810a5-1524-4cfd-bd03-09dc4c832884">
       <typeId>aac28e1a-68ec-4896-a2ec-be37ad244301</typeId>
@@ -38,7 +38,7 @@
     <stereotypes />
     <mappings>
       <mapping type="Publish Message Mapping" typeId="7ff48a4c-ee8b-4e66-9dbb-c014eb0542fb">
-        <source applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="aac28e1a-68ec-4896-a2ec-be37ad244301" location="[eShop.Catalog].[Services].[]" />
+        <source applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="aac28e1a-68ec-4896-a2ec-be37ad244301" location="[eShop.Catalog].[Services].[Handler]" />
         <target applicationId="44d380ae-948c-4862-b683-aa6e53a25264" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="8eba012d-f636-42a5-9cdb-a28d76885f7f" location="[eShop.Catalog].[Services].[OrderStockConfirmedIntegrationEvent]" />
         <mappedEnds>
           <mappedEnd>
@@ -50,7 +50,7 @@
             <sources>
               <source identifier="OrderId" mappingType="Data Mapping" mappingTypeId="d12e5102-45f3-4dde-8f63-f6a630e75771">
                 <path>
-                  <target id="aac28e1a-68ec-4896-a2ec-be37ad244301" name="" type="association" specialization="Subscribe Integration Event Target End" specializationId="16fa2952-79e6-4150-b5ab-45aa4c106de4" />
+                  <target id="aac28e1a-68ec-4896-a2ec-be37ad244301" name="Handler" type="association" specialization="Subscribe Integration Event Target End" specializationId="16fa2952-79e6-4150-b5ab-45aa4c106de4" />
                   <target id="ee310d68-a208-40ed-9499-57771611974b" name="OrderId" type="element" specialization="Property" specializationId="bde29850-5fb9-4f47-9941-b9e182fd9bdc" />
                 </path>
               </source>

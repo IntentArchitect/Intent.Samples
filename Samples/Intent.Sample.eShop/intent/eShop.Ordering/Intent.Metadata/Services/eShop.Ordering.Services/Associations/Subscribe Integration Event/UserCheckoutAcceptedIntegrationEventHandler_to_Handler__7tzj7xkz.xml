@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<association id="cd7ca205-c077-4ef9-a6f0-48be3c92ca24">
-  <sourceEnd id="b2c62761-980f-46f0-9c0f-e6a3a29229b3" type="Subscribe Integration Event Source End" typeId="5d8f5c33-f9c9-4629-b637-fad9b0096894">
-    <display>handled by: eShop.Ordering.Services.GracePeriodConfirmedIntegrationEventHandler</display>
+<association id="338a6971-5453-426c-990f-708ef9d50793">
+  <sourceEnd id="9cd2954c-68ff-451f-b650-996b14e2ebce" type="Subscribe Integration Event Source End" typeId="5d8f5c33-f9c9-4629-b637-fad9b0096894">
+    <display>handled by: eShop.Ordering.Services.UserCheckoutAcceptedIntegrationEventHandler</display>
     <order>0</order>
-    <typeReference id="176768e4-49d0-472e-9362-c8795e5e98aa">
-      <typeId>49a3e417-a005-4ec5-a952-906d8f762224</typeId>
+    <typeReference id="173d5170-2f22-40f6-87cf-6866340a655c">
+      <typeId>d74c7f81-0779-46bf-98a4-ee76c7ae0172</typeId>
       <isNavigable>false</isNavigable>
       <isNullable>false</isNullable>
       <isCollection>false</isCollection>
@@ -18,20 +18,21 @@
     <metadata />
     <childElements />
   </sourceEnd>
-  <targetEnd id="cd7ca205-c077-4ef9-a6f0-48be3c92ca24" type="Subscribe Integration Event Target End" typeId="16fa2952-79e6-4150-b5ab-45aa4c106de4">
-    <display>[handles] GracePeriodConfirmedIntegrationEvent</display>
+  <targetEnd id="338a6971-5453-426c-990f-708ef9d50793" type="Subscribe Integration Event Target End" typeId="16fa2952-79e6-4150-b5ab-45aa4c106de4">
+    <name>Handler</name>
+    <display>[handles] UserCheckoutAcceptedIntegrationEvent</display>
     <order>0</order>
     <traits>
       <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
     </traits>
-    <typeReference id="cfb48df0-bea7-4fc8-b89c-ead435e670ab">
-      <typeId>26121a0b-3aef-416f-8a8b-50070ee78b39</typeId>
+    <typeReference id="97337ea6-caf7-428b-b6cb-3e72800bc661">
+      <typeId>fd737b53-48a3-4f40-bd71-add404369a46</typeId>
       <isNavigable>true</isNavigable>
       <isNullable>false</isNullable>
       <isCollection>false</isCollection>
       <isRequired>true</isRequired>
-      <typePackageName>eShop.Ordering.Eventing.Messages</typePackageName>
-      <typePackageId>e8b2562f-2ef0-49f0-baf8-8d96c6469736</typePackageId>
+      <typePackageName>eShop.Basket.Eventing.Messages</typePackageName>
+      <typePackageId>6fc93e9e-3e6f-474c-848a-f74c25d4e35b</typePackageId>
       <stereotypes />
       <genericTypeParameters />
     </typeReference>

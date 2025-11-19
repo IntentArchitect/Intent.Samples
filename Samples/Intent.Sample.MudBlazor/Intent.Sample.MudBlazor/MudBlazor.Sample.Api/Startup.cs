@@ -54,6 +54,7 @@ namespace MudBlazor.Sample.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseWebAssemblyDebugging();
             }
             else
             {

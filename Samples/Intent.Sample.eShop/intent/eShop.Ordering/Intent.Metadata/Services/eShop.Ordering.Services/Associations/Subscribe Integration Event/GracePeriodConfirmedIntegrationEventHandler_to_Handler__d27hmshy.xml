@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<association id="7b660c98-cbdb-4d75-a90f-7159f524aa16">
-  <sourceEnd id="54077c0a-1767-480f-964e-8a2cc98c15b9" type="Subscribe Integration Event Source End" typeId="5d8f5c33-f9c9-4629-b637-fad9b0096894">
-    <display>handled by: eShop.Basket.Services.OrderStartedIntegrationEventHandler</display>
+<association id="cd7ca205-c077-4ef9-a6f0-48be3c92ca24">
+  <sourceEnd id="b2c62761-980f-46f0-9c0f-e6a3a29229b3" type="Subscribe Integration Event Source End" typeId="5d8f5c33-f9c9-4629-b637-fad9b0096894">
+    <display>handled by: eShop.Ordering.Services.GracePeriodConfirmedIntegrationEventHandler</display>
     <order>0</order>
-    <typeReference id="9593be85-0534-4db1-86d0-694fc819726d">
-      <typeId>c85b74ed-98a3-42d7-b655-46cff6542971</typeId>
+    <typeReference id="176768e4-49d0-472e-9362-c8795e5e98aa">
+      <typeId>49a3e417-a005-4ec5-a952-906d8f762224</typeId>
       <isNavigable>false</isNavigable>
       <isNullable>false</isNullable>
       <isCollection>false</isCollection>
       <isRequired>true</isRequired>
-      <typePackageName>eShop.Basket.Services</typePackageName>
-      <typePackageId>5a8d8f31-e4d4-42b2-b31f-ca2ff5ba00e3</typePackageId>
+      <typePackageName>eShop.Ordering.Services</typePackageName>
+      <typePackageId>ca7d61dd-acc3-4e7e-9c9d-6e3f90926b16</typePackageId>
       <stereotypes />
       <genericTypeParameters />
     </typeReference>
@@ -18,14 +18,15 @@
     <metadata />
     <childElements />
   </sourceEnd>
-  <targetEnd id="7b660c98-cbdb-4d75-a90f-7159f524aa16" type="Subscribe Integration Event Target End" typeId="16fa2952-79e6-4150-b5ab-45aa4c106de4">
-    <display>[handles] OrderStartedIntegrationEvent</display>
+  <targetEnd id="cd7ca205-c077-4ef9-a6f0-48be3c92ca24" type="Subscribe Integration Event Target End" typeId="16fa2952-79e6-4150-b5ab-45aa4c106de4">
+    <name>Handler</name>
+    <display>[handles] GracePeriodConfirmedIntegrationEvent</display>
     <order>0</order>
     <traits>
       <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
     </traits>
-    <typeReference id="1becaae2-4d66-46c4-a0bb-a116008966e2">
-      <typeId>038ac4a1-40f7-43d8-8880-5c3977fae015</typeId>
+    <typeReference id="cfb48df0-bea7-4fc8-b89c-ead435e670ab">
+      <typeId>26121a0b-3aef-416f-8a8b-50070ee78b39</typeId>
       <isNavigable>true</isNavigable>
       <isNullable>false</isNullable>
       <isCollection>false</isCollection>

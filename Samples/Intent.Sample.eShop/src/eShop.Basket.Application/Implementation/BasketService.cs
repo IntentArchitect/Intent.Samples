@@ -38,19 +38,15 @@ namespace eShop.Basket.Application.Implementation
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
         public async Task<BasketDto> GetBasketById(string id, CancellationToken cancellationToken = default)
         {
-            try
+            var customerBasket = await _customerBasketRepository.FindByIdAsync(id, cancellationToken);
+            if (customerBasket is null)
             {
-                var customerBasket = await _customerBasketRepository.FindByIdAsync(id, cancellationToken);
-                
-                return customerBasket.MapToBasketDto(_mapper);
-            }
-            catch (Exception)
-            {
-                var customerBasket = new CustomerBasket(id);
+                customerBasket = new CustomerBasket(id);
                 _customerBasketRepository.Add(customerBasket);
                 await _mongoDbUnitOfWork.SaveChangesAsync();
-                return customerBasket.MapToBasketDto(_mapper);
             }
+
+            return customerBasket.MapToBasketDto(_mapper);
         }
 
         /// <summary>

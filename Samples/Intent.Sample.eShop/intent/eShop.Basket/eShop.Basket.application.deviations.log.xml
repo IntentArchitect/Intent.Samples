@@ -29,7 +29,7 @@
       <updatedByDisplayName>JP Seini</updatedByDisplayName>
       <updatedAt>2025-10-06T18:00:55.938773Z</updatedAt>
       <deviationsHash>3ED1D5C5765A14BE67E1C7FFC307B25F98ECFA24C34CC1230E97453C32D84AE7</deviationsHash>
-      <fileHash>A8EE44FA9CF59028CE0D3B8BDA51C211E589290A11C46D60EEB3F98834C5BF95</fileHash>
+      <fileHash>B65760F31E6AA8EE524AB1F6711174DB90791EC4A95BB52159FFF89FBD53F923</fileHash>
     </file>
     <file>
       <correlationId>Intent.Entities.DomainEntity#09d6cad2-e555-47ba-9c4f-9b0705455f62</correlationId>
@@ -50,6 +50,16 @@
       <updatedAt>2025-09-29T11:47:10.8108445Z</updatedAt>
       <deviationsHash>E3A36D6DF1DEE2810A78A1B269FFB62841D6CFC5E102BE2340096B4F5C1C931A</deviationsHash>
       <fileHash>9244DE75DA74649196EBDECFC690C47F734F5EA7B50419EABF67F1E61A238983</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Infrastructure.DependencyInjection.DependencyInjection#abcf198a-a833-49eb-914b-fc709f2240b0</correlationId>
+      <path>eShop.Basket.Infrastructure/DependencyInjection.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-11-18T11:00:33.2188904Z</updatedAt>
+      <deviationsHash>C964CA59B2AE569C4CF74B30E5EFCC0CE179EFA49CC86D5E8584FED18702D2BC</deviationsHash>
+      <fileHash>B2D3762EDECB9C825AA931E04D4FF5EEF7FD0CEDAC29611025671CEE00F17BEE</fileHash>
     </file>
   </files>
 </deviationsLog>

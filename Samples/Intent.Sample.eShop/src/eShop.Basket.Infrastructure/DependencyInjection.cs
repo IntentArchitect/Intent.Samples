@@ -21,7 +21,9 @@ namespace eShop.Basket.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            var cs = configuration.GetConnectionString("MongoDbConnection");
+            //var cs = configuration.GetConnectionString("MongoDbConnection");
+            // IntentIgnore
+            var cs = configuration.GetConnectionString("eshop");
             services.TryAddSingleton<IMongoClient>(_ => new MongoClient(cs));
             services.TryAddSingleton<IMongoDatabase>(sp =>
                     {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <association id="8500f820-c7f2-4bc0-b754-6db95145eedc">
   <sourceEnd id="1f917057-a10c-4a03-8e0d-b452604cf4b1" type="Perform Invocation Source End" typeId="ee56bd48-8eff-4fff-8d3a-87731d002335">
-    <display>called by : GracePeriodConfirmedIntegrationEventHandler.</display>
+    <display>called by : GracePeriodConfirmedIntegrationEventHandler.Handler</display>
     <order>0</order>
     <typeReference id="ceed9c97-3ee8-40a7-93f4-1631ac20b6a6">
       <typeId>cd7ca205-c077-4ef9-a6f0-48be3c92ca24</typeId>
@@ -38,20 +38,33 @@
     <stereotypes />
     <mappings>
       <mapping type="Invocation Mapping" typeId="a4c4c5cc-76df-48ed-9d4e-c35caf44b567">
-        <source applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="822e4254-9ced-4dd1-ad56-500b861f7e4d" elementId="26121a0b-3aef-416f-8a8b-50070ee78b39" location="[eShop.Ordering].[Services].[GracePeriodConfirmedIntegrationEvent]" />
+        <source applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="cd7ca205-c077-4ef9-a6f0-48be3c92ca24" location="[eShop.Ordering].[Services].[Handler]" />
         <target applicationId="a69e0287-59a0-48ac-a257-010f24d26af3" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="ea2d331f-c2e8-4c4b-b9f8-b8f710fdf35d" location="[eShop.Ordering].[Services].[SetAwaitingValidationOrderStatusCommand]" />
         <mappedEnds>
           <mappedEnd>
+            <expression>{Handler}</expression>
+            <path>
+              <target id="ea2d331f-c2e8-4c4b-b9f8-b8f710fdf35d" name="SetAwaitingValidationOrderStatusCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+            </path>
+            <sources>
+              <source identifier="Handler" mappingType="Invocation Mapping" mappingTypeId="7ca5c18a-bdbe-434b-a68a-421899a077e7">
+                <path>
+                  <target id="cd7ca205-c077-4ef9-a6f0-48be3c92ca24" name="Handler" type="association" specialization="Subscribe Integration Event Target End" specializationId="16fa2952-79e6-4150-b5ab-45aa4c106de4" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
             <expression>{OrderId}</expression>
             <path>
-              <target id="ea2d331f-c2e8-4c4b-b9f8-b8f710fdf35d" name="SetAwaitingValidationOrderStatusCommand" type="element" specialization="Command" />
-              <target id="ceea2ae8-5b84-4036-8b61-2ecd65d3234f" name="OrderId" type="element" specialization="DTO-Field" />
+              <target id="ea2d331f-c2e8-4c4b-b9f8-b8f710fdf35d" name="SetAwaitingValidationOrderStatusCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="ceea2ae8-5b84-4036-8b61-2ecd65d3234f" name="OrderId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
             </path>
             <sources>
               <source identifier="OrderId" mappingType="Data Mapping" mappingTypeId="1ad97d12-2aa8-4f03-8cb0-3a8a4e71b4d9">
                 <path>
-                  <target id="26121a0b-3aef-416f-8a8b-50070ee78b39" name="GracePeriodConfirmedIntegrationEvent" type="element" specialization="Message" />
-                  <target id="f5a49691-c1a1-4754-9a91-ea58119d4caf" name="OrderId" type="element" specialization="Property" />
+                  <target id="cd7ca205-c077-4ef9-a6f0-48be3c92ca24" name="Handler" type="association" specialization="Subscribe Integration Event Target End" specializationId="16fa2952-79e6-4150-b5ab-45aa4c106de4" />
+                  <target id="f5a49691-c1a1-4754-9a91-ea58119d4caf" name="OrderId" type="element" specialization="Property" specializationId="bde29850-5fb9-4f47-9941-b9e182fd9bdc" />
                 </path>
               </source>
             </sources>

@@ -2,6 +2,7 @@
 @using System.ComponentModel.DataAnnotations
 @using eShop.Web.Common
 @using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Mvc
 @inject IAuthService AuthService
 @inject NavigationManager NavigationManager
 @attribute [Intent.Skip("/h1", "/div[@class='row']")]
@@ -70,17 +71,10 @@
     [SupplyParameterFromQuery]
     private string? ReturnUrl { get; set; }
 
+    [IgnoreAntiforgeryToken]
     public async Task LoginUser()
     {
         await AuthService.Login(Input.Email, Input.Password, Input.RememberMe, ReturnUrl);
-    }
-
-    protected override async Task OnInitializedAsync()
-    {
-        if (HttpMethods.IsGet(HttpContext.Request.Method))
-        {
-            await HttpContext.SignOutAsync();
-        }
     }
 
     private sealed class InputModel

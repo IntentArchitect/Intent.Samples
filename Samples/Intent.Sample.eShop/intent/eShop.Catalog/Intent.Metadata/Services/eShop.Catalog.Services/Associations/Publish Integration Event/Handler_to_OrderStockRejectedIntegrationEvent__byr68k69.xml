@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <association id="e391939e-3f6e-4a81-8752-808e7f053a06">
   <sourceEnd id="013557d9-b3bd-4eef-8caa-d9082c0b8735" type="Publish Integration Event Source End" typeId="eab91b3a-9903-40a2-90e8-ddb714883eab">
-    <display>published by : OrderStatusChangedToAwaitingValidationIntegrationEventHandler.</display>
+    <display>published by : OrderStatusChangedToAwaitingValidationIntegrationEventHandler.Handler</display>
     <order>0</order>
     <typeReference id="f3533d99-7254-46c8-8f45-1d27a6be4200">
       <typeId>aac28e1a-68ec-4896-a2ec-be37ad244301</typeId>

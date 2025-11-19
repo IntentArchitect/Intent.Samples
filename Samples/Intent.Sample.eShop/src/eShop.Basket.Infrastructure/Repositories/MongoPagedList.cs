@@ -23,10 +23,7 @@ namespace eShop.Basket.Infrastructure.Repositories
             var skip = ((PageNo - 1) * PageSize);
 
             AddRange(
-                source
-                    .Skip(skip)
-                    .Take(PageSize)
-                    .ToList());
+                source.Skip(skip).Take(PageSize).ToList());
         }
 
         public MongoPagedList(int totalCount, int pageNo, int pageSize, List<TDomain> results)
@@ -62,10 +59,7 @@ namespace eShop.Basket.Infrastructure.Repositories
             var count = await source.CountAsync(cancellationToken);
             var skip = ((pageNo - 1) * pageSize);
 
-            var results = await source
-                .Skip(skip)
-                .Take(pageSize)
-                .ToListAsync(cancellationToken);
+            var results = await source.Skip(skip).Take(pageSize).ToListAsync(cancellationToken);
             return new MongoPagedList<TDomain, TIdentifier>(count, pageNo, pageSize, results);
         }
     }

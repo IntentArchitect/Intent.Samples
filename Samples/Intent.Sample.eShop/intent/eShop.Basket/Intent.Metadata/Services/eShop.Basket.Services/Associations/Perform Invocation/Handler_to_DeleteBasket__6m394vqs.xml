@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <association id="5b90bb5f-c848-48d8-bcb1-ec6313f81716">
   <sourceEnd id="cd2d8b7c-f10d-4625-a437-949bdce29bd3" type="Perform Invocation Source End" typeId="ee56bd48-8eff-4fff-8d3a-87731d002335">
-    <display>called by : OrderStartedIntegrationEventHandler.</display>
+    <display>called by : OrderStartedIntegrationEventHandler.Handler</display>
     <order>0</order>
     <typeReference id="b00abf7f-e412-4a6f-b90d-d4dfe6bd35ed">
       <typeId>7b660c98-cbdb-4d75-a90f-7159f524aa16</typeId>
@@ -38,7 +38,7 @@
     <stereotypes />
     <mappings>
       <mapping type="Invocation Mapping" typeId="a4c4c5cc-76df-48ed-9d4e-c35caf44b567">
-        <source applicationId="0fad2d18-af53-4fc4-b6f1-698045dd88f4" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="7b660c98-cbdb-4d75-a90f-7159f524aa16" location="[eShop.Basket].[Services].[]" />
+        <source applicationId="0fad2d18-af53-4fc4-b6f1-698045dd88f4" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="7b660c98-cbdb-4d75-a90f-7159f524aa16" location="[eShop.Basket].[Services].[Handler]" />
         <target applicationId="0fad2d18-af53-4fc4-b6f1-698045dd88f4" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="cea6baf4-5628-4437-be23-4346010317e6" location="[eShop.Basket].[Services].[DeleteBasket]" />
         <mappedEnds>
           <mappedEnd>
@@ -50,7 +50,7 @@
             <sources>
               <source identifier="UserId" mappingType="Data Mapping" mappingTypeId="1ad97d12-2aa8-4f03-8cb0-3a8a4e71b4d9">
                 <path>
-                  <target id="7b660c98-cbdb-4d75-a90f-7159f524aa16" name="" type="association" specialization="Subscribe Integration Event Target End" specializationId="16fa2952-79e6-4150-b5ab-45aa4c106de4" />
+                  <target id="7b660c98-cbdb-4d75-a90f-7159f524aa16" name="Handler" type="association" specialization="Subscribe Integration Event Target End" specializationId="16fa2952-79e6-4150-b5ab-45aa4c106de4" />
                   <target id="4ea9a80a-d252-4d78-af2e-e3decb98ecc3" name="UserId" type="element" specialization="Property" specializationId="bde29850-5fb9-4f47-9941-b9e182fd9bdc" />
                 </path>
               </source>
