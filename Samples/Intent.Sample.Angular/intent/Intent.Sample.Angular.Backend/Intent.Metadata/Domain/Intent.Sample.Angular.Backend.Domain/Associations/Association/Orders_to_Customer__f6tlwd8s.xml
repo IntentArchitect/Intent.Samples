@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="11f248bf-f281-43f0-9850-4dd1fc253669">
+  <sourceEnd id="86c32758-ea99-4ed2-9fe1-8b102267a69e" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Orders</name>
+    <display>Orders: Order[*]</display>
+    <order>0</order>
+    <typeReference id="a700ed7e-a31c-4923-b7a0-91a17f129514">
+      <typeId>577cc142-d7d2-4bac-8175-0130b62c5486</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Domain</typePackageName>
+      <typePackageId>e1b6727c-9540-4539-9b6b-4079694ef95f</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="11f248bf-f281-43f0-9850-4dd1fc253669" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Customer</name>
+    <display>Customer: Customer</display>
+    <order>7</order>
+    <typeReference id="bee3e81f-777d-468b-89ca-e07b5817f4e7">
+      <typeId>cf1433a2-f1ef-4312-8872-14219a9811b0</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Domain</typePackageName>
+      <typePackageId>e1b6727c-9540-4539-9b6b-4079694ef95f</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

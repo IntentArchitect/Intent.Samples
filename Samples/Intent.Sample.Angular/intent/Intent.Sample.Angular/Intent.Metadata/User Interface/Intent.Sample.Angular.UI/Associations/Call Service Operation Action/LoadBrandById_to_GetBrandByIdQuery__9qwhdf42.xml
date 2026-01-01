@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="709ce78c-0b7f-417e-8bf6-76d6490270f6">
+  <sourceEnd id="cf28b22b-f975-43c3-a3f7-db2006e86b58" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: LoadBrandById</display>
+    <order>0</order>
+    <typeReference id="08efb38c-0243-447a-9b1e-3936e7c971aa">
+      <typeId>3253485c-6f7f-420f-9534-c5596e225350</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="709ce78c-0b7f-417e-8bf6-76d6490270f6" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>GetBrandByIdQuery</name>
+    <display>[call] Brands.GetBrandByIdQuery: BrandDto</display>
+    <order>1</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="5152f28f-3808-4688-af65-5183c416e6ab">
+      <typeId>c8e3289a-7ac4-4557-b931-88d7361dbfb0</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="906056df-d1e7-4a17-9bd6-a80656752053" location="[Intent.Sample.Angular].[User Interface].[BrandEditDialog]" />
+        <target applicationId="4f799450-9dd9-4f4c-9740-262eafcfa4da" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="c8e3289a-7ac4-4557-b931-88d7361dbfb0" location="[Intent.Sample.Angular].[User Interface].[GetBrandByIdQuery]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{LoadBrandById.GetBrandByIdQuery}</expression>
+            <path>
+              <target id="c8e3289a-7ac4-4557-b931-88d7361dbfb0" name="GetBrandByIdQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+            </path>
+            <sources>
+              <source identifier="LoadBrandById.GetBrandByIdQuery" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="906056df-d1e7-4a17-9bd6-a80656752053" name="BrandEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="3253485c-6f7f-420f-9534-c5596e225350" name="LoadBrandById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="709ce78c-0b7f-417e-8bf6-76d6490270f6" name="GetBrandByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadBrandById.id}</expression>
+            <path>
+              <target id="c8e3289a-7ac4-4557-b931-88d7361dbfb0" name="GetBrandByIdQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+              <target id="466d9fe4-3ce5-4f62-a3b1-3820c84f1653" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="LoadBrandById.id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="906056df-d1e7-4a17-9bd6-a80656752053" name="BrandEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="3253485c-6f7f-420f-9534-c5596e225350" name="LoadBrandById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8181c81b-a016-479b-9c6e-d0667800da18" name="id" type="element" specialization="Parameter" specializationId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Call Service Response Mapping" typeId="e60890c6-7ce7-47be-a0da-dff82b8adc02">
+        <source applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="906056df-d1e7-4a17-9bd6-a80656752053" location="[Intent.Sample.Angular].[User Interface].[BrandEditDialog]" />
+        <target applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="906056df-d1e7-4a17-9bd6-a80656752053" location="[Intent.Sample.Angular].[User Interface].[BrandEditDialog]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{LoadBrandById.GetBrandByIdQuery.response}</expression>
+            <path>
+              <target id="906056df-d1e7-4a17-9bd6-a80656752053" name="BrandEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="907e4d8b-a071-40f6-ae71-4dfbbd5ef79e" name="BrandByIdModels" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadBrandById.GetBrandByIdQuery.response" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="906056df-d1e7-4a17-9bd6-a80656752053" name="BrandEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="3253485c-6f7f-420f-9534-c5596e225350" name="LoadBrandById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="709ce78c-0b7f-417e-8bf6-76d6490270f6" name="GetBrandByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>76f9dcf8-e66b-4d8e-b4f3-f9994f3c15ce</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

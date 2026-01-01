@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="27e9fa4d-8f10-413b-a883-2ebf808ae3d3" type="Component View" typeId="624513a6-cba8-4dde-8ebe-6b19f00f0364">
+  <name>[view]</name>
+  <display>[view]</display>
+  <isAbstract>false</isAbstract>
+  <order>0</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>4fdd865b-3d04-4266-9b42-03385b1f638d</parentFolderId>
+  <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+  <packageName>Intent.Sample.Angular.UI</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

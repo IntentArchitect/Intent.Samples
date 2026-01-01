@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="efa19c27-0440-4624-8a23-69891c0bda34">
+  <sourceEnd id="5b10735d-95e1-4be1-9287-c8cbfe49db50" type="Show Dialog Source End" typeId="ad3de626-cb72-4dde-966b-122a6b386fb7">
+    <display>: DeleteDiscount</display>
+    <order>0</order>
+    <typeReference id="9d02b199-a9da-459d-abf7-f8c61f03612e">
+      <typeId>d7ac9cdb-ef91-480d-a695-922bbae3cf32</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="efa19c27-0440-4624-8a23-69891c0bda34" type="Show Dialog Target End" typeId="c44a7969-abfa-4073-ab2c-d2d0f1f6bd2f">
+    <name>Delete Discount</name>
+    <display>[show] DiscountDeleteDialog("Delete Discount")</display>
+    <order>1</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="b3adce2c-f8a0-4242-a1a1-84b839a8f501">
+      <typeId>ca599f69-86c8-4706-ba3f-a54c8b3b0b78</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Open Dialog Mapping" typeId="f0e43df8-a662-46ec-a766-e67de9ddc0d0">
+        <source applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="c256a0aa-9cb3-439e-8335-b8edc872af06" location="[Intent.Sample.Angular].[User Interface].[DiscountListPage]" />
+        <target applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="ca599f69-86c8-4706-ba3f-a54c8b3b0b78" location="[Intent.Sample.Angular].[User Interface].[DiscountDeleteDialog]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{DeleteDiscount.discountId}</expression>
+            <path>
+              <target id="ca599f69-86c8-4706-ba3f-a54c8b3b0b78" name="DiscountDeleteDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="37ba4d5c-fade-4a3a-a017-3c98fb4cedb6" name="DiscountId" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="DeleteDiscount.discountId" mappingType="Data Mapping" mappingTypeId="c85fabc0-963d-470c-a57e-c1b4c64d59b5">
+                <path>
+                  <target id="c256a0aa-9cb3-439e-8335-b8edc872af06" name="DiscountListPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d7ac9cdb-ef91-480d-a695-922bbae3cf32" name="DeleteDiscount" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bc7e34e1-c488-409f-99ab-86464866d4c1" name="discountId" type="element" specialization="Parameter" specializationId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Show Dialog</associationType>
+  <associationTypeId>2a309fb2-c487-4c00-9462-16dac9824731</associationTypeId>
+  <stereotypes />
+</association>

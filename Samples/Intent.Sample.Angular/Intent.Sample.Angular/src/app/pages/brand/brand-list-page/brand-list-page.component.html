@@ -1,0 +1,85 @@
+<div class="pa-4">
+  <mat-card class="mb-4 ux-gradient-primary" appearance="outlined">
+    <mat-card-content class="pa-4">
+      <div class="header-content">
+        <div class="title-row">
+          <mat-icon class="mr-2">branding_watermark</mat-icon>
+          <span class="mat-headline-5 text-white font-weight-bold">Brand Directory</span>
+        </div>
+        <div class="subtitle-row text-white opacity-90">
+          Browse and manage the list of available brands.
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="ux-fade-in-up" style="animation-delay: 0.1s">
+    <mat-card-header>
+      <mat-card-title>Brands</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="filter-grid">
+        <div class="filter-item">
+          <span class="filter-helper-text">All brands are loaded from the service. No additional filters are available.</span>
+        </div>
+      </div>
+
+      <div class="button-row mb-4">
+        <button mat-raised-button color="primary" (click)="loadBrands()" class="mr-2">
+          <mat-icon class="mr-1">refresh</mat-icon>
+          Reload Brands
+        </button>
+
+        <button mat-raised-button color="accent" (click)="addBrand()">
+          <mat-icon class="mr-1">add</mat-icon>
+          Add Brand
+        </button>
+      </div>
+
+      <div *ngIf="serviceErrors.loadBrandsError" class="error-message mb-4">
+        {{ serviceErrors.loadBrandsError }}
+      </div>
+
+      <div class="table-wrapper">
+        <div class="table-container" [class.loading]="isLoading">
+          <table
+            mat-table
+            [dataSource]="brandsModels ?? []"
+            class="mat-elevation-z2">
+
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef>Name</th>
+              <td mat-cell *matCellDef="let row">{{ row.name }}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="actions">
+              <th mat-header-cell *matHeaderCellDef>Actions</th>
+              <td mat-cell *matCellDef="let row">
+                <button
+                  mat-icon-button
+                  color="primary"
+                  (click)="editBrand(row.id)">
+                  <mat-icon>edit</mat-icon>
+                </button>
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+            <tr class="mat-row" *ngIf="!isLoading && (brandsModels?.length ?? 0) === 0">
+              <td class="mat-cell" [attr.colspan]="displayedColumns.length">
+                No brands found.
+              </td>
+            </tr>
+          </table>
+
+          <div class="loading-overlay" *ngIf="isLoading">
+            <mat-spinner diameter="40"></mat-spinner>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

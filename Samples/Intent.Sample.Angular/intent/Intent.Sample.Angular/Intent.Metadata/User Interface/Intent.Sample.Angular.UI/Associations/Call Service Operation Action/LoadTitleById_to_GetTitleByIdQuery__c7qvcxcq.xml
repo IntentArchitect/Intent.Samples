@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="8f99c5a2-787d-4e0a-a9ff-fd46ea5df680">
+  <sourceEnd id="25fcc441-9d64-4d7b-a768-77e6610351db" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: LoadTitleById</display>
+    <order>0</order>
+    <typeReference id="e008ff39-f862-482a-ba2e-ddda1f7f7309">
+      <typeId>2083eb51-1f9f-468e-80ba-3df9b3b7b97d</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="8f99c5a2-787d-4e0a-a9ff-fd46ea5df680" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>GetTitleByIdQuery</name>
+    <display>[call] Titles.GetTitleByIdQuery: TitleDto</display>
+    <order>1</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="8047efd8-f9cc-4c6f-b931-c8fbb56a7c13">
+      <typeId>0a231d62-e395-46db-88b3-26c94ea8b290</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="ab3094db-caac-4016-9a39-4c6c9c3c0296" location="[Intent.Sample.Angular].[User Interface].[TitleEditPage]" />
+        <target applicationId="4f799450-9dd9-4f4c-9740-262eafcfa4da" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="0a231d62-e395-46db-88b3-26c94ea8b290" location="[Intent.Sample.Angular].[User Interface].[GetTitleByIdQuery]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{LoadTitleById.GetTitleByIdQuery}</expression>
+            <path>
+              <target id="0a231d62-e395-46db-88b3-26c94ea8b290" name="GetTitleByIdQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+            </path>
+            <sources>
+              <source identifier="LoadTitleById.GetTitleByIdQuery" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="ab3094db-caac-4016-9a39-4c6c9c3c0296" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="2083eb51-1f9f-468e-80ba-3df9b3b7b97d" name="LoadTitleById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8f99c5a2-787d-4e0a-a9ff-fd46ea5df680" name="GetTitleByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadTitleById.id}</expression>
+            <path>
+              <target id="0a231d62-e395-46db-88b3-26c94ea8b290" name="GetTitleByIdQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+              <target id="237d799e-c594-45cd-a34b-b3aa779f3d9f" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="LoadTitleById.id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="ab3094db-caac-4016-9a39-4c6c9c3c0296" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="2083eb51-1f9f-468e-80ba-3df9b3b7b97d" name="LoadTitleById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="aec50fcd-71ae-4f61-983f-b918988d0c4a" name="id" type="element" specialization="Parameter" specializationId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Call Service Response Mapping" typeId="e60890c6-7ce7-47be-a0da-dff82b8adc02">
+        <source applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="ab3094db-caac-4016-9a39-4c6c9c3c0296" location="[Intent.Sample.Angular].[User Interface].[TitleEditPage]" />
+        <target applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="ab3094db-caac-4016-9a39-4c6c9c3c0296" location="[Intent.Sample.Angular].[User Interface].[TitleEditPage]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{LoadTitleById.GetTitleByIdQuery.response}</expression>
+            <path>
+              <target id="ab3094db-caac-4016-9a39-4c6c9c3c0296" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="ed6b2403-5b5c-4bfc-afae-9eec1e4e0ac3" name="TitleByIdModels" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadTitleById.GetTitleByIdQuery.response" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="ab3094db-caac-4016-9a39-4c6c9c3c0296" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="2083eb51-1f9f-468e-80ba-3df9b3b7b97d" name="LoadTitleById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8f99c5a2-787d-4e0a-a9ff-fd46ea5df680" name="GetTitleByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>db1ccc43-09fd-45ad-9d10-3699652e2e1f</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

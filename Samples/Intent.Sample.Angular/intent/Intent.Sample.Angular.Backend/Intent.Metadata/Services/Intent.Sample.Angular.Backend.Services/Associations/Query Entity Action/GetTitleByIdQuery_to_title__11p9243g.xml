@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="a0a8410f-0fe6-429b-aefd-972a4b7908b5">
+  <sourceEnd id="d175fbb2-c2ce-4824-a03e-88f8020fdf80" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: GetTitleByIdQuery</display>
+    <order>0</order>
+    <typeReference id="20febc15-2288-471a-82b4-6d762ef03dca">
+      <typeId>0a231d62-e395-46db-88b3-26c94ea8b290</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="a0a8410f-0fe6-429b-aefd-972a4b7908b5" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>title</name>
+    <display>[query] title: Title</display>
+    <order>1</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="685f1052-4594-4bbb-a228-e68e19aca2c7">
+      <typeId>8ca439a1-21a6-4c00-9dcf-af12aee23d91</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Domain</typePackageName>
+      <typePackageId>e1b6727c-9540-4539-9b6b-4079694ef95f</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="4f799450-9dd9-4f4c-9740-262eafcfa4da" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="0a231d62-e395-46db-88b3-26c94ea8b290" location="[Intent.Sample.Angular.Backend].[Services].[GetTitleByIdQuery]" />
+        <target applicationId="4f799450-9dd9-4f4c-9740-262eafcfa4da" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="8ca439a1-21a6-4c00-9dcf-af12aee23d91" location="[Intent.Sample.Angular.Backend].[Services].[Title]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="8ca439a1-21a6-4c00-9dcf-af12aee23d91" name="Title" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="6bc16757-dd21-4221-a89f-3492663f15b3" name="Id" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="0a231d62-e395-46db-88b3-26c94ea8b290" name="GetTitleByIdQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+                  <target id="237d799e-c594-45cd-a34b-b3aa779f3d9f" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

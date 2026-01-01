@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="8209ca7d-883e-4860-9c26-5a72d074c639">
+  <sourceEnd id="989d7c27-3762-4ec2-bc52-f47c48099364" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: GetOrdersQuery</display>
+    <order>0</order>
+    <typeReference id="dcdd0209-d7a1-4207-8da4-5f795048f67b">
+      <typeId>5cd0371b-cac1-4ed6-9ec5-b6bcd50ef31a</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="8209ca7d-883e-4860-9c26-5a72d074c639" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>orders</name>
+    <display>[query] orders: Order[*]</display>
+    <order>0</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="05758603-bbab-483f-b98c-b31d809bcd65">
+      <typeId>577cc142-d7d2-4bac-8175-0130b62c5486</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Domain</typePackageName>
+      <typePackageId>e1b6727c-9540-4539-9b6b-4079694ef95f</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="4f799450-9dd9-4f4c-9740-262eafcfa4da" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="5cd0371b-cac1-4ed6-9ec5-b6bcd50ef31a" location="[Intent.Sample.Angular.Backend].[Services].[GetOrdersQuery]" />
+        <target applicationId="4f799450-9dd9-4f4c-9740-262eafcfa4da" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="577cc142-d7d2-4bac-8175-0130b62c5486" location="[Intent.Sample.Angular.Backend].[Services].[Order]" />
+        <mappedEnds />
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

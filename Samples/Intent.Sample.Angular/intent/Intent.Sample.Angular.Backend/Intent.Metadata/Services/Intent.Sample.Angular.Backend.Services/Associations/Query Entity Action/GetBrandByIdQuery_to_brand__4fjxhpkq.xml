@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="c6f33240-1ad6-4d68-b9e0-49b1921ce207">
+  <sourceEnd id="efc5fcaf-fe2d-4153-809d-f7762ea9cca4" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: GetBrandByIdQuery</display>
+    <order>0</order>
+    <typeReference id="ad9d3eb3-fe03-40a2-ace8-f23f0c17fac8">
+      <typeId>c8e3289a-7ac4-4557-b931-88d7361dbfb0</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="c6f33240-1ad6-4d68-b9e0-49b1921ce207" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>brand</name>
+    <display>[query] brand: Brand</display>
+    <order>1</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="300df2b8-5f2b-4268-a14d-9161f08751b2">
+      <typeId>887d2433-e1ed-4512-b586-fa0e6ed7c44f</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Domain</typePackageName>
+      <typePackageId>e1b6727c-9540-4539-9b6b-4079694ef95f</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="4f799450-9dd9-4f4c-9740-262eafcfa4da" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="c8e3289a-7ac4-4557-b931-88d7361dbfb0" location="[Intent.Sample.Angular.Backend].[Services].[GetBrandByIdQuery]" />
+        <target applicationId="4f799450-9dd9-4f4c-9740-262eafcfa4da" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="887d2433-e1ed-4512-b586-fa0e6ed7c44f" location="[Intent.Sample.Angular.Backend].[Services].[Brand]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="887d2433-e1ed-4512-b586-fa0e6ed7c44f" name="Brand" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="8c3df982-37ab-414c-a754-595a815dbf90" name="Id" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="c8e3289a-7ac4-4557-b931-88d7361dbfb0" name="GetBrandByIdQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+                  <target id="466d9fe4-3ce5-4f62-a3b1-3820c84f1653" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

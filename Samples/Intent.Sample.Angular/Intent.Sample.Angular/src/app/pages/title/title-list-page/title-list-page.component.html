@@ -1,0 +1,82 @@
+<div class="pa-4">
+  <mat-card class="mb-4 ux-gradient-primary" appearance="outlined">
+    <mat-card-content class="pa-4">
+      <div class="header-content">
+        <div class="title-row">
+          <mat-icon class="mr-2">badge</mat-icon>
+          <span class="mat-headline-5 text-white font-weight-bold">Titles</span>
+        </div>
+        <div class="subtitle-row text-white opacity-90">
+          Manage and review the list of available titles.
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="ux-fade-in-up" style="animation-delay: 0.1s">
+    <mat-card-header>
+      <mat-card-title>Title List</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="filter-grid"></div>
+
+      <div class="button-row mb-4">
+        <button mat-raised-button color="primary" (click)="loadTitles()" [disabled]="isLoading" class="mr-2">
+          <mat-icon class="mr-1">refresh</mat-icon>
+          Reload Titles
+        </button>
+
+        <button mat-raised-button color="accent" (click)="navigateToTitleAddPage()">
+          <mat-icon class="mr-1">add</mat-icon>
+          Add Title
+        </button>
+      </div>
+
+      <div *ngIf="serviceErrors.loadTitlesError" class="error-message mb-4">
+        {{ serviceErrors.loadTitlesError }}
+      </div>
+
+      <div class="table-wrapper">
+        <div class="table-container" [class.loading]="isLoading">
+          <table
+            mat-table
+            [dataSource]="titlesModels || []"
+            class="mat-elevation-z2">
+
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef>Name</th>
+              <td mat-cell *matCellDef="let row">{{ row.name }}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="actions">
+              <th mat-header-cell *matHeaderCellDef>Actions</th>
+              <td mat-cell *matCellDef="let row">
+                <button
+                  mat-icon-button
+                  color="primary"
+                  matTooltip="Edit Title"
+                  (click)="navigateToTitleEditPage(row.id)">
+                  <mat-icon>edit</mat-icon>
+                </button>
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="['name', 'actions']"></tr>
+            <tr mat-row *matRowDef="let row; columns: ['name', 'actions'];"></tr>
+
+            <tr class="mat-row" *ngIf="!isLoading && (titlesModels?.length ?? 0) === 0">
+              <td class="mat-cell" colspan="2">
+                No titles found.
+              </td>
+            </tr>
+          </table>
+
+          <div class="loading-overlay" *ngIf="isLoading">
+            <mat-spinner diameter="40"></mat-spinner>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

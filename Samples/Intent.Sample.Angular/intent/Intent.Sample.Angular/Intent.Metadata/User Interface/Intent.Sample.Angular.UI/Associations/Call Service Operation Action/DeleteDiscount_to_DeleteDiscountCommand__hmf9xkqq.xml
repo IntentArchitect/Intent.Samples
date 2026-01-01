@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="f41c1be2-bf00-410f-8f4c-0a170e730024">
+  <sourceEnd id="41935400-4931-4552-a2de-e1b5a2227b35" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: DeleteDiscount</display>
+    <order>0</order>
+    <typeReference id="15000a0e-8165-4164-8203-bebb841ed801">
+      <typeId>9033abc5-325c-4cc3-908f-f7268734c9e9</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="f41c1be2-bf00-410f-8f4c-0a170e730024" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>DeleteDiscountCommand</name>
+    <display>[call] Discounts.DeleteDiscountCommand: void</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="f56d8fdd-1f7e-49f1-9709-08f1110bab1a">
+      <typeId>e7f325e6-3f34-41a5-bc04-9ad2c847d7f1</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="ca599f69-86c8-4706-ba3f-a54c8b3b0b78" location="[Intent.Sample.Angular].[User Interface].[DiscountDeleteDialog]" />
+        <target applicationId="4f799450-9dd9-4f4c-9740-262eafcfa4da" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="e7f325e6-3f34-41a5-bc04-9ad2c847d7f1" location="[Intent.Sample.Angular].[User Interface].[DeleteDiscountCommand]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{DeleteDiscount.DeleteDiscountCommand}</expression>
+            <path>
+              <target id="e7f325e6-3f34-41a5-bc04-9ad2c847d7f1" name="DeleteDiscountCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+            </path>
+            <sources>
+              <source identifier="DeleteDiscount.DeleteDiscountCommand" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="ca599f69-86c8-4706-ba3f-a54c8b3b0b78" name="DiscountDeleteDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="9033abc5-325c-4cc3-908f-f7268734c9e9" name="DeleteDiscount" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="f41c1be2-bf00-410f-8f4c-0a170e730024" name="DeleteDiscountCommand" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{DiscountByIdModels.Id}</expression>
+            <path>
+              <target id="e7f325e6-3f34-41a5-bc04-9ad2c847d7f1" name="DeleteDiscountCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="2f9ab960-9f25-4461-8ed2-70359e6e69a2" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="DiscountByIdModels.Id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="ca599f69-86c8-4706-ba3f-a54c8b3b0b78" name="DiscountDeleteDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="61803f54-5a85-458a-8030-272e0410f487" name="DiscountByIdModels" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="09b4bb2e-3ea4-4716-b24a-66e0221b22d0" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

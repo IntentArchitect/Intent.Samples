@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="bad5edaf-1159-4a29-a618-955b7ffc68f2">
+  <sourceEnd id="0294c831-2181-4577-a983-36437589948a" type="Show Dialog Source End" typeId="ad3de626-cb72-4dde-966b-122a6b386fb7">
+    <display>: EditBrand</display>
+    <order>0</order>
+    <typeReference id="39be888c-8229-4bcf-9cb9-e7a3d4975686">
+      <typeId>52c992d0-1819-4612-b00e-cce113fdfc35</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="bad5edaf-1159-4a29-a618-955b7ffc68f2" type="Show Dialog Target End" typeId="c44a7969-abfa-4073-ab2c-d2d0f1f6bd2f">
+    <name>Edit Brand</name>
+    <display>[show] BrandEditDialog("Edit Brand")</display>
+    <order>1</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="31aeb663-29f1-403f-935f-46139d0ebfdf">
+      <typeId>906056df-d1e7-4a17-9bd6-a80656752053</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Open Dialog Mapping" typeId="f0e43df8-a662-46ec-a766-e67de9ddc0d0">
+        <source applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="0c2a734f-b8e8-49de-8760-c92a4981812c" location="[Intent.Sample.Angular].[User Interface].[BrandListPage]" />
+        <target applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="906056df-d1e7-4a17-9bd6-a80656752053" location="[Intent.Sample.Angular].[User Interface].[BrandEditDialog]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{EditBrand.brandId}</expression>
+            <path>
+              <target id="906056df-d1e7-4a17-9bd6-a80656752053" name="BrandEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="cfefa36b-f72a-4d83-8ebd-0da672c6975f" name="BrandId" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="EditBrand.brandId" mappingType="Data Mapping" mappingTypeId="c85fabc0-963d-470c-a57e-c1b4c64d59b5">
+                <path>
+                  <target id="0c2a734f-b8e8-49de-8760-c92a4981812c" name="BrandListPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="52c992d0-1819-4612-b00e-cce113fdfc35" name="EditBrand" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="e152ae60-6451-4b1d-8ad1-0f66060a228d" name="brandId" type="element" specialization="Parameter" specializationId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Show Dialog</associationType>
+  <associationTypeId>2a309fb2-c487-4c00-9462-16dac9824731</associationTypeId>
+  <stereotypes />
+</association>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deviationsLog>
+  <files>
+    <file>
+      <correlationId>Intent.Application.MediatR.QueryHandler#073ec302-54c7-4a4f-8f83-014edfa13c27</correlationId>
+      <path>Intent.Sample.Angular.Backend.Application/Customers/GetCustomers/GetCustomersQueryHandler.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-12-29T07:19:54.3502736Z</updatedAt>
+      <deviationsHash>DAD11F11AE4288E7991C6A5FDC7C360C25532D54A262F51E67FAC580C9FF761C</deviationsHash>
+      <fileHash>9ECEF9AEE7DEDF53FFAB003ED564A5FA621380E004DB163924503F352AEA67B3</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Entities.DomainEntity#577cc142-d7d2-4bac-8175-0130b62c5486</correlationId>
+      <path>Intent.Sample.Angular.Backend.Domain/Entities/Order.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2025-12-26T19:08:06.4741727Z</updatedAt>
+      <deviationsHash>BA3CEDA09BFF32F405A54C312D1B2A6A84E90B28BEE2B88F3D1CF39700491B16</deviationsHash>
+      <fileHash>5C3C13660342A8CB3E3B4C5723C5C4FD43AFD738D766D93AC57DED365183BDE4</fileHash>
+    </file>
+  </files>
+</deviationsLog>

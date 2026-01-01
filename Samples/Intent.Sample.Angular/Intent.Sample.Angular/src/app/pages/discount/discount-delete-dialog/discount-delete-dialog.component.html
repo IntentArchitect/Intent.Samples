@@ -1,0 +1,40 @@
+<h2 mat-dialog-title>Delete discount</h2>
+
+<mat-dialog-content class="dialog-content">
+  <p *ngIf="discountByIdModels; else genericMessage">
+    Are you sure you want to delete the discount
+    <strong>{{ discountByIdModels.code }}</strong>
+    with amount
+    <strong>{{ discountByIdModels.discountAmount | number: '1.2-2' }}</strong>
+    that expires on
+    <strong>{{ discountByIdModels.expiry | date: 'mediumDate' }}</strong>?
+  </p>
+
+  <ng-template #genericMessage>
+    <p>Are you sure you want to delete this discount?</p>
+  </ng-template>
+
+  <div *ngIf="serviceErrors.loadDiscountByIdError" class="error-message mt-2">
+    {{ serviceErrors.loadDiscountByIdError }}
+  </div>
+
+  <div *ngIf="serviceErrors.deleteDiscountError" class="error-message mt-2">
+    {{ serviceErrors.deleteDiscountError }}
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button type="button" (click)="cancel()" [disabled]="isLoading">
+    Cancel
+  </button>
+
+  <button mat-raised-button color="warn" type="button" (click)="save()" [disabled]="isLoading">
+    <mat-icon class="mr-1">delete</mat-icon>
+    <span *ngIf="!isLoading">Delete</span>
+    <mat-progress-spinner
+      *ngIf="isLoading"
+      mode="indeterminate"
+      diameter="20">
+    </mat-progress-spinner>
+  </button>
+</mat-dialog-actions>

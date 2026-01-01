@@ -1,0 +1,247 @@
+<div class="pa-4">
+  <mat-card class="mb-4 ux-gradient-primary" appearance="outlined">
+    <mat-card-content class="pa-4">
+      <div class="header-content">
+        <div class="title-row">
+          <mat-icon class="mr-2">shopping_cart</mat-icon>
+          <span class="mat-headline-5 text-white font-weight-bold">Add Order</span>
+        </div>
+        <div class="subtitle-row text-white opacity-90">
+          Capture a new order, select a customer, and add order items.
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="ux-fade-in-up" style="animation-delay: 0.1s">
+    <mat-card-header>
+      <mat-card-title>Order Details</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <form #form="ngForm" class="order-form">
+        <div *ngIf="serviceErrors.createOrderError" class="error-container">
+          {{ serviceErrors.createOrderError }}
+        </div>
+        <div *ngIf="serviceErrors.loadCustomersError" class="error-container">
+          {{ serviceErrors.loadCustomersError }}
+        </div>
+        <div *ngIf="serviceErrors.loadProductsError" class="error-container">
+          {{ serviceErrors.loadProductsError }}
+        </div>
+
+        <div class="grid">
+          <div class="grid-item">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Customer</mat-label>
+              <mat-select
+                name="customerId"
+                required
+                [(ngModel)]="model.customerId"
+                #customerCtrl="ngModel">
+                <mat-option [value]="null">Select...</mat-option>
+                <mat-option *ngFor="let c of customersModels?.data" [value]="c.id">
+                  {{ c.name }} {{ c.surname }} ({{ c.email }})
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="customerCtrl.invalid && customerCtrl.touched">
+                Customer is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="grid-item">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Order Number</mat-label>
+              <input
+                matInput
+                placeholder="Enter order number"
+                name="orderNo"
+                required
+                [(ngModel)]="model.orderNo"
+                #orderNoCtrl="ngModel" />
+              <button mat-icon-button matPrefix disabled>
+                <mat-icon>confirmation_number</mat-icon>
+              </button>
+              <mat-error *ngIf="orderNoCtrl.invalid && orderNoCtrl.touched">
+                Order number is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="grid-item">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Discount Code</mat-label>
+              <input
+                matInput
+                placeholder="Optional discount code"
+                name="discountCode"
+                [(ngModel)]="model.discountCode" />
+              <button mat-icon-button matPrefix disabled>
+                <mat-icon>local_offer</mat-icon>
+              </button>
+            </mat-form-field>
+          </div>
+
+          <div class="grid-item">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Ordered Date</mat-label>
+              <input
+                matInput
+                [matDatepicker]="orderedDatePicker"
+                placeholder="Select ordered date"
+                name="orderedDate"
+                required
+                [(ngModel)]="model.orderedDate"
+                #orderedDateCtrl="ngModel" />
+              <mat-datepicker-toggle matSuffix [for]="orderedDatePicker"></mat-datepicker-toggle>
+              <mat-datepicker #orderedDatePicker></mat-datepicker>
+              <mat-error *ngIf="orderedDateCtrl.invalid && orderedDateCtrl.touched">
+                Ordered date is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="grid-item">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Total</mat-label>
+              <input
+                matInput
+                name="total"
+                [ngModel]="model.total"
+                readonly />
+              <button mat-icon-button matPrefix disabled>
+                <mat-icon>attach_money</mat-icon>
+              </button>
+            </mat-form-field>
+          </div>
+
+          <div class="grid-item-wide">
+            <mat-divider class="my-4"></mat-divider>
+            <h3 class="section-title">Order Items</h3>
+          </div>
+
+          <ng-container *ngFor="let item of model.orderItems; let i = index">
+            <div class="grid-item-wide order-item-block">
+              <div class="items-grid">
+                <div class="item-field">
+                  <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Product</mat-label>
+                    <mat-select
+                      name="productId-{{ i }}"
+                      required
+                      [(ngModel)]="item.productId"
+                      #productCtrl="ngModel"
+                      (selectionChange)="onOrderItemChanged()">
+                      <mat-option [value]="null">Select...</mat-option>
+                      <mat-option *ngFor="let p of productsModels" [value]="p.id">
+                        {{ p.name }} ({{ p.code }})
+                      </mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="productCtrl.invalid && productCtrl.touched">
+                      Product is required
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+
+                <div class="item-field">
+                  <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Units</mat-label>
+                    <input
+                      matInput
+                      type="number"
+                      min="1"
+                      name="units-{{ i }}"
+                      required
+                      [(ngModel)]="item.units"
+                      #unitsCtrl="ngModel"
+                      (ngModelChange)="onOrderItemChanged()" />
+                    <button mat-icon-button matPrefix disabled>
+                      <mat-icon>production_quantity_limits</mat-icon>
+                    </button>
+                    <mat-error *ngIf="unitsCtrl.invalid && unitsCtrl.touched">
+                      Units must be at least 1
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+
+                <div class="item-field">
+                  <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Price</mat-label>
+                    <input
+                      matInput
+                      type="number"
+                      min="0"
+                      step="0.01"
+                      name="price-{{ i }}"
+                      required
+                      [(ngModel)]="item.price"
+                      #priceCtrl="ngModel"
+                      (ngModelChange)="onOrderItemChanged()" />
+                    <button mat-icon-button matPrefix disabled>
+                      <mat-icon>attach_money</mat-icon>
+                    </button>
+                    <mat-error *ngIf="priceCtrl.invalid && priceCtrl.touched">
+                      Price is required
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+
+                <div class="item-field full-row remove-row">
+                  <button
+                    mat-stroked-button
+                    color="warn"
+                    type="button"
+                    (click)="removeOrderItem(i)">
+                    <mat-icon>delete</mat-icon>
+                    Remove item
+                  </button>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+
+          <div class="grid-item-wide">
+            <button
+              mat-stroked-button
+              color="primary"
+              type="button"
+              (click)="addOrderItem()">
+              <mat-icon>add</mat-icon>
+              Add item
+            </button>
+          </div>
+
+          <div class="grid-item-wide actions-row">
+            <button
+              mat-raised-button
+              color="primary"
+              type="button"
+              class="save-button"
+              (click)="save(form)"
+              [disabled]="isLoading || form.invalid || !model.orderItems || model.orderItems.length === 0">
+              <mat-progress-spinner
+                *ngIf="isLoading"
+                mode="indeterminate"
+                diameter="18"
+                class="spinner">
+              </mat-progress-spinner>
+              <mat-icon *ngIf="!isLoading" class="mr-1">save</mat-icon>
+              <span>{{ isLoading ? 'Saving…' : 'Save' }}</span>
+            </button>
+
+            <button
+              mat-raised-button
+              color="accent"
+              type="button"
+              (click)="navigateToOrderListPage()"
+              [disabled]="isLoading">
+              <mat-icon class="mr-1">arrow_back</mat-icon>
+              Back to list
+            </button>
+          </div>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

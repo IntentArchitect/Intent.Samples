@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="df2b7b69-775d-4b88-9937-a531c35f6b26">
+  <sourceEnd id="37bc5b24-cbe9-4113-b9a7-5ddffde7da83" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Customer</name>
+    <display>Customer: Customer</display>
+    <order>0</order>
+    <typeReference id="6e48ee80-ab98-4d62-842d-fe364359335b">
+      <typeId>cf1433a2-f1ef-4312-8872-14219a9811b0</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Domain</typePackageName>
+      <typePackageId>e1b6727c-9540-4539-9b6b-4079694ef95f</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="df2b7b69-775d-4b88-9937-a531c35f6b26" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Loyalty</name>
+    <display>Loyalty: Loyalty?</display>
+    <order>7</order>
+    <typeReference id="d6cd2fc9-e6ce-4da6-b9a0-bd983db0063e">
+      <typeId>d54629d7-2a5e-4bc3-b2a3-4dd6edec1655</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>true</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Domain</typePackageName>
+      <typePackageId>e1b6727c-9540-4539-9b6b-4079694ef95f</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

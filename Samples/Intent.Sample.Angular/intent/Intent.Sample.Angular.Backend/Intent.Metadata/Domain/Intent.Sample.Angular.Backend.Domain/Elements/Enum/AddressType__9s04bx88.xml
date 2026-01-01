@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="64246d8d-b256-47d5-8230-cfd9c8624ed5" type="Enum" typeId="85fba0e9-9161-4c85-a603-a229ef312beb">
+  <name>AddressType</name>
+  <display>AddressType</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>e1b6727c-9540-4539-9b6b-4079694ef95f</parentFolderId>
+  <packageId>e1b6727c-9540-4539-9b6b-4079694ef95f</packageId>
+  <packageName>Intent.Sample.Angular.Backend.Domain</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="ef85d0b6-e2e9-49ae-b7e3-b2889a9ce00e" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Delivery</name>
+      <display>Delivery = 1</display>
+      <isAbstract>false</isAbstract>
+      <value>1</value>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>64246d8d-b256-47d5-8230-cfd9c8624ed5</parentFolderId>
+      <packageId>e1b6727c-9540-4539-9b6b-4079694ef95f</packageId>
+      <packageName>Intent.Sample.Angular.Backend.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="cf5abde9-3f14-475c-823c-4b9a5535baee" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Billing</name>
+      <display>Billing = 2</display>
+      <isAbstract>false</isAbstract>
+      <value>2</value>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>64246d8d-b256-47d5-8230-cfd9c8624ed5</parentFolderId>
+      <packageId>e1b6727c-9540-4539-9b6b-4079694ef95f</packageId>
+      <packageName>Intent.Sample.Angular.Backend.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

@@ -1,0 +1,43 @@
+<form #form="ngForm" novalidate (ngSubmit)="save(form)">
+  <h2 mat-dialog-title>Add Brand</h2>
+
+  <mat-dialog-content class="dialog-content">
+    <div class="grid">
+      <div class="grid-item">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Name</mat-label>
+          <input
+            matInput
+            required
+            name="name"
+            [(ngModel)]="model.name"
+            #nameCtrl="ngModel" />
+          <mat-error *ngIf="nameCtrl.invalid && (nameCtrl.touched || form.submitted)">
+            Name is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="grid-item-wide error-container" *ngIf="serviceErrors.createBrandError">
+        {{ serviceErrors.createBrandError }}
+      </div>
+    </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button mat-button type="button" (click)="cancel()">Cancel</button>
+
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      [disabled]="form.invalid || isLoading">
+      <mat-progress-spinner
+        *ngIf="isLoading"
+        mode="indeterminate"
+        diameter="18">
+      </mat-progress-spinner>
+      <span *ngIf="!isLoading">Save</span>
+    </button>
+  </mat-dialog-actions>
+</form>

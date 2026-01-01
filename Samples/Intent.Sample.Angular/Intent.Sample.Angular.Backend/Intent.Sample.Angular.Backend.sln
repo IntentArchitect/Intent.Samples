@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{3767BB6D-8CC6-4CEE-BC1D-43B92ECB8246}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intent.Sample.Angular.Backend.Api", "Intent.Sample.Angular.Backend.Api\Intent.Sample.Angular.Backend.Api.csproj", "{3DB2FBAB-4CD0-4A5B-9A18-F927AC2B3A0F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{DBF46D6B-FAFF-4EFD-BC2C-05EE1629A886}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intent.Sample.Angular.Backend.Application", "Intent.Sample.Angular.Backend.Application\Intent.Sample.Angular.Backend.Application.csproj", "{FFC13534-221B-4210-82F4-5AEAEC1F29C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{983C865D-5549-4D2F-BAD5-8A6C39F7DC97}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intent.Sample.Angular.Backend.Domain", "Intent.Sample.Angular.Backend.Domain\Intent.Sample.Angular.Backend.Domain.csproj", "{73DFFE50-4D05-4D3D-ABE8-F15C045D71C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{19C071B0-FFE6-4678-8D99-66921640A003}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intent.Sample.Angular.Backend.Infrastructure", "Intent.Sample.Angular.Backend.Infrastructure\Intent.Sample.Angular.Backend.Infrastructure.csproj", "{77474A85-6683-4E37-93B8-1FC3FABD8089}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3DB2FBAB-4CD0-4A5B-9A18-F927AC2B3A0F} = {3767BB6D-8CC6-4CEE-BC1D-43B92ECB8246}
+		{FFC13534-221B-4210-82F4-5AEAEC1F29C0} = {DBF46D6B-FAFF-4EFD-BC2C-05EE1629A886}
+		{73DFFE50-4D05-4D3D-ABE8-F15C045D71C0} = {983C865D-5549-4D2F-BAD5-8A6C39F7DC97}
+		{77474A85-6683-4E37-93B8-1FC3FABD8089} = {19C071B0-FFE6-4678-8D99-66921640A003}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DB2FBAB-4CD0-4A5B-9A18-F927AC2B3A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB2FBAB-4CD0-4A5B-9A18-F927AC2B3A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB2FBAB-4CD0-4A5B-9A18-F927AC2B3A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB2FBAB-4CD0-4A5B-9A18-F927AC2B3A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFC13534-221B-4210-82F4-5AEAEC1F29C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC13534-221B-4210-82F4-5AEAEC1F29C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC13534-221B-4210-82F4-5AEAEC1F29C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC13534-221B-4210-82F4-5AEAEC1F29C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73DFFE50-4D05-4D3D-ABE8-F15C045D71C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73DFFE50-4D05-4D3D-ABE8-F15C045D71C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73DFFE50-4D05-4D3D-ABE8-F15C045D71C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73DFFE50-4D05-4D3D-ABE8-F15C045D71C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77474A85-6683-4E37-93B8-1FC3FABD8089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77474A85-6683-4E37-93B8-1FC3FABD8089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77474A85-6683-4E37-93B8-1FC3FABD8089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77474A85-6683-4E37-93B8-1FC3FABD8089}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

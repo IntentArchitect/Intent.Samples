@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="c520bbb2-dc83-4e94-a5e6-10e663b38e01" type="Component View" typeId="624513a6-cba8-4dde-8ebe-6b19f00f0364">
+  <name>[view]</name>
+  <display>[view]</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>manually</sort-children>
+  <order>0</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>78e64e03-5e8b-481b-95ae-8474637113a2</parentFolderId>
+  <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+  <packageName>Intent.Sample.Angular.UI</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="ef882068-7a4c-48b5-9699-de0dceb8d1a5" type="Dialog" typeId="1260ae89-b0cc-4ae0-b21c-7e26d45f16a5">
+      <name>Dialog</name>
+      <display>Dialog</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>c520bbb2-dc83-4e94-a5e6-10e663b38e01</parentFolderId>
+      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+      <packageName>Intent.Sample.Angular.UI</packageName>
+      <traits>
+        <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+      </traits>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="f233f4eb-6220-4900-840d-6f210c4cc838" type="Dialog Content" typeId="69495016-6e72-4c18-bae5-2391e45cd234">
+          <name>Content</name>
+          <display>Content</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>ef882068-7a4c-48b5-9699-de0dceb8d1a5</parentFolderId>
+          <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+          <packageName>Intent.Sample.Angular.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="f6a26c8c-eac2-4181-9466-41a1f8f95e20" type="Dialog Actions" typeId="247a4768-7c46-472c-b5ea-565b37194956">
+          <name>Actions</name>
+          <display>Actions</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>ef882068-7a4c-48b5-9699-de0dceb8d1a5</parentFolderId>
+          <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+          <packageName>Intent.Sample.Angular.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

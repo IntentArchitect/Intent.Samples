@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="5a6a852c-d383-4e94-8ce9-eca3fd8d22af">
+  <sourceEnd id="3b2e3dc8-12d2-4a11-8e86-8a64c5c93d14" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: LoadCustomers</display>
+    <order>0</order>
+    <typeReference id="99d086e0-eb82-4d58-89db-6352a70ad0dd">
+      <typeId>5831912f-48a3-4832-9eca-321f7ac74cb1</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="5a6a852c-d383-4e94-8ce9-eca3fd8d22af" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>GetCustomersQuery</name>
+    <display>[call] Customers.GetCustomersQuery: PagedResult&lt;CustomerSummaryDto&gt;</display>
+    <order>5</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="2bd38246-d28e-47fa-8ae9-cc019608d229">
+      <typeId>073ec302-54c7-4a4f-8f83-014edfa13c27</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="3d35a9b0-d467-4a0f-a5c6-2f1a422fd967" location="[Intent.Sample.Angular].[User Interface].[CustomerListPage]" />
+        <target applicationId="4f799450-9dd9-4f4c-9740-262eafcfa4da" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="073ec302-54c7-4a4f-8f83-014edfa13c27" location="[Intent.Sample.Angular].[User Interface].[GetCustomersQuery]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{LoadCustomers.GetCustomersQuery}</expression>
+            <path>
+              <target id="073ec302-54c7-4a4f-8f83-014edfa13c27" name="GetCustomersQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomers.GetCustomersQuery" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="3d35a9b0-d467-4a0f-a5c6-2f1a422fd967" name="CustomerListPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="5831912f-48a3-4832-9eca-321f7ac74cb1" name="LoadCustomers" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="5a6a852c-d383-4e94-8ce9-eca3fd8d22af" name="GetCustomersQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomers.pageNo}</expression>
+            <path>
+              <target id="073ec302-54c7-4a4f-8f83-014edfa13c27" name="GetCustomersQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+              <target id="79c970c7-3a5a-4370-afac-09b0d91ace53" name="PageNo" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomers.pageNo" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="3d35a9b0-d467-4a0f-a5c6-2f1a422fd967" name="CustomerListPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="5831912f-48a3-4832-9eca-321f7ac74cb1" name="LoadCustomers" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="2e9d14a2-6e49-4914-be12-e9c9c1818c80" name="pageNo" type="element" specialization="Parameter" specializationId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomers.pageSize}</expression>
+            <path>
+              <target id="073ec302-54c7-4a4f-8f83-014edfa13c27" name="GetCustomersQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+              <target id="39f3e5b4-226c-4edb-ba1f-edf0b56677a1" name="PageSize" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomers.pageSize" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="3d35a9b0-d467-4a0f-a5c6-2f1a422fd967" name="CustomerListPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="5831912f-48a3-4832-9eca-321f7ac74cb1" name="LoadCustomers" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="cdda8585-275f-498b-b416-64fd53eeabc1" name="pageSize" type="element" specialization="Parameter" specializationId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomers.searchTerm}</expression>
+            <path>
+              <target id="073ec302-54c7-4a4f-8f83-014edfa13c27" name="GetCustomersQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+              <target id="26ecdc69-240c-465a-9639-cfd3d4f342d1" name="SearchTerm" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomers.searchTerm" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="3d35a9b0-d467-4a0f-a5c6-2f1a422fd967" name="CustomerListPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="5831912f-48a3-4832-9eca-321f7ac74cb1" name="LoadCustomers" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="f67c5a5c-46fb-4651-888d-ea7b226910b0" name="searchTerm" type="element" specialization="Parameter" specializationId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomers.orderBy}</expression>
+            <path>
+              <target id="073ec302-54c7-4a4f-8f83-014edfa13c27" name="GetCustomersQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+              <target id="ee9b5b6d-7694-446e-94d7-58f43449ccf4" name="OrderBy" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomers.orderBy" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="3d35a9b0-d467-4a0f-a5c6-2f1a422fd967" name="CustomerListPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="5831912f-48a3-4832-9eca-321f7ac74cb1" name="LoadCustomers" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="91b605bc-9416-415a-8f73-5c48826b869e" name="orderBy" type="element" specialization="Parameter" specializationId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomers.isActive}</expression>
+            <path>
+              <target id="073ec302-54c7-4a4f-8f83-014edfa13c27" name="GetCustomersQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+              <target id="69c3c9a9-e71b-46a0-a773-d75bc0772007" name="IsActive" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomers.isActive" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="3d35a9b0-d467-4a0f-a5c6-2f1a422fd967" name="CustomerListPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="5831912f-48a3-4832-9eca-321f7ac74cb1" name="LoadCustomers" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="40523d04-ca30-485d-a070-2f5b199d28a7" name="isActive" type="element" specialization="Parameter" specializationId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Call Service Response Mapping" typeId="e60890c6-7ce7-47be-a0da-dff82b8adc02">
+        <source applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="3d35a9b0-d467-4a0f-a5c6-2f1a422fd967" location="[Intent.Sample.Angular].[User Interface].[CustomerListPage]" />
+        <target applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="3d35a9b0-d467-4a0f-a5c6-2f1a422fd967" location="[Intent.Sample.Angular].[User Interface].[CustomerListPage]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{LoadCustomers.GetCustomersQuery.response}</expression>
+            <path>
+              <target id="3d35a9b0-d467-4a0f-a5c6-2f1a422fd967" name="CustomerListPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="9005c422-fabe-454c-a303-2594f66207ca" name="CustomersModels" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomers.GetCustomersQuery.response" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="3d35a9b0-d467-4a0f-a5c6-2f1a422fd967" name="CustomerListPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="5831912f-48a3-4832-9eca-321f7ac74cb1" name="LoadCustomers" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="5a6a852c-d383-4e94-8ce9-eca3fd8d22af" name="GetCustomersQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>9204e067-bdc8-45e7-8970-8a833fdc5253</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Modelers.Services.Pagination</typePackageName>
+                      <typePackageId>7ed452ae-334c-48f7-b0aa-0426fc21e243</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

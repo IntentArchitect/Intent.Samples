@@ -1,0 +1,170 @@
+//@IntentMerge()
+import { IntentIgnoreBody, IntentMerge, IntentIgnore } from './../../../intent/intent.decorators';
+import { GetCustomersQuery } from './../../../service-proxies/models/backend/services/customers/get-customers-query';
+import { CustomerSummaryDto } from './../../../service-proxies/models/backend/services/customers/customer-summary-dto';
+import { CustomersService } from './../../../service-proxies/customers/customers-service';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { finalize } from 'rxjs';
+import { PagedResult } from './../../../service-proxies/models/paged-result';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
+import { MatSortModule, Sort } from '@angular/material/sort';
+import { MatSelectModule } from '@angular/material/select';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
+@IntentMerge()
+@Component({
+  selector: 'app-customer-list-page',
+  standalone: true,
+  templateUrl: 'customer-list-page.component.html',
+  styleUrls: ['customer-list-page.component.scss'],
+  imports: [
+    CommonModule,
+    FormsModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatIconModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatSelectModule,
+    MatChipsModule,
+    MatTooltipModule,
+    MatProgressSpinnerModule
+  ]
+})
+export class CustomerListPageComponent implements OnInit {
+  serviceErrors = {
+    loadCustomersError: null as string | null
+  };
+  isLoading = false;
+  customersModels: PagedResult<CustomerSummaryDto> | null = null;
+
+  searchTerm: string | null = '';
+  isActiveFilter: boolean | null = null;
+  displayedColumns: string[] = ['name', 'surname', 'email', 'status'];
+  pageSize = 10;
+  pageIndex = 0;
+  sortField: string | null = null;
+  sortDirection: 'asc' | 'desc' | '' = '';
+
+  get displayedColumnsWithActions(): string[] {
+    return [...this.displayedColumns, 'actions'];
+  }
+
+  get data(): CustomerSummaryDto[] {
+    return this.customersModels?.data ?? [];
+  }
+
+  get totalItems(): number {
+    return this.customersModels?.totalCount ?? 0;
+  }
+
+  //@IntentMerge()
+  constructor(private router: Router, private readonly customersService: CustomersService) {
+  }
+
+  @IntentMerge()
+  ngOnInit(): void {
+    this.refreshCustomers();
+  }
+
+  @IntentMerge()
+  loadCustomers(pageNo: number, pageSize: number, searchTerm: string | null, orderBy: string | null, isActive: boolean | null): void {
+    this.serviceErrors.loadCustomersError = null;
+    this.isLoading = true;
+    
+    this.customersService.getCustomers({
+      pageNo: pageNo,
+      pageSize: pageSize,
+      searchTerm: searchTerm,
+      orderBy: orderBy,
+      isActive: isActive,
+    })
+    .pipe(
+        finalize(() => {
+          this.isLoading = false; 
+        })
+     )
+    .subscribe({
+      next: (data) => {
+        this.customersModels = data;
+      },
+      error: (err) => {
+        const message = err?.error?.message || err.message || 'Unknown error';
+        this.serviceErrors.loadCustomersError = `Failed to call service: ${message}`;
+
+        console.error('Failed to call service:', err);
+      }
+    });
+  }
+
+  navigateToCustomerAddPage(): void {
+    this.router.navigate(['/customer', 'add']);
+  }
+
+  navigateToCustomerEditPage(customerId: string): void {
+    this.router.navigate(['/customer', 'edit', customerId]);
+  }
+
+  navigateToCustomerViewPage(customerId: string): void {
+    this.router.navigate(['/customer', 'view', customerId]);
+  }
+
+  onSearch(): void {
+    this.pageIndex = 0;
+    this.refreshCustomers();
+  }
+
+  onPageChange(event: PageEvent): void {
+    this.pageIndex = event.pageIndex;
+    this.pageSize = event.pageSize;
+    this.refreshCustomers();
+  }
+
+  onSortChange(sort: Sort): void {
+    if (!sort.direction) {
+      this.sortField = null;
+      this.sortDirection = '';
+    } else {
+      const fieldMap: Record<string, string> = {
+        name: 'Name',
+        surname: 'Surname',
+        email: 'Email'
+      };
+      this.sortField = fieldMap[sort.active] ?? sort.active;
+      this.sortDirection = sort.direction;
+    }
+    this.refreshCustomers();
+  }
+
+  private getOrderBy(): string | null {
+    if (!this.sortField || !this.sortDirection) {
+      return null;
+    }
+    return `${this.sortField} ${this.sortDirection}`;
+  }
+
+  private refreshCustomers(): void {
+    const trimmedSearch = this.searchTerm && this.searchTerm.trim().length > 0 ? this.searchTerm.trim() : null;
+    this.loadCustomers(
+      this.pageIndex + 1,
+      this.pageSize,
+      trimmedSearch,
+      this.getOrderBy(),
+      this.isActiveFilter
+    );
+  }
+}

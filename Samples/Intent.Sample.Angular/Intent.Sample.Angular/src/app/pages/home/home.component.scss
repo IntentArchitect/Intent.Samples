@@ -1,0 +1,141 @@
+// Default Home Component Styles. This can overridden or modified as needed manually or using AI
+@use '../../../theme' as theme;
+@use '../../../styles.scss' as *;
+
+:host {
+  display: block;
+  min-height: 100%;
+  overflow: auto;
+}
+
+.home-container {
+  @extend .page-container;
+  overflow: visible;
+  padding-bottom: $spacing-2xl;
+  min-height: 100%;
+}
+
+// Override icon badge with accent color
+.icon-badge {
+  background: $accent-gradient;
+  box-shadow: 0 8px 20px rgba(theme.$accent-color, 0.3);
+}
+
+// Override info-display to use accent color
+.info-display {
+  background: linear-gradient(135deg, rgba(theme.$accent-color, 0.08) 0%, rgba(theme.$accent-light, 0.12) 100%);
+  border-left: 4px solid theme.$accent-color;
+  margin-top: $spacing-xl;
+}
+
+// Component-specific description override
+.description {
+  font-size: 1.2rem;
+  color: $text-primary;
+
+  strong {
+    color: #2c2c2c;
+    font-weight: 700;
+  }
+}
+
+.intro-text {
+  font-size: 1rem;
+  color: $text-secondary;
+  margin-top: $spacing-md;
+  margin-bottom: $spacing-xl;
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tiles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: $spacing-lg;
+  margin: $spacing-xl 0;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.nav-tile {
+  background: white;
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  cursor: pointer;
+  transition: all $transition-normal ease;
+  box-shadow: $shadow-sm;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+
+  .tile-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto $spacing-md;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: $accent-gradient;
+    color: white;
+    transition: all $transition-normal ease;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $text-primary;
+    margin-bottom: $spacing-xs;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: $text-secondary;
+    margin: 0;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    .tile-icon {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(theme.$accent-color, 0.3);
+    }
+  }
+
+  &:active {
+    transform: translateY(-2px);
+  }
+}
+
+.docs-button {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-xs;
+  background: $primary-gradient;
+  color: white;
+  padding: $spacing-sm $spacing-lg;
+  border-radius: $radius-lg;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all $transition-normal ease;
+  box-shadow: $shadow-primary-md;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-primary-lg;
+    background: $primary-gradient-dark;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}

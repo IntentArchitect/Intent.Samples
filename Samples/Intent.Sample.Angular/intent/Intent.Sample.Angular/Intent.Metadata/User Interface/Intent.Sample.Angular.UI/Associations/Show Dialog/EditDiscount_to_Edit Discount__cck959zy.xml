@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="d7228ea4-7140-4ad4-a85f-2eeb37a322e5">
+  <sourceEnd id="f9320978-b846-4326-9ee8-14f0d43db858" type="Show Dialog Source End" typeId="ad3de626-cb72-4dde-966b-122a6b386fb7">
+    <display>: EditDiscount</display>
+    <order>0</order>
+    <typeReference id="44102b57-397a-4a93-87c2-f5ea9d1bbb1a">
+      <typeId>a330c9fa-d316-4148-ab6f-be971472c4f1</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="d7228ea4-7140-4ad4-a85f-2eeb37a322e5" type="Show Dialog Target End" typeId="c44a7969-abfa-4073-ab2c-d2d0f1f6bd2f">
+    <name>Edit Discount</name>
+    <display>[show] DiscountEditDialog("Edit Discount")</display>
+    <order>1</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="9c9ffe3d-6563-4023-b45a-e5a10ba3836d">
+      <typeId>b1d07692-8e65-43dc-8846-afd4a20111ea</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Open Dialog Mapping" typeId="f0e43df8-a662-46ec-a766-e67de9ddc0d0">
+        <source applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="c256a0aa-9cb3-439e-8335-b8edc872af06" location="[Intent.Sample.Angular].[User Interface].[DiscountListPage]" />
+        <target applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="b1d07692-8e65-43dc-8846-afd4a20111ea" location="[Intent.Sample.Angular].[User Interface].[DiscountEditDialog]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{EditDiscount.discountId}</expression>
+            <path>
+              <target id="b1d07692-8e65-43dc-8846-afd4a20111ea" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="84550d93-966d-4148-91c0-ef251edbe647" name="DiscountId" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="EditDiscount.discountId" mappingType="Data Mapping" mappingTypeId="c85fabc0-963d-470c-a57e-c1b4c64d59b5">
+                <path>
+                  <target id="c256a0aa-9cb3-439e-8335-b8edc872af06" name="DiscountListPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="a330c9fa-d316-4148-ab6f-be971472c4f1" name="EditDiscount" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="613cb7fa-28d4-470b-9cbb-fb31e35572cd" name="discountId" type="element" specialization="Parameter" specializationId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Show Dialog</associationType>
+  <associationTypeId>2a309fb2-c487-4c00-9462-16dac9824731</associationTypeId>
+  <stereotypes />
+</association>

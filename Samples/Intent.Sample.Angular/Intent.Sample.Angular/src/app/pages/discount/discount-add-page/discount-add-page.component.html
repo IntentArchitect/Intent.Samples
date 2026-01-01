@@ -1,0 +1,120 @@
+<div class="pa-4">
+  <mat-card class="mb-4 ux-gradient-primary" appearance="outlined">
+    <mat-card-content class="pa-4">
+      <div class="header-content">
+        <div class="title-row">
+          <mat-icon class="mr-2">local_offer</mat-icon>
+          <span class="mat-headline-5 text-white font-weight-bold">Add Discount</span>
+        </div>
+        <div class="subtitle-row text-white opacity-90">
+          Create a new discount code, amount, and expiry date.
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="ux-fade-in-up" style="animation-delay: 0.1s">
+    <mat-card-header>
+      <mat-card-title>Discount Details</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <form #form="ngForm" class="discount-form">
+        <div *ngIf="serviceErrors.createDiscountError" class="error-message mb-4">
+          {{ serviceErrors.createDiscountError }}
+        </div>
+
+        <div class="grid">
+          <div class="grid-item">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Code</mat-label>
+              <input
+                matInput
+                placeholder="Enter discount code"
+                name="code"
+                required
+                [(ngModel)]="model.code"
+                #codeCtrl="ngModel" />
+              <button mat-icon-button matPrefix disabled>
+                <mat-icon>confirmation_number</mat-icon>
+              </button>
+              <mat-error *ngIf="codeCtrl.invalid && codeCtrl.touched">
+                Code is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="grid-item">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Discount Amount</mat-label>
+              <input
+                matInput
+                type="number"
+                min="0.01"
+                step="0.01"
+                placeholder="Enter amount"
+                name="discountAmount"
+                required
+                [(ngModel)]="model.discountAmount"
+                #discountAmountCtrl="ngModel" />
+              <button mat-icon-button matPrefix disabled>
+                <mat-icon>percent</mat-icon>
+              </button>
+              <mat-error *ngIf="discountAmountCtrl.invalid && discountAmountCtrl.touched">
+                Discount amount is required and must be greater than zero
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="grid-item">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Expiry Date</mat-label>
+              <input
+                matInput
+                [matDatepicker]="expiryPicker"
+                placeholder="Choose a date"
+                name="expiry"
+                required
+                [(ngModel)]="model.expiry"
+                #expiryCtrl="ngModel" />
+              <mat-datepicker-toggle matIconSuffix [for]="expiryPicker"></mat-datepicker-toggle>
+              <mat-datepicker #expiryPicker></mat-datepicker>
+              <mat-error *ngIf="expiryCtrl.invalid && expiryCtrl.touched">
+                Expiry date is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="grid-item-wide actions-row">
+            <button
+              mat-raised-button
+              color="primary"
+              type="button"
+              class="save-button"
+              (click)="save(form)"
+              [disabled]="isLoading || form.invalid">
+              <mat-progress-spinner
+                *ngIf="isLoading"
+                mode="indeterminate"
+                diameter="18"
+                class="spinner">
+              </mat-progress-spinner>
+              <mat-icon *ngIf="!isLoading" class="mr-1">save</mat-icon>
+              <span>{{ isLoading ? 'Saving…' : 'Save' }}</span>
+            </button>
+
+            <button
+              mat-raised-button
+              color="accent"
+              type="button"
+              (click)="navigateToDiscountListPage()"
+              [disabled]="isLoading">
+              <mat-icon class="mr-1">arrow_back</mat-icon>
+              Back to list
+            </button>
+          </div>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

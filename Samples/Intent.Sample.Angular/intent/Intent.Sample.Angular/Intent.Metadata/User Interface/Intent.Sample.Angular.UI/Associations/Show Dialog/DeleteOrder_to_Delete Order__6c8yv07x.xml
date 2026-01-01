@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="af82155c-4e8e-485f-acc6-d39d055bbd2a">
+  <sourceEnd id="5703fac5-b658-46bc-a45f-e878b24ad61d" type="Show Dialog Source End" typeId="ad3de626-cb72-4dde-966b-122a6b386fb7">
+    <display>: DeleteOrder</display>
+    <order>0</order>
+    <typeReference id="df64b43a-a242-41d8-94ca-ff96a324f694">
+      <typeId>672fc13d-0694-4571-b6e5-746787669a22</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="af82155c-4e8e-485f-acc6-d39d055bbd2a" type="Show Dialog Target End" typeId="c44a7969-abfa-4073-ab2c-d2d0f1f6bd2f">
+    <name>Delete Order</name>
+    <display>[show] OrderDeleteDialog("Delete Order")</display>
+    <order>1</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="455fe4e4-0ecf-44c1-9091-3d11d147b30c">
+      <typeId>78e64e03-5e8b-481b-95ae-8474637113a2</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Open Dialog Mapping" typeId="f0e43df8-a662-46ec-a766-e67de9ddc0d0">
+        <source applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="9f961720-6601-482f-89c4-4d84383191dd" location="[Intent.Sample.Angular].[User Interface].[OrderListPage]" />
+        <target applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="78e64e03-5e8b-481b-95ae-8474637113a2" location="[Intent.Sample.Angular].[User Interface].[OrderDeleteDialog]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{DeleteOrder.orderId}</expression>
+            <path>
+              <target id="78e64e03-5e8b-481b-95ae-8474637113a2" name="OrderDeleteDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="bcc2f053-119e-4f18-aaba-548d662e9f24" name="OrderId" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="DeleteOrder.orderId" mappingType="Data Mapping" mappingTypeId="c85fabc0-963d-470c-a57e-c1b4c64d59b5">
+                <path>
+                  <target id="9f961720-6601-482f-89c4-4d84383191dd" name="OrderListPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="672fc13d-0694-4571-b6e5-746787669a22" name="DeleteOrder" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="86910852-73af-42f8-b7be-ab3991d72407" name="orderId" type="element" specialization="Parameter" specializationId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Show Dialog</associationType>
+  <associationTypeId>2a309fb2-c487-4c00-9462-16dac9824731</associationTypeId>
+  <stereotypes />
+</association>

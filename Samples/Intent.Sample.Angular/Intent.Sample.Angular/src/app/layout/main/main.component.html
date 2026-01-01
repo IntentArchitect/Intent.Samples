@@ -1,0 +1,46 @@
+<mat-toolbar color="primary" class="app-header">
+  <button mat-icon-button (click)="drawer.toggle()" aria-label="Toggle menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a routerLink="/" class="home-link" mat-button>
+    <mat-icon>home</mat-icon>
+    <span>Home</span>
+  </a>
+</mat-toolbar>
+
+<mat-sidenav-container class="app-layout">
+  <mat-sidenav #drawer mode="side" opened class="app-sidebar">
+    <mat-nav-list>
+      <h3 mat-subheader>Order Info</h3>
+      <a mat-list-item routerLink="/customer-list" routerLinkActive="active">
+        <mat-icon matListItemIcon>people</mat-icon>
+        <span matListItemTitle>Customer Search</span>
+      </a>
+      <a mat-list-item routerLink="/order/list" routerLinkActive="active">
+        <mat-icon matListItemIcon>receipt_long</mat-icon>
+        <span matListItemTitle>Orders</span>
+      </a>
+      <h3 mat-subheader>Lookups</h3>
+      <a mat-list-item routerLink="/brand/list" routerLinkActive="active">
+        <mat-icon matListItemIcon>branding_watermark</mat-icon>
+        <span matListItemTitle>Brands</span>
+      </a>
+      <a mat-list-item routerLink="/product/list" routerLinkActive="active">
+        <mat-icon matListItemIcon>inventory_2</mat-icon>
+        <span matListItemTitle>Products</span>
+      </a>
+      <a mat-list-item routerLink="/title/list" routerLinkActive="active">
+        <mat-icon matListItemIcon>format_list_bulleted</mat-icon>
+        <span matListItemTitle>Titles</span>
+      </a>
+      <a mat-list-item routerLink="/discount-list" routerLinkActive="active">
+        <mat-icon matListItemIcon>local_offer</mat-icon>
+        <span matListItemTitle>Discounts</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="app-content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

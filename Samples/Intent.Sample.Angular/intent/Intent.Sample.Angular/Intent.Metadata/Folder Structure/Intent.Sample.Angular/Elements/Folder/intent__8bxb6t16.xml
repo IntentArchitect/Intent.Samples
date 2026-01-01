@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="e7dfd878-3386-4685-9e16-546f595d12c4" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>intent</name>
+  <display>intent</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>5f1fc34b-15ed-4f3a-8314-3aef31a409f7</parentFolderId>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="40e2e967-21ae-482e-83ec-df59d669e8ab" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+      <name>Intent.Angular.Shared.IntentDecorators</name>
+      <display>Intent.Angular.Shared.IntentDecorators</display>
+      <externalReference>Intent.Angular</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>e7dfd878-3386-4685-9e16-546f595d12c4</parentFolderId>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

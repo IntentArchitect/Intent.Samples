@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="fa635aa1-6bf5-40c5-a6e3-89aa07cbfa01" type="Diagram" typeId="4912c89a-77eb-497e-a3f4-7408b6a20886">
+  <name>CustomerDiagram</name>
+  <display>CustomerDiagram</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>633e3dc4-e855-4fa3-a814-2f3b51da5e72</parentFolderId>
+  <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+  <packageName>Intent.Sample.Angular.UI</packageName>
+  <diagram>
+    <targetPackageId>fa635aa1-6bf5-40c5-a6e3-89aa07cbfa01</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

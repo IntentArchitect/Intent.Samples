@@ -1,0 +1,38 @@
+import { Routes } from '@angular/router';
+import { BrandListPageComponent } from './pages/brand/brand-list-page/brand-list-page.component';
+import { CustomerAddPageComponent } from './pages/customer/customer-add-page/customer-add-page.component';
+import { CustomerEditPageComponent } from './pages/customer/customer-edit-page/customer-edit-page.component';
+import { CustomerListPageComponent } from './pages/customer/customer-list-page/customer-list-page.component';
+import { CustomerViewPageComponent } from './pages/customer/customer-view-page/customer-view-page.component';
+import { DiscountAddPageComponent } from './pages/discount/discount-add-page/discount-add-page.component';
+import { DiscountListPageComponent } from './pages/discount/discount-list-page/discount-list-page.component';
+import { HomeComponent } from './pages/home/home.component';
+import { OrderAddPageComponent } from './pages/order/order-add-page/order-add-page.component';
+import { OrderListPageComponent } from './pages/order/order-list-page/order-list-page.component';
+import { OrderViewPageComponent } from './pages/order/order-view-page/order-view-page.component';
+import { ProductAddPageComponent } from './pages/product/product-add-page/product-add-page.component';
+import { ProductEditPageComponent } from './pages/product/product-edit-page/product-edit-page.component';
+import { ProductListPageComponent } from './pages/product/product-list-page/product-list-page.component';
+import { TitleAddPageComponent } from './pages/title/title-add-page/title-add-page.component';
+import { TitleEditPageComponent } from './pages/title/title-edit-page/title-edit-page.component';
+import { TitleListPageComponent } from './pages/title/title-list-page/title-list-page.component';
+
+export const routes: Routes = [
+  { path: 'brand/list', component: BrandListPageComponent },
+  { path: 'customer/add', component: CustomerAddPageComponent },
+  { path: 'customer/edit/:customerId', component: CustomerEditPageComponent },
+  { path: 'customer-list', component: CustomerListPageComponent },
+  { path: 'customer/view/:customerId', component: CustomerViewPageComponent },
+  { path: 'discount/add', component: DiscountAddPageComponent },
+  { path: 'discount-list', component: DiscountListPageComponent },
+  { path: '', component: HomeComponent },
+  { path: 'order/add', component: OrderAddPageComponent },
+  { path: 'order/list', component: OrderListPageComponent },
+  { path: 'order/view/:orderId', component: OrderViewPageComponent },
+  { path: 'product/add', component: ProductAddPageComponent },
+  { path: 'product/edit/:productId', component: ProductEditPageComponent },
+  { path: 'product/list', component: ProductListPageComponent },
+  { path: 'title/add', component: TitleAddPageComponent },
+  { path: 'title/edit/:titleId', component: TitleEditPageComponent },
+  { path: 'title/list', component: TitleListPageComponent },
+];
