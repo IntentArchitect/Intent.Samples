@@ -17,10 +17,11 @@ namespace eShop.Basket.Infrastructure.Configuration
 {
     public static class MassTransitConfiguration
     {
-        public static void AddMassTransitConfiguration(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddMassTransitConfiguration(
+            this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<MassTransitEventBus>();
-            services.AddScoped<IEventBus>(provider => provider.GetRequiredService<MassTransitEventBus>());
+            services.AddScoped<MassTransitMessageBus>();
+            services.AddScoped<IEventBus>(provider => provider.GetRequiredService<MassTransitMessageBus>());
 
             services.AddMassTransit(x =>
             {
@@ -41,6 +42,7 @@ namespace eShop.Basket.Infrastructure.Configuration
                     cfg.ConfigureEndpoints(context);
                 });
             });
+            return services;
         }
 
         private static void AddConsumers(this IRegistrationConfigurator cfg)

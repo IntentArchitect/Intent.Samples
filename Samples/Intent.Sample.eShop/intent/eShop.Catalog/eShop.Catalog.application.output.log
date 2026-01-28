@@ -340,7 +340,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>3771990c-bcc4-42d5-8d21-848572fee042</ProjectId>
-      <CorrelationId>Intent.Eventing.MassTransit.IntegrationEventHandler#0429ea0b-1e5f-4857-b184-a9358254e8ba</CorrelationId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventHandler#0429ea0b-1e5f-4857-b184-a9358254e8ba</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Catalog.Application/IntegrationEvents/EventHandlers/OrderStatusChangedToAwaitingValidationIntegrationEventHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>OrderStatusChangedToAwaitingValidationIntegrationEventHandler.cs</ProjectRelativeFilePath>
@@ -540,10 +540,10 @@
     </FileLog>
     <FileLog>
       <ProjectId>11a07ab3-173d-4750-9548-a26f54f82566</ProjectId>
-      <CorrelationId>Intent.Eventing.MassTransit.MassTransitEventBus#446d1b4d-48d8-4b31-b6db-008441ce0030</CorrelationId>
+      <CorrelationId>Intent.Eventing.MassTransit.MassTransitMessageBus#23156da2-3aea-42c9-9f82-c7ca096bad51</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/eShop.Catalog.Infrastructure/Eventing/MassTransitEventBus.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>MassTransitEventBus.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../src/eShop.Catalog.Infrastructure/Eventing/MassTransitMessageBus.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>MassTransitMessageBus.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

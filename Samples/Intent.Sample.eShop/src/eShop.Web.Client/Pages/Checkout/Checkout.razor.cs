@@ -69,7 +69,7 @@ namespace eShop.Web.Client.Pages.Checkout
                         })
                         .ToList()
                 });
-                NavigationManager.NavigateTo("/orders");
+                NavigationManager.NavigateTo("orders");
             }
             catch (Exception e)
             {

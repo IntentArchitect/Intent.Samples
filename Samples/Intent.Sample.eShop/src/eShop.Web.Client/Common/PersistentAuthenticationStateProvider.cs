@@ -63,8 +63,7 @@ namespace eShop.Web.Client.Common
             return _authenticationStateTask;
         }
 
-        public ValueTask<AccessTokenResult> RequestAccessToken()
-=> RequestAccessToken(new AccessTokenRequestOptions());
+        public ValueTask<AccessTokenResult> RequestAccessToken() => RequestAccessToken(new AccessTokenRequestOptions());
 
         public async ValueTask<AccessTokenResult> RequestAccessToken(AccessTokenRequestOptions options)
         {
@@ -103,8 +102,8 @@ namespace eShop.Web.Client.Common
 
             // Token present and we consider it valid
             var expires = _accessTokenExpiresAt > DateTimeOffset.MinValue
-                ? _accessTokenExpiresAt
-                : DateTimeOffset.UtcNow.AddMinutes(5);
+                            ? _accessTokenExpiresAt
+                            : DateTimeOffset.UtcNow.AddMinutes(5);
 
             var accessToken = new AccessToken
             {
@@ -137,8 +136,8 @@ namespace eShop.Web.Client.Common
 
                 _accessToken = dto.AccessToken;
                 _refreshToken = string.IsNullOrWhiteSpace(dto.RefreshToken)
-                    ? _refreshToken // keep old if not rotated
-                    : dto.RefreshToken;
+                                ? _refreshToken // keep old if not rotated
+                                : dto.RefreshToken;
 
                 // compute expiry
                 _accessTokenExpiresAt = new DateTimeOffset(dto.ExpiresIn!.Value, TimeSpan.Zero);

@@ -43,9 +43,9 @@ namespace Intent.Sample.Angular.Backend.Application.Customers.GetCustomers
                     {
                         var term = request.SearchTerm!.Trim().ToLower();
                         query = query.Where(x =>
-                            x.Name.Contains(term, StringComparison.CurrentCultureIgnoreCase) ||
-                            x.Surname.Contains(term, StringComparison.CurrentCultureIgnoreCase) ||
-                            x.Email.Contains(term, StringComparison.CurrentCultureIgnoreCase));
+                            x.Name.ToLower().Contains(term) ||
+                            x.Surname.ToLower().Contains(term) ||
+                            x.Email.ToLower().Contains(term));
                     }
 
                     return query.OrderBy(request.OrderBy ?? "Id");

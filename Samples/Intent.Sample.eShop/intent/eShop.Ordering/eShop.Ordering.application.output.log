@@ -148,18 +148,18 @@
     </FileLog>
     <FileLog>
       <ProjectId>f5df569f-b7a2-434d-ab2d-b0c75c133439</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.Behaviours.EventBusPublishBehaviour#e31f7ef5-1325-43a9-8e42-75583363fc23</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/eShop.Ordering.Application/Common/Behaviours/EventBusPublishBehaviour.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>EventBusPublishBehaviour.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>f5df569f-b7a2-434d-ab2d-b0c75c133439</ProjectId>
       <CorrelationId>Intent.Application.MediatR.Behaviours.LoggingBehaviour#3c04c133-ccb9-466b-b433-53d9607c8774</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Ordering.Application/Common/Behaviours/LoggingBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>LoggingBehaviour.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>f5df569f-b7a2-434d-ab2d-b0c75c133439</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.Behaviours.MessageBusPublishBehaviour#b7488e43-90de-47c2-9e02-1362cae6777e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../src/eShop.Ordering.Application/Common/Behaviours/MessageBusPublishBehaviour.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>MessageBusPublishBehaviour.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -436,7 +436,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>e1e9ad9e-c246-42b4-a748-63ac5903e213</ProjectId>
-      <CorrelationId>Intent.Eventing.MassTransit.IntegrationEventHandler#49a3e417-a005-4ec5-a952-906d8f762224</CorrelationId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventHandler#49a3e417-a005-4ec5-a952-906d8f762224</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Ordering.Application/IntegrationEvents/EventHandlers/GracePeriodConfirmedIntegrationEventHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>GracePeriodConfirmedIntegrationEventHandler.cs</ProjectRelativeFilePath>
@@ -444,7 +444,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>e1e9ad9e-c246-42b4-a748-63ac5903e213</ProjectId>
-      <CorrelationId>Intent.Eventing.MassTransit.IntegrationEventHandler#c1b6e20a-85de-49a5-a07d-8b147eec7edc</CorrelationId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventHandler#c1b6e20a-85de-49a5-a07d-8b147eec7edc</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Ordering.Application/IntegrationEvents/EventHandlers/OrderStockConfirmedIntegrationEventHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>OrderStockConfirmedIntegrationEventHandler.cs</ProjectRelativeFilePath>
@@ -452,7 +452,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>e1e9ad9e-c246-42b4-a748-63ac5903e213</ProjectId>
-      <CorrelationId>Intent.Eventing.MassTransit.IntegrationEventHandler#c47ffc5b-7f52-4f08-a051-773c5acea3ea</CorrelationId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventHandler#c47ffc5b-7f52-4f08-a051-773c5acea3ea</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Ordering.Application/IntegrationEvents/EventHandlers/OrderStockRejectedIntegrationEventHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>OrderStockRejectedIntegrationEventHandler.cs</ProjectRelativeFilePath>
@@ -460,7 +460,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>e1e9ad9e-c246-42b4-a748-63ac5903e213</ProjectId>
-      <CorrelationId>Intent.Eventing.MassTransit.IntegrationEventHandler#d74c7f81-0779-46bf-98a4-ee76c7ae0172</CorrelationId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventHandler#d74c7f81-0779-46bf-98a4-ee76c7ae0172</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Ordering.Application/IntegrationEvents/EventHandlers/UserCheckoutAcceptedIntegrationEventHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>UserCheckoutAcceptedIntegrationEventHandler.cs</ProjectRelativeFilePath>
@@ -1036,10 +1036,10 @@
     </FileLog>
     <FileLog>
       <ProjectId>bcd7b645-8e02-4929-8de1-7a757bf35d25</ProjectId>
-      <CorrelationId>Intent.Eventing.MassTransit.MassTransitEventBus#7df1abbf-10fb-4016-a3df-d03ae8407059</CorrelationId>
+      <CorrelationId>Intent.Eventing.MassTransit.MassTransitMessageBus#ae4df5f1-4eef-46a0-9189-ba3dadae26d0</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/eShop.Ordering.Infrastructure/Eventing/MassTransitEventBus.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>MassTransitEventBus.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../src/eShop.Ordering.Infrastructure/Eventing/MassTransitMessageBus.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>MassTransitMessageBus.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

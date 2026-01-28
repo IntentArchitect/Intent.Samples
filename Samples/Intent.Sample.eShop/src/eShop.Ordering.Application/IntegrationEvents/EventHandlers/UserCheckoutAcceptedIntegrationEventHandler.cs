@@ -11,7 +11,7 @@ using Intent.RoslynWeaver.Attributes;
 using MediatR;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
-[assembly: IntentTemplate("Intent.Eventing.MassTransit.IntegrationEventHandler", Version = "1.0")]
+[assembly: IntentTemplate("Intent.Eventing.Contracts.IntegrationEventHandler", Version = "1.0")]
 
 namespace eShop.Ordering.Application.IntegrationEvents.EventHandlers
 {
@@ -50,8 +50,7 @@ namespace eShop.Ordering.Application.IntegrationEvents.EventHandlers
                     })
                     .ToList(),
                 buyerId: message.Basket.BuyerId);
-
-            await _mediator.Send(command, cancellationToken);
+            var result = await _mediator.Send(command, cancellationToken);
         }
     }
 }

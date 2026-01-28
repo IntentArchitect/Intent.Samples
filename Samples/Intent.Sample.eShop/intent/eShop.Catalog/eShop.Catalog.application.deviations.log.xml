@@ -32,14 +32,14 @@
       <fileHash>5D859ADECF8A36B54E01DFDB1DDE392434E11353AD3760C5A835E65BCACD2A4C</fileHash>
     </file>
     <file>
-      <correlationId>Intent.Eventing.MassTransit.IntegrationEventHandler#0429ea0b-1e5f-4857-b184-a9358254e8ba</correlationId>
+      <correlationId>Intent.Eventing.Contracts.IntegrationEventHandler#0429ea0b-1e5f-4857-b184-a9358254e8ba</correlationId>
       <path>eShop.Catalog.Application/IntegrationEvents/EventHandlers/OrderStatusChangedToAwaitingValidationIntegrationEventHandler.cs</path>
       <count>1</count>
-      <updatedByAccountName>theunis.vanderstoep@intentarchitect.com</updatedByAccountName>
-      <updatedByDisplayName>Theunis van der Stoep</updatedByDisplayName>
-      <updatedAt>2025-07-11T08:06:02.4682082Z</updatedAt>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2026-01-28T18:09:39.5295874Z</updatedAt>
       <deviationsHash>9A4FFCF0D05165A44FADBF619C5E70059CF02AAA717677DEA41567ADD54557DE</deviationsHash>
-      <fileHash>0D463CC374FB07CFC3094298F42906F638E7085FFFF6C43FAC24DE6DDD22D3C6</fileHash>
+      <fileHash>42275F4373DA516028A744DCAE705823DE3BD874D33055011A27E6D7AC0E7D8A</fileHash>
     </file>
     <file>
       <correlationId>Intent.Entities.DomainEntity#f2ce80a2-8077-42e8-be33-de22cf15a09d</correlationId>

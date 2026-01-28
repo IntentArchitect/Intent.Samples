@@ -91,7 +91,7 @@ namespace eShop.Web.Client.Layout
 
         private void NavigateToCatalog(int? brandId, int itemTypeId)
         {
-            NavigationManager.NavigateTo($"/?BrandId={brandId}&ItemTypeId={itemTypeId}");
+            NavigationManager.NavigateTo("?BrandId={brandId}&ItemTypeId={itemTypeId}");
         }
 
         [IntentIgnore]

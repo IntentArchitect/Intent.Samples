@@ -4,6 +4,7 @@ using Asp.Versioning.ApiExplorer;
 using Intent.RoslynWeaver.Attributes;
 using Intent.Sample.Angular.Backend.Api.Filters;
 using Intent.Sample.Angular.Backend.Application;
+using Intent.Sample.Angular.Backend.Domain.Common.Exceptions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
@@ -37,6 +38,12 @@ namespace Intent.Sample.Angular.Backend.Api.Configuration
                     if (File.Exists(applicationXmlFile))
                     {
                         options.IncludeXmlComments(applicationXmlFile);
+                    }
+
+                    var domainXmlFile = Path.Combine(AppContext.BaseDirectory, $"{typeof(NotFoundException).Assembly.GetName().Name}.xml");
+                    if (File.Exists(domainXmlFile))
+                    {
+                        options.IncludeXmlComments(domainXmlFile);
                     }
 
                     options.OperationFilter<AuthorizeCheckOperationFilter>();

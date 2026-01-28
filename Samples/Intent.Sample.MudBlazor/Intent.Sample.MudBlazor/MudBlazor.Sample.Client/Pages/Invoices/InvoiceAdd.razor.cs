@@ -44,7 +44,7 @@ namespace MudBlazor.Sample.Client.Pages.Invoices
                         })
                         .ToList()
                 });
-                NavigationManager.NavigateTo("/invoices");
+                NavigationManager.NavigateTo("invoices");
             }
             catch (Exception e)
             {
@@ -54,7 +54,7 @@ namespace MudBlazor.Sample.Client.Pages.Invoices
 
         private void OnCancelClicked()
         {
-            NavigationManager.NavigateTo("/invoices");
+            NavigationManager.NavigateTo("invoices");
         }
     }
 }

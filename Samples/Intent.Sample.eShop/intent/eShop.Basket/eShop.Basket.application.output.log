@@ -356,7 +356,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>0333b4b4-5766-4a8c-aa78-389e32c79709</ProjectId>
-      <CorrelationId>Intent.Eventing.MassTransit.IntegrationEventHandler#c85b74ed-98a3-42d7-b655-46cff6542971</CorrelationId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventHandler#c85b74ed-98a3-42d7-b655-46cff6542971</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Basket.Application/IntegrationEvents/EventHandlers/OrderStartedIntegrationEventHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>OrderStartedIntegrationEventHandler.cs</ProjectRelativeFilePath>
@@ -364,7 +364,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>0333b4b4-5766-4a8c-aa78-389e32c79709</ProjectId>
-      <CorrelationId>Intent.Eventing.MassTransit.IntegrationEventHandler#a1cfd4f7-79d7-43c0-8d6e-dbd50e81c8b5</CorrelationId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventHandler#a1cfd4f7-79d7-43c0-8d6e-dbd50e81c8b5</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Basket.Application/IntegrationEvents/EventHandlers/UserCheckoutAcceptedIntegrationEventHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>UserCheckoutAcceptedIntegrationEventHandler.cs</ProjectRelativeFilePath>
@@ -548,10 +548,10 @@
     </FileLog>
     <FileLog>
       <ProjectId>3b361c08-3b78-44a7-aec6-18da07edaa56</ProjectId>
-      <CorrelationId>Intent.Eventing.MassTransit.MassTransitEventBus#3d38fa82-336c-4651-bc46-cdab934638a4</CorrelationId>
+      <CorrelationId>Intent.Eventing.MassTransit.MassTransitMessageBus#a4732595-ccb4-4b3a-a9cd-55759dfb08f1</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../src/eShop.Basket.Infrastructure/Eventing/MassTransitEventBus.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>MassTransitEventBus.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../src/eShop.Basket.Infrastructure/Eventing/MassTransitMessageBus.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>MassTransitMessageBus.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

@@ -21,16 +21,14 @@
   </stereotypes>
   <metadata />
   <childElements>
-    <childElement id="8fe03cc5-9a2b-45ae-ac68-f3852a87a813" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
-      <name>Intent.Eventing.MassTransit.IntegrationEventHandler</name>
-      <display>Intent.Eventing.MassTransit.IntegrationEventHandler</display>
-      <externalReference>Intent.Eventing.MassTransit</externalReference>
+    <childElement id="43f7ac0e-8873-4f27-9cd6-de045359f6fe" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Eventing.Contracts.IntegrationEventHandler</name>
+      <display>Intent.Eventing.Contracts.IntegrationEventHandler</display>
+      <externalReference>Intent.Eventing.Contracts</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>e1e9ad9e-c246-42b4-a748-63ac5903e213</parentFolderId>
-      <packageId>431fcae9-9939-4773-a801-8625bbc50909</packageId>
-      <packageName>eShop.Ordering</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />
