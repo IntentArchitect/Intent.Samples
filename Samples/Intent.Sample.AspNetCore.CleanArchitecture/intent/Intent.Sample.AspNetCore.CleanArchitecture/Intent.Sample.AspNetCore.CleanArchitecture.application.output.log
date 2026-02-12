@@ -3,7 +3,7 @@
   <ApplicationId>326c7757-54e3-4911-b25f-e7b66fb33c34</ApplicationId>
   <FileLogs>
     <FileLog>
-      <CorrelationId>Intent.VisualStudio.Projects.GitIgnore#3e7c1b86-e3c7-4988-bf3a-ebbfbf586b85</CorrelationId>
+      <CorrelationId>Intent.VisualStudio.Projects.GitIgnore#f34cc2c5-43a8-4518-a9df-5bca1fc7d7c9</CorrelationId>
       <OverwriteBehaviour>overwrite-disabled</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Intent.AspNetCoreCleanArchitecture.Sample/.gitignore</ApplicationRelativeFilePath>
       <IsIgnored>false</IsIgnored>
@@ -118,6 +118,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Intent.AspNetCoreCleanArchitecture.Sample/AspNetCoreCleanArchitecture.Sample.Api/Filters/ExceptionFilter.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ExceptionFilter.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>80e6e519-a8f3-4ac6-93e4-82213c676a8a</ProjectId>
+      <CorrelationId>Intent.AspNetCore.Swashbuckle.HideRouteParametersFromBodyOperationFilter#70dbb201-b79f-4c6c-94c1-6fa77d316063</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Intent.AspNetCoreCleanArchitecture.Sample/AspNetCoreCleanArchitecture.Sample.Api/Filters/HideRouteParametersFromBodyOperationFilter.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>HideRouteParametersFromBodyOperationFilter.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -1057,7 +1065,7 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
-      <CorrelationId>Intent.VisualStudio.Projects.VisualStudioSolution#3e7c1b86-e3c7-4988-bf3a-ebbfbf586b85</CorrelationId>
+      <CorrelationId>Intent.VisualStudio.Projects.VisualStudioSolution#f34cc2c5-43a8-4518-a9df-5bca1fc7d7c9</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Intent.AspNetCoreCleanArchitecture.Sample/AspNetCoreCleanArchitecture.Sample.sln</ApplicationRelativeFilePath>
       <IsIgnored>false</IsIgnored>

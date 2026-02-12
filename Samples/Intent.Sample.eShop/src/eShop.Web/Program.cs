@@ -65,10 +65,10 @@ namespace eShop.Web
             {
                 app.UseWebAssemblyDebugging();
             }
+            app.UseStaticFiles();
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
-            app.UseStaticFiles();
             app.UseAntiforgery();
 
             app.MapRazorComponents<App>()

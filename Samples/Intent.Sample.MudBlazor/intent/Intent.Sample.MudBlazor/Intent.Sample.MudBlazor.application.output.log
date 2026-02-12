@@ -124,6 +124,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>99346e23-9b34-488c-b5f4-7a5cdf6b6b0f</ProjectId>
+      <CorrelationId>Intent.AspNetCore.Swashbuckle.HideRouteParametersFromBodyOperationFilter#18af84fc-6257-486c-8904-367458122573</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../Intent.Sample.MudBlazor/MudBlazor.Sample.Api/Filters/HideRouteParametersFromBodyOperationFilter.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>HideRouteParametersFromBodyOperationFilter.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>99346e23-9b34-488c-b5f4-7a5cdf6b6b0f</ProjectId>
       <CorrelationId>Intent.AspNetCore.Swashbuckle.TypeSchemaFilter#66a1b5d4-d9e6-4f27-88c1-7ffdce138816</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Intent.Sample.MudBlazor/MudBlazor.Sample.Api/Filters/TypeSchemaFilter.cs</ApplicationRelativeFilePath>
@@ -1827,7 +1835,7 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
-      <CorrelationId>Intent.VisualStudio.Projects.VisualStudioSolution#72b24fdb-6647-4d7b-a6f8-da92b15a0f3a</CorrelationId>
+      <CorrelationId>Intent.VisualStudio.Projects.VisualStudioSolution#e934e20a-fc93-45a9-a79e-8f6c24b3bc9b</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../Intent.Sample.MudBlazor/MudBlazor.Sample.sln</ApplicationRelativeFilePath>
       <IsIgnored>false</IsIgnored>

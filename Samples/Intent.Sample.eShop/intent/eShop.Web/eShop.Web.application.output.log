@@ -3,13 +3,13 @@
   <ApplicationId>6b7965d9-865e-4d2b-bd06-f7c0dd8cc9db</ApplicationId>
   <FileLogs>
     <FileLog>
-      <CorrelationId>Intent.VisualStudio.Projects.GitIgnore#dd40f215-4bf6-4101-b9a2-ef5ca6380c59</CorrelationId>
+      <CorrelationId>Intent.VisualStudio.Projects.GitIgnore#e0f869ed-b7a6-4186-881d-f34ba8021fb3</CorrelationId>
       <OverwriteBehaviour>overwrite-disabled</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/.gitignore</ApplicationRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
-      <CorrelationId>Intent.VisualStudio.Projects.VisualStudioSolution#dd40f215-4bf6-4101-b9a2-ef5ca6380c59</CorrelationId>
+      <CorrelationId>Intent.VisualStudio.Projects.VisualStudioSolution#e0f869ed-b7a6-4186-881d-f34ba8021fb3</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../src/eShop.Sample.sln</ApplicationRelativeFilePath>
       <IsIgnored>false</IsIgnored>
