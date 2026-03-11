@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="0e6801f5-2f91-4b93-bf01-780aef38c522" type="Template Output" typeId="09de2192-2507-41a2-8044-286c7ecadec2">
+  <name>Intent.Angular.Core.TypescriptConfigSpecJsonFileTemplate</name>
+  <display>Intent.Angular.Core.TypescriptConfigSpecJsonFileTemplate</display>
+  <externalReference>Intent.Angular</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>3f3b26ab-7380-4dfe-81bc-595c251bf23e</parentFolderId>
+  <stereotypes />
+  <metadata>
+    <entry key="status" value="assigned" />
+  </metadata>
+  <childElements />
+</class>

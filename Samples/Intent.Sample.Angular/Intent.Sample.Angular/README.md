@@ -1,6 +1,6 @@
 # Intent.Sample.Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.19.
+This project was generated using [Intent Architect](https://intentarchitect.com/) based equivalent to a project generating using [Angular CLI](https://github.com/angular/angular-cli).
 
 ## Development server
 
