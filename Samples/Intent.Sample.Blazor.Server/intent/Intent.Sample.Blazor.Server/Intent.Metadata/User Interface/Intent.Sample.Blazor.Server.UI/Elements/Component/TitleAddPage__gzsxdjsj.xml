@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="3411f2d8-2d8c-4059-b357-5d98e5ed043b" type="Component" typeId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b">
+  <name>TitleAddPage</name>
+  <display>TitleAddPage</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>02e01005-bd61-47a6-bb1d-32d834e362bd</parentFolderId>
+  <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+  <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+  <traits>
+    <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+    <trait id="ea4adc09-8978-4ede-ba5f-265debb2b60c" name="Page" />
+  </traits>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="ea4adc09-8978-4ede-ba5f-265debb2b60c" name="Page">
+      <addedByDefault>false</addedByDefault>
+      <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+      <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+      <properties>
+        <property name="9dff9df1-a993-4bf6-9aa7-c16811142228" display="Route" value="/titles/add" isActive="true" />
+        <property name="0a8627ba-ec45-4023-9c36-b0999f43e982" display="Title" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <mappings>
+    <mapping type="View Binding" typeId="c33f86ad-423a-4a6f-a80c-a3206eafe5cd">
+      <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="3411f2d8-2d8c-4059-b357-5d98e5ed043b" location="[Intent.Sample.Blazor.Server].[User Interface].[TitleAddPage]" />
+      <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="46f750bb-c819-4b99-970d-43e1abe7fed7" location="[Intent.Sample.Blazor.Server].[User Interface].[[view]]" />
+      <mappedEnds />
+    </mapping>
+  </mappings>
+  <metadata />
+  <childElements>
+    <childElement id="1d6b52f2-b5d3-49db-a2c8-881fa601395f" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Model</name>
+      <display>Model: CreateTitleModel = new()</display>
+      <isAbstract>false</isAbstract>
+      <value>new()</value>
+      <genericTypes />
+      <typeReference id="1a93d03b-48a2-4c70-afa4-68d2e234da85">
+        <typeId>4c66226b-9a87-4cf5-8186-039fd37030ca</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+        <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>3411f2d8-2d8c-4059-b357-5d98e5ed043b</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="7cde92d9-b222-483c-84d6-67d85cfab89b" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>OnInitializedAsync</name>
+      <display>OnInitializedAsync(): void</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="6de32c49-f785-4690-af79-1019170e91dd">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>3411f2d8-2d8c-4059-b357-5d98e5ed043b</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="2dff5127-c73e-4281-af79-867c817d1a4f" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>CreateTitle</name>
+      <display>CreateTitle(): void</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="82962220-b6d5-4006-8ed6-e01a584dc0eb">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>3411f2d8-2d8c-4059-b357-5d98e5ed043b</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

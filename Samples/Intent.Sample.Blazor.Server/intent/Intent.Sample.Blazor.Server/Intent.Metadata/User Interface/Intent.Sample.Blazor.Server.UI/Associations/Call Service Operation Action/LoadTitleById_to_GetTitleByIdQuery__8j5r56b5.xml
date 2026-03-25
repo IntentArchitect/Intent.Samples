@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="70c14e7b-6c0a-432d-9d46-90b52c75d45c">
+  <sourceEnd id="9af3214f-d912-4642-806b-a775c4632702" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: LoadTitleById</display>
+    <order>0</order>
+    <typeReference id="754f46b8-e48f-439f-ba63-c2a9b44cafb0">
+      <typeId>91446f6b-af0e-4329-9c7d-912e55e069ae</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="70c14e7b-6c0a-432d-9d46-90b52c75d45c" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>GetTitleByIdQuery</name>
+    <display>[call] Titles.GetTitleByIdQuery: TitleDto</display>
+    <order>1</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="85549bef-d3e1-43d3-8581-9381d2080582">
+      <typeId>200d1e31-b71d-490b-aa3f-9713adbe61d7</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="14d62660-b11b-4d86-9e94-1880fa36bde0" location="[Intent.Sample.Blazor.Server].[User Interface].[TitleEditPage]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="200d1e31-b71d-490b-aa3f-9713adbe61d7" location="[Intent.Sample.Blazor.Server].[User Interface].[GetTitleByIdQuery]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{LoadTitleById.GetTitleByIdQuery}</expression>
+            <path>
+              <target id="200d1e31-b71d-490b-aa3f-9713adbe61d7" name="GetTitleByIdQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+            </path>
+            <sources>
+              <source identifier="LoadTitleById.GetTitleByIdQuery" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="14d62660-b11b-4d86-9e94-1880fa36bde0" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="91446f6b-af0e-4329-9c7d-912e55e069ae" name="LoadTitleById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="70c14e7b-6c0a-432d-9d46-90b52c75d45c" name="GetTitleByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadTitleById.id}</expression>
+            <path>
+              <target id="200d1e31-b71d-490b-aa3f-9713adbe61d7" name="GetTitleByIdQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+              <target id="034ba249-49ed-4dc1-9d45-24baa6c7ac17" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="LoadTitleById.id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="14d62660-b11b-4d86-9e94-1880fa36bde0" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="91446f6b-af0e-4329-9c7d-912e55e069ae" name="LoadTitleById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="f234a08f-79b3-431e-a6f7-3387334645db" name="id" type="element" specialization="Parameter" specializationId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Call Service Response Mapping" typeId="e60890c6-7ce7-47be-a0da-dff82b8adc02">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="14d62660-b11b-4d86-9e94-1880fa36bde0" location="[Intent.Sample.Blazor.Server].[User Interface].[TitleEditPage]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="14d62660-b11b-4d86-9e94-1880fa36bde0" location="[Intent.Sample.Blazor.Server].[User Interface].[TitleEditPage]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{LoadTitleById.GetTitleByIdQuery.response.Id}</expression>
+            <path>
+              <target id="14d62660-b11b-4d86-9e94-1880fa36bde0" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="687def62-a24d-4fc5-bcb2-34c206042834" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="90664a56-271e-40b4-8266-dd7b3ab31101" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadTitleById.GetTitleByIdQuery.response.Id" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="14d62660-b11b-4d86-9e94-1880fa36bde0" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="91446f6b-af0e-4329-9c7d-912e55e069ae" name="LoadTitleById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="70c14e7b-6c0a-432d-9d46-90b52c75d45c" name="GetTitleByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5250abb8-dfac-4fb0-b7f0-08853eeaa5a3</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+                      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="d481e506-7042-4279-b77e-6ce10a6122b5" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadTitleById.GetTitleByIdQuery.response.Name}</expression>
+            <path>
+              <target id="14d62660-b11b-4d86-9e94-1880fa36bde0" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="687def62-a24d-4fc5-bcb2-34c206042834" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="7ae2e4e1-8af6-4ff2-8a93-41418677b7cc" name="Name" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadTitleById.GetTitleByIdQuery.response.Name" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="14d62660-b11b-4d86-9e94-1880fa36bde0" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="91446f6b-af0e-4329-9c7d-912e55e069ae" name="LoadTitleById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="70c14e7b-6c0a-432d-9d46-90b52c75d45c" name="GetTitleByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5250abb8-dfac-4fb0-b7f0-08853eeaa5a3</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+                      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="7d1801ec-9a46-4dcf-a9bd-2e0b1b0b7311" name="Name" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

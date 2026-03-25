@@ -4,7 +4,7 @@
   <display>UpdateDiscountModel</display>
   <isAbstract>false</isAbstract>
   <sort-children>by-type-then-manually</sort-children>
-  <order>7</order>
+  <order>6</order>
   <genericTypes />
   <isMapped>false</isMapped>
   <parentFolderId>b1d07692-8e65-43dc-8846-afd4a20111ea</parentFolderId>

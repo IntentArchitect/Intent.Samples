@@ -80,13 +80,14 @@
         <target applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="ab3094db-caac-4016-9a39-4c6c9c3c0296" location="[Intent.Sample.Angular].[User Interface].[TitleEditPage]" />
         <mappedEnds>
           <mappedEnd>
-            <expression>{LoadTitleById.GetTitleByIdQuery.response}</expression>
+            <expression>{LoadTitleById.GetTitleByIdQuery.response.Id}</expression>
             <path>
               <target id="ab3094db-caac-4016-9a39-4c6c9c3c0296" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
-              <target id="ed6b2403-5b5c-4bfc-afae-9eec1e4e0ac3" name="TitleByIdModels" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="1407eb77-1687-492b-aedc-1173c17ef24c" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="746b770a-7bd6-4042-90cf-1ec8e032e2d6" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
             </path>
             <sources>
-              <source identifier="LoadTitleById.GetTitleByIdQuery.response" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+              <source identifier="LoadTitleById.GetTitleByIdQuery.response.Id" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
                 <path>
                   <target id="ab3094db-caac-4016-9a39-4c6c9c3c0296" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
                   <target id="2083eb51-1f9f-468e-80ba-3df9b3b7b97d" name="LoadTitleById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
@@ -104,6 +105,38 @@
                       <genericTypeParameters />
                     </typeReference>
                   </target>
+                  <target id="a1b5087d-1bfa-4171-91ce-0bea7dd068dc" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadTitleById.GetTitleByIdQuery.response.Name}</expression>
+            <path>
+              <target id="ab3094db-caac-4016-9a39-4c6c9c3c0296" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="1407eb77-1687-492b-aedc-1173c17ef24c" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="f31ce114-d541-4abc-9c4d-b4e767cf4108" name="Name" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadTitleById.GetTitleByIdQuery.response.Name" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="ab3094db-caac-4016-9a39-4c6c9c3c0296" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="2083eb51-1f9f-468e-80ba-3df9b3b7b97d" name="LoadTitleById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="8f99c5a2-787d-4e0a-a9ff-fd46ea5df680" name="GetTitleByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>db1ccc43-09fd-45ad-9d10-3699652e2e1f</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="c2312128-901f-4c62-802c-eb4db8bc4335" name="Name" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
                 </path>
               </source>
             </sources>

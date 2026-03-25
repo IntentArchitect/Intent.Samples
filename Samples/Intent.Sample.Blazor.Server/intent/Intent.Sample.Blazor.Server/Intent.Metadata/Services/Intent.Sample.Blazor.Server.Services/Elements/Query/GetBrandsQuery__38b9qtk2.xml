@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="85f44b2f-2810-4338-9a0b-5175e9d71368" type="Query" typeId="e71b0662-e29d-4db2-868b-8a12464b25d0">
+  <name>GetBrandsQuery</name>
+  <display>GetBrandsQuery: BrandDto[*]</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <typeReference id="86c0e3e8-d1b5-43c8-8d49-85340c26363b">
+    <typeId>e9bcfc68-a41e-4db4-a6ed-abf45ea4fd09</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>true</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+    <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>7eeca730-a8d8-4347-bfd3-20cb48650011</parentFolderId>
+  <packageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</packageId>
+  <packageName>Intent.Sample.Blazor.Server.Services</packageName>
+  <traits>
+    <trait id="9e587d4d-f317-4ab8-9bbb-9394234d2a88" name="[Allow Comment]" />
+    <trait id="0a932465-ea1f-42e7-b1eb-9f90aa8961fd" name="[Invokable]" />
+    <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+  </traits>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

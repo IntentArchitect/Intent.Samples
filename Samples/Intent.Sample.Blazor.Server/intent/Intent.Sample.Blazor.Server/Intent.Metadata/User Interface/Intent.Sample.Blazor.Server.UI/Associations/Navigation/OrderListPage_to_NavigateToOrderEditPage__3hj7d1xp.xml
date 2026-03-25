@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="2533a732-8c14-47f0-918e-0b1f60d4c210">
+  <sourceEnd id="b2b7bdff-c8d8-4915-9a25-3c92253ecda0" type="Navigation Source End" typeId="97a3de8a-c9bf-4cf2-bc0a-b8692b02211b">
+    <display>: OrderListPage</display>
+    <order>10</order>
+    <typeReference id="49eb7239-47ef-4382-8fbd-4202a9eed8f6">
+      <typeId>beb46cf2-2a5c-4f26-aaff-19904961b916</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="2533a732-8c14-47f0-918e-0b1f60d4c210" type="Navigation Target End" typeId="2b191288-ecae-4743-b069-cbdd927ef349">
+    <name>NavigateToOrderEditPage</name>
+    <display>[navigate] OrderEditPage</display>
+    <order>8</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="84bfbe81-26d9-4977-abb9-1092a3ce2126">
+      <typeId>cbd960a9-7273-4662-97e5-03c7c5c14f35</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Navigation</associationType>
+  <associationTypeId>6d2b2070-c1cb-4cd2-88b4-4e5f8414bd9e</associationTypeId>
+  <stereotypes />
+</association>

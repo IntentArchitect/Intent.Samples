@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="d63561b5-2c2c-4f40-9587-82321fe39084" type="Diagram" typeId="4912c89a-77eb-497e-a3f4-7408b6a20886">
+  <name>Site Map</name>
+  <display>Site Map</display>
+  <externalReference>aba7806c-72bd-4b20-8aa1-15af62253841</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>a66e41b8-afd2-4278-adaa-5992d538533f</parentFolderId>
+  <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+  <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+  <diagram>
+    <targetPackageId>a66e41b8-afd2-4278-adaa-5992d538533f</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

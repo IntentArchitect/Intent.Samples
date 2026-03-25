@@ -1,10 +1,10 @@
 //@IntentMerge()
 import { IntentIgnoreBody, IntentMerge, IntentIgnore } from './../../../intent/intent.decorators';
-import { UpdateProductCommand } from './../../../service-proxies/models/backend/services/products/update-product-command';
 import { ProductDto } from './../../../service-proxies/models/backend/services/products/product-dto';
+import { UpdateProductCommand } from './../../../service-proxies/models/backend/services/products/update-product-command';
 import { BrandDto } from './../../../service-proxies/models/backend/services/brands/brand-dto';
-import { BrandsService } from './../../../service-proxies/brands/brands-service';
 import { ProductsService } from './../../../service-proxies/products/products-service';
+import { BrandsService } from './../../../service-proxies/brands/brands-service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { finalize } from 'rxjs';
@@ -17,7 +17,6 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatDividerModule } from '@angular/material/divider';
 
 interface UpdateProductModel {
   id: string | null;
@@ -42,26 +41,25 @@ interface UpdateProductModel {
     MatSelectModule,
     MatButtonModule,
     MatIconModule,
-    MatProgressSpinnerModule,
-    MatDividerModule
-  ],
+    MatProgressSpinnerModule
+  ]
 })
 export class ProductEditPageComponent implements OnInit {
   serviceErrors = {
-    loadBrandsError: null as string | null,
     loadProductByIdError: null as string | null,
-    updateProductError: null as string | null
+    updateProductError: null as string | null,
+    loadBrandsError: null as string | null
   };
   isLoading = false;
   productId: string = '';
   brandsModels: BrandDto[] | null = null;
-  productByIdModels: ProductDto | null = null;
+  model: UpdateProductModel | null = null;
 
   //@IntentMerge()
   constructor(private route: ActivatedRoute,
       private router: Router,
-      private readonly brandsService: BrandsService,
-      private readonly productsService: ProductsService) {
+      private readonly productsService: ProductsService,
+      private readonly brandsService: BrandsService) {
   }
 
   @IntentMerge()
@@ -71,7 +69,6 @@ export class ProductEditPageComponent implements OnInit {
       throw new Error("Expected 'productId' not supplied");
     }
     this.productId = productId;
-
     this.loadBrands();
     this.loadProductById(this.productId);
   }
@@ -107,13 +104,18 @@ export class ProductEditPageComponent implements OnInit {
     
     this.productsService.getProductById(id)
     .pipe(
-        finalize(() => {
-          this.isLoading = false; 
-        })
-     )
-    .subscribe({
+      finalize(() => {
+        this.isLoading = false; 
+      })
+    ).subscribe({
       next: (data) => {
-        this.productByIdModels = data;
+        this.model = {
+          id: data.id,
+          name: data.name,
+          description: data.description,
+          code: data.code,
+          brandId: data.brandId,
+        };
       },
       error: (err) => {
         const message = err?.error?.message || err.message || 'Unknown error';
@@ -128,22 +130,22 @@ export class ProductEditPageComponent implements OnInit {
     this.router.navigate(['/product', 'list']);
   }
 
-  @IntentIgnore()
+  @IntentMerge()
   updateProduct(): void {
     this.serviceErrors.updateProductError = null;
     this.isLoading = true;
     
-    if(!this.productByIdModels) {
-      this.serviceErrors.updateProductError = "Property 'productByIdModels' cannot be null";
+    if(!this.model) {
+      this.serviceErrors.updateProductError = "Property 'model' cannot be null";
       this.isLoading = false;
       return;
     }
     this.productsService.updateProduct({
-      id: this.productByIdModels.id,
-      name: this.productByIdModels.name,
-      description: this.productByIdModels.description,
-      code: this.productByIdModels.code,
-      brandId: this.productByIdModels.brandId,
+      id: this.model.id!,
+      name: this.model.name,
+      description: this.model.description,
+      code: this.model.code,
+      brandId: this.model.brandId!,
     })
     .pipe(
         finalize(() => {
@@ -151,9 +153,6 @@ export class ProductEditPageComponent implements OnInit {
         })
     )
     .subscribe({
-      next: () => {
-        this.navigateToProductListPage();
-      },
       error: (err) => {
         const message = err?.error?.message || err.message || 'Unknown error';
         this.serviceErrors.updateProductError = `Failed to call service: ${message}`;
@@ -164,18 +163,11 @@ export class ProductEditPageComponent implements OnInit {
   }
 
   save(form: NgForm): void {
-    this.serviceErrors.updateProductError = null;
-
-    if (form.invalid) {
-      this.serviceErrors.updateProductError = 'Please fix validation errors before saving.';
+    if (form.invalid || !this.model) {
+      form.form.markAllAsTouched();
       return;
     }
-
-    if (!this.productByIdModels) {
-      this.serviceErrors.updateProductError = "Property 'productByIdModels' cannot be null";
-      return;
-    }
-
     this.updateProduct();
+    this.navigateToProductListPage();
   }
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="172b6a0d-717c-40a8-9971-ceba0eb0962d" type="Diagram" typeId="4912c89a-77eb-497e-a3f4-7408b6a20886">
+  <name>Product</name>
+  <display>Product</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>5dac1921-7500-4e64-8752-cdf26899b48b</parentFolderId>
+  <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+  <packageName>Intent.Sample.Angular.UI</packageName>
+  <diagram>
+    <targetPackageId>172b6a0d-717c-40a8-9971-ceba0eb0962d</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="a9622c4d-7d5b-46b4-8c67-efcc8ff821ee" type="Model Definition" typeId="bd3941b5-e3b3-4a40-96e6-b9c87cea0101">
+  <name>UpdateOrderModel</name>
+  <display>UpdateOrderModel</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <order>8</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>cbd960a9-7273-4662-97e5-03c7c5c14f35</parentFolderId>
+  <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+  <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="e27443ef-4e46-4d2f-b587-74c4ed9616fb" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Id</name>
+      <display>Id: guid?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="0cb2dedd-59e7-4d4c-968b-7b617b407e97">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a9622c4d-7d5b-46b4-8c67-efcc8ff821ee</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="8ebb72aa-1469-4635-b8a6-67c7307cc54d" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>CustomerId</name>
+      <display>CustomerId: guid?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="e7050e8a-4560-4ec6-8d52-629758b4b2e7">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a9622c4d-7d5b-46b4-8c67-efcc8ff821ee</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="2c2a2428-d8e3-4eea-9b51-1a5a854bae90" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>OrderNo</name>
+      <display>OrderNo: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="15c598ca-6be8-4375-bd65-55f9874a885a">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a9622c4d-7d5b-46b4-8c67-efcc8ff821ee</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="26e670ca-0c0e-468e-ab8d-537817e7ed19" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>DiscountCode</name>
+      <display>DiscountCode: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="ccb47189-79cb-4f19-9b04-5db6ddb24ef1">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a9622c4d-7d5b-46b4-8c67-efcc8ff821ee</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="73248db0-d928-4f9f-b3ae-c3bdb302b7f6" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Total</name>
+      <display>Total: decimal?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="0844788a-9160-4c33-9a22-776e9cab2b74">
+        <typeId>675c7b84-997a-44e0-82b9-cd724c07c9e6</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a9622c4d-7d5b-46b4-8c67-efcc8ff821ee</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="1cf78a20-fc7a-4a98-bbfc-147e6d3a6630" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>OrderedDate</name>
+      <display>OrderedDate: datetime?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="e685e7f4-a6f1-4de9-a189-56d1ffbbf4c0">
+        <typeId>a4107c29-7851-4121-9416-cf1236908f1e</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a9622c4d-7d5b-46b4-8c67-efcc8ff821ee</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="69eaac7b-fbd1-4f04-803a-f707f7b1ba68" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>OrderItems</name>
+      <display>OrderItems: UpdateOrderCommandOrderItemsModel[*]</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="eac8bd83-4570-4382-be28-8e34277dccfd">
+        <typeId>35e8b575-34e3-40d9-b9fe-de746d564d14</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+        <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a9622c4d-7d5b-46b4-8c67-efcc8ff821ee</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="2542046e-bce8-4c76-a002-b1158e465799" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>CustomerName</name>
+      <display>CustomerName: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="1ad01c65-63d3-41c8-9ca4-b887bae877eb">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a9622c4d-7d5b-46b4-8c67-efcc8ff821ee</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="6a56a290-3132-43e0-8010-03ff6cf72c53" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>CustomerSurname</name>
+      <display>CustomerSurname: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="3ab21e29-a9f2-41ac-a146-dd7d148c8e4c">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a9622c4d-7d5b-46b4-8c67-efcc8ff821ee</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="9397c5ba-6433-4824-bbcd-7cc27169455d" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Email</name>
+      <display>Email: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="be0d5950-9c98-441c-af1e-e3d105a88e04">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a9622c4d-7d5b-46b4-8c67-efcc8ff821ee</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

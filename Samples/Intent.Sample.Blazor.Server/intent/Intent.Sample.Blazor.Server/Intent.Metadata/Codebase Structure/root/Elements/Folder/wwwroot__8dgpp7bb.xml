@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="02509379-7d05-427e-8b21-8322ad52ce25" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>wwwroot</name>
+  <display>wwwroot</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>c2d97fdc-38b2-4233-b997-31063b8786a9</parentFolderId>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="a819894b-8323-47b3-a75c-086c54dcc021" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Modules.AI.Blazor.Templates.StaticContentTemplateRegistrations.MudBlazorTemplateThemeCSSStaticContentTemplateRegistration</name>
+      <display>Intent.Modules.AI.Blazor.Templates.StaticContentTemplateRegistrations.MudBlazorTemplateThemeCSSStaticContentTemplateRegistration</display>
+      <externalReference>Intent.AI.Blazor</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>02509379-7d05-427e-8b21-8322ad52ce25</parentFolderId>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

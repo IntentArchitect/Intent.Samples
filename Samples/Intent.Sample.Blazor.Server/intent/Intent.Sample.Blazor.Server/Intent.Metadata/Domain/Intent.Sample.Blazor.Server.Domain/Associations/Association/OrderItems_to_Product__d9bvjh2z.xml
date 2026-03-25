@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="c170feb1-daf1-4cc5-a1fa-895f7d56e787">
+  <sourceEnd id="d68242cd-917a-4125-b4b2-c569208391df" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>OrderItems</name>
+    <display>OrderItems: OrderItem[*]</display>
+    <order>0</order>
+    <typeReference id="8e588017-d1b2-4f52-9a55-217595a17fca">
+      <typeId>7c072c70-4741-4291-a00a-e8d426fbd394</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Domain</typePackageName>
+      <typePackageId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="c170feb1-daf1-4cc5-a1fa-895f7d56e787" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Product</name>
+    <display>Product: Product</display>
+    <order>5</order>
+    <typeReference id="f54a1e36-ccf8-468f-9a50-8679b2f6ec5d">
+      <typeId>97ee29bb-9642-4dc2-b491-0dea177a7c26</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Domain</typePackageName>
+      <typePackageId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

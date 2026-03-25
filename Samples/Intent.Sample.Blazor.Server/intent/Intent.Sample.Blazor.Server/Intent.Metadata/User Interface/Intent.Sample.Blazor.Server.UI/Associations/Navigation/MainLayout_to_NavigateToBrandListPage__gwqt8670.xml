@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="ac8183d7-78f2-4d0e-8ada-8087a18466f5">
+  <sourceEnd id="a90b89b6-f4e8-4576-b59b-cd18f7216393" type="Navigation Source End" typeId="97a3de8a-c9bf-4cf2-bc0a-b8692b02211b">
+    <display>: MainLayout</display>
+    <order>0</order>
+    <typeReference id="d043e6bb-3d9f-4944-b2fe-a27cab2f42bd">
+      <typeId>1e5af17e-c2c7-4479-98cf-d853aa123729</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="ac8183d7-78f2-4d0e-8ada-8087a18466f5" type="Navigation Target End" typeId="2b191288-ecae-4743-b069-cbdd927ef349">
+    <name>NavigateToBrandListPage</name>
+    <display>[navigate] BrandListPage</display>
+    <order>4</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="26f5c795-4c35-49d0-8613-ae13899e22c3">
+      <typeId>9c4e978f-fb64-44fb-b39e-fa413df3d83c</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Navigation</associationType>
+  <associationTypeId>6d2b2070-c1cb-4cd2-88b4-4e5f8414bd9e</associationTypeId>
+  <stereotypes />
+</association>

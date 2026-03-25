@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="93f13b4f-9ca0-4ebe-a4e3-cb8ceda8c9db" type="Model Definition" typeId="bd3941b5-e3b3-4a40-96e6-b9c87cea0101">
+  <name>UpdateProductModel</name>
+  <display>UpdateProductModel</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <order>8</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>4fdd865b-3d04-4266-9b42-03385b1f638d</parentFolderId>
+  <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+  <packageName>Intent.Sample.Angular.UI</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="eb0f177b-ad49-4d4f-bced-227294384e56" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Id</name>
+      <display>Id: guid?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="aa825dd7-6b7f-4495-a9eb-1c313e19e195">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>93f13b4f-9ca0-4ebe-a4e3-cb8ceda8c9db</parentFolderId>
+      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+      <packageName>Intent.Sample.Angular.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="6b97bb9c-e2ed-4ab5-8e20-513ca5706486" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Name</name>
+      <display>Name: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="6ec23db4-bff7-445e-b2d8-b0605b9271d5">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>93f13b4f-9ca0-4ebe-a4e3-cb8ceda8c9db</parentFolderId>
+      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+      <packageName>Intent.Sample.Angular.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="e1203e66-3103-44dd-b683-219d09df0094" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Description</name>
+      <display>Description: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="4ae3516e-86fd-4d67-ae18-6e423be85b7b">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>93f13b4f-9ca0-4ebe-a4e3-cb8ceda8c9db</parentFolderId>
+      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+      <packageName>Intent.Sample.Angular.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="3cbf3b07-5dc8-477a-87b3-251e6513c76f" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Code</name>
+      <display>Code: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="def392ac-5497-41f5-b0b0-022c56fa1b7d">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>93f13b4f-9ca0-4ebe-a4e3-cb8ceda8c9db</parentFolderId>
+      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+      <packageName>Intent.Sample.Angular.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="fe356fc3-c573-488e-aa5c-dc1553bc0eb1" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>BrandId</name>
+      <display>BrandId: guid?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="e9a6146d-8430-4202-92ca-d90947398b5c">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>93f13b4f-9ca0-4ebe-a4e3-cb8ceda8c9db</parentFolderId>
+      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+      <packageName>Intent.Sample.Angular.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

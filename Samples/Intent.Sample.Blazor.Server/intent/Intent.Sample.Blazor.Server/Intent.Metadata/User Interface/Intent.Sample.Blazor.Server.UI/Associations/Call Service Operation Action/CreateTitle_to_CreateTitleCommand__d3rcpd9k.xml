@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="a2c761af-f37f-4d19-8bfb-09f2ba3cf5a8">
+  <sourceEnd id="8ebf55a3-00a6-4fdc-b337-6a093023bcb1" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: CreateTitle</display>
+    <order>0</order>
+    <typeReference id="4d6f2981-6ca5-45d4-b525-5691ca7934f6">
+      <typeId>2dff5127-c73e-4281-af79-867c817d1a4f</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="a2c761af-f37f-4d19-8bfb-09f2ba3cf5a8" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>CreateTitleCommand</name>
+    <display>[call] Titles.CreateTitleCommand: guid</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="8ee64a38-3867-4416-81ae-826560975e5e">
+      <typeId>d19e7b22-f84f-47db-a78a-8a742561e551</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="3411f2d8-2d8c-4059-b357-5d98e5ed043b" location="[Intent.Sample.Blazor.Server].[User Interface].[TitleAddPage]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="d19e7b22-f84f-47db-a78a-8a742561e551" location="[Intent.Sample.Blazor.Server].[User Interface].[CreateTitleCommand]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{CreateTitle.CreateTitleCommand}</expression>
+            <path>
+              <target id="d19e7b22-f84f-47db-a78a-8a742561e551" name="CreateTitleCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+            </path>
+            <sources>
+              <source identifier="CreateTitle.CreateTitleCommand" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="3411f2d8-2d8c-4059-b357-5d98e5ed043b" name="TitleAddPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="2dff5127-c73e-4281-af79-867c817d1a4f" name="CreateTitle" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="a2c761af-f37f-4d19-8bfb-09f2ba3cf5a8" name="CreateTitleCommand" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Name}</expression>
+            <path>
+              <target id="d19e7b22-f84f-47db-a78a-8a742561e551" name="CreateTitleCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="98a7cffb-05bb-4cce-8e18-1774f4257ff7" name="Name" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Name" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="3411f2d8-2d8c-4059-b357-5d98e5ed043b" name="TitleAddPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="1d6b52f2-b5d3-49db-a2c8-881fa601395f" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="9a16790c-ae74-4ed8-b29d-7ff443b6b0ff" name="Name" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

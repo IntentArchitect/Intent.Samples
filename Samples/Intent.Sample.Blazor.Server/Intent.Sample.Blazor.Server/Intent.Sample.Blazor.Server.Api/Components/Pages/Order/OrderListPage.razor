@@ -1,0 +1,97 @@
+@page "/order/list"
+@using Intent.Sample.Blazor.Server.Application.Orders
+
+<MudPaper Class="pa-4 mb-4 ux-gradient-primary" Elevation="0">
+    <MudText Typo="Typo.h4" Class="text-white font-weight-bold mb-2">
+        <MudIcon Icon="@Icons.Material.Filled.ShoppingCart" Class="mr-2" />
+        Orders
+    </MudText>
+    <MudText Typo="Typo.body1" Class="text-white opacity-90">
+        View and manage customer orders.
+    </MudText>
+</MudPaper>
+
+<MudCard Class="ux-fade-in-up" Style="animation-delay: 0.1s">
+    <MudCardHeader>
+        <CardHeaderContent>
+            <MudGrid>
+                <MudItem xs="12">
+                    <MudButton Variant="Variant.Filled"
+                               Color="Color.Secondary"
+                               StartIcon="@Icons.Material.Filled.Add"
+                               OnClick="@NavigateToOrderAddPage">
+                        Add Order
+                    </MudButton>
+                    <MudButton Variant="Variant.Outlined"
+                               Color="Color.Primary"
+                               StartIcon="@Icons.Material.Filled.Refresh"
+                               OnClick="@(async () => await LoadOrders())">
+                        Refresh
+                    </MudButton>
+                </MudItem>
+            </MudGrid>
+        </CardHeaderContent>
+    </MudCardHeader>
+    <MudCardContent>
+        @if (OrdersModels is null)
+        {
+            <MudStack Direction="FlexDirection.Row"
+                      AlignItems="AlignItems.Center"
+                      Justify="Justify.FlexStart"
+                      Spacing="2">
+                <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+                <MudText Typo="Typo.body2">Loading orders...</MudText>
+            </MudStack>
+        }
+        else if (!OrdersModels.Any())
+        {
+            <MudText Typo="Typo.body2">No orders found.</MudText>
+        }
+        else
+        {
+            <MudTable T="OrderDto"
+                      Items="OrdersModels"
+                      Dense="true"
+                      Hover="true"
+                      Striped
+                      Elevation="1">
+                <HeaderContent>
+                    <MudTh>Order #</MudTh>
+                    <MudTh>Customer</MudTh>
+                    <MudTh>Email</MudTh>
+                    <MudTh>Title</MudTh>
+                    <MudTh>Discount Code</MudTh>
+                    <MudTh>Total</MudTh>
+                    <MudTh>Ordered Date</MudTh>
+                    <MudTh>Actions</MudTh>
+                </HeaderContent>
+                <RowTemplate>
+                    <MudTd DataLabel="Order #">@context.OrderNo</MudTd>
+                    <MudTd DataLabel="Customer">@context.CustomerName @context.CustomerSurname</MudTd>
+                    <MudTd DataLabel="Email">@context.CustomerEmail</MudTd>
+                    <MudTd DataLabel="Title">@context.TitleName</MudTd>
+                    <MudTd DataLabel="Discount Code">@context.DiscountCode</MudTd>
+                    <MudTd DataLabel="Total">@context.Total.ToString("C")</MudTd>
+                    <MudTd DataLabel="Ordered Date">@context.OrderedDate.ToString("yyyy-MM-dd")</MudTd>
+                    <MudTd DataLabel="Actions">
+                        <MudTooltip Text="View Order">
+                            <MudIconButton Icon="@Icons.Material.Filled.Visibility"
+                                           Color="Color.Info"
+                                           OnClick="@(() => NavigateToOrderViewPage(context.Id))" />
+                        </MudTooltip>
+                        <MudTooltip Text="Edit Order">
+                            <MudIconButton Icon="@Icons.Material.Filled.Edit"
+                                           Color="Color.Primary"
+                                           OnClick="@(() => NavigateToOrderEditPage(context.Id))" />
+                        </MudTooltip>
+                        <MudTooltip Text="Delete Order">
+                            <MudIconButton Icon="@Icons.Material.Filled.Delete"
+                                           Color="Color.Error"
+                                           OnClick="@(() => OnDeleteOrder(context.Id))" />
+                        </MudTooltip>
+                    </MudTd>
+                </RowTemplate>
+            </MudTable>
+        }
+    </MudCardContent>
+</MudCard>

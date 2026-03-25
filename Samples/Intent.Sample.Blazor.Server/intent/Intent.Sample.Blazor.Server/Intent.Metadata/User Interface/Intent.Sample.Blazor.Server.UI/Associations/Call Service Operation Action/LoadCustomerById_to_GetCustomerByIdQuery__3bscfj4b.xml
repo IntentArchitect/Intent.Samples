@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="4b1a7130-c50a-4b93-9edb-7ce868535668">
+  <sourceEnd id="eb9b46ba-0ca2-4234-90ad-f652fa7201f5" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: LoadCustomerById</display>
+    <order>0</order>
+    <typeReference id="558699d6-a841-44a3-ba7f-0de7a6fc1dac">
+      <typeId>36362bb7-77b7-4f46-b6e2-7641b606deba</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="4b1a7130-c50a-4b93-9edb-7ce868535668" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>GetCustomerByIdQuery</name>
+    <display>[call] Customers.GetCustomerByIdQuery: CustomerDto</display>
+    <order>1</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="2c69b2c0-a058-4bb1-9cea-7373718fa94d">
+      <typeId>c740e0cb-3f08-47f9-8252-b4035d65da2d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="6d28db2a-72e7-4388-892a-9d2cfceb8f19" location="[Intent.Sample.Blazor.Server].[User Interface].[CustomerViewPage]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="c740e0cb-3f08-47f9-8252-b4035d65da2d" location="[Intent.Sample.Blazor.Server].[User Interface].[GetCustomerByIdQuery]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery}</expression>
+            <path>
+              <target id="c740e0cb-3f08-47f9-8252-b4035d65da2d" name="GetCustomerByIdQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="6d28db2a-72e7-4388-892a-9d2cfceb8f19" name="CustomerViewPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="36362bb7-77b7-4f46-b6e2-7641b606deba" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="4b1a7130-c50a-4b93-9edb-7ce868535668" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.id}</expression>
+            <path>
+              <target id="c740e0cb-3f08-47f9-8252-b4035d65da2d" name="GetCustomerByIdQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+              <target id="4c281e23-a89f-43a7-ac0a-64aadd9dc95c" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="6d28db2a-72e7-4388-892a-9d2cfceb8f19" name="CustomerViewPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="36362bb7-77b7-4f46-b6e2-7641b606deba" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="97648a64-8699-44c0-9bef-55b91dc404c9" name="id" type="element" specialization="Parameter" specializationId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Call Service Response Mapping" typeId="e60890c6-7ce7-47be-a0da-dff82b8adc02">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="6d28db2a-72e7-4388-892a-9d2cfceb8f19" location="[Intent.Sample.Blazor.Server].[User Interface].[CustomerViewPage]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="6d28db2a-72e7-4388-892a-9d2cfceb8f19" location="[Intent.Sample.Blazor.Server].[User Interface].[CustomerViewPage]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response}</expression>
+            <path>
+              <target id="6d28db2a-72e7-4388-892a-9d2cfceb8f19" name="CustomerViewPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="a77a7995-e81e-465c-8824-c932a2f7ec90" name="CustomerByIdModels" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="6d28db2a-72e7-4388-892a-9d2cfceb8f19" name="CustomerViewPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="36362bb7-77b7-4f46-b6e2-7641b606deba" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="4b1a7130-c50a-4b93-9edb-7ce868535668" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>1ef36f31-0e12-4fc2-aaf9-42ea68926f6d</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+                      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

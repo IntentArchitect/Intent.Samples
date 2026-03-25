@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="50d29f3c-7291-4818-8264-921892ce159c">
+  <sourceEnd id="3962fc5d-1a60-4053-9072-e9f4cb8e3178" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: UpdateDiscount</display>
+    <order>0</order>
+    <typeReference id="ee2ec531-8c83-4eda-9de0-0524f56ca232">
+      <typeId>2a08b10e-8e46-4d57-ba63-796bef5c9236</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="50d29f3c-7291-4818-8264-921892ce159c" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>UpdateDiscountCommand</name>
+    <display>[call] Discounts.UpdateDiscountCommand: void</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="73383979-04c0-4db4-82cb-00c98a2d4753">
+      <typeId>87090422-5211-4c36-a86f-474374f7f516</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="5e875608-307b-4f74-8a6a-899f344b5291" location="[Intent.Sample.Blazor.Server].[User Interface].[DiscountEditDialog]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="87090422-5211-4c36-a86f-474374f7f516" location="[Intent.Sample.Blazor.Server].[User Interface].[UpdateDiscountCommand]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{UpdateDiscount.UpdateDiscountCommand}</expression>
+            <path>
+              <target id="87090422-5211-4c36-a86f-474374f7f516" name="UpdateDiscountCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+            </path>
+            <sources>
+              <source identifier="UpdateDiscount.UpdateDiscountCommand" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="5e875608-307b-4f74-8a6a-899f344b5291" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="2a08b10e-8e46-4d57-ba63-796bef5c9236" name="UpdateDiscount" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="50d29f3c-7291-4818-8264-921892ce159c" name="UpdateDiscountCommand" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Id}</expression>
+            <path>
+              <target id="87090422-5211-4c36-a86f-474374f7f516" name="UpdateDiscountCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="77f65950-aebd-40c6-9b7c-ba1fb4fbd74a" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="5e875608-307b-4f74-8a6a-899f344b5291" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="464536f9-770c-4427-bd90-ca1b7f48f4c1" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="dba03ca1-ed87-4f90-9d89-c5b7270d43ab" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Code}</expression>
+            <path>
+              <target id="87090422-5211-4c36-a86f-474374f7f516" name="UpdateDiscountCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="e6b77647-790f-4485-9c5b-2c29f08ba002" name="Code" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Code" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="5e875608-307b-4f74-8a6a-899f344b5291" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="464536f9-770c-4427-bd90-ca1b7f48f4c1" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="e2d23783-9e6f-4dcc-b3c0-3de36f5d464d" name="Code" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.DiscountAmount}</expression>
+            <path>
+              <target id="87090422-5211-4c36-a86f-474374f7f516" name="UpdateDiscountCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="a674f232-27e0-42c7-869d-aeb9196e42f8" name="DiscountAmount" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.DiscountAmount" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="5e875608-307b-4f74-8a6a-899f344b5291" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="464536f9-770c-4427-bd90-ca1b7f48f4c1" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="689b03fe-e149-4367-8a96-c8bc09361fe0" name="DiscountAmount" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Expiry}</expression>
+            <path>
+              <target id="87090422-5211-4c36-a86f-474374f7f516" name="UpdateDiscountCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="7933d941-f242-40f1-af51-896a41858a5c" name="Expiry" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Expiry" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="5e875608-307b-4f74-8a6a-899f344b5291" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="464536f9-770c-4427-bd90-ca1b7f48f4c1" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="ddbf76c0-92ce-4d06-81e8-c6903ea7d88c" name="Expiry" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

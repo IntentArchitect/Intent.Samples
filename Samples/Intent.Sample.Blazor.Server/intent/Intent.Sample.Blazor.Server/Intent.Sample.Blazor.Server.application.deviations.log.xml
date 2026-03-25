@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deviationsLog>
+  <files>
+    <file>
+      <correlationId>Intent.Blazor.Templates.Client.RazorComponentTemplate#1ccf9145-ad74-466e-88fa-f02a15f50a97</correlationId>
+      <path>Intent.Sample.Blazor.Server.Api/Components/Pages/Home.razor</path>
+      <count>3</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2026-03-24T13:19:03.5390981Z</updatedAt>
+      <deviationsHash>AF77C591E2F4BA75672BD2767D6CDC5510AA06F0ADEED295DDB9AB2B3DF8FA78</deviationsHash>
+      <fileHash>28D1F63A9BE1BEEC858D46FB569F3C1E355ABEC28AE185791704ED3CD838D21E</fileHash>
+    </file>
+    <file>
+      <correlationId>Intent.Application.MediatR.QueryHandler#2b4a07a8-c14f-4a35-88bf-628608bb7523</correlationId>
+      <path>Intent.Sample.Blazor.Server.Application/Customers/GetCustomers/GetCustomersQueryHandler.cs</path>
+      <count>1</count>
+      <updatedByAccountName>jp.seini@intentarchitect.com</updatedByAccountName>
+      <updatedByDisplayName>JP Seini</updatedByDisplayName>
+      <updatedAt>2026-03-19T17:29:38.6170827Z</updatedAt>
+      <deviationsHash>DAD11F11AE4288E7991C6A5FDC7C360C25532D54A262F51E67FAC580C9FF761C</deviationsHash>
+      <fileHash>6943B283826499D78C5ACA84991C6360EE417CFB0F28CE3C81B659E9999BDB0F</fileHash>
+    </file>
+  </files>
+</deviationsLog>

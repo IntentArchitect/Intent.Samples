@@ -1,18 +1,18 @@
 //@IntentMerge()
 import { IntentIgnoreBody, IntentMerge, IntentIgnore } from './../../../intent/intent.decorators';
-import { UpdateTitleCommand } from './../../../service-proxies/models/backend/services/titles/update-title-command';
 import { TitleDto } from './../../../service-proxies/models/backend/services/titles/title-dto';
+import { UpdateTitleCommand } from './../../../service-proxies/models/backend/services/titles/update-title-command';
 import { TitlesService } from './../../../service-proxies/titles/titles-service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { finalize } from 'rxjs';
 import { CommonModule } from '@angular/common';
-import { FormsModule, NgForm } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 interface UpdateTitleModel {
@@ -32,10 +32,10 @@ interface UpdateTitleModel {
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule,
     MatIconModule,
+    MatButtonModule,
     MatProgressSpinnerModule
-  ]
+  ],
 })
 export class TitleEditPageComponent implements OnInit {
   serviceErrors = {
@@ -44,7 +44,7 @@ export class TitleEditPageComponent implements OnInit {
   };
   isLoading = false;
   titleId: string = '';
-  titleByIdModels: TitleDto | null = null;
+  model: UpdateTitleModel | null = null;
 
   //@IntentMerge()
   constructor(private route: ActivatedRoute, private router: Router, private readonly titlesService: TitlesService) {
@@ -67,13 +67,15 @@ export class TitleEditPageComponent implements OnInit {
     
     this.titlesService.getTitleById(id)
     .pipe(
-        finalize(() => {
-          this.isLoading = false; 
-        })
-     )
-    .subscribe({
+      finalize(() => {
+        this.isLoading = false; 
+      })
+    ).subscribe({
       next: (data) => {
-        this.titleByIdModels = data;
+        this.model = {
+          id: data.id,
+          name: data.name,
+        };
       },
       error: (err) => {
         const message = err?.error?.message || err.message || 'Unknown error';
@@ -93,14 +95,14 @@ export class TitleEditPageComponent implements OnInit {
     this.serviceErrors.updateTitleError = null;
     this.isLoading = true;
     
-    if(!this.titleByIdModels) {
-      this.serviceErrors.updateTitleError = "Property 'titleByIdModels' cannot be null";
+    if(!this.model) {
+      this.serviceErrors.updateTitleError = "Property 'model' cannot be null";
       this.isLoading = false;
       return;
     }
     this.titlesService.updateTitle({
-      id: this.titleByIdModels.id,
-      name: this.titleByIdModels.name,
+      id: this.model.id!,
+      name: this.model.name,
     })
     .pipe(
         finalize(() => {
@@ -117,40 +119,11 @@ export class TitleEditPageComponent implements OnInit {
     });
   }
 
-  save(form: NgForm): void {
-    if (form.invalid) {
+  save(): void {
+    if (this.isLoading) {
       return;
     }
-
-    this.serviceErrors.updateTitleError = null;
-
-    if (!this.titleByIdModels) {
-      this.serviceErrors.updateTitleError = "Property 'titleByIdModels' cannot be null";
-      return;
-    }
-
-    this.isLoading = true;
-
-    this.titlesService
-      .updateTitle({
-        id: this.titleByIdModels.id,
-        name: this.titleByIdModels.name
-      })
-      .pipe(
-        finalize(() => {
-          this.isLoading = false;
-        })
-      )
-      .subscribe({
-        next: () => {
-          this.navigateToTitleListPage();
-        },
-        error: (err) => {
-          const message = err?.error?.message || err.message || 'Unknown error';
-          this.serviceErrors.updateTitleError = `Failed to call service: ${message}`;
-
-          console.error('Failed to call service:', err);
-        }
-      });
+    this.updateTitle();
+    this.navigateToTitleListPage();
   }
 }

@@ -80,13 +80,14 @@
         <target applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="906056df-d1e7-4a17-9bd6-a80656752053" location="[Intent.Sample.Angular].[User Interface].[BrandEditDialog]" />
         <mappedEnds>
           <mappedEnd>
-            <expression>{LoadBrandById.GetBrandByIdQuery.response}</expression>
+            <expression>{LoadBrandById.GetBrandByIdQuery.response.Id}</expression>
             <path>
               <target id="906056df-d1e7-4a17-9bd6-a80656752053" name="BrandEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
-              <target id="907e4d8b-a071-40f6-ae71-4dfbbd5ef79e" name="BrandByIdModels" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="377d803a-9867-4a3d-9650-2af4714b0d30" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="b79a2912-aefe-460d-a72d-cdbd3e42bd82" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
             </path>
             <sources>
-              <source identifier="LoadBrandById.GetBrandByIdQuery.response" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+              <source identifier="LoadBrandById.GetBrandByIdQuery.response.Id" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
                 <path>
                   <target id="906056df-d1e7-4a17-9bd6-a80656752053" name="BrandEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
                   <target id="3253485c-6f7f-420f-9534-c5596e225350" name="LoadBrandById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
@@ -104,6 +105,38 @@
                       <genericTypeParameters />
                     </typeReference>
                   </target>
+                  <target id="3fa8bd7a-4314-47c2-99c0-862eb194b372" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadBrandById.GetBrandByIdQuery.response.Name}</expression>
+            <path>
+              <target id="906056df-d1e7-4a17-9bd6-a80656752053" name="BrandEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="377d803a-9867-4a3d-9650-2af4714b0d30" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="fe1da938-5521-4f67-99e5-841df19893bf" name="Name" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadBrandById.GetBrandByIdQuery.response.Name" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="906056df-d1e7-4a17-9bd6-a80656752053" name="BrandEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="3253485c-6f7f-420f-9534-c5596e225350" name="LoadBrandById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="709ce78c-0b7f-417e-8bf6-76d6490270f6" name="GetBrandByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>76f9dcf8-e66b-4d8e-b4f3-f9994f3c15ce</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="3d2bd886-1f35-488b-92f3-ec00813c570b" name="Name" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
                 </path>
               </source>
             </sources>

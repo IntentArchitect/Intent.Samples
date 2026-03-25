@@ -2,26 +2,26 @@
 import { IntentIgnoreBody, IntentMerge, IntentIgnore } from './../../../intent/intent.decorators';
 import { AddressType } from './../../../service-proxies/models/address-type';
 import { UpdateCustomerCommand } from './../../../service-proxies/models/backend/services/customers/update-customer-command';
-import { CustomerDto } from './../../../service-proxies/models/backend/services/customers/customer-dto';
 import { UpdateCustomerCommandAddressesDto } from './../../../service-proxies/models/backend/services/customers/update-customer-command-addresses-dto';
-import { CustomerAddressDto } from './../../../service-proxies/models/backend/services/customers/customer-address-dto';
 import { UpdateCustomerCommandLoyaltyDto } from './../../../service-proxies/models/backend/services/customers/update-customer-command-loyalty-dto';
+import { CustomerDto } from './../../../service-proxies/models/backend/services/customers/customer-dto';
+import { CustomerAddressDto } from './../../../service-proxies/models/backend/services/customers/customer-address-dto';
 import { CustomerLoyaltyDto } from './../../../service-proxies/models/backend/services/customers/customer-loyalty-dto';
 import { TitleDto } from './../../../service-proxies/models/backend/services/titles/title-dto';
-import { CustomersService } from './../../../service-proxies/customers/customers-service';
 import { TitlesService } from './../../../service-proxies/titles/titles-service';
+import { CustomersService } from './../../../service-proxies/customers/customers-service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { finalize } from 'rxjs';
 import { CommonModule } from '@angular/common';
-import { FormsModule, NgForm } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
@@ -63,24 +63,24 @@ interface UpdateCustomerCommandLoyaltyModel {
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    MatIconModule,
     MatSelectModule,
     MatSlideToggleModule,
     MatButtonModule,
-    MatIconModule,
     MatDividerModule,
     MatProgressSpinnerModule
-  ]
+  ],
 })
 export class CustomerEditPageComponent implements OnInit {
   serviceErrors = {
-    loadCustomerByIdError: null as string | null,
     loadTitlesError: null as string | null,
-    updateCustomerError: null as string | null
+    updateCustomerError: null as string | null,
+    loadCustomerByIdError: null as string | null
   };
   isLoading = false;
-  customerByIdModels: CustomerDto | null = null;
   titlesModels: TitleDto[] | null = null;
   customerId: string = '';
+  model: UpdateCustomerModel | null = null;
 
   AddressType = AddressType;
   hasLoyalty = false;
@@ -88,8 +88,8 @@ export class CustomerEditPageComponent implements OnInit {
   //@IntentMerge()
   constructor(private route: ActivatedRoute,
       private router: Router,
-      private readonly customersService: CustomersService,
-      private readonly titlesService: TitlesService) {
+      private readonly titlesService: TitlesService,
+      private readonly customersService: CustomersService) {
   }
 
   @IntentMerge()
@@ -110,13 +110,34 @@ export class CustomerEditPageComponent implements OnInit {
     
     this.customersService.getCustomerById(id)
     .pipe(
-        finalize(() => {
-          this.isLoading = false; 
-        })
-     )
-    .subscribe({
+      finalize(() => {
+        this.isLoading = false; 
+      })
+    ).subscribe({
       next: (data) => {
-        this.customerByIdModels = data;
+        this.model = {
+          id: data.id,
+          titleId: data.titleId,
+          name: data.name,
+          surname: data.surname,
+          email: data.email,
+          isActive: data.isActive,
+          addresses: data.addresses.map(a => ({
+            id: a.id,
+            line1: a.line1,
+            line2: a.line2,
+            city: a.city,
+            postal: a.postal,
+            addressType: a.addressType,
+          })),
+          loyalty: data.loyalty
+        ? {
+                id: data.loyalty.id,
+                loyaltyNo: data.loyalty.loyaltyNo,
+                points: data.loyalty.points,
+              }
+            : null,
+        };
       },
       error: (err) => {
         const message = err?.error?.message || err.message || 'Unknown error';
@@ -125,6 +146,8 @@ export class CustomerEditPageComponent implements OnInit {
         console.error('Failed to call service:', err);
       }
     });
+    
+    
   }
 
   @IntentMerge()
@@ -160,38 +183,31 @@ export class CustomerEditPageComponent implements OnInit {
     this.serviceErrors.updateCustomerError = null;
     this.isLoading = true;
     
-    if(!this.customerByIdModels) {
-      this.serviceErrors.updateCustomerError = "Property 'customerByIdModels' cannot be null";
+    if(!this.model) {
+      this.serviceErrors.updateCustomerError = "Property 'model' cannot be null";
       this.isLoading = false;
       return;
     }
-
-    if (!this.hasLoyalty) {
-      this.customerByIdModels.loyalty = null;
-    }else if (this.customerByIdModels.loyalty && !this.customerByIdModels.loyalty.id) {
-      this.customerByIdModels.loyalty.id = crypto.randomUUID();
-    }
-
     this.customersService.updateCustomer({
-      id: this.customerByIdModels.id,
-      titleId: this.customerByIdModels.titleId,
-      name: this.customerByIdModels.name,
-      surname: this.customerByIdModels.surname,
-      email: this.customerByIdModels.email,
-      isActive: this.customerByIdModels.isActive,
-      addresses: this.customerByIdModels.addresses.map(a => ({
-        id: a.id,
+      id: this.model.id!,
+      titleId: this.model.titleId!,
+      name: this.model.name,
+      surname: this.model.surname,
+      email: this.model.email,
+      isActive: this.model.isActive,
+      addresses: this.model.addresses.map(a => ({
+        id: a.id!,
         line1: a.line1,
         line2: a.line2,
         city: a.city,
         postal: a.postal,
         addressType: a.addressType,
       })),
-      loyalty: this.customerByIdModels.loyalty
+      loyalty: this.model.loyalty
         ? {
-            id: this.customerByIdModels.loyalty.id,
-            loyaltyNo: this.customerByIdModels.loyalty.loyaltyNo,
-            points: this.customerByIdModels.loyalty.points,
+            id: this.model.loyalty.id!,
+            loyaltyNo: this.model.loyalty.loyaltyNo,
+            points: this.model.loyalty.points!,
           }
         : null,
     })
@@ -210,63 +226,57 @@ export class CustomerEditPageComponent implements OnInit {
     });
   }
 
-  save(form: NgForm): void {
-    this.serviceErrors.updateCustomerError = null;
-    if (!this.customerByIdModels) {
-      this.serviceErrors.updateCustomerError = 'No customer loaded.';
-      return;
-    }
-    if (form.invalid) {
-      form.control.markAllAsTouched();
-      return;
+  save(): void {
+    if (!this.hasLoyalty && this.model) {
+      this.model.loyalty = null;
     }
     this.updateCustomer();
     this.navigateToCustomerListPage();
   }
 
-  addAddress(): void {
-    if (!this.customerByIdModels) {
+  onHasLoyaltyChange(value: boolean): void {
+    this.hasLoyalty = value;
+    if (!this.model) {
       return;
     }
-    if (!this.customerByIdModels.addresses) {
-      this.customerByIdModels.addresses = [] as any;
+    if (value) {
+      if (!this.model.loyalty) {
+        this.model.loyalty = {
+          id: null,
+          loyaltyNo: '',
+          points: 0
+        };
+      }
+    } else {
+      this.model.loyalty = null;
     }
-    const hasDelivery = this.customerByIdModels.addresses.some(a => a.addressType === AddressType.Delivery);
+  }
+
+  addAddress(): void {
+    if (!this.model) {
+      return;
+    }
+    if (!this.model.addresses) {
+      this.model.addresses = [];
+    }
+    const hasDelivery = this.model.addresses.some(a => a.addressType === AddressType.Delivery);
     const nextType = hasDelivery ? AddressType.Billing : AddressType.Delivery;
-    this.customerByIdModels.addresses.push({
-      id: '',
+    this.model.addresses.push({
+      id: null,
       line1: '',
       line2: '',
       city: '',
       postal: '',
       addressType: nextType
-    } as CustomerAddressDto);
+    });
   }
 
   removeAddress(index: number): void {
-    if (!this.customerByIdModels || !this.customerByIdModels.addresses) {
+    if (!this.model || !this.model.addresses) {
       return;
     }
-    if (index >= 0 && index < this.customerByIdModels.addresses.length) {
-      this.customerByIdModels.addresses.splice(index, 1);
-    }
-  }
-
-  onHasLoyaltyChange(checked: boolean): void {
-    this.hasLoyalty = checked;
-    if (!this.customerByIdModels) {
-      return;
-    }
-    if (checked) {
-      if (!this.customerByIdModels.loyalty) {
-        this.customerByIdModels.loyalty = {
-          id: '',
-          loyaltyNo: '',
-          points: 0
-        } as CustomerLoyaltyDto;
-      }
-    } else {
-      this.customerByIdModels.loyalty = null;
+    if (index >= 0 && index < this.model.addresses.length) {
+      this.model.addresses.splice(index, 1);
     }
   }
 }

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="fdd5203c-ff3b-4c54-910e-e277fefa8932">
+  <sourceEnd id="d2bc5f04-2ebe-47ca-b83b-1208efe71d81" type="Query Entity Action Source End" typeId="32a65f26-2555-4616-8a2c-6a90805600bb">
+    <display>: GetDiscountByIdQuery</display>
+    <order>0</order>
+    <typeReference id="1f8df7d4-9158-4e95-9c0b-012a01315dcd">
+      <typeId>b2da09b0-e233-4359-acb1-ec90b9beb410</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="fdd5203c-ff3b-4c54-910e-e277fefa8932" type="Query Entity Action Target End" typeId="93ef6675-cba4-4998-adff-cb22d5343ed4">
+    <name>discount</name>
+    <display>[query] discount: Discount</display>
+    <order>1</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="c1aa7199-0205-4867-aea9-fde6ff6ca96f">
+      <typeId>0a830ffa-ab85-4104-8ad7-20c5fe12da9b</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Domain</typePackageName>
+      <typePackageId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Query Entity Mapping" typeId="25f25af9-c38b-4053-9474-b0fabe9d7ea7">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="b2da09b0-e233-4359-acb1-ec90b9beb410" location="[Intent.Sample.Blazor.Server].[Services].[GetDiscountByIdQuery]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="0a830ffa-ab85-4104-8ad7-20c5fe12da9b" location="[Intent.Sample.Blazor.Server].[Services].[Discount]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{Id}</expression>
+            <path>
+              <target id="0a830ffa-ab85-4104-8ad7-20c5fe12da9b" name="Discount" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="fb2ea6cb-1ffb-472f-8a9e-39dcd6b52e6a" name="Id" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="Id" mappingType="Filter Mapping" mappingTypeId="01d09a7f-0e7c-4670-b7bc-395d7e893ef2">
+                <path>
+                  <target id="b2da09b0-e233-4359-acb1-ec90b9beb410" name="GetDiscountByIdQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+                  <target id="4615cbb1-7d84-4f9d-89e4-6c5941a10dbf" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Query Entity Action</associationType>
+  <associationTypeId>47ab5888-a258-4bec-a9fc-a83de69eb79d</associationTypeId>
+  <stereotypes />
+</association>

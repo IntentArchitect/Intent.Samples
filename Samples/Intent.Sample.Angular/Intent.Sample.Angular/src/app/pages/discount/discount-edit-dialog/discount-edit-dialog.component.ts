@@ -47,7 +47,6 @@ export class DiscountEditDialogComponent implements OnInit {
   };
   isLoading = false;
   discountId: string = '';
-  discountByIdModels: DiscountDto | null = null;
   model: UpdateDiscountModel | null = null;
 
   //@IntentMerge()
@@ -72,13 +71,17 @@ export class DiscountEditDialogComponent implements OnInit {
     
     this.discountsService.getDiscountById(id)
     .pipe(
-        finalize(() => {
-          this.isLoading = false; 
-        })
-     )
-    .subscribe({
+      finalize(() => {
+        this.isLoading = false; 
+      })
+    ).subscribe({
       next: (data) => {
-        this.discountByIdModels = data;
+        this.model = {
+          id: data.id,
+          code: data.code,
+          discountAmount: data.discountAmount,
+          expiry: data.expiry,
+        };
       },
       error: (err) => {
         const message = err?.error?.message || err.message || 'Unknown error';
@@ -132,7 +135,6 @@ export class DiscountEditDialogComponent implements OnInit {
       )
       .subscribe({
         next: (data) => {
-          this.discountByIdModels = data;
           this.model = {
             id: data.id,
             code: data.code,

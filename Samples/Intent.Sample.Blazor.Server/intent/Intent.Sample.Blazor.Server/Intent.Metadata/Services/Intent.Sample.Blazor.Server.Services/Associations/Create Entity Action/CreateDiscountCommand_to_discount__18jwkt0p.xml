@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="f1187512-d958-4a9c-8537-0f767b0fd01a">
+  <sourceEnd id="e8363dbf-c1e4-4f65-84d9-e22008b98b9a" type="Create Entity Action Source End" typeId="a3e7c59e-b0a1-47e1-ba29-66f2c7047b0a">
+    <display>created by : Discounts.CreateDiscountCommand</display>
+    <order>0</order>
+    <typeReference id="8436567b-0d1b-4514-ba45-7f403405afac">
+      <typeId>cc6904b1-8079-43ea-9f64-df86c6a76eca</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="f1187512-d958-4a9c-8537-0f767b0fd01a" type="Create Entity Action Target End" typeId="328f54e5-7bad-4b5f-90ca-03ce3105d016">
+    <name>discount</name>
+    <display>[create] discount: Discount</display>
+    <order>3</order>
+    <traits>
+      <trait id="d00a2ab0-9a23-4192-b8bb-166798fc7dba" name="[Processing Action]" />
+    </traits>
+    <typeReference id="31317101-750f-4bf5-ab75-e0a5dede39da">
+      <typeId>0a830ffa-ab85-4104-8ad7-20c5fe12da9b</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Domain</typePackageName>
+      <typePackageId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Create Entity Mapping" typeId="5f172141-fdba-426b-980e-163e782ff53e">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="cc6904b1-8079-43ea-9f64-df86c6a76eca" location="[Intent.Sample.Blazor.Server].[Services].[CreateDiscountCommand]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="6ab29b31-27af-4f56-a67c-986d82097d63" elementId="0a830ffa-ab85-4104-8ad7-20c5fe12da9b" location="[Intent.Sample.Blazor.Server].[Services].[Discount]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{CreateDiscountCommand}</expression>
+            <path>
+              <target id="0a830ffa-ab85-4104-8ad7-20c5fe12da9b" name="Discount" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+            </path>
+            <sources>
+              <source identifier="CreateDiscountCommand" mappingType="Invocation Mapping" mappingTypeId="47dc4a51-30a3-4ee8-8c7d-25a35bb965b9">
+                <path>
+                  <target id="cc6904b1-8079-43ea-9f64-df86c6a76eca" name="CreateDiscountCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Code}</expression>
+            <path>
+              <target id="0a830ffa-ab85-4104-8ad7-20c5fe12da9b" name="Discount" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="547ff52a-12d7-433c-ad66-161072a6b55c" name="Code" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="Code" mappingType="Data Mapping" mappingTypeId="50dccfb2-bd24-4135-adf6-ed31f28f8fe0">
+                <path>
+                  <target id="cc6904b1-8079-43ea-9f64-df86c6a76eca" name="CreateDiscountCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+                  <target id="d20b0841-a97b-4b12-9e59-39355a190889" name="Code" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{DiscountAmount}</expression>
+            <path>
+              <target id="0a830ffa-ab85-4104-8ad7-20c5fe12da9b" name="Discount" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="6c7b609e-5fac-4cfd-87d2-54fa5875299d" name="DiscountAmount" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="DiscountAmount" mappingType="Data Mapping" mappingTypeId="50dccfb2-bd24-4135-adf6-ed31f28f8fe0">
+                <path>
+                  <target id="cc6904b1-8079-43ea-9f64-df86c6a76eca" name="CreateDiscountCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+                  <target id="76ddb9af-865c-4695-9692-75c672e7176f" name="DiscountAmount" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Expiry}</expression>
+            <path>
+              <target id="0a830ffa-ab85-4104-8ad7-20c5fe12da9b" name="Discount" type="element" specialization="Class" specializationId="04e12b51-ed12-42a3-9667-a6aa81bb6d10" />
+              <target id="87e2b381-1a07-481b-bf10-032af0cf80ef" name="Expiry" type="element" specialization="Attribute" specializationId="0090fb93-483e-41af-a11d-5ad2dc796adf" />
+            </path>
+            <sources>
+              <source identifier="Expiry" mappingType="Data Mapping" mappingTypeId="50dccfb2-bd24-4135-adf6-ed31f28f8fe0">
+                <path>
+                  <target id="cc6904b1-8079-43ea-9f64-df86c6a76eca" name="CreateDiscountCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+                  <target id="7ae40464-8ea3-4f5a-adc6-c92e6770ebff" name="Expiry" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Create Entity Action</associationType>
+  <associationTypeId>7a3f0474-3cf8-4249-baac-8c07c49465e0</associationTypeId>
+  <stereotypes />
+</association>

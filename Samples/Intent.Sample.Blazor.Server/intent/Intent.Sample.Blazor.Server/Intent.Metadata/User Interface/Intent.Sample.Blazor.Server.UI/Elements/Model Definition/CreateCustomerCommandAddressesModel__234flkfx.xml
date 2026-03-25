@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="a8c5671e-fcef-4e94-95b0-0fcbb84c5e6b" type="Model Definition" typeId="bd3941b5-e3b3-4a40-96e6-b9c87cea0101">
+  <name>CreateCustomerCommandAddressesModel</name>
+  <display>CreateCustomerCommandAddressesModel</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <order>7</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>bf709575-a411-42cc-b486-798fdbec2bef</parentFolderId>
+  <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+  <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="448967e8-15a7-4beb-9d2e-23fc738c24fd" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Line1</name>
+      <display>Line1: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="53d97246-f09d-42ef-95f0-49e06bf7a5e5">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a8c5671e-fcef-4e94-95b0-0fcbb84c5e6b</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="fb47b3a6-4786-480d-a11d-d66b8292980e" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Line2</name>
+      <display>Line2: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="e1b3bd2a-e6ba-4800-a3a5-f0d2397b0a73">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a8c5671e-fcef-4e94-95b0-0fcbb84c5e6b</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="690f33cf-5e8f-4cda-a258-64521114d08b" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>City</name>
+      <display>City: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="d439ad84-99ec-49bb-990f-bec4b2ef55ea">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a8c5671e-fcef-4e94-95b0-0fcbb84c5e6b</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="a6298a17-b712-4f50-9a13-bd101fbe610b" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Postal</name>
+      <display>Postal: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="1305b7ae-9abb-400d-93da-529d80d65680">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a8c5671e-fcef-4e94-95b0-0fcbb84c5e6b</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="0c06aa7a-d438-440e-a7df-7e2bc7865391" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>AddressType</name>
+      <display>AddressType: AddressType</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="44aa5dce-7961-4c28-8bcd-7d09b6d9e1bf">
+        <typeId>cb1c809b-0205-4078-8bcf-89d6082ab7f5</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Sample.Blazor.Server.Domain</typePackageName>
+        <typePackageId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a8c5671e-fcef-4e94-95b0-0fcbb84c5e6b</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

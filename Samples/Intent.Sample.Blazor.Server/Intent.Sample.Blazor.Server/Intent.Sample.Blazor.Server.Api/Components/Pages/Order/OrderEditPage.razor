@@ -1,0 +1,188 @@
+@page "/order/edit/{OrderId:guid}"
+
+<MudPaper Class="pa-4 mb-4 ux-gradient-primary" Elevation="0">
+    <MudText Typo="Typo.h4" Class="text-white font-weight-bold mb-2">
+        <MudIcon Icon="@Icons.Material.Filled.Edit" Class="mr-2" />
+        Edit Order
+    </MudText>
+    <MudText Typo="Typo.body1" Class="text-white opacity-90">
+        Update the details of this order.
+    </MudText>
+</MudPaper>
+
+<MudCard Class="ux-fade-in-up" Style="animation-delay: 0.1s">
+    <MudCardContent>
+        @if (Model is not null)
+        {
+            <MudForm @ref="_form" Model="Model">
+                <MudGrid>
+                    <MudItem xs="12" md="4">
+                        <MudTextField @bind-Value="Model.CustomerName"
+                                      Label="Customer name"
+                                      Disabled="true"
+                                      Adornment="Adornment.Start"
+                                      AdornmentIcon="@Icons.Material.Filled.Person" />
+                    </MudItem>
+                    <MudItem xs="12" md="4">
+                        <MudTextField @bind-Value="Model.CustomerSurname"
+                                      Label="Customer surname"
+                                      Disabled="true"
+                                      Adornment="Adornment.Start"
+                                      AdornmentIcon="@Icons.Material.Filled.Person" />
+                    </MudItem>
+                    <MudItem xs="12" md="4">
+                        <MudTextField @bind-Value="Model.Email"
+                                      Label="Customer email"
+                                      Disabled="true"
+                                      Adornment="Adornment.Start"
+                                      AdornmentIcon="@Icons.Material.Filled.Email" />
+                    </MudItem>
+
+                    <MudItem xs="12" md="4">
+                        <MudTextField @bind-Value="Model.OrderNo"
+                                      Label="Order number"
+                                      Placeholder="Enter order number"
+                                      Adornment="Adornment.Start"
+                                      AdornmentIcon="@Icons.Material.Filled.ConfirmationNumber"
+                                      Immediate
+                                      Required
+                                      RequiredError="Order number is required" />
+                    </MudItem>
+                    <MudItem xs="12" md="4">
+                        <MudTextField @bind-Value="Model.DiscountCode"
+                                      Label="Discount code"
+                                      Placeholder="Enter discount code"
+                                      Adornment="Adornment.Start"
+                                      AdornmentIcon="@Icons.Material.Filled.LocalOffer"
+                                      Immediate
+                                      Required
+                                      RequiredError="Discount code is required" />
+                    </MudItem>
+                    <MudItem xs="12" md="4">
+                        <MudDatePicker @bind-Date="Model.OrderedDate"
+                                       Label="Ordered date"
+                                       Required="true"
+                                       RequiredError="Ordered date is required"
+                                       Editable="true" />
+                    </MudItem>
+
+                    <MudItem xs="12" md="4">
+                        <MudNumericField T="decimal?" @bind-Value="Model.Total"
+                                         Label="Total"
+                                         Disabled="true"
+                                         Adornment="Adornment.Start"
+                                         AdornmentIcon="@Icons.Material.Filled.AttachMoney" />
+                    </MudItem>
+
+                    <MudItem xs="12">
+                        <MudDivider Class="my-4" />
+                        <MudStack Direction="FlexDirection.Row" AlignItems="AlignItems.Center" Spacing="2">
+                            <MudText Typo="Typo.h6">Order items</MudText>
+                            <MudSpacer />
+                            <MudButton Variant="Variant.Outlined" Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add" OnClick="AddOrderItem">
+                                Add item
+                            </MudButton>
+                        </MudStack>
+                    </MudItem>
+
+                    <MudItem xs="12">
+                        <MudTable Items="Model.OrderItems">
+                            <HeaderContent>
+                                <MudTh>Product</MudTh>
+                                <MudTh>Units</MudTh>
+                                <MudTh>Price</MudTh>
+                                <MudTh>Line total</MudTh>
+                                <MudTh></MudTh>
+                            </HeaderContent>
+                            <RowTemplate Context="item">
+                                @{
+                                    var index = Model.OrderItems.IndexOf(item);
+                                }
+                                <MudTd>
+                                    <MudSelect T="Guid?" @bind-Value="item.ProductId" Label="Product" Placeholder="Select..." Required RequiredError="Product is required">
+                                        @if (ProductsModels is { Count: > 0 })
+                                        {
+                                            @foreach (var p in ProductsModels)
+                                            {
+                                                <MudSelectItem T="Guid?" Value="@p.Id">@p.Name</MudSelectItem>
+                                            }
+                                        }
+                                    </MudSelect>
+                                </MudTd>
+                                <MudTd>
+                                    <MudNumericField T="int?" 
+                                                     Value="item.Units" 
+                                                     ValueChanged="@(v => { item.Units = v; RecalculateTotal(); })"
+                                                     Label="Units" 
+                                                     Min="1" 
+                                                     Required 
+                                                     RequiredError="Units are required" 
+                                                     Immediate />
+                                </MudTd>
+                                <MudTd>
+                                    <MudNumericField T="decimal?" 
+                                                     Value="item.Price" 
+                                                     ValueChanged="@(v => { item.Price = v; RecalculateTotal(); })"
+                                                     Label="Price" 
+                                                     Min="0" 
+                                                     Required 
+                                                     RequiredError="Price is required" 
+                                                     Immediate />
+                                </MudTd>
+                                <MudTd>
+                                    @if (item.Units.HasValue && item.Price.HasValue)
+                                    {
+                                        <MudText>@(item.Units.Value * item.Price.Value)</MudText>
+                                    }
+                                    else
+                                    {
+                                        <MudText>-</MudText>
+                                    }
+                                </MudTd>
+                                <MudTd Class="text-right">
+                                    <MudButton Variant="Variant.Outlined" Color="Color.Error" StartIcon="@Icons.Material.Filled.Delete" OnClick="@(() => RemoveOrderItem(index))">
+                                        Remove
+                                    </MudButton>
+                                </MudTd>
+                            </RowTemplate>
+                        </MudTable>
+                    </MudItem>
+
+                    <MudItem xs="12" Class="mt-4">
+                        <MudStack Row="true" Spacing="2" Justify="Justify.FlexEnd" AlignItems="AlignItems.Center">
+                            <MudButton OnClick="SaveAsync"
+                                       Disabled="@_saving"
+                                       Color="Color.Primary"
+                                       Variant="Variant.Filled"
+                                       StartIcon="@Icons.Material.Filled.Save">
+                                @if (_saving)
+                                {
+                                    <MudProgressCircular Size="Size.Small" Indeterminate="true" Class="mr-2" />
+                                    <span>Saving…</span>
+                                }
+                                else
+                                {
+                                    <span>Save</span>
+                                }
+                            </MudButton>
+                            <MudButton OnClick="Cancel"
+                                       Disabled="@_saving"
+                                       Color="Color.Secondary"
+                                       Variant="Variant.Filled"
+                                       StartIcon="@Icons.Material.Filled.ArrowBack">
+                                Back to list
+                            </MudButton>
+                        </MudStack>
+                    </MudItem>
+                </MudGrid>
+            </MudForm>
+        }
+        else
+        {
+            <MudStack AlignItems="AlignItems.Center" Justify="Justify.Center" Style="min-height:200px">
+                <MudProgressCircular Indeterminate="true" />
+                <MudText Class="mt-2">Loading order...</MudText>
+            </MudStack>
+        }
+    </MudCardContent>
+</MudCard>

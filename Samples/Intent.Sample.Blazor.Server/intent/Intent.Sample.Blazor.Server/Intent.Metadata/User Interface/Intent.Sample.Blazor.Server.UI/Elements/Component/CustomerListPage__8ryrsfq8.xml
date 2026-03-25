@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="b5bfef7e-27f1-4687-adba-e2c0dc85284b" type="Component" typeId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b">
+  <name>CustomerListPage</name>
+  <display>CustomerListPage</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>e68cb196-9684-4fdf-a6a2-7ddb6cfcdeca</parentFolderId>
+  <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+  <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+  <traits>
+    <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+    <trait id="ea4adc09-8978-4ede-ba5f-265debb2b60c" name="Page" />
+  </traits>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="ea4adc09-8978-4ede-ba5f-265debb2b60c" name="Page">
+      <addedByDefault>false</addedByDefault>
+      <definitionPackageName>Intent.Modelers.UI</definitionPackageName>
+      <definitionPackageId>5c4628ec-679e-4f3d-afda-137c978deae0</definitionPackageId>
+      <properties>
+        <property name="9dff9df1-a993-4bf6-9aa7-c16811142228" display="Route" value="/customer/list" isActive="true" />
+        <property name="0a8627ba-ec45-4023-9c36-b0999f43e982" display="Title" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <mappings>
+    <mapping type="View Binding" typeId="c33f86ad-423a-4a6f-a80c-a3206eafe5cd">
+      <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="b5bfef7e-27f1-4687-adba-e2c0dc85284b" location="[Intent.Sample.Blazor.Server].[User Interface].[CustomerListPage]" />
+      <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="99179a4d-a460-45c3-a719-2872f6c9ae28" location="[Intent.Sample.Blazor.Server].[User Interface].[[view]]" />
+      <mappedEnds />
+    </mapping>
+  </mappings>
+  <metadata />
+  <childElements>
+    <childElement id="03f02bf3-e53a-4a06-8d4b-3566d5a72c86" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>CustomersModels</name>
+      <display>CustomersModels: PagedResult&lt;CustomerSummaryDto&gt;?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="777d976b-1f9c-49c8-94f5-f856648be4e0">
+        <typeId>9204e067-bdc8-45e7-8970-8a833fdc5253</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Modelers.Services.Pagination</typePackageName>
+        <typePackageId>7ed452ae-334c-48f7-b0aa-0426fc21e243</typePackageId>
+        <stereotypes />
+        <genericTypeParameters>
+          <genericTypeParameter id="92c74fce-dea8-48ad-ad1b-403e7e317bb3">
+            <typeId>57af914d-6eb6-4f7d-9a53-757c1ad18d29</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <genericTypeId>b2e9202d-2fb1-426b-91a9-02b6a3a294bd</genericTypeId>
+            <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+            <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </genericTypeParameter>
+        </genericTypeParameters>
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>b5bfef7e-27f1-4687-adba-e2c0dc85284b</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="f887111e-7a81-42ab-8f79-9e7d823e29ee" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>OnInitializedAsync</name>
+      <display>OnInitializedAsync(): void</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="6750d32c-97bc-4351-a94a-72c865ec64c4">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>b5bfef7e-27f1-4687-adba-e2c0dc85284b</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="4f678df1-becd-47af-894b-b145d38cb5bf" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>LoadCustomers</name>
+      <display>LoadCustomers(pageNo: int, pageSize: int, searchTerm: string?, orderBy: string?, isActive: bool?): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="9259b050-70f1-4d81-aec5-40b21db515b3">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>b5bfef7e-27f1-4687-adba-e2c0dc85284b</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="7ddf4c6d-08c8-4bae-8e5d-89ea7d1096b9" type="Parameter" typeId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b">
+          <name>pageNo</name>
+          <display>in : pageNo: int</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="60f82435-63bf-49e6-8c16-0d1ab4554880">
+            <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>4f678df1-becd-47af-894b-b145d38cb5bf</parentFolderId>
+          <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+          <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="82ce138a-4d34-47e2-89b2-493b852dd711" type="Parameter" typeId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b">
+          <name>pageSize</name>
+          <display>in : pageSize: int</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="bb079454-993f-4fdb-a4f0-225e2d73fd77">
+            <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>4f678df1-becd-47af-894b-b145d38cb5bf</parentFolderId>
+          <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+          <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="07ca7d4a-a5cb-4499-a779-91f466127a9e" type="Parameter" typeId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b">
+          <name>searchTerm</name>
+          <display>in : searchTerm: string?</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="7f8be03c-f56d-45d2-a0da-6e965506924a">
+            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>true</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>4f678df1-becd-47af-894b-b145d38cb5bf</parentFolderId>
+          <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+          <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="e03229b3-539b-4e97-ac35-33b3f04cad1b" type="Parameter" typeId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b">
+          <name>orderBy</name>
+          <display>in : orderBy: string?</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="3366263f-490e-4bb8-8d6e-e616fe022576">
+            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>true</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>4f678df1-becd-47af-894b-b145d38cb5bf</parentFolderId>
+          <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+          <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="489ef966-f10e-42b0-a944-cfb0d2e48b96" type="Parameter" typeId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b">
+          <name>isActive</name>
+          <display>in : isActive: bool?</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="edf55151-d433-46b3-a3f1-3e6723f7690c">
+            <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>true</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>4f678df1-becd-47af-894b-b145d38cb5bf</parentFolderId>
+          <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+          <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

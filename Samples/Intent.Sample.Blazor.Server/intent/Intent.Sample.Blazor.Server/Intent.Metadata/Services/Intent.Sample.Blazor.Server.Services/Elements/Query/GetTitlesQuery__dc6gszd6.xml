@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="ff89dcb2-75db-4e58-96f4-0aeced421b25" type="Query" typeId="e71b0662-e29d-4db2-868b-8a12464b25d0">
+  <name>GetTitlesQuery</name>
+  <display>GetTitlesQuery: TitleDto[*]</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <typeReference id="ac3cafd4-e8a5-41af-832b-7987f498911a">
+    <typeId>5250abb8-dfac-4fb0-b7f0-08853eeaa5a3</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>true</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+    <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>3bbd03e6-9fe9-49bf-b8d9-f2a053761cb9</parentFolderId>
+  <packageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</packageId>
+  <packageName>Intent.Sample.Blazor.Server.Services</packageName>
+  <traits>
+    <trait id="9e587d4d-f317-4ab8-9bbb-9394234d2a88" name="[Allow Comment]" />
+    <trait id="0a932465-ea1f-42e7-b1eb-9f90aa8961fd" name="[Invokable]" />
+    <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+  </traits>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

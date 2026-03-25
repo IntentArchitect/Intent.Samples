@@ -1,0 +1,76 @@
+@page "/brand/list"
+@using System.Linq
+@using Intent.Sample.Blazor.Server.Application.Brands
+
+<MudPaper Class="pa-4 mb-4 ux-gradient-primary" Elevation="0">
+    <MudText Typo="Typo.h4" Class="text-white font-weight-bold mb-2">
+        <MudIcon Icon="@Icons.Material.Filled.Store" Class="mr-2" />
+        Brands Management
+    </MudText>
+    <MudText Typo="Typo.body1" Class="text-white opacity-90">
+        View and manage your brand list.
+    </MudText>
+</MudPaper>
+
+<MudCard Class="ux-fade-in-up" Style="animation-delay: 0.1s">
+    <MudCardHeader>
+        <CardHeaderContent>
+            <MudGrid>
+                <MudItem xs="12">
+                    <MudButton Variant="Variant.Filled"
+                               Color="Color.Secondary"
+                               StartIcon="@Icons.Material.Filled.Add"
+                               OnClick="AddBrand">
+                        Add Brand
+                    </MudButton>
+                    <MudButton Variant="Variant.Outlined"
+                               Color="Color.Primary"
+                               StartIcon="@Icons.Material.Filled.Refresh"
+                               OnClick="async () => await LoadBrands()">
+                        Refresh
+                    </MudButton>
+                </MudItem>
+            </MudGrid>
+        </CardHeaderContent>
+    </MudCardHeader>
+    <MudCardContent>
+        @if (BrandsModels is null)
+        {
+            <MudStack Direction="FlexDirection.Row"
+                      AlignItems="AlignItems.Center"
+                      Justify="Justify.FlexStart"
+                      Spacing="2">
+                <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+                <MudText Typo="Typo.body2">Loading brands...</MudText>
+            </MudStack>
+        }
+        else if (!BrandsModels.Any())
+        {
+            <MudText Typo="Typo.body2">No brands found.</MudText>
+        }
+        else
+        {
+            <MudTable T="BrandDto"
+                      Items="BrandsModels"
+                      Dense="true"
+                      Hover="true"
+                      Striped
+                      Elevation="1">
+                <HeaderContent>
+                    <MudTh>Name</MudTh>
+                    <MudTh>Actions</MudTh>
+                </HeaderContent>
+                <RowTemplate>
+                    <MudTd DataLabel="Name">@context.Name</MudTd>
+                    <MudTd DataLabel="Actions">
+                        <MudTooltip Text="Edit Brand">
+                            <MudIconButton Icon="@Icons.Material.Filled.Edit"
+                                           Color="Color.Primary"
+                                           OnClick="@(() => EditBrand(context.Id))" />
+                        </MudTooltip>
+                    </MudTd>
+                </RowTemplate>
+            </MudTable>
+        }
+    </MudCardContent>
+</MudCard>

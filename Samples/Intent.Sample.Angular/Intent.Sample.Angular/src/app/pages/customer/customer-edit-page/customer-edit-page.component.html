@@ -19,7 +19,7 @@
     </mat-card-header>
 
     <mat-card-content>
-      <ng-container *ngIf="customerByIdModels; else loadingTpl">
+      <ng-container *ngIf="model; else loadingTpl">
         <form #form="ngForm" class="customer-form">
           <div *ngIf="serviceErrors.updateCustomerError" class="error-container">
             {{ serviceErrors.updateCustomerError }}
@@ -38,7 +38,7 @@
                 <mat-select
                   name="titleId"
                   required
-                  [(ngModel)]="customerByIdModels!.titleId"
+                  [(ngModel)]="model!.titleId"
                   #titleCtrl="ngModel"
                 >
                   <mat-option [value]="null">Select...</mat-option>
@@ -59,7 +59,7 @@
                   matInput
                   name="name"
                   required
-                  [(ngModel)]="customerByIdModels!.name"
+                  [(ngModel)]="model!.name"
                   #nameCtrl="ngModel"
                   placeholder="Enter name"
                 />
@@ -79,7 +79,7 @@
                   matInput
                   name="surname"
                   required
-                  [(ngModel)]="customerByIdModels!.surname"
+                  [(ngModel)]="model!.surname"
                   #surnameCtrl="ngModel"
                   placeholder="Enter surname"
                 />
@@ -100,7 +100,7 @@
                   name="email"
                   required
                   email
-                  [(ngModel)]="customerByIdModels!.email"
+                  [(ngModel)]="model!.email"
                   #emailCtrl="ngModel"
                   placeholder="name@company.com"
                 />
@@ -120,7 +120,7 @@
               <mat-slide-toggle
                 color="primary"
                 name="isActive"
-                [(ngModel)]="customerByIdModels!.isActive"
+                [(ngModel)]="model!.isActive"
               >
                 Active
               </mat-slide-toggle>
@@ -132,7 +132,7 @@
                 <h3 class="section-title">Loyalty</h3>
                 <mat-slide-toggle
                   color="primary"
-                  [checked]="customerByIdModels.loyalty != null"
+                  [checked]="hasLoyalty"
                   (change)="onHasLoyaltyChange($event.checked)"
                 >
                   Has Loyalty
@@ -140,7 +140,7 @@
               </div>
             </div>
 
-            <ng-container *ngIf="customerByIdModels?.loyalty">
+            <ng-container *ngIf="model?.loyalty">
               <div class="grid-item">
                 <mat-form-field appearance="outline" class="w-100">
                   <mat-label>Loyalty Number</mat-label>
@@ -148,7 +148,7 @@
                     matInput
                     name="loyaltyNo"
                     required
-                    [(ngModel)]="customerByIdModels!.loyalty!.loyaltyNo"
+                    [(ngModel)]="model!.loyalty!.loyaltyNo"
                     #loyaltyNoCtrl="ngModel"
                     placeholder="Enter loyalty number"
                   />
@@ -171,7 +171,7 @@
                     max="1000000"
                     required
                     name="points"
-                    [(ngModel)]="customerByIdModels!.loyalty!.points"
+                    [(ngModel)]="model!.loyalty!.points"
                     #pointsCtrl="ngModel"
                     placeholder="0"
                   />
@@ -187,7 +187,7 @@
               <h3 class="section-title">Addresses</h3>
             </div>
 
-            <ng-container *ngFor="let addr of customerByIdModels!.addresses; let i = index">
+            <ng-container *ngFor="let addr of model!.addresses; let i = index">
               <div class="grid-item-wide address-block">
                 <div class="address-grid">
                   <div class="address-item">
@@ -318,8 +318,8 @@
                 color="primary"
                 type="button"
                 class="save-button"
-                (click)="save(form)"
-                [disabled]="isLoading || form.invalid || !customerByIdModels"
+                (click)="save()"
+                [disabled]="isLoading || form.invalid || !model"
               >
                 <mat-progress-spinner
                   *ngIf="isLoading"

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="9b3d00f1-c41f-4235-a1e0-fb31bed81122">
+  <sourceEnd id="30b6e57b-0b69-4f19-b360-f541ff2cc79a" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: LoadProducts</display>
+    <order>0</order>
+    <typeReference id="0c3af61b-c6e3-4e2e-8e58-6caebeeb5426">
+      <typeId>875dad17-dc6a-4187-9ded-246f6a27339a</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="9b3d00f1-c41f-4235-a1e0-fb31bed81122" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>GetProductsQuery</name>
+    <display>[call] Products.GetProductsQuery: ProductDto[*]</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="9cd5dcc9-23be-47ef-b89a-305259936e69">
+      <typeId>387652ab-106e-4f4d-a3f5-caa5c7045fc2</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="cbd960a9-7273-4662-97e5-03c7c5c14f35" location="[Intent.Sample.Blazor.Server].[User Interface].[OrderEditPage]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="387652ab-106e-4f4d-a3f5-caa5c7045fc2" location="[Intent.Sample.Blazor.Server].[User Interface].[GetProductsQuery]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{LoadProducts.GetProductsQuery}</expression>
+            <path>
+              <target id="387652ab-106e-4f4d-a3f5-caa5c7045fc2" name="GetProductsQuery" type="element" specialization="Query" specializationId="e71b0662-e29d-4db2-868b-8a12464b25d0" />
+            </path>
+            <sources>
+              <source identifier="LoadProducts.GetProductsQuery" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="cbd960a9-7273-4662-97e5-03c7c5c14f35" name="OrderEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="875dad17-dc6a-4187-9ded-246f6a27339a" name="LoadProducts" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="9b3d00f1-c41f-4235-a1e0-fb31bed81122" name="GetProductsQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+      <mapping type="Call Service Response Mapping" typeId="e60890c6-7ce7-47be-a0da-dff82b8adc02">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="cbd960a9-7273-4662-97e5-03c7c5c14f35" location="[Intent.Sample.Blazor.Server].[User Interface].[OrderEditPage]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="cbd960a9-7273-4662-97e5-03c7c5c14f35" location="[Intent.Sample.Blazor.Server].[User Interface].[OrderEditPage]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{LoadProducts.GetProductsQuery.response}</expression>
+            <path>
+              <target id="cbd960a9-7273-4662-97e5-03c7c5c14f35" name="OrderEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="219d3907-0b24-4f39-9b87-07a4ab80f531" name="ProductsModels" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadProducts.GetProductsQuery.response" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="cbd960a9-7273-4662-97e5-03c7c5c14f35" name="OrderEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="875dad17-dc6a-4187-9ded-246f6a27339a" name="LoadProducts" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="9b3d00f1-c41f-4235-a1e0-fb31bed81122" name="GetProductsQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>53025905-9dc2-4caf-afed-c9ce922d756b</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>true</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+                      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

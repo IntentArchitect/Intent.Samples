@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="f238b2a1-da13-4d3a-8ad3-2ae76237b99c">
+  <sourceEnd id="47521c93-8f72-4dad-bb00-2d881be5c08b" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: UpdateCustomer</display>
+    <order>0</order>
+    <typeReference id="64a4646c-3a54-4aa2-b4dd-ffa35013af9f">
+      <typeId>07674012-a0ef-4495-afa9-c0799824d47f</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="f238b2a1-da13-4d3a-8ad3-2ae76237b99c" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>UpdateCustomerCommand</name>
+    <display>[call] Customers.UpdateCustomerCommand: void</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="8a42cb55-6134-448f-9406-f098a2336e14">
+      <typeId>42eece30-6c69-4858-a249-4a5ba016a8cb</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="7e917874-3192-48ec-856c-1c6181cc9492" location="[Intent.Sample.Angular].[User Interface].[CustomerEditPage]" />
+        <target applicationId="4f799450-9dd9-4f4c-9740-262eafcfa4da" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="42eece30-6c69-4858-a249-4a5ba016a8cb" location="[Intent.Sample.Angular].[User Interface].[UpdateCustomerCommand]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{UpdateCustomer.UpdateCustomerCommand}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+            </path>
+            <sources>
+              <source identifier="UpdateCustomer.UpdateCustomerCommand" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="07674012-a0ef-4495-afa9-c0799824d47f" name="UpdateCustomer" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="f238b2a1-da13-4d3a-8ad3-2ae76237b99c" name="UpdateCustomerCommand" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Id}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="fb472a93-3452-413c-bd57-868cb8951271" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="9282dbff-9813-428a-be44-86ea73f8fa66" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.TitleId}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="7b699acc-af6f-431b-8b1d-c5c8c298810c" name="TitleId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.TitleId" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="b2ee90f6-6899-432f-909c-38391ca405eb" name="TitleId" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Name}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="1b37a1b1-ef75-4e2d-8549-e592193099ae" name="Name" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Name" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="cc77880a-d57d-491e-9cae-2c423a40fde3" name="Name" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Surname}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="476fdcba-e6de-4ccc-98f3-9ca82f81c992" name="Surname" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Surname" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="57e950ef-c11a-4ec7-8fe6-e84f14628a6a" name="Surname" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Email}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="5635b27b-2356-4fed-b9cc-367031f194cd" name="Email" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Email" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="3937ca4e-c101-4629-9393-cfdfeb168f26" name="Email" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.IsActive}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="a8db48cc-a95e-4f74-9506-a6e8b3ebcaba" name="IsActive" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.IsActive" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="0590acc4-dc20-4986-b370-ae90668b50da" name="IsActive" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Addresses}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="86d6d97a-4c96-4103-b50d-40681557246c" name="Addresses" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Addresses" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="0fb0ab3d-6e08-425b-9d5d-ea22ceff9326" name="Addresses" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Addresses.Id}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="86d6d97a-4c96-4103-b50d-40681557246c" name="Addresses" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="fcb2f8c1-1483-41e0-91f5-a108aa12d927" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Addresses.Id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="0fb0ab3d-6e08-425b-9d5d-ea22ceff9326" name="Addresses" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="c54c9dda-c554-42e1-a1c4-350a6c08e2ed" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Addresses.Line1}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="86d6d97a-4c96-4103-b50d-40681557246c" name="Addresses" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="98fe735b-0041-4b0c-b1c8-0601608117cd" name="Line1" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Addresses.Line1" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="0fb0ab3d-6e08-425b-9d5d-ea22ceff9326" name="Addresses" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="2b89fc74-4735-4d3b-9b1c-6dfaeee33375" name="Line1" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Addresses.Line2}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="86d6d97a-4c96-4103-b50d-40681557246c" name="Addresses" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="1a3a998d-af65-4dbc-ad5f-d57efb67c279" name="Line2" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Addresses.Line2" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="0fb0ab3d-6e08-425b-9d5d-ea22ceff9326" name="Addresses" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="2531773c-4082-4bfd-b83c-52f6031f5489" name="Line2" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Addresses.City}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="86d6d97a-4c96-4103-b50d-40681557246c" name="Addresses" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="1fbca792-bab4-4599-98a2-510a36a3dca0" name="City" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Addresses.City" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="0fb0ab3d-6e08-425b-9d5d-ea22ceff9326" name="Addresses" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="9afea104-0e2f-427e-95bd-a4e81d2e4282" name="City" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Addresses.Postal}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="86d6d97a-4c96-4103-b50d-40681557246c" name="Addresses" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="394a521e-40c4-4491-a3de-d91c63e42685" name="Postal" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Addresses.Postal" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="0fb0ab3d-6e08-425b-9d5d-ea22ceff9326" name="Addresses" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="5ed322f7-cc12-44c6-8cbd-670228fea27a" name="Postal" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Addresses.AddressType}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="86d6d97a-4c96-4103-b50d-40681557246c" name="Addresses" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="b4e92d45-878d-4ff8-89c5-9dc310a14f7f" name="AddressType" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Addresses.AddressType" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="0fb0ab3d-6e08-425b-9d5d-ea22ceff9326" name="Addresses" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="1001143c-2c2f-430b-9c8e-05c2cbff8c84" name="AddressType" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Loyalty.Id}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="2dc89097-497f-4f01-b273-226856388551" name="Loyalty" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="3b5b10e1-bfdb-4271-96e5-c7b315f2e860" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Loyalty.Id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="c547f2bb-7117-48be-92bf-b280b60a3f92" name="Loyalty" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="a0f2296e-2de2-4d73-a848-73973361c558" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Loyalty.LoyaltyNo}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="2dc89097-497f-4f01-b273-226856388551" name="Loyalty" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="85a0b7f1-aba9-41a4-8acc-3dc79d144d96" name="LoyaltyNo" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Loyalty.LoyaltyNo" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="c547f2bb-7117-48be-92bf-b280b60a3f92" name="Loyalty" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="2690e10d-7ce1-4cb2-9444-e7cd10eb8e10" name="LoyaltyNo" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Loyalty.Points}</expression>
+            <path>
+              <target id="42eece30-6c69-4858-a249-4a5ba016a8cb" name="UpdateCustomerCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="2dc89097-497f-4f01-b273-226856388551" name="Loyalty" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+              <target id="e3aafdba-b2f0-48f0-a8b9-0bdc3023d008" name="Points" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Loyalty.Points" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="c547f2bb-7117-48be-92bf-b280b60a3f92" name="Loyalty" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="a67bdeb6-edf0-42d3-bc04-f6fa7340ebbe" name="Points" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="3d045b0c-cc36-4e16-8801-dfef262fada3">
+  <sourceEnd id="111342c5-7cee-461b-adee-0f5dc54189f0" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: UpdateTitle</display>
+    <order>0</order>
+    <typeReference id="81cfee23-bdc8-4374-ada0-2b175622f46f">
+      <typeId>0afe8ba5-69cb-41b4-9309-23a7d4f5b6ed</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="3d045b0c-cc36-4e16-8801-dfef262fada3" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>UpdateTitleCommand</name>
+    <display>[call] Titles.UpdateTitleCommand: void</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="23eaea6d-66db-44bf-8ec9-6ccceeb5ba4d">
+      <typeId>0087ad7f-ffa5-4e0f-94b0-c3aa221145c1</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="14d62660-b11b-4d86-9e94-1880fa36bde0" location="[Intent.Sample.Blazor.Server].[User Interface].[TitleEditPage]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="0087ad7f-ffa5-4e0f-94b0-c3aa221145c1" location="[Intent.Sample.Blazor.Server].[User Interface].[UpdateTitleCommand]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{UpdateTitle.UpdateTitleCommand}</expression>
+            <path>
+              <target id="0087ad7f-ffa5-4e0f-94b0-c3aa221145c1" name="UpdateTitleCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+            </path>
+            <sources>
+              <source identifier="UpdateTitle.UpdateTitleCommand" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="14d62660-b11b-4d86-9e94-1880fa36bde0" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="0afe8ba5-69cb-41b4-9309-23a7d4f5b6ed" name="UpdateTitle" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="3d045b0c-cc36-4e16-8801-dfef262fada3" name="UpdateTitleCommand" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Id}</expression>
+            <path>
+              <target id="0087ad7f-ffa5-4e0f-94b0-c3aa221145c1" name="UpdateTitleCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="351f012d-c0a3-447d-90ee-5e2a8a8f01a0" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="14d62660-b11b-4d86-9e94-1880fa36bde0" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="687def62-a24d-4fc5-bcb2-34c206042834" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="90664a56-271e-40b4-8266-dd7b3ab31101" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Name}</expression>
+            <path>
+              <target id="0087ad7f-ffa5-4e0f-94b0-c3aa221145c1" name="UpdateTitleCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="ce3bd5ef-d199-4c6f-b601-5ada534c8af2" name="Name" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Name" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="14d62660-b11b-4d86-9e94-1880fa36bde0" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="687def62-a24d-4fc5-bcb2-34c206042834" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="7ae2e4e1-8af6-4ff2-8a93-41418677b7cc" name="Name" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

@@ -36,12 +36,12 @@ interface UpdateBrandModel {
 })
 export class BrandEditDialogComponent implements OnInit {
   serviceErrors = {
-    loadBrandByIdError: null as string | null,
-    updateBrandError: null as string | null
+    updateBrandError: null as string | null,
+    loadBrandByIdError: null as string | null
   };
   isLoading = false;
-  brandByIdModels: BrandDto | null = null;
   brandId: string = '';
+  model: UpdateBrandModel | null = null;
 
   //@IntentMerge()
   constructor(private readonly brandsService: BrandsService,
@@ -65,13 +65,15 @@ export class BrandEditDialogComponent implements OnInit {
     
     this.brandsService.getBrandById(id)
     .pipe(
-        finalize(() => {
-          this.isLoading = false; 
-        })
-     )
-    .subscribe({
+      finalize(() => {
+        this.isLoading = false; 
+      })
+    ).subscribe({
       next: (data) => {
-        this.brandByIdModels = data;
+        this.model = {
+          id: data.id,
+          name: data.name,
+        };
       },
       error: (err) => {
         const message = err?.error?.message || err.message || 'Unknown error';
@@ -87,14 +89,15 @@ export class BrandEditDialogComponent implements OnInit {
     this.serviceErrors.updateBrandError = null;
     this.isLoading = true;
     
-    if(!this.brandByIdModels) {
-      this.serviceErrors.updateBrandError = "Property 'brandByIdModels' cannot be null";
+    if(!this.model) {
+      this.serviceErrors.updateBrandError = "Property 'model' cannot be null";
       this.isLoading = false;
       return;
     }
+    
     this.brandsService.updateBrand({
-      id: this.brandByIdModels.id,
-      name: this.brandByIdModels.name,
+      id: this.model.id!,
+      name: this.model.name,
     })
     .pipe(
         finalize(() => {
@@ -109,28 +112,7 @@ export class BrandEditDialogComponent implements OnInit {
         console.error('Failed to call service:', err);
       }
     });
-    this.brandsService.updateBrand({
-      id: this.brandByIdModels.id,
-      name: this.brandByIdModels.name,
-    })
-    .pipe(
-        finalize(() => {
-          this.isLoading = false; 
-        })
-    )
-    .subscribe({
-      next: () => {
-        if (!this.serviceErrors.updateBrandError) {
-          this.dialogRef.close(true);
-        }
-      },
-      error: (err) => {
-        const message = err?.error?.message || err.message || 'Unknown error';
-        this.serviceErrors.updateBrandError = `Failed to call service: ${message}`;
 
-        console.error('Failed to call service:', err);
-      }
-    });
   }
 
   onSave(form: NgForm): void {
@@ -142,6 +124,7 @@ export class BrandEditDialogComponent implements OnInit {
     }
 
     this.updateBrand();
+    this.dialogRef.close(null);
   }
 
   cancel(): void {

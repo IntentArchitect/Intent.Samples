@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<outputFiles>
+  <files>
+    <file relativePath="../intent/AI.Prompt.Templates/Intent.Sample.Blazor.Server/Intent.Blazor.AI/add-entity.md" state="ignored" />
+    <file relativePath="../intent/AI.Prompt.Templates/Intent.Sample.Blazor.Server/Intent.Blazor.AI/AddEntity/AddEntityTemplate.razor" state="ignored" />
+    <file relativePath="../intent/AI.Prompt.Templates/Intent.Sample.Blazor.Server/Intent.Blazor.AI/edit-entity.md" state="ignored" />
+    <file relativePath="../intent/AI.Prompt.Templates/Intent.Sample.Blazor.Server/Intent.Blazor.AI/EditEntity/EditEntityTemplate.razor" state="ignored" />
+    <file relativePath="../intent/AI.Prompt.Templates/Intent.Sample.Blazor.Server/Intent.Blazor.AI/prompt-config.json" state="ignored" />
+    <file relativePath="../intent/AI.Prompt.Templates/Intent.Sample.Blazor.Server/Intent.Blazor.AI/SearchEntity/SearchEntityTemplate.razor" state="ignored" />
+    <file relativePath="../intent/AI.Prompt.Templates/Intent.Sample.Blazor.Server/Intent.Blazor.AI/SearchEntity/SearchEntityTemplate.razor.cs" state="ignored" />
+    <file relativePath="../intent/AI.Prompt.Templates/Intent.Sample.Blazor.Server/Intent.Blazor.AI/ViewEntity/EntityViewTemplate.razor" state="ignored" />
+    <file relativePath="Intent.Sample.Blazor.Server.Api/wwwroot/ux-theme.css" state="ignored" />
+  </files>
+</outputFiles>

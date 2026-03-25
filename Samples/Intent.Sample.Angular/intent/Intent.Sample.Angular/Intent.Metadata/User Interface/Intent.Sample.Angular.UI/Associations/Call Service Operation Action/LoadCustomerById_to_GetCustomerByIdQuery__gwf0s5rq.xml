@@ -80,13 +80,14 @@
         <target applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="7e917874-3192-48ec-856c-1c6181cc9492" location="[Intent.Sample.Angular].[User Interface].[CustomerEditPage]" />
         <mappedEnds>
           <mappedEnd>
-            <expression>{LoadCustomerById.GetCustomerByIdQuery.response}</expression>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.Id}</expression>
             <path>
               <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
-              <target id="6a53a116-3c62-4ac5-b714-79871f18880e" name="CustomerByIdModels" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="9282dbff-9813-428a-be44-86ea73f8fa66" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
             </path>
             <sources>
-              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.Id" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
                 <path>
                   <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
                   <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
@@ -104,6 +105,490 @@
                       <genericTypeParameters />
                     </typeReference>
                   </target>
+                  <target id="cb227597-8822-42df-be6e-a07c9c42cfef" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.TitleId}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="b2ee90f6-6899-432f-909c-38391ca405eb" name="TitleId" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.TitleId" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="2d12c1ec-6da6-404d-8792-c6fe327de269" name="TitleId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.Name}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="cc77880a-d57d-491e-9cae-2c423a40fde3" name="Name" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.Name" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="da481400-adb6-4478-9cf3-c29855463f60" name="Name" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.Surname}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="57e950ef-c11a-4ec7-8fe6-e84f14628a6a" name="Surname" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.Surname" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="380838ba-9520-425c-a424-d24b41ff7cd4" name="Surname" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.Email}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="3937ca4e-c101-4629-9393-cfdfeb168f26" name="Email" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.Email" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="33a11423-2284-467b-9463-6d50efa8cc76" name="Email" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.IsActive}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="0590acc4-dc20-4986-b370-ae90668b50da" name="IsActive" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.IsActive" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="758963f1-a633-401a-bce8-b0165a159bd3" name="IsActive" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.Addresses}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="0fb0ab3d-6e08-425b-9d5d-ea22ceff9326" name="Addresses" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.Addresses" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="2aa9cd1b-141a-458c-84e8-94d52a2e78d8" name="Addresses" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.Addresses.Id}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="0fb0ab3d-6e08-425b-9d5d-ea22ceff9326" name="Addresses" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="c54c9dda-c554-42e1-a1c4-350a6c08e2ed" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.Addresses.Id" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="2aa9cd1b-141a-458c-84e8-94d52a2e78d8" name="Addresses" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="8c6c4d0f-97e5-4af2-9a98-59549894ab80" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.Addresses.Line1}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="0fb0ab3d-6e08-425b-9d5d-ea22ceff9326" name="Addresses" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="2b89fc74-4735-4d3b-9b1c-6dfaeee33375" name="Line1" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.Addresses.Line1" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="2aa9cd1b-141a-458c-84e8-94d52a2e78d8" name="Addresses" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="195d1b2f-fbeb-4515-bbeb-789ed18fe1f0" name="Line1" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.Addresses.Line2}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="0fb0ab3d-6e08-425b-9d5d-ea22ceff9326" name="Addresses" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="2531773c-4082-4bfd-b83c-52f6031f5489" name="Line2" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.Addresses.Line2" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="2aa9cd1b-141a-458c-84e8-94d52a2e78d8" name="Addresses" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="ae9a656d-0947-41e2-bb8a-c189547f2ecf" name="Line2" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.Addresses.City}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="0fb0ab3d-6e08-425b-9d5d-ea22ceff9326" name="Addresses" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="9afea104-0e2f-427e-95bd-a4e81d2e4282" name="City" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.Addresses.City" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="2aa9cd1b-141a-458c-84e8-94d52a2e78d8" name="Addresses" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="96d76aef-1662-4cda-8676-f17737382d8c" name="City" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.Addresses.Postal}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="0fb0ab3d-6e08-425b-9d5d-ea22ceff9326" name="Addresses" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="5ed322f7-cc12-44c6-8cbd-670228fea27a" name="Postal" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.Addresses.Postal" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="2aa9cd1b-141a-458c-84e8-94d52a2e78d8" name="Addresses" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="30ff4fc1-1330-4989-b947-3fb7b363f696" name="Postal" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.Addresses.AddressType}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="0fb0ab3d-6e08-425b-9d5d-ea22ceff9326" name="Addresses" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="1001143c-2c2f-430b-9c8e-05c2cbff8c84" name="AddressType" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.Addresses.AddressType" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="2aa9cd1b-141a-458c-84e8-94d52a2e78d8" name="Addresses" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="4d1ba5ff-84fa-4f41-b76a-a50da8fb266f" name="AddressType" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.Loyalty.Id}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="c547f2bb-7117-48be-92bf-b280b60a3f92" name="Loyalty" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="a0f2296e-2de2-4d73-a848-73973361c558" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.Loyalty.Id" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="599dbf46-4d57-45a3-9506-5747f0449213" name="Loyalty" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="4b014a42-a294-4a5b-b03a-3a25d3a972d6" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.Loyalty.LoyaltyNo}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="c547f2bb-7117-48be-92bf-b280b60a3f92" name="Loyalty" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="2690e10d-7ce1-4cb2-9444-e7cd10eb8e10" name="LoyaltyNo" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.Loyalty.LoyaltyNo" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="599dbf46-4d57-45a3-9506-5747f0449213" name="Loyalty" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="5997f318-306a-4599-b15f-83da4c80898f" name="LoyaltyNo" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadCustomerById.GetCustomerByIdQuery.response.Loyalty.Points}</expression>
+            <path>
+              <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="82e2f07b-26f4-4413-bdd1-8a1633dfb943" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="c547f2bb-7117-48be-92bf-b280b60a3f92" name="Loyalty" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="a67bdeb6-edf0-42d3-bc04-f6fa7340ebbe" name="Points" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadCustomerById.GetCustomerByIdQuery.response.Loyalty.Points" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="7e917874-3192-48ec-856c-1c6181cc9492" name="CustomerEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="ff932a6a-6ff6-454c-8fbc-ed31fd9997c7" name="LoadCustomerById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="bec55dd7-18a9-4d76-98d1-e328037d6962" name="GetCustomerByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>5a93d653-b289-4a8e-8085-e19fb2e395fc</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="599dbf46-4d57-45a3-9506-5747f0449213" name="Loyalty" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                  <target id="6f2fbdd7-fa35-408e-b223-6564d9f5321e" name="Points" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
                 </path>
               </source>
             </sources>

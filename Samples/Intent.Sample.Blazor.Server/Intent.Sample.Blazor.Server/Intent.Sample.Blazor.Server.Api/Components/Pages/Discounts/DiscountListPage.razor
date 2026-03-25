@@ -1,0 +1,79 @@
+@page "/discounts/list"
+@using Intent.Sample.Blazor.Server.Application.Discounts
+
+<MudPaper Class="pa-4 mb-4 ux-gradient-primary" Elevation="0">
+    <MudText Typo="Typo.h4" Class="text-white font-weight-bold mb-2">
+        <MudIcon Icon="@Icons.Material.Filled.LocalOffer" Class="mr-2" />
+        Discounts
+    </MudText>
+    <MudText Typo="Typo.body1" Class="text-white opacity-90">
+        View all available discounts.
+    </MudText>
+</MudPaper>
+
+<MudCard Class="ux-fade-in-up" Style="animation-delay: 0.1s">
+    <MudCardHeader>
+        <CardHeaderContent>
+            <MudGrid>
+                <MudItem xs="12">
+                    <MudButton Variant="Variant.Filled"
+                               Color="Color.Secondary"
+                               StartIcon="@Icons.Material.Filled.Add"
+                               OnClick="NavigateToDiscountAddPage">
+                        Add Discount
+                    </MudButton>
+                    <MudButton Variant="Variant.Outlined"
+                               Color="Color.Primary"
+                               StartIcon="@Icons.Material.Filled.Refresh"
+                               OnClick="@(async () => await LoadDiscounts())">
+                        Refresh
+                    </MudButton>
+                </MudItem>
+            </MudGrid>
+        </CardHeaderContent>
+    </MudCardHeader>
+    <MudCardContent>
+        @if (DiscountsModels is null)
+        {
+            <MudStack Direction="FlexDirection.Row"
+                      AlignItems="AlignItems.Center"
+                      Justify="Justify.FlexStart"
+                      Spacing="2">
+                <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+                <MudText Typo="Typo.body2">Loading discounts...</MudText>
+            </MudStack>
+        }
+        else if (DiscountsModels.Count == 0)
+        {
+            <MudText Typo="Typo.body2">No discounts found.</MudText>
+        }
+        else
+        {
+            <MudTable T="DiscountDto"
+                      Items="DiscountsModels"
+                      Dense="true"
+                      Hover="true"
+                      Striped
+                      Elevation="1">
+                <HeaderContent>
+                    <MudTh>Code</MudTh>
+                    <MudTh>Amount</MudTh>
+                    <MudTh>Expiry</MudTh>
+                    <MudTh>Actions</MudTh>
+                </HeaderContent>
+                <RowTemplate>
+                    <MudTd DataLabel="Code">@context.Code</MudTd>
+                    <MudTd DataLabel="Amount">@context.DiscountAmount.ToString("C")</MudTd>
+                    <MudTd DataLabel="Expiry">@context.Expiry.ToShortDateString()</MudTd>
+                    <MudTd DataLabel="Actions">
+                        <MudTooltip Text="Edit Discount">
+                            <MudIconButton Icon="@Icons.Material.Filled.Edit"
+                                           Color="Color.Primary"
+                                           OnClick="@(() => OnEditDiscount(context.Id))" />
+                        </MudTooltip>
+                    </MudTd>
+                </RowTemplate>
+            </MudTable>
+        }
+    </MudCardContent>
+</MudCard>

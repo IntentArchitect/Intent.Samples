@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="caed72fa-f451-4208-9c79-4bff6cfb3f5c" type="Diagram" typeId="4912c89a-77eb-497e-a3f4-7408b6a20886">
+  <name>Discount</name>
+  <display>Discount</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>e9d1033d-3cda-40c9-b88a-caede49b15e3</parentFolderId>
+  <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+  <packageName>Intent.Sample.Angular.UI</packageName>
+  <diagram>
+    <targetPackageId>caed72fa-f451-4208-9c79-4bff6cfb3f5c</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

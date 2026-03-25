@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="3b79bd1d-a20d-43c3-8230-6edbba319510">
+  <sourceEnd id="b691446c-27b7-4e81-a072-a94702334f5a" type="Show Dialog Source End" typeId="ad3de626-cb72-4dde-966b-122a6b386fb7">
+    <display>: EditDiscount</display>
+    <order>0</order>
+    <typeReference id="87d7ae28-f2ff-4221-9683-03e531cdfaf2">
+      <typeId>e1672549-8412-4d90-a331-04d97e0e07c0</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="3b79bd1d-a20d-43c3-8230-6edbba319510" type="Show Dialog Target End" typeId="c44a7969-abfa-4073-ab2c-d2d0f1f6bd2f">
+    <name>Edit Discount</name>
+    <display>[show] DiscountEditDialog("Edit Discount")</display>
+    <order>1</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="a51f66c2-4552-413e-86db-ff767c1cacfc">
+      <typeId>5e875608-307b-4f74-8a6a-899f344b5291</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Open Dialog Mapping" typeId="f0e43df8-a662-46ec-a766-e67de9ddc0d0">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="531c4da8-1583-40e6-9138-b9820f504e56" location="[Intent.Sample.Blazor.Server].[User Interface].[DiscountListPage]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="5e875608-307b-4f74-8a6a-899f344b5291" location="[Intent.Sample.Blazor.Server].[User Interface].[DiscountEditDialog]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{EditDiscount.discountId}</expression>
+            <path>
+              <target id="5e875608-307b-4f74-8a6a-899f344b5291" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="3232c754-c834-43e6-b406-28583e34f215" name="DiscountId" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="EditDiscount.discountId" mappingType="Data Mapping" mappingTypeId="c85fabc0-963d-470c-a57e-c1b4c64d59b5">
+                <path>
+                  <target id="531c4da8-1583-40e6-9138-b9820f504e56" name="DiscountListPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="e1672549-8412-4d90-a331-04d97e0e07c0" name="EditDiscount" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="1d39db68-64a4-4b46-80de-f1bb0161c5f5" name="discountId" type="element" specialization="Parameter" specializationId="c26d8d0a-a26b-4b5f-b449-e9bdb60b3a4b" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Show Dialog</associationType>
+  <associationTypeId>2a309fb2-c487-4c00-9462-16dac9824731</associationTypeId>
+  <stereotypes />
+</association>

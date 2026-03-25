@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="c64239f7-3cad-4186-9a0f-ec46c53272b3" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>Filters</name>
+  <display>Filters</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>c2d97fdc-38b2-4233-b997-31063b8786a9</parentFolderId>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

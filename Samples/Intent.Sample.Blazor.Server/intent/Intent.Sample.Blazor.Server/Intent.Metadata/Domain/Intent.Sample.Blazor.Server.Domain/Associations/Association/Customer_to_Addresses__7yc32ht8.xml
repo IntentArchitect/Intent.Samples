@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="c29dfc72-5a77-4fe3-8bd2-d550c4f36775">
+  <sourceEnd id="0b8f81e6-fffa-42fe-8b21-2da4a67d89c2" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Customer</name>
+    <display>Customer: Customer</display>
+    <order>0</order>
+    <typeReference id="1d541b0e-a01b-43e6-8fe1-e6e8f05f9682">
+      <typeId>9255b2e1-7dc7-48f1-a4ee-af2aca030c21</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Domain</typePackageName>
+      <typePackageId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="c29dfc72-5a77-4fe3-8bd2-d550c4f36775" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Addresses</name>
+    <display>Addresses: Address[*]</display>
+    <order>6</order>
+    <typeReference id="3cc7655e-3418-4147-808c-a540d6c3fb40">
+      <typeId>1d941238-addd-4ab2-b35f-6bf28290d90e</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Domain</typePackageName>
+      <typePackageId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

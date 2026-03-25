@@ -1,0 +1,101 @@
+@page "/templates/pages/customers"
+@using UI.AI.Samples.Application.Customers
+
+<MudPaper Class="pa-4 mb-4 ux-gradient-primary" Elevation="0">
+    <MudText Typo="Typo.h4" Class="text-white font-weight-bold mb-2">
+        <MudIcon Icon="@Icons.Material.Filled.Person" Class="mr-2" />
+        Customers Management
+    </MudText>
+    <MudText Typo="Typo.body1" Class="text-white opacity-90">
+        View and manage your customer list.
+    </MudText>
+</MudPaper>
+
+<MudCard Class="ux-fade-in-up" Style="animation-delay: 0.1s">
+    <MudCardHeader>
+        <CardHeaderContent>
+            <MudGrid>
+                <MudItem xs="12">
+                    <MudButton Variant="Variant.Filled"
+                            Color="Color.Secondary"
+                            StartIcon="@Icons.Material.Filled.Add"
+                            OnClick="NavigateToCustomerAddPage">
+                        Add Customer
+                    </MudButton>
+                    <MudButton Variant="Variant.Outlined"
+                            Color="Color.Primary"
+                            StartIcon="@Icons.Material.Filled.Refresh"
+                            OnClick="async () => await LoadAllCustomers()">
+                        Refresh
+                    </MudButton>
+                </MudItem>
+            </MudGrid>
+        </CardHeaderContent>
+    </MudCardHeader>
+    <MudCardContent>
+        @if (AllCustomersModels is null)
+        {
+            <MudStack Direction="FlexDirection.Row"
+                      AlignItems="AlignItems.Center"
+                      Justify="Justify.FlexStart"
+                      Spacing="2">
+                <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+                <MudText Typo="Typo.body2">Loading customers...</MudText>
+            </MudStack>
+        }
+        else if (!AllCustomersModels.Any())
+        {
+            <MudText Typo="Typo.body2">No customers found.</MudText>
+        }
+        else
+        {
+            <MudTable T="CustomerSummaryDto"
+                      Items="AllCustomersModels"
+                      Dense="true"
+                      Hover="true"
+                      Striped
+                      Elevation="1">
+                <HeaderContent>
+                    <MudTh>Name</MudTh>
+                    <MudTh>Surname</MudTh>
+                    <MudTh>Email</MudTh>
+                    <MudTh>Status</MudTh>
+                    <MudTh>Actions</MudTh>
+                </HeaderContent>
+                <RowTemplate>
+                    <MudTd DataLabel="Name">@context.Name</MudTd>
+                    <MudTd DataLabel="Surname">@context.Surname</MudTd>
+                    <MudTd DataLabel="Email">@context.Email</MudTd>
+                    <MudTd DataLabel="Status">
+                        @if (context.IsActive)
+                        {
+                            <MudChip T="string" Color="Color.Success" Variant="Variant.Filled" Size="Size.Small">Active</MudChip>
+                        }
+                        else
+                        {
+                            <MudChip T="string" Color="Color.Error" Variant="Variant.Filled" Size="Size.Small">Inactive</MudChip>
+                        }
+                    </MudTd>
+                    <MudTd DataLabel="Actions">
+                        <MudTooltip Text="View Customer">
+                            <MudIconButton Icon="@Icons.Material.Filled.Visibility"
+                                           Color="Color.Info"
+                                           OnClick="@(() => NavigateToCustomerViewPage(context.Id))" />
+                        </MudTooltip>
+                        <MudTooltip Text="Edit Customer">
+                            <MudIconButton Icon="@Icons.Material.Filled.Edit"
+                                           Color="Color.Primary"
+                                           OnClick="@(() => NavigateToCustomerEditPage(context.Id))" />
+                        </MudTooltip>
+                        <MudTooltip Text="Delete Customer">
+                            <MudIconButton Icon="@Icons.Material.Filled.Delete"
+                                            Color="Color.Error"
+                                            OnClick="@(() => OnDeleteCustomer(context.Id))"
+                                            Title="Delete" />
+                        </MudTooltip>
+                    </MudTd>
+                </RowTemplate>
+            </MudTable>
+        }
+    </MudCardContent>
+</MudCard>

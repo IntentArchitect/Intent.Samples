@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="b8381290-38b4-47cc-a16d-9431872ec184">
+  <sourceEnd id="25408f3e-2021-481c-a1be-4d0bb9cc7cdb" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Customer</name>
+    <display>Customer: Customer</display>
+    <order>0</order>
+    <typeReference id="725cdeae-f1d1-4a0a-bfc8-ece9cc4840c0">
+      <typeId>9255b2e1-7dc7-48f1-a4ee-af2aca030c21</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Domain</typePackageName>
+      <typePackageId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="b8381290-38b4-47cc-a16d-9431872ec184" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Loyalty</name>
+    <display>Loyalty: Loyalty?</display>
+    <order>7</order>
+    <typeReference id="890b298f-2a0c-4d71-b147-05bdf8421b99">
+      <typeId>8765a5fe-5da9-458d-8af7-a2c433d05617</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>true</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Domain</typePackageName>
+      <typePackageId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

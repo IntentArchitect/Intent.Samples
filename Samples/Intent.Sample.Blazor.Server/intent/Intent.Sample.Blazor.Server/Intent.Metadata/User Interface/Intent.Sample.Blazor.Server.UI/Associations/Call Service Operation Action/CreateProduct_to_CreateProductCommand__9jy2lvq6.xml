@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="7dce208a-9029-4665-9ffe-9e900772aeec">
+  <sourceEnd id="e545915f-277c-443f-bd78-1fa9ccbe5d1f" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: CreateProduct</display>
+    <order>0</order>
+    <typeReference id="07784acb-999d-4698-b1b1-e1b4f78566e8">
+      <typeId>65473438-f007-41e9-9e9d-5833592d5d4e</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="7dce208a-9029-4665-9ffe-9e900772aeec" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>CreateProductCommand</name>
+    <display>[call] Products.CreateProductCommand: guid</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="4eac9ca5-65f6-4241-b072-012843a8e9f8">
+      <typeId>b2997def-061e-4e6a-a63f-23a84d088977</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="ab63d5c8-1430-4877-9448-eea5dc16077b" location="[Intent.Sample.Blazor.Server].[User Interface].[ProductAddPage]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="b2997def-061e-4e6a-a63f-23a84d088977" location="[Intent.Sample.Blazor.Server].[User Interface].[CreateProductCommand]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{CreateProduct.CreateProductCommand}</expression>
+            <path>
+              <target id="b2997def-061e-4e6a-a63f-23a84d088977" name="CreateProductCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+            </path>
+            <sources>
+              <source identifier="CreateProduct.CreateProductCommand" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="ab63d5c8-1430-4877-9448-eea5dc16077b" name="ProductAddPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="65473438-f007-41e9-9e9d-5833592d5d4e" name="CreateProduct" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="7dce208a-9029-4665-9ffe-9e900772aeec" name="CreateProductCommand" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.BrandId}</expression>
+            <path>
+              <target id="b2997def-061e-4e6a-a63f-23a84d088977" name="CreateProductCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="503f8150-3a52-4cfd-8baf-6f751dd43b8e" name="BrandId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.BrandId" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="ab63d5c8-1430-4877-9448-eea5dc16077b" name="ProductAddPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d55183c4-7dbe-4d1e-b123-9709e2eb8848" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="a0f5588a-918c-45dc-8bdd-d0c6dcc5c3ff" name="BrandId" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Name}</expression>
+            <path>
+              <target id="b2997def-061e-4e6a-a63f-23a84d088977" name="CreateProductCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="9840028d-e4af-48fc-88e8-be8ccdc15f15" name="Name" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Name" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="ab63d5c8-1430-4877-9448-eea5dc16077b" name="ProductAddPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d55183c4-7dbe-4d1e-b123-9709e2eb8848" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="3e040b79-1955-49e3-ab14-749ffcd17243" name="Name" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Description}</expression>
+            <path>
+              <target id="b2997def-061e-4e6a-a63f-23a84d088977" name="CreateProductCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="bb2dc6b0-1c97-4639-812e-ff8a0c711ba7" name="Description" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Description" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="ab63d5c8-1430-4877-9448-eea5dc16077b" name="ProductAddPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d55183c4-7dbe-4d1e-b123-9709e2eb8848" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="07732b71-7ace-4f13-b023-4ba6e9d9f960" name="Description" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Code}</expression>
+            <path>
+              <target id="b2997def-061e-4e6a-a63f-23a84d088977" name="CreateProductCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="fc2a861e-1558-47ff-8499-475940bc6149" name="Code" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Code" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="ab63d5c8-1430-4877-9448-eea5dc16077b" name="ProductAddPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d55183c4-7dbe-4d1e-b123-9709e2eb8848" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="89b14554-c03d-4acf-a502-cb890824c0ce" name="Code" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

@@ -19,24 +19,24 @@
     </mat-card-header>
 
     <mat-card-content>
-      <ng-container *ngIf="titleByIdModels; else loadingTpl">
+      <ng-container *ngIf="model; else loadingTpl">
         <form #form="ngForm">
-          <div *ngIf="serviceErrors.updateTitleError" class="error-message mb-4">
+          <div *ngIf="serviceErrors.updateTitleError" class="error-container">
             {{ serviceErrors.updateTitleError }}
           </div>
-          <div *ngIf="serviceErrors.loadTitleByIdError" class="error-message mb-4">
+          <div *ngIf="serviceErrors.loadTitleByIdError" class="error-container">
             {{ serviceErrors.loadTitleByIdError }}
           </div>
 
           <div class="grid">
             <div class="grid-item">
               <mat-form-field appearance="outline" class="w-100">
-                <mat-label>Name</mat-label>
+                <mat-label>Title Name</mat-label>
                 <input
                   matInput
                   name="name"
                   required
-                  [(ngModel)]="titleByIdModels!.name"
+                  [(ngModel)]="model!.name"
                   #nameCtrl="ngModel"
                   placeholder="Enter title name"
                 />
@@ -50,18 +50,19 @@
             </div>
           </div>
 
-          <div class="button-row mt-2">
+          <div class="button-row">
             <button
               mat-raised-button
               color="primary"
               type="button"
-              (click)="save(form)"
-              [disabled]="isLoading || form.invalid || !titleByIdModels"
+              (click)="save()"
+              [disabled]="isLoading || form.invalid || !model"
             >
               <mat-progress-spinner
                 *ngIf="isLoading"
                 mode="indeterminate"
                 diameter="18"
+                class="mr-1"
               ></mat-progress-spinner>
               <mat-icon *ngIf="!isLoading" class="mr-1">save</mat-icon>
               <span>{{ isLoading ? 'Saving…' : 'Save' }}</span>

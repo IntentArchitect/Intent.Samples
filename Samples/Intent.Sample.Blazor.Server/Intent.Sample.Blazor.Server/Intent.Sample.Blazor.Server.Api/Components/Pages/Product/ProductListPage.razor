@@ -1,0 +1,82 @@
+@page "/product/list"
+@using Intent.Sample.Blazor.Server.Application.Products
+
+<MudPaper Class="pa-4 mb-4 ux-gradient-primary" Elevation="0">
+    <MudText Typo="Typo.h4" Class="text-white font-weight-bold mb-2">
+        <MudIcon Icon="@Icons.Material.Filled.Inventory2" Class="mr-2" />
+        Products
+    </MudText>
+    <MudText Typo="Typo.body1" Class="text-white opacity-90">
+        Browse the list of available products.
+    </MudText>
+</MudPaper>
+
+<MudCard Class="ux-fade-in-up" Style="animation-delay: 0.1s">
+    <MudCardHeader>
+        <CardHeaderContent>
+            <MudGrid>
+                <MudItem xs="12">
+                    <MudButton Variant="Variant.Filled"
+                               Color="Color.Secondary"
+                               StartIcon="@Icons.Material.Filled.Add"
+                               Class="mr-2"
+                               OnClick="@NavigateToProductAddPage">
+                        Add Product
+                    </MudButton>
+                    <MudButton Variant="Variant.Outlined"
+                               Color="Color.Primary"
+                               StartIcon="@Icons.Material.Filled.Refresh"
+                               OnClick="@(async () => await LoadProducts())">
+                        Refresh
+                    </MudButton>
+                </MudItem>
+            </MudGrid>
+        </CardHeaderContent>
+    </MudCardHeader>
+    <MudCardContent>
+        @if (ProductsModels is null)
+        {
+            <MudStack Direction="FlexDirection.Row"
+                      AlignItems="AlignItems.Center"
+                      Justify="Justify.FlexStart"
+                      Spacing="2">
+                <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+                <MudText Typo="Typo.body2">Loading products...</MudText>
+            </MudStack>
+        }
+        else if (!ProductsModels.Any())
+        {
+            <MudText Typo="Typo.body2">No products found.</MudText>
+        }
+        else
+        {
+            <MudTable T="ProductDto"
+                      Items="ProductsModels"
+                      Dense="true"
+                      Hover="true"
+                      Striped
+                      Elevation="1">
+                <HeaderContent>
+                    <MudTh>Name</MudTh>
+                    <MudTh>Description</MudTh>
+                    <MudTh>Code</MudTh>
+                    <MudTh>Brand</MudTh>
+                    <MudTh>Actions</MudTh>
+                </HeaderContent>
+                <RowTemplate>
+                    <MudTd DataLabel="Name">@context.Name</MudTd>
+                    <MudTd DataLabel="Description">@context.Description</MudTd>
+                    <MudTd DataLabel="Code">@context.Code</MudTd>
+                    <MudTd DataLabel="Brand">@context.BrandName</MudTd>
+                    <MudTd DataLabel="Actions">
+                        <MudTooltip Text="Edit Product">
+                            <MudIconButton Icon="@Icons.Material.Filled.Edit"
+                                           Color="Color.Primary"
+                                           OnClick="@(() => NavigateToProductEditPage(context.Id))" />
+                        </MudTooltip>
+                    </MudTd>
+                </RowTemplate>
+            </MudTable>
+        }
+    </MudCardContent>
+</MudCard>

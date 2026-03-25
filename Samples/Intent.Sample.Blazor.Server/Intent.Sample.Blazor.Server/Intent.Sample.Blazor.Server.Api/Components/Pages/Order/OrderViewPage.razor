@@ -1,0 +1,100 @@
+@page "/order/view/{OrderId:guid}"
+
+<MudPaper Class="pa-4 mb-4 ux-gradient-primary" Elevation="0">
+    <MudText Typo="Typo.h4" Class="text-white font-weight-bold mb-2">
+        <MudIcon Icon="@Icons.Material.Filled.Visibility" Class="mr-2" />
+        View Order
+    </MudText>
+    <MudText Typo="Typo.body1" Class="text-white opacity-90">
+        Read-only view of this order's details.
+    </MudText>
+</MudPaper>
+
+<MudCard Class="ux-fade-in-up" Style="animation-delay: 0.1s">
+    <MudCardContent>
+        @if (OrderByIdModels is null)
+        {
+            <MudStack AlignItems="AlignItems.Center" JustifyContent="Justify.Center" Style="min-height:200px">
+                <MudProgressCircular Indeterminate="true" />
+                <MudText Class="mt-2">Loading order...</MudText>
+            </MudStack>
+        }
+        else
+        {
+            <MudGrid>
+                <MudItem xs="12" md="6">
+                    <MudText Typo="Typo.overline">Order Number</MudText>
+                    <MudText Typo="Typo.body1">@OrderByIdModels.OrderNo</MudText>
+                </MudItem>
+                <MudItem xs="12" md="3">
+                    <MudText Typo="Typo.overline">Ordered Date</MudText>
+                    <MudText Typo="Typo.body1">@OrderByIdModels.OrderedDate.ToString("d")</MudText>
+                </MudItem>
+                <MudItem xs="12" md="3">
+                    <MudText Typo="Typo.overline">Total</MudText>
+                    <MudText Typo="Typo.body1">@OrderByIdModels.Total.ToString("C")</MudText>
+                </MudItem>
+
+                <MudItem xs="12" md="6">
+                    <MudText Typo="Typo.overline">Customer</MudText>
+                    <MudText Typo="Typo.body1">@OrderByIdModels.TitleName @OrderByIdModels.CustomerName @OrderByIdModels.CustomerSurname</MudText>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudText Typo="Typo.overline">Customer Email</MudText>
+                    <MudText Typo="Typo.body1">@OrderByIdModels.CustomerEmail</MudText>
+                </MudItem>
+
+                <MudItem xs="12" md="6">
+                    <MudText Typo="Typo.overline">Discount Code</MudText>
+                    <MudText Typo="Typo.body1">@(string.IsNullOrWhiteSpace(OrderByIdModels.DiscountCode) ? "None" : OrderByIdModels.DiscountCode)</MudText>
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudText Typo="Typo.overline">Items</MudText>
+                    <MudText Typo="Typo.body1">@OrderByIdModels.OrderItems.Count item@(OrderByIdModels.OrderItems.Count == 1 ? string.Empty : "s")</MudText>
+                </MudItem>
+
+                <MudItem xs="12">
+                    <MudDivider Class="my-4" />
+                    <MudText Typo="Typo.h6">Order Items</MudText>
+                </MudItem>
+
+                <MudItem xs="12">
+                    <MudTable Items="@OrderByIdModels.OrderItems" Dense="true" Hover="true" Elevation="0" Outlined="true">
+                        <HeaderContent>
+                            <MudTh>Product</MudTh>
+                            <MudTh>Brand</MudTh>
+                            <MudTh align="right">Units</MudTh>
+                            <MudTh align="right">Unit Price</MudTh>
+                            <MudTh align="right">Line Total</MudTh>
+                        </HeaderContent>
+                        <RowTemplate>
+                            <MudTd DataLabel="Product">@context.ProductName</MudTd>
+                            <MudTd DataLabel="Brand">@context.BrandName</MudTd>
+                            <MudTd DataLabel="Units" Align="Align.Right">@context.Units</MudTd>
+                            <MudTd DataLabel="Unit Price" Align="Align.Right">@context.Price.ToString("C")</MudTd>
+                            <MudTd DataLabel="Line Total" Align="Align.Right">@((context.Price * context.Units).ToString("C"))</MudTd>
+                        </RowTemplate>
+                        <FooterContent>
+                            <MudTr>
+                                <MudTd ColSpan="4" Align="Align.Right">
+                                    <MudText Typo="Typo.subtitle2">Order Total</MudText>
+                                </MudTd>
+                                <MudTd Align="Align.Right">
+                                    <MudText Typo="Typo.subtitle2">@OrderByIdModels.Total.ToString("C")</MudText>
+                                </MudTd>
+                            </MudTr>
+                        </FooterContent>
+                    </MudTable>
+                </MudItem>
+
+                <MudItem xs="12" Class="mt-4">
+                    <MudStack Row="true" Spacing="2" Justify="Justify.FlexEnd" AlignItems="AlignItems.Center">
+                        <MudButton OnClick="NavigateToOrderListPage" Color="Color.Secondary" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.ArrowBack">
+                            Back to list
+                        </MudButton>
+                    </MudStack>
+                </MudItem>
+            </MudGrid>
+        }
+    </MudCardContent>
+</MudCard>

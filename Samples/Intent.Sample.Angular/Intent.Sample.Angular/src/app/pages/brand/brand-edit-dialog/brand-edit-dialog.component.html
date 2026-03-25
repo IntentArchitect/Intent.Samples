@@ -2,22 +2,30 @@
   <h2 mat-dialog-title>Edit Brand</h2>
 
   <mat-dialog-content class="dialog-content">
-    <ng-container *ngIf="brandByIdModels; else loadingTpl">
-      <mat-form-field appearance="outline" class="w-100">
-        <mat-label>Name</mat-label>
-        <input
-          matInput
-          required
-          name="name"
-          [(ngModel)]="brandByIdModels!.name"
-          #nameCtrl="ngModel" />
-        <mat-error *ngIf="nameCtrl.invalid && (nameCtrl.touched || form.submitted)">
-          Name is required
-        </mat-error>
-      </mat-form-field>
+    <ng-container *ngIf="model; else loadingTpl">
+      <div class="grid">
+        <div class="grid-item">
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Name</mat-label>
+            <input
+              matInput
+              required
+              name="name"
+              [(ngModel)]="model!.name"
+              #nameCtrl="ngModel" />
+            <mat-error *ngIf="nameCtrl.invalid && (nameCtrl.touched || form.submitted)">
+              Name is required
+            </mat-error>
+          </mat-form-field>
+        </div>
 
-      <div *ngIf="serviceErrors.updateBrandError" class="error-message mt-2">
-        {{ serviceErrors.updateBrandError }}
+        <div class="grid-item-wide error-text" *ngIf="serviceErrors.loadBrandByIdError">
+          {{ serviceErrors.loadBrandByIdError }}
+        </div>
+
+        <div class="grid-item-wide error-text" *ngIf="serviceErrors.updateBrandError">
+          {{ serviceErrors.updateBrandError }}
+        </div>
       </div>
     </ng-container>
 
@@ -25,9 +33,6 @@
       <div class="loading-container">
         <mat-progress-spinner mode="indeterminate" diameter="40"></mat-progress-spinner>
         <div class="mt-2">Loading brand...</div>
-        <div *ngIf="serviceErrors.loadBrandByIdError" class="error-message mt-2">
-          {{ serviceErrors.loadBrandByIdError }}
-        </div>
       </div>
     </ng-template>
   </mat-dialog-content>
@@ -41,12 +46,12 @@
       mat-raised-button
       color="primary"
       type="submit"
-      [disabled]="form.invalid || isLoading || !brandByIdModels">
+      [disabled]="form.invalid || isLoading || !model">
       <mat-progress-spinner
         *ngIf="isLoading"
         mode="indeterminate"
         diameter="18"
-        class="mr-1">
+        class="spinner">
       </mat-progress-spinner>
       <span *ngIf="!isLoading">Save</span>
     </button>

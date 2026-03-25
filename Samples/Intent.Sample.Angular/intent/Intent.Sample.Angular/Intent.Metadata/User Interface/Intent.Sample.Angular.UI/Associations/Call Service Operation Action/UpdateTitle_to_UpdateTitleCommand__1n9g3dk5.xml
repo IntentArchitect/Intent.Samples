@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="b449f217-15ef-460d-b598-0541c4637811">
+  <sourceEnd id="8cbacd65-42b0-4a5d-806a-abeba4fe24e9" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: UpdateTitle</display>
+    <order>0</order>
+    <typeReference id="1255ca45-44da-4f34-886f-eb84cec7d466">
+      <typeId>787608c4-eeff-4061-9cea-9050e16acede</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="b449f217-15ef-460d-b598-0541c4637811" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>UpdateTitleCommand</name>
+    <display>[call] Titles.UpdateTitleCommand: void</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="dba43ffc-6850-48ad-9ec3-d34720e46429">
+      <typeId>0c1f14ac-988a-4a82-81f5-74ef36b8916f</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="ab3094db-caac-4016-9a39-4c6c9c3c0296" location="[Intent.Sample.Angular].[User Interface].[TitleEditPage]" />
+        <target applicationId="4f799450-9dd9-4f4c-9740-262eafcfa4da" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="0c1f14ac-988a-4a82-81f5-74ef36b8916f" location="[Intent.Sample.Angular].[User Interface].[UpdateTitleCommand]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{UpdateTitle.UpdateTitleCommand}</expression>
+            <path>
+              <target id="0c1f14ac-988a-4a82-81f5-74ef36b8916f" name="UpdateTitleCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+            </path>
+            <sources>
+              <source identifier="UpdateTitle.UpdateTitleCommand" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="ab3094db-caac-4016-9a39-4c6c9c3c0296" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="787608c4-eeff-4061-9cea-9050e16acede" name="UpdateTitle" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="b449f217-15ef-460d-b598-0541c4637811" name="UpdateTitleCommand" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Id}</expression>
+            <path>
+              <target id="0c1f14ac-988a-4a82-81f5-74ef36b8916f" name="UpdateTitleCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="62717aa4-eb6d-4284-8a67-243bec6afb00" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="ab3094db-caac-4016-9a39-4c6c9c3c0296" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="1407eb77-1687-492b-aedc-1173c17ef24c" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="746b770a-7bd6-4042-90cf-1ec8e032e2d6" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Name}</expression>
+            <path>
+              <target id="0c1f14ac-988a-4a82-81f5-74ef36b8916f" name="UpdateTitleCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="04471069-5273-4b5e-9e2e-58a4c83b6dac" name="Name" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Name" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="ab3094db-caac-4016-9a39-4c6c9c3c0296" name="TitleEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="1407eb77-1687-492b-aedc-1173c17ef24c" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="f31ce114-d541-4abc-9c4d-b4e767cf4108" name="Name" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

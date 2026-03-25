@@ -9,6 +9,44 @@
   overflow-x: hidden;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.grid-item {
+  width: 100%;
+}
+
+.grid-item-wide {
+  grid-column: 1 / -1;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.spinner {
+  margin-right: 8px;
+}
+
+.error-text {
+  color: #c62828;
+  background-color: #ffebee;
+  border-left: 4px solid #c62828;
+  border-radius: 4px;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
 @media (max-width: 768px) {
   .dialog-content {
     min-width: 320px;

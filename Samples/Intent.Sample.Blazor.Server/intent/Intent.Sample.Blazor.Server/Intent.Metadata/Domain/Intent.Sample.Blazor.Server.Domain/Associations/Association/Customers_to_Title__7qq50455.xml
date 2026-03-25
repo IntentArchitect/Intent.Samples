@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="18d8e26f-67b3-4d51-ba15-75d717f945bd">
+  <sourceEnd id="850dcae1-f70a-4f4b-bcd3-a55caf9235b9" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Customers</name>
+    <display>Customers: Customer[*]</display>
+    <order>0</order>
+    <typeReference id="09716e03-bd20-4cdd-9586-66534b65ed57">
+      <typeId>9255b2e1-7dc7-48f1-a4ee-af2aca030c21</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Domain</typePackageName>
+      <typePackageId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="18d8e26f-67b3-4d51-ba15-75d717f945bd" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Title</name>
+    <display>Title: Title</display>
+    <order>8</order>
+    <typeReference id="2a821cd7-d28c-4a45-a7ff-d01b82fce6ad">
+      <typeId>11accc0a-4f72-4346-829c-9c7004e4b038</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Domain</typePackageName>
+      <typePackageId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

@@ -1,0 +1,21 @@
+<MudDialog MaxWidth="MaxWidth.ExtraSmall" Style="max-width: 500px;">
+<DialogContent>
+    <MudStack Direction="FlexDirection.Column" Spacing="2">
+        <MudStack Direction="FlexDirection.Row" AlignItems="AlignItems.Center" Spacing="1">
+            <MudIcon Icon="@Icons.Material.Filled.Warning" Color="Color.Warning" Size="Size.Medium" />
+            <MudText Typo="Typo.h6">Delete order</MudText>
+        </MudStack>
+        <MudText Typo="Typo.body1">
+            Are you sure you want to permanently delete this order? This action cannot be undone.
+        </MudText>
+    </MudStack>
+</DialogContent>
+    <DialogActions>
+        <MudButton Variant="Variant.Text" Color="Color.Default" OnClick="OnCancel">
+            Cancel
+        </MudButton>
+        <MudButton Variant="Variant.Filled" Color="Color.Error" OnClick="OnConfirmDelete">
+            Delete
+        </MudButton>
+    </DialogActions>
+</MudDialog>

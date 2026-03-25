@@ -17,6 +17,22 @@
   gap: 0.5rem;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item-wide {
+  grid-column: 1 / -1;
+}
+
 @media (max-width: 768px) {
   .actions-row {
     flex-direction: column;

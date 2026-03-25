@@ -22,30 +22,6 @@
   </mappings>
   <metadata />
   <childElements>
-    <childElement id="907e4d8b-a071-40f6-ae71-4dfbbd5ef79e" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
-      <name>BrandByIdModels</name>
-      <display>BrandByIdModels: BrandDto?</display>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <typeReference id="4548de20-0dfe-4ba9-92f5-c05f123276dd">
-        <typeId>76f9dcf8-e66b-4d8e-b4f3-f9994f3c15ce</typeId>
-        <isNavigable>true</isNavigable>
-        <isNullable>true</isNullable>
-        <isCollection>false</isCollection>
-        <isRequired>true</isRequired>
-        <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
-        <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
-        <stereotypes />
-        <genericTypeParameters />
-      </typeReference>
-      <isMapped>false</isMapped>
-      <parentFolderId>906056df-d1e7-4a17-9bd6-a80656752053</parentFolderId>
-      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
-      <packageName>Intent.Sample.Angular.UI</packageName>
-      <stereotypes />
-      <metadata />
-      <childElements />
-    </childElement>
     <childElement id="cfefa36b-f72a-4d83-8ebd-0da672c6975f" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
       <name>BrandId</name>
       <display>BrandId: guid</display>
@@ -74,6 +50,72 @@
           <properties />
         </stereotype>
       </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="377d803a-9867-4a3d-9650-2af4714b0d30" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
+      <name>Model</name>
+      <display>Model: UpdateBrandModel?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="8a1be436-afa2-4519-be1c-c1b7b8d914fb">
+        <typeId>77361c08-9aaf-4557-96e4-2be026e1d2f6</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+        <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>906056df-d1e7-4a17-9bd6-a80656752053</parentFolderId>
+      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+      <packageName>Intent.Sample.Angular.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="4e62547b-8649-4e4b-b4d3-fd51ed17cf61" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>ngOnInit</name>
+      <display>ngOnInit(): void</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="a59f8baf-b30b-412b-b278-0e04531ecb0f">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>906056df-d1e7-4a17-9bd6-a80656752053</parentFolderId>
+      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+      <packageName>Intent.Sample.Angular.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="316e6cae-af6e-4cdb-b920-351ed8656bf9" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>UpdateBrand</name>
+      <display>UpdateBrand(): void</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="282d29fa-4296-415b-a377-597ad6b5b355">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>906056df-d1e7-4a17-9bd6-a80656752053</parentFolderId>
+      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+      <packageName>Intent.Sample.Angular.UI</packageName>
+      <stereotypes />
       <metadata />
       <childElements />
     </childElement>
@@ -123,48 +165,6 @@
           <childElements />
         </childElement>
       </childElements>
-    </childElement>
-    <childElement id="6460463d-4b79-4725-b9ba-3a2347b72562" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
-      <name>UpdateBrand</name>
-      <display>UpdateBrand(): void</display>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <typeReference id="bae9948d-17b4-42c1-88ea-1ce879b6387a">
-        <isNavigable>true</isNavigable>
-        <isNullable>false</isNullable>
-        <isCollection>false</isCollection>
-        <isRequired>true</isRequired>
-        <stereotypes />
-        <genericTypeParameters />
-      </typeReference>
-      <isMapped>false</isMapped>
-      <parentFolderId>906056df-d1e7-4a17-9bd6-a80656752053</parentFolderId>
-      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
-      <packageName>Intent.Sample.Angular.UI</packageName>
-      <stereotypes />
-      <metadata />
-      <childElements />
-    </childElement>
-    <childElement id="4e62547b-8649-4e4b-b4d3-fd51ed17cf61" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
-      <name>ngOnInit</name>
-      <display>ngOnInit(): void</display>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <typeReference id="a59f8baf-b30b-412b-b278-0e04531ecb0f">
-        <isNavigable>true</isNavigable>
-        <isNullable>false</isNullable>
-        <isCollection>false</isCollection>
-        <isRequired>true</isRequired>
-        <stereotypes />
-        <genericTypeParameters />
-      </typeReference>
-      <isMapped>false</isMapped>
-      <parentFolderId>906056df-d1e7-4a17-9bd6-a80656752053</parentFolderId>
-      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
-      <packageName>Intent.Sample.Angular.UI</packageName>
-      <stereotypes />
-      <metadata />
-      <childElements />
     </childElement>
   </childElements>
 </class>

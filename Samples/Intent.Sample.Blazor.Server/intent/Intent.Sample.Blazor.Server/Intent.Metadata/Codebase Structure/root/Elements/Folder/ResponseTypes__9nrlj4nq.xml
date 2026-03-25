@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="6a9be98b-7e3e-4546-bc21-5c7729eb14f9" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>ResponseTypes</name>
+  <display>ResponseTypes</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>d099610c-3ed4-4f50-8a5d-9eeed4cb2809</parentFolderId>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

@@ -1,0 +1,57 @@
+@page "/titles/add"
+
+<MudPaper Class="pa-4 mb-4 ux-gradient-primary" Elevation="0">
+    <MudText Typo="Typo.h4" Class="text-white font-weight-bold mb-2">
+        <MudIcon Icon="@Icons.Material.Filled.Badge" Class="mr-2" />
+        Add Title
+    </MudText>
+    <MudText Typo="Typo.body1" Class="text-white opacity-90">
+        Create a new title.
+    </MudText>
+</MudPaper>
+
+<MudCard Class="ux-fade-in-up" Style="animation-delay: 0.1s">
+    <MudCardContent>
+        <MudForm @ref="_form" Model="@Model">
+            <MudGrid>
+                <MudItem xs="12" md="6">
+                    <MudTextField @bind-Value="Model.Name"
+                                  Label="Name"
+                                  Placeholder="Enter title name"
+                                  Adornment="Adornment.Start"
+                                  AdornmentIcon="@Icons.Material.Filled.Badge"
+                                  Immediate
+                                  Required
+                                  RequiredError="Name is required" />
+                </MudItem>
+
+                <MudItem xs="12" Class="mt-4">
+                    <MudStack Row="true" Spacing="2" Justify="Justify.FlexEnd" AlignItems="AlignItems.Center">
+                        <MudButton OnClick="SaveAsync"
+                                   Disabled="@(_saving || (_form is not null && !_form.IsValid))"
+                                   Color="Color.Primary"
+                                   Variant="Variant.Filled"
+                                   StartIcon="@Icons.Material.Filled.Save">
+                            @if (_saving)
+                            {
+                                <MudProgressCircular Size="Size.Small" Indeterminate="true" Class="mr-2" />
+                                <span>Saving…</span>
+                            }
+                            else
+                            {
+                                <span>Save</span>
+                            }
+                        </MudButton>
+                        <MudButton OnClick="Cancel"
+                                   Disabled="@_saving"
+                                   Color="Color.Secondary"
+                                   Variant="Variant.Filled"
+                                   StartIcon="@Icons.Material.Filled.ArrowBack">
+                            Back to list
+                        </MudButton>
+                    </MudStack>
+                </MudItem>
+            </MudGrid>
+        </MudForm>
+    </MudCardContent>
+</MudCard>

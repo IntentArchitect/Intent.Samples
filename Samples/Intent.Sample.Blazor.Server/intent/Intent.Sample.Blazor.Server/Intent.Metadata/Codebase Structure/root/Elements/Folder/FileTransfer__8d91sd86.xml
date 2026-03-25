@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="fc907d79-aadc-46c4-89cd-16e4075885b3" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>FileTransfer</name>
+  <display>FileTransfer</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>d099610c-3ed4-4f50-8a5d-9eeed4cb2809</parentFolderId>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

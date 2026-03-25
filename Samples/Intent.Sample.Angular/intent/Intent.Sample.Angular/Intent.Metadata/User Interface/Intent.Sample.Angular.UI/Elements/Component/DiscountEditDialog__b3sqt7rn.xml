@@ -53,30 +53,6 @@
       <metadata />
       <childElements />
     </childElement>
-    <childElement id="ced88ad1-a87c-44e9-8737-0bcb8f79c01c" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
-      <name>DiscountByIdModels</name>
-      <display>DiscountByIdModels: DiscountDto?</display>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <typeReference id="e9dca06f-d485-41e3-98bc-55508c6c5a5e">
-        <typeId>53d2c5d1-6c8a-40c4-95c5-d98c93a6e84f</typeId>
-        <isNavigable>true</isNavigable>
-        <isNullable>true</isNullable>
-        <isCollection>false</isCollection>
-        <isRequired>true</isRequired>
-        <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
-        <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
-        <stereotypes />
-        <genericTypeParameters />
-      </typeReference>
-      <isMapped>false</isMapped>
-      <parentFolderId>b1d07692-8e65-43dc-8846-afd4a20111ea</parentFolderId>
-      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
-      <packageName>Intent.Sample.Angular.UI</packageName>
-      <stereotypes />
-      <metadata />
-      <childElements />
-    </childElement>
     <childElement id="2a997430-1194-4747-8be9-b03791d9e31f" type="Property" typeId="356fbe17-bc63-4e16-b915-feefbc063cbe">
       <name>Model</name>
       <display>Model: UpdateDiscountModel?</display>
@@ -90,27 +66,6 @@
         <isRequired>true</isRequired>
         <typePackageName>Intent.Sample.Angular.UI</typePackageName>
         <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
-        <stereotypes />
-        <genericTypeParameters />
-      </typeReference>
-      <isMapped>false</isMapped>
-      <parentFolderId>b1d07692-8e65-43dc-8846-afd4a20111ea</parentFolderId>
-      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
-      <packageName>Intent.Sample.Angular.UI</packageName>
-      <stereotypes />
-      <metadata />
-      <childElements />
-    </childElement>
-    <childElement id="f6d6e52b-40d0-44e7-b0a7-5a6073e8be2a" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
-      <name>ngOnInit</name>
-      <display>ngOnInit(): void</display>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <typeReference id="f17a26bc-202d-4ada-ae38-ee7004bea125">
-        <isNavigable>true</isNavigable>
-        <isNullable>false</isNullable>
-        <isCollection>false</isCollection>
-        <isRequired>true</isRequired>
         <stereotypes />
         <genericTypeParameters />
       </typeReference>
@@ -175,6 +130,27 @@
       <isAbstract>false</isAbstract>
       <genericTypes />
       <typeReference id="65112e69-ecdd-449e-a6fb-ea981e274668">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>b1d07692-8e65-43dc-8846-afd4a20111ea</parentFolderId>
+      <packageId>057de13e-cf1a-41aa-914f-f88d95e463f4</packageId>
+      <packageName>Intent.Sample.Angular.UI</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="f6d6e52b-40d0-44e7-b0a7-5a6073e8be2a" type="Component Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>ngOnInit</name>
+      <display>ngOnInit(): void</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="f17a26bc-202d-4ada-ae38-ee7004bea125">
         <isNavigable>true</isNavigable>
         <isNullable>false</isNullable>
         <isCollection>false</isCollection>

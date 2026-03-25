@@ -1,0 +1,98 @@
+@page "/product/edit/{ProductId:guid}"
+
+<MudPaper Class="pa-4 mb-4 ux-gradient-primary" Elevation="0">
+    <MudText Typo="Typo.h4" Class="text-white font-weight-bold mb-2">
+        <MudIcon Icon="@Icons.Material.Filled.Edit" Class="mr-2" />
+        Edit Product
+    </MudText>
+    <MudText Typo="Typo.body1" Class="text-white opacity-90">
+        Update the details of this product.
+    </MudText>
+</MudPaper>
+
+<MudCard Class="ux-fade-in-up" Style="animation-delay: 0.1s">
+    <MudCardContent>
+        @if (Model is not null && BrandsModels is not null)
+        {
+            <MudForm @ref="_form" Model="Model">
+                <MudGrid>
+                    <MudItem xs="12" md="6">
+                        <MudSelect T="Guid?" @bind-Value="Model.BrandId" Label="Brand" Placeholder="Select..." Required="true" RequiredError="Brand is required">
+                            @if (BrandsModels is { Count: > 0 })
+                            {
+                                @foreach (var brand in BrandsModels)
+                                {
+                                    <MudSelectItem T="Guid?" Value="@brand.Id">@brand.Name</MudSelectItem>
+                                }
+                            }
+                        </MudSelect>
+                    </MudItem>
+                    <MudItem xs="12" md="6">
+                        <MudTextField @bind-Value="Model.Name"
+                                      Label="Name"
+                                      Placeholder="Enter product name"
+                                      Adornment="Adornment.Start"
+                                      AdornmentIcon="@Icons.Material.Filled.Badge"
+                                      Immediate
+                                      Required
+                                      RequiredError="Name is required" />
+                    </MudItem>
+                    <MudItem xs="12" md="6">
+                        <MudTextField @bind-Value="Model.Code"
+                                      Label="Code"
+                                      Placeholder="Enter product code"
+                                      Adornment="Adornment.Start"
+                                      AdornmentIcon="@Icons.Material.Filled.QrCode"
+                                      Immediate
+                                      Required
+                                      RequiredError="Code is required" />
+                    </MudItem>
+                    <MudItem xs="12">
+                        <MudTextField @bind-Value="Model.Description"
+                                      Label="Description"
+                                      Placeholder="Enter product description"
+                                      Adornment="Adornment.Start"
+                                      AdornmentIcon="@Icons.Material.Filled.Description"
+                                      Lines="4"
+                                      Immediate
+                                      Required
+                                      RequiredError="Description is required" />
+                    </MudItem>
+                    <MudItem xs="12" Class="mt-4">
+                        <MudStack Row="true" Spacing="2" Justify="Justify.FlexEnd" AlignItems="AlignItems.Center">
+                            <MudButton OnClick="SaveAsync"
+                                       Disabled="@_saving"
+                                       Color="Color.Primary"
+                                       Variant="Variant.Filled"
+                                       StartIcon="@Icons.Material.Filled.Save">
+                                @if (_saving)
+                                {
+                                    <MudProgressCircular Size="Size.Small" Indeterminate Class="mr-2" />
+                                    <span>Saving...</span>
+                                }
+                                else
+                                {
+                                    <span>Save</span>
+                                }
+                            </MudButton>
+                            <MudButton OnClick="Cancel"
+                                       Disabled="@_saving"
+                                       Color="Color.Secondary"
+                                       Variant="Variant.Filled"
+                                       StartIcon="@Icons.Material.Filled.ArrowBack">
+                                Back to list
+                            </MudButton>
+                        </MudStack>
+                    </MudItem>
+                </MudGrid>
+            </MudForm>
+        }
+        else
+        {
+            <MudStack AlignItems="AlignItems.Center" Justify="Justify.Center" Style="min-height:200px">
+                <MudProgressCircular Indeterminate />
+                <MudText Class="mt-2">Loading product...</MudText>
+            </MudStack>
+        }
+    </MudCardContent>
+</MudCard>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="eade7b8e-e1ad-4d6b-89c1-40b3b4c62327" type="Query" typeId="e71b0662-e29d-4db2-868b-8a12464b25d0">
+  <name>GetOrdersQuery</name>
+  <display>GetOrdersQuery: OrderDto[*]</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <typeReference id="c80053cc-1bd4-48da-8491-158a31b628ad">
+    <typeId>df011ae4-bc3a-43c0-8bc8-008471906575</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>true</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+    <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>f7eae424-97e2-4b2d-ac1c-97e4912c2324</parentFolderId>
+  <packageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</packageId>
+  <packageName>Intent.Sample.Blazor.Server.Services</packageName>
+  <traits>
+    <trait id="9e587d4d-f317-4ab8-9bbb-9394234d2a88" name="[Allow Comment]" />
+    <trait id="0a932465-ea1f-42e7-b1eb-9f90aa8961fd" name="[Invokable]" />
+    <trait id="2b6729eb-e2ae-4b5f-86fe-4f611d1f912e" name="[Processing Handler]" />
+  </traits>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

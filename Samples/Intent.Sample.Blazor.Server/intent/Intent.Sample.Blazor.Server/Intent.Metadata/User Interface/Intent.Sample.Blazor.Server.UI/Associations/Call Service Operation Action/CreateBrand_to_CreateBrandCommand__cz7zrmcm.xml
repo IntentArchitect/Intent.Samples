@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="268848ad-72c3-4689-996b-eb06ebc989a7">
+  <sourceEnd id="1cae692d-a2c5-485b-b182-05ca010c0e17" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: CreateBrand</display>
+    <order>0</order>
+    <typeReference id="1e7c44da-d443-4710-823a-fbf0817be634">
+      <typeId>f1b4ac32-73d6-42a5-b60f-1427dac8d463</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="268848ad-72c3-4689-996b-eb06ebc989a7" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>CreateBrandCommand</name>
+    <display>[call] Brands.CreateBrandCommand: guid</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="d2393659-ddd9-4959-998d-bd4a2d5b6484">
+      <typeId>507aee24-467f-4411-831e-5b5a1815061f</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="b6839b0c-0071-4919-97fe-652b6ef8f470" location="[Intent.Sample.Blazor.Server].[User Interface].[BrandAddDialog]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="507aee24-467f-4411-831e-5b5a1815061f" location="[Intent.Sample.Blazor.Server].[User Interface].[CreateBrandCommand]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{CreateBrand.CreateBrandCommand}</expression>
+            <path>
+              <target id="507aee24-467f-4411-831e-5b5a1815061f" name="CreateBrandCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+            </path>
+            <sources>
+              <source identifier="CreateBrand.CreateBrandCommand" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="b6839b0c-0071-4919-97fe-652b6ef8f470" name="BrandAddDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="f1b4ac32-73d6-42a5-b60f-1427dac8d463" name="CreateBrand" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="268848ad-72c3-4689-996b-eb06ebc989a7" name="CreateBrandCommand" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Name}</expression>
+            <path>
+              <target id="507aee24-467f-4411-831e-5b5a1815061f" name="CreateBrandCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="e45099f1-9ad9-4c10-b8f8-8529ea0bdf6d" name="Name" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Name" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="b6839b0c-0071-4919-97fe-652b6ef8f470" name="BrandAddDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="4cfa9a22-86cb-4ccc-8f85-1aa63669e1be" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="9a2bd21d-085a-419d-9d3e-cc37b44e8240" name="Name" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

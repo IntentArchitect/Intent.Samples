@@ -1,0 +1,90 @@
+@Intent.IgnoreBody()
+@page "/"
+<PageTitle>Home</PageTitle>
+
+<MudContainer MaxWidth="MaxWidth.Large" Class="home-container py-8">
+	<MudPaper Class="content-wrapper pa-6 pa-md-10" Elevation="2">
+		<MudIcon Icon="@Icons.Material.Filled.Home" Size="Size.Large" /><MudText Typo="Typo.h4" Class="page-title mt-5 mb-2"> Blazor Application Built with Intent Architect</MudText>
+		
+		<MudText Typo="Typo.subtitle1" Class="description mb-1">
+			<strong>Model-driven development meets AI-powered automation</strong>
+		</MudText>
+		<MudText Typo="Typo.body1" Class="intro-text mb-6">
+			Welcome to this sample Blazor application. Explore the various features by navigating through the pages below or using the menu.
+		</MudText>
+
+		<MudGrid Class="tiles-container" Spacing="3">
+			<MudItem xs="12" sm="6" md="4">
+				<MudLink Href="/customer/list" Underline="Underline.None" Class="tile-link">
+					<MudPaper Class="nav-tile pa-5" Outlined="true">
+						<MudIcon Icon="@Icons.Material.Filled.Person" Size="Size.Large" Class="tile-icon mb-3" />
+						<MudText Typo="Typo.h6">Customers</MudText>
+						<MudText Typo="Typo.body2">Manage customer information and profiles</MudText>
+					</MudPaper>
+				</MudLink>
+			</MudItem>
+
+			<MudItem xs="12" sm="6" md="4">
+				<MudLink Href="/product/list" Underline="Underline.None" Class="tile-link">
+					<MudPaper Class="nav-tile pa-5" Outlined="true">
+						<MudIcon Icon="@Icons.Material.Filled.Inventory2" Size="Size.Large" Class="tile-icon mb-3" />
+						<MudText Typo="Typo.h6">Products</MudText>
+						<MudText Typo="Typo.body2">Browse and manage product catalog</MudText>
+					</MudPaper>
+				</MudLink>
+			</MudItem>
+
+			<MudItem xs="12" sm="6" md="4">
+				<MudLink Href="/order/list" Underline="Underline.None" Class="tile-link">
+					<MudPaper Class="nav-tile pa-5" Outlined="true">
+						<MudIcon Icon="@Icons.Material.Filled.ShoppingBag" Size="Size.Large" Class="tile-icon mb-3" />
+						<MudText Typo="Typo.h6">Orders</MudText>
+						<MudText Typo="Typo.body2">View and process customer orders</MudText>
+					</MudPaper>
+				</MudLink>
+			</MudItem>
+
+			<MudItem xs="12" sm="6" md="4">
+				<MudLink Href="/brand/list" Underline="Underline.None" Class="tile-link">
+					<MudPaper Class="nav-tile pa-5" Outlined="true">
+						<MudIcon Icon="@Icons.Material.Filled.Layers" Size="Size.Large" Class="tile-icon mb-3" />
+						<MudText Typo="Typo.h6">Brands</MudText>
+						<MudText Typo="Typo.body2">Manage product brands and manufacturers</MudText>
+					</MudPaper>
+				</MudLink>
+			</MudItem>
+
+			<MudItem xs="12" sm="6" md="4">
+				<MudLink Href="/titles/list" Underline="Underline.None" Class="tile-link">
+					<MudPaper Class="nav-tile pa-5" Outlined="true">
+						<MudIcon Icon="@Icons.Material.Filled.Info" Size="Size.Large" Class="tile-icon mb-3" />
+						<MudText Typo="Typo.h6">Titles</MudText>
+						<MudText Typo="Typo.body2">Configure customer title options</MudText>
+					</MudPaper>
+				</MudLink>
+			</MudItem>
+
+			<MudItem xs="12" sm="6" md="4">
+				<MudLink Href="/discounts/list" Underline="Underline.None" Class="tile-link">
+					<MudPaper Class="nav-tile pa-5" Outlined="true">
+						<MudIcon Icon="@Icons.Material.Filled.Percent" Size="Size.Large" Class="tile-icon mb-3" />
+						<MudText Typo="Typo.h6">Discounts</MudText>
+						<MudText Typo="Typo.body2">Create and manage discount campaigns</MudText>
+					</MudPaper>
+				</MudLink>
+			</MudItem>
+		</MudGrid>
+
+		<MudStack Row="true" Justify="Justify.Center" Class="mt-8">
+			<MudButton Variant="Variant.Filled"
+					   Color="Color.Primary"
+					   Href="https://docs.intentarchitect.com/articles/application-development/modelling/ui-designer/blazor-modeling/blazor-modeling.html"
+					   Target="_blank"
+					   Rel="noopener noreferrer"
+					   StartIcon="@Icons.Material.Filled.MenuBook"
+					   Class="docs-button">
+				View Documentation
+			</MudButton>
+		</MudStack>
+	</MudPaper>
+</MudContainer>

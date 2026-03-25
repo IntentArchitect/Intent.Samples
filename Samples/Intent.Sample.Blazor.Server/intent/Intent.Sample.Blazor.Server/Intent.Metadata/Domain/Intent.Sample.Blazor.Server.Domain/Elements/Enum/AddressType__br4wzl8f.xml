@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="cb1c809b-0205-4078-8bcf-89d6082ab7f5" type="Enum" typeId="85fba0e9-9161-4c85-a603-a229ef312beb">
+  <name>AddressType</name>
+  <display>AddressType</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</parentFolderId>
+  <packageId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</packageId>
+  <packageName>Intent.Sample.Blazor.Server.Domain</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="b7d829bf-1f9c-41ce-9210-e8cd411f40bc" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Delivery</name>
+      <display>Delivery = 1</display>
+      <isAbstract>false</isAbstract>
+      <value>1</value>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>cb1c809b-0205-4078-8bcf-89d6082ab7f5</parentFolderId>
+      <packageId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</packageId>
+      <packageName>Intent.Sample.Blazor.Server.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="91cfc624-cd2c-4907-a248-40caf5254684" type="Enum-Literal" typeId="4215f417-25d2-4509-9309-5076a1452eaa">
+      <name>Billing</name>
+      <display>Billing = 2</display>
+      <isAbstract>false</isAbstract>
+      <value>2</value>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>cb1c809b-0205-4078-8bcf-89d6082ab7f5</parentFolderId>
+      <packageId>1b0b2ac2-693a-46d2-9e31-59b91ee956f0</packageId>
+      <packageName>Intent.Sample.Blazor.Server.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

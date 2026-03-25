@@ -80,13 +80,14 @@
         <target applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="4fdd865b-3d04-4266-9b42-03385b1f638d" location="[Intent.Sample.Angular].[User Interface].[ProductEditPage]" />
         <mappedEnds>
           <mappedEnd>
-            <expression>{LoadProductById.GetProductByIdQuery.response}</expression>
+            <expression>{LoadProductById.GetProductByIdQuery.response.Id}</expression>
             <path>
               <target id="4fdd865b-3d04-4266-9b42-03385b1f638d" name="ProductEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
-              <target id="a3abab6a-054d-4217-9a79-b9e058d79a76" name="ProductByIdModels" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="1acf69ff-579e-4761-99c3-086bfd413c9f" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="eb0f177b-ad49-4d4f-bced-227294384e56" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
             </path>
             <sources>
-              <source identifier="LoadProductById.GetProductByIdQuery.response" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+              <source identifier="LoadProductById.GetProductByIdQuery.response.Id" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
                 <path>
                   <target id="4fdd865b-3d04-4266-9b42-03385b1f638d" name="ProductEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
                   <target id="d05aa8a2-f2c7-4946-bbda-1e73e54619b6" name="LoadProductById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
@@ -104,6 +105,131 @@
                       <genericTypeParameters />
                     </typeReference>
                   </target>
+                  <target id="92d9d8dd-6a13-4009-b6a2-8e5d3481ca0b" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadProductById.GetProductByIdQuery.response.Name}</expression>
+            <path>
+              <target id="4fdd865b-3d04-4266-9b42-03385b1f638d" name="ProductEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="1acf69ff-579e-4761-99c3-086bfd413c9f" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="6b97bb9c-e2ed-4ab5-8e20-513ca5706486" name="Name" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadProductById.GetProductByIdQuery.response.Name" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="4fdd865b-3d04-4266-9b42-03385b1f638d" name="ProductEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d05aa8a2-f2c7-4946-bbda-1e73e54619b6" name="LoadProductById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="df6a4a22-eebe-48e8-a7b5-84093e6f0d22" name="GetProductByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>25c6bedf-bd41-4c2d-b860-210dad0af766</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="4d82bdbf-dd9a-4cfb-a81f-6af6c32046d2" name="Name" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadProductById.GetProductByIdQuery.response.Description}</expression>
+            <path>
+              <target id="4fdd865b-3d04-4266-9b42-03385b1f638d" name="ProductEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="1acf69ff-579e-4761-99c3-086bfd413c9f" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="e1203e66-3103-44dd-b683-219d09df0094" name="Description" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadProductById.GetProductByIdQuery.response.Description" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="4fdd865b-3d04-4266-9b42-03385b1f638d" name="ProductEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d05aa8a2-f2c7-4946-bbda-1e73e54619b6" name="LoadProductById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="df6a4a22-eebe-48e8-a7b5-84093e6f0d22" name="GetProductByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>25c6bedf-bd41-4c2d-b860-210dad0af766</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="b88898bf-6fef-4080-b57c-433337baa18e" name="Description" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadProductById.GetProductByIdQuery.response.Code}</expression>
+            <path>
+              <target id="4fdd865b-3d04-4266-9b42-03385b1f638d" name="ProductEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="1acf69ff-579e-4761-99c3-086bfd413c9f" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="3cbf3b07-5dc8-477a-87b3-251e6513c76f" name="Code" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadProductById.GetProductByIdQuery.response.Code" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="4fdd865b-3d04-4266-9b42-03385b1f638d" name="ProductEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d05aa8a2-f2c7-4946-bbda-1e73e54619b6" name="LoadProductById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="df6a4a22-eebe-48e8-a7b5-84093e6f0d22" name="GetProductByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>25c6bedf-bd41-4c2d-b860-210dad0af766</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="1873560e-f5dd-469c-9624-48f955c74fdd" name="Code" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadProductById.GetProductByIdQuery.response.BrandId}</expression>
+            <path>
+              <target id="4fdd865b-3d04-4266-9b42-03385b1f638d" name="ProductEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="1acf69ff-579e-4761-99c3-086bfd413c9f" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="fe356fc3-c573-488e-aa5c-dc1553bc0eb1" name="BrandId" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadProductById.GetProductByIdQuery.response.BrandId" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="4fdd865b-3d04-4266-9b42-03385b1f638d" name="ProductEditPage" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d05aa8a2-f2c7-4946-bbda-1e73e54619b6" name="LoadProductById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="df6a4a22-eebe-48e8-a7b5-84093e6f0d22" name="GetProductByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>25c6bedf-bd41-4c2d-b860-210dad0af766</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="2a0139c6-a82d-4074-86fc-c0e412d542eb" name="BrandId" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
                 </path>
               </source>
             </sources>

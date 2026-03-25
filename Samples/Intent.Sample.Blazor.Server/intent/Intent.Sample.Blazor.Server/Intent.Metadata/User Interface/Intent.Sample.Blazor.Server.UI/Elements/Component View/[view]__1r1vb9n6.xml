@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="046f3b19-9158-4b2a-b19c-7cf3dd313bc3" type="Component View" typeId="624513a6-cba8-4dde-8ebe-6b19f00f0364">
+  <name>[view]</name>
+  <display>[view]</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>manually</sort-children>
+  <order>0</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>81d38489-a296-4413-99c2-d05ca5b97fb2</parentFolderId>
+  <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+  <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="a63d2db8-5569-42a7-b8bf-7759cb18076f" type="Dialog" typeId="1260ae89-b0cc-4ae0-b21c-7e26d45f16a5">
+      <name>Dialog</name>
+      <display>Dialog</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-by-name</sort-children>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>046f3b19-9158-4b2a-b19c-7cf3dd313bc3</parentFolderId>
+      <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+      <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+      <traits>
+        <trait id="b407aace-ad14-484e-ac93-4762a3d182d8" name="[Component]" />
+      </traits>
+      <stereotypes />
+      <metadata />
+      <childElements>
+        <childElement id="e1fc0f00-099b-414b-bc94-5c7c4d1f70ce" type="Dialog Content" typeId="69495016-6e72-4c18-bae5-2391e45cd234">
+          <name>Content</name>
+          <display>Content</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>a63d2db8-5569-42a7-b8bf-7759cb18076f</parentFolderId>
+          <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+          <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="77f44f0e-0457-4d7d-9eda-ec76372d9832" type="Dialog Actions" typeId="247a4768-7c46-472c-b5ea-565b37194956">
+          <name>Actions</name>
+          <display>Actions</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <isMapped>false</isMapped>
+          <parentFolderId>a63d2db8-5569-42a7-b8bf-7759cb18076f</parentFolderId>
+          <packageId>a216f9c6-840a-4a29-a650-5b5294d167d2</packageId>
+          <packageName>Intent.Sample.Blazor.Server.UI</packageName>
+          <stereotypes />
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

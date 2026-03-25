@@ -80,13 +80,14 @@
         <target applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="b1d07692-8e65-43dc-8846-afd4a20111ea" location="[Intent.Sample.Angular].[User Interface].[DiscountEditDialog]" />
         <mappedEnds>
           <mappedEnd>
-            <expression>{LoadDiscountById.GetDiscountByIdQuery.response}</expression>
+            <expression>{LoadDiscountById.GetDiscountByIdQuery.response.Id}</expression>
             <path>
               <target id="b1d07692-8e65-43dc-8846-afd4a20111ea" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
-              <target id="ced88ad1-a87c-44e9-8737-0bcb8f79c01c" name="DiscountByIdModels" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="2a997430-1194-4747-8be9-b03791d9e31f" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="c1c42e63-c7a6-446a-93e7-185038ce681f" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
             </path>
             <sources>
-              <source identifier="LoadDiscountById.GetDiscountByIdQuery.response" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+              <source identifier="LoadDiscountById.GetDiscountByIdQuery.response.Id" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
                 <path>
                   <target id="b1d07692-8e65-43dc-8846-afd4a20111ea" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
                   <target id="d11dfe65-bce5-4ff9-9933-764b09c89c2a" name="LoadDiscountById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
@@ -104,6 +105,100 @@
                       <genericTypeParameters />
                     </typeReference>
                   </target>
+                  <target id="09b4bb2e-3ea4-4716-b24a-66e0221b22d0" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadDiscountById.GetDiscountByIdQuery.response.Code}</expression>
+            <path>
+              <target id="b1d07692-8e65-43dc-8846-afd4a20111ea" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="2a997430-1194-4747-8be9-b03791d9e31f" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="754947cb-3be0-4ac6-8502-00316e4bd837" name="Code" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadDiscountById.GetDiscountByIdQuery.response.Code" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="b1d07692-8e65-43dc-8846-afd4a20111ea" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d11dfe65-bce5-4ff9-9933-764b09c89c2a" name="LoadDiscountById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="060c2fa3-7f8a-40a8-902e-8925ba46e99c" name="GetDiscountByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>53d2c5d1-6c8a-40c4-95c5-d98c93a6e84f</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="0323c392-0e85-490b-a679-2a88ce27427c" name="Code" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadDiscountById.GetDiscountByIdQuery.response.DiscountAmount}</expression>
+            <path>
+              <target id="b1d07692-8e65-43dc-8846-afd4a20111ea" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="2a997430-1194-4747-8be9-b03791d9e31f" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="14c524be-a8d2-4cfb-a8d4-e9d520a389f2" name="DiscountAmount" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadDiscountById.GetDiscountByIdQuery.response.DiscountAmount" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="b1d07692-8e65-43dc-8846-afd4a20111ea" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d11dfe65-bce5-4ff9-9933-764b09c89c2a" name="LoadDiscountById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="060c2fa3-7f8a-40a8-902e-8925ba46e99c" name="GetDiscountByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>53d2c5d1-6c8a-40c4-95c5-d98c93a6e84f</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="d5937357-1d3a-495c-bb83-307df6c2e6d0" name="DiscountAmount" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{LoadDiscountById.GetDiscountByIdQuery.response.Expiry}</expression>
+            <path>
+              <target id="b1d07692-8e65-43dc-8846-afd4a20111ea" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+              <target id="2a997430-1194-4747-8be9-b03791d9e31f" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+              <target id="e01e68ab-06b7-47f1-bb2c-e6711a1de4a3" name="Expiry" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+            </path>
+            <sources>
+              <source identifier="LoadDiscountById.GetDiscountByIdQuery.response.Expiry" mappingType="Data Mapping" mappingTypeId="9cccf6be-31be-4ac0-a026-ed0c4f5578bf">
+                <path>
+                  <target id="b1d07692-8e65-43dc-8846-afd4a20111ea" name="DiscountEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="d11dfe65-bce5-4ff9-9933-764b09c89c2a" name="LoadDiscountById" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="060c2fa3-7f8a-40a8-902e-8925ba46e99c" name="GetDiscountByIdQuery" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                  <target id="2f68b1a4-a523-4987-b3da-f35e6e8e146b" name="response" type="static-mappable" specialization="response" specializationId="2f68b1a4-a523-4987-b3da-f35e6e8e146b">
+                    <typeReference>
+                      <typeId>53d2c5d1-6c8a-40c4-95c5-d98c93a6e84f</typeId>
+                      <isNavigable>true</isNavigable>
+                      <isNullable>false</isNullable>
+                      <isCollection>false</isCollection>
+                      <isRequired>true</isRequired>
+                      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+                      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+                      <stereotypes />
+                      <genericTypeParameters />
+                    </typeReference>
+                  </target>
+                  <target id="ba2a491d-6912-4867-abec-f60f98ebd2ec" name="Expiry" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
                 </path>
               </source>
             </sources>

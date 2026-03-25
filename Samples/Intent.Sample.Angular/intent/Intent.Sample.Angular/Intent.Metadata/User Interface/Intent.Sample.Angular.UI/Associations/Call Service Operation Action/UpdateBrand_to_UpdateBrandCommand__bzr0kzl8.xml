@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="4c590a9f-ad50-4721-bf14-1004713f9316">
+  <sourceEnd id="27cca4e3-caa1-4894-8796-5bc6b11cd7dc" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: UpdateBrand</display>
+    <order>0</order>
+    <typeReference id="3b6519f4-b0dd-4a2f-97a8-e7dee93fffdb">
+      <typeId>316e6cae-af6e-4cdb-b920-351ed8656bf9</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.UI</typePackageName>
+      <typePackageId>057de13e-cf1a-41aa-914f-f88d95e463f4</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="4c590a9f-ad50-4721-bf14-1004713f9316" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>UpdateBrandCommand</name>
+    <display>[call] Brands.UpdateBrandCommand: void</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="1f991144-2ece-44bb-9aaa-2d02ea9454b2">
+      <typeId>9e1156af-3433-4d81-ac2d-8d77066a3b8d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Angular.Backend.Services</typePackageName>
+      <typePackageId>518ad6a2-953d-4588-95e4-35ba4905dc7b</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="9984788e-6d43-4e13-9121-d43d720222af" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="906056df-d1e7-4a17-9bd6-a80656752053" location="[Intent.Sample.Angular].[User Interface].[BrandEditDialog]" />
+        <target applicationId="4f799450-9dd9-4f4c-9740-262eafcfa4da" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="9e1156af-3433-4d81-ac2d-8d77066a3b8d" location="[Intent.Sample.Angular].[User Interface].[UpdateBrandCommand]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{UpdateBrand.UpdateBrandCommand}</expression>
+            <path>
+              <target id="9e1156af-3433-4d81-ac2d-8d77066a3b8d" name="UpdateBrandCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+            </path>
+            <sources>
+              <source identifier="UpdateBrand.UpdateBrandCommand" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="906056df-d1e7-4a17-9bd6-a80656752053" name="BrandEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="316e6cae-af6e-4cdb-b920-351ed8656bf9" name="UpdateBrand" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="4c590a9f-ad50-4721-bf14-1004713f9316" name="UpdateBrandCommand" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Id}</expression>
+            <path>
+              <target id="9e1156af-3433-4d81-ac2d-8d77066a3b8d" name="UpdateBrandCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="dc36144f-9488-43e7-bd58-783ee05eef94" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="906056df-d1e7-4a17-9bd6-a80656752053" name="BrandEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="377d803a-9867-4a3d-9650-2af4714b0d30" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="b79a2912-aefe-460d-a72d-cdbd3e42bd82" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Name}</expression>
+            <path>
+              <target id="9e1156af-3433-4d81-ac2d-8d77066a3b8d" name="UpdateBrandCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="5449e440-3710-46e1-8861-669793da0c8c" name="Name" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Name" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="906056df-d1e7-4a17-9bd6-a80656752053" name="BrandEditDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="377d803a-9867-4a3d-9650-2af4714b0d30" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="fe1da938-5521-4f67-99e5-841df19893bf" name="Name" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>

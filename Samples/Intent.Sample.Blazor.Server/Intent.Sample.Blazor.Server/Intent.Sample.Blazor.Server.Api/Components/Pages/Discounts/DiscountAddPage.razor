@@ -1,0 +1,79 @@
+@page "/discounts/add"
+
+<MudPaper Class="pa-4 mb-4 ux-gradient-primary" Elevation="0">
+    <MudText Typo="Typo.h4" Class="text-white font-weight-bold mb-2">
+        <MudIcon Icon="@Icons.Material.Filled.LocalOffer" Class="mr-2" />
+        Add Discount
+    </MudText>
+    <MudText Typo="Typo.body1" Class="text-white opacity-90">
+        Create a new discount code with an amount and expiry date.
+    </MudText>
+</MudPaper>
+
+<MudCard Class="ux-fade-in-up" Style="animation-delay: 0.1s">
+    <MudCardContent>
+        <MudForm @ref="_form" Model="@Model">
+            <MudGrid>
+                <MudItem xs="12" md="6">
+                    <MudTextField @bind-Value="Model.Code"
+                                  Label="Code"
+                                  Placeholder="Enter discount code"
+                                  Adornment="Adornment.Start"
+                                  AdornmentIcon="@Icons.Material.Filled.Tag"
+                                  Immediate
+                                  Required
+                                  RequiredError="Code is required" />
+                </MudItem>
+
+                <MudItem xs="12" md="6">
+                    <MudNumericField T="decimal?" @bind-Value="Model.DiscountAmount"
+                                     Label="Discount Amount"
+                                     Placeholder="Enter amount"
+                                     Adornment="Adornment.Start"
+                                     AdornmentIcon="@Icons.Material.Filled.AttachMoney"
+                                     Min="0"
+                                     Immediate
+                                     Required
+                                     RequiredError="Discount amount is required" />
+                </MudItem>
+
+                <MudItem xs="12" md="6">
+                    <MudDatePicker @bind-Date="Model.Expiry"
+                                   Label="Expiry Date"
+                                   PickerVariant="PickerVariant.Inline"
+                                   Adornment="Adornment.Start"
+                                   AdornmentIcon="@Icons.Material.Filled.Event"
+                                   Required
+                                   RequiredError="Expiry date is required" />
+                </MudItem>
+
+                <MudItem xs="12" Class="mt-4">
+                    <MudStack Row="true" Spacing="2" Justify="Justify.FlexEnd" AlignItems="AlignItems.Center">
+                        <MudButton OnClick="SaveAsync"
+                                   Disabled="@_saving"
+                                   Color="Color.Primary"
+                                   Variant="Variant.Filled"
+                                   StartIcon="@Icons.Material.Filled.Save">
+                            @if (_saving)
+                            {
+                                <MudProgressCircular Size="Size.Small" Indeterminate="true" Class="mr-2" />
+                                <span>Saving…</span>
+                            }
+                            else
+                            {
+                                <span>Save</span>
+                            }
+                        </MudButton>
+                        <MudButton OnClick="NavigateToDiscountListPage"
+                                   Disabled="@_saving"
+                                   Color="Color.Secondary"
+                                   Variant="Variant.Filled"
+                                   StartIcon="@Icons.Material.Filled.ArrowBack">
+                            Back to list
+                        </MudButton>
+                    </MudStack>
+                </MudItem>
+            </MudGrid>
+        </MudForm>
+    </MudCardContent>
+</MudCard>

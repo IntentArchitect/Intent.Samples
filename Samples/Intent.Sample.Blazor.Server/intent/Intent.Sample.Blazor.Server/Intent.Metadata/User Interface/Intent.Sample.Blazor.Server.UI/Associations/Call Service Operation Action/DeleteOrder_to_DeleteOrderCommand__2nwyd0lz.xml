@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="11abb126-877d-4eba-8625-247d86c347a6">
+  <sourceEnd id="64252e18-dc8e-40b2-9f15-40901827f5c8" type="Call Service Operation Action Source End" typeId="936e090c-8408-429d-b2f6-2eb8deecc428">
+    <display>: DeleteOrder</display>
+    <order>0</order>
+    <typeReference id="9b6a9913-3820-44a1-9c97-e26249d8ebcf">
+      <typeId>bc1a5d52-03d3-4758-b6dc-405095fa3920</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.UI</typePackageName>
+      <typePackageId>a216f9c6-840a-4a29-a650-5b5294d167d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="11abb126-877d-4eba-8625-247d86c347a6" type="Call Service Operation Action Target End" typeId="475f0810-2b4a-40da-8eb8-697cb62f7dbe">
+    <name>DeleteOrderCommand</name>
+    <display>[call] Orders.DeleteOrderCommand: void</display>
+    <order>0</order>
+    <traits>
+      <trait id="dc813928-0ce1-4f66-ae31-b5e5d506b4a3" name="[Invokable]" />
+    </traits>
+    <typeReference id="ee2d25e4-b10a-4112-848d-c6c5d8c30116">
+      <typeId>c31dd7bf-46b7-4144-96fd-5766a76f5ef6</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Intent.Sample.Blazor.Server.Services</typePackageName>
+      <typePackageId>07214eae-1a6d-4f46-92a3-5ef63eab4cf9</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <mappings>
+      <mapping type="Call Service Mapping" typeId="e4a4111b-cf13-4efe-8a5d-fea9457ac8ad">
+        <source applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="f492faed-0665-4513-9853-5a230721786f" elementId="5ca7ec2a-7740-4b34-a2c3-e5a8db5c3a13" location="[Intent.Sample.Blazor.Server].[User Interface].[OrderDeleteDialog]" />
+        <target applicationId="4e51ada8-1c6c-46f9-8942-093659a2b2cf" designerId="81104ae6-2bc5-4bae-b05a-f987b0372d81" elementId="c31dd7bf-46b7-4144-96fd-5766a76f5ef6" location="[Intent.Sample.Blazor.Server].[User Interface].[DeleteOrderCommand]" />
+        <mappedEnds>
+          <mappedEnd>
+            <expression>{DeleteOrder.DeleteOrderCommand}</expression>
+            <path>
+              <target id="c31dd7bf-46b7-4144-96fd-5766a76f5ef6" name="DeleteOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+            </path>
+            <sources>
+              <source identifier="DeleteOrder.DeleteOrderCommand" mappingType="Invocation Mapping" mappingTypeId="ab447316-1252-49bc-a695-f34cb00a3cdc">
+                <path>
+                  <target id="5ca7ec2a-7740-4b34-a2c3-e5a8db5c3a13" name="OrderDeleteDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="bc1a5d52-03d3-4758-b6dc-405095fa3920" name="DeleteOrder" type="element" specialization="Component Operation" specializationId="e030c97a-e066-40a7-8188-808c275df3cb" />
+                  <target id="11abb126-877d-4eba-8625-247d86c347a6" name="DeleteOrderCommand" type="association" specialization="Call Service Operation Action Target End" specializationId="475f0810-2b4a-40da-8eb8-697cb62f7dbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+          <mappedEnd>
+            <expression>{Model.Id}</expression>
+            <path>
+              <target id="c31dd7bf-46b7-4144-96fd-5766a76f5ef6" name="DeleteOrderCommand" type="element" specialization="Command" specializationId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9" />
+              <target id="c9d38a6e-3d7d-412c-91f5-537ec8821a77" name="Id" type="element" specialization="DTO-Field" specializationId="7baed1fd-469b-4980-8fd9-4cefb8331eb2" />
+            </path>
+            <sources>
+              <source identifier="Model.Id" mappingType="Data Mapping" mappingTypeId="ce70308a-e29d-4644-8410-f9e6bbd214fc">
+                <path>
+                  <target id="5ca7ec2a-7740-4b34-a2c3-e5a8db5c3a13" name="OrderDeleteDialog" type="element" specialization="Component" specializationId="b1c481e1-e91e-4c29-9817-00ab9cad4b6b" />
+                  <target id="66065086-db7b-402d-8031-d61d0fff400d" name="Model" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                  <target id="d03d586c-8238-407c-9583-73a112237163" name="Id" type="element" specialization="Property" specializationId="356fbe17-bc63-4e16-b915-feefbc063cbe" />
+                </path>
+              </source>
+            </sources>
+          </mappedEnd>
+        </mappedEnds>
+      </mapping>
+    </mappings>
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Call Service Operation Action</associationType>
+  <associationTypeId>fe5a5cd8-aabd-472f-8d42-f5c233e658dc</associationTypeId>
+  <stereotypes />
+</association>
